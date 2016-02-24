@@ -1,0 +1,89 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "child.disconnect()\tchild_process",
+            "contents": "child.disconnect();$0"
+        },
+        {
+            "trigger": "child.kill([signal])\tchild_process",
+            "contents": "child.kill(${1:[, signal]});$0"
+        },
+        {
+            "trigger": "child.send(message[, sendHandle][, callback])\tchild_process",
+            "contents": "child.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "child.connected\tchild_process",
+            "contents": "child.connected$0"
+        },
+        {
+            "trigger": "grep.pid\tchild_process",
+            "contents": "grep.pid$0"
+        },
+        {
+            "trigger": "child.stderr\tchild_process",
+            "contents": "child.stderr$0"
+        },
+        {
+            "trigger": "child.stdin\tchild_process",
+            "contents": "child.stdin$0"
+        },
+        {
+            "trigger": "child.stdio\tchild_process",
+            "contents": "child.stdio$0"
+        },
+        {
+            "trigger": "child.stdout\tchild_process",
+            "contents": "child.stdout$0"
+        },
+        {
+            "trigger": "close\tchild_process",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "disconnect\tchild_process",
+            "contents": "disconnect$0"
+        },
+        {
+            "trigger": "error\tchild_process",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "exit\tchild_process",
+            "contents": "exit$0"
+        },
+        {
+            "trigger": "message\tchild_process",
+            "contents": "message$0"
+        },
+        {
+            "trigger": "child_process.exec(command[, options][, callback])\tchild_process",
+            "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "child_process.execFile(file[, args][, options][, callback])\tchild_process",
+            "contents": "child_process.execFile(${1:file}, ${2:[, args]}, ${3:[, options]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "child_process.fork(modulePath[, args][, options])\tchild_process",
+            "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.spawn(command[, args][, options])\tchild_process",
+            "contents": "child_process.spawn(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.execFileSync(file[, args][, options])\tchild_process",
+            "contents": "child_process.execFileSync(${1:file}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.execSync(command[, options])\tchild_process",
+            "contents": "child_process.execSync(${1:command}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.spawnSync(command[, args][, options])\tchild_process",
+            "contents": "child_process.spawnSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
+        }
+    ]
+}

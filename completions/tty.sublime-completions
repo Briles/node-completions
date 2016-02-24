@@ -1,0 +1,33 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "tty.isatty(fd)\ttty",
+            "contents": "tty.isatty(${1:fd});$0"
+        },
+        {
+            "trigger": "tty.setRawMode(mode)\ttty",
+            "contents": "tty.setRawMode(${1:mode});$0"
+        },
+        {
+            "trigger": "rs.setRawMode(mode)\ttty",
+            "contents": "rs.setRawMode(${1:mode});$0"
+        },
+        {
+            "trigger": "readstream.isRaw\ttty",
+            "contents": "readstream.isRaw$0"
+        },
+        {
+            "trigger": "writestream.columns\ttty",
+            "contents": "writestream.columns$0"
+        },
+        {
+            "trigger": "writestream.rows\ttty",
+            "contents": "writestream.rows$0"
+        },
+        {
+            "trigger": "resize\ttty",
+            "contents": "resize$0"
+        }
+    ]
+}
