@@ -27,7 +27,7 @@
         },
         {
             "trigger": "socket.send(msg, [offset, length,] port, address[, callback])\tdgram",
-            "contents": "socket.send(${1:buf}, ${2:offset}, ${3:length}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
+            "contents": "socket.send(${1:msg}, ${2:offset}, ${3:length}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
         },
         {
             "trigger": "socket.setBroadcast(flag)\tdgram",

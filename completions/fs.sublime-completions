@@ -74,6 +74,14 @@
             "contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid});$0"
         },
         {
+            "trigger": "fs.fdatasync(fd, callback)\tfs",
+            "contents": "fs.fdatasync(${1:fd}, ${2:callback});$0"
+        },
+        {
+            "trigger": "fs.fdatasyncSync(fd)\tfs",
+            "contents": "fs.fdatasyncSync(${1:fd});$0"
+        },
+        {
             "trigger": "fs.fstat(fd, callback)\tfs",
             "contents": "fs.fstat(${1:fd}, ${2:callback});$0"
         },

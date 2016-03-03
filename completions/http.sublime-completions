@@ -238,8 +238,8 @@
             "contents": "request.headers$0"
         },
         {
-            "trigger": "response.httpVersion\thttp",
-            "contents": "response.httpVersion$0"
+            "trigger": "message.httpVersion\thttp",
+            "contents": "message.httpVersion$0"
         },
         {
             "trigger": "http.incomingmessage.method\thttp",
