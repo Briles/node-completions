@@ -62,8 +62,8 @@
             "contents": "process.nextTick(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "process.send(message[, sendHandle][, callback])\tglobals",
-            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
+            "trigger": "process.send(message[, sendHandle[, options]][, callback])\tglobals",
+            "contents": "process.send(${1:message}, ${2:sendHandle}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "process.setegid(id)\tglobals",
