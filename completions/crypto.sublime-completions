@@ -130,20 +130,20 @@
             "contents": "hmac.digest(${1:[, encoding]});$0"
         },
         {
-            "trigger": "hmac.update(data)\tcrypto",
-            "contents": "hmac.update(${1:data});$0"
+            "trigger": "hmac.update(data[, input_encoding])\tcrypto",
+            "contents": "hmac.update(${1:data}, ${2:[, input_encoding]});$0"
         },
         {
             "trigger": "sign.sign(private_key[, output_format])\tcrypto",
             "contents": "sign.sign(${1:private_key}, ${2:[, output_format]});$0"
         },
         {
-            "trigger": "sign.update(data)\tcrypto",
-            "contents": "sign.update(${1:data});$0"
+            "trigger": "sign.update(data[, input_encoding])\tcrypto",
+            "contents": "sign.update(${1:data}, ${2:[, input_encoding]});$0"
         },
         {
-            "trigger": "verifier.update(data)\tcrypto",
-            "contents": "verifier.update(${1:data});$0"
+            "trigger": "verifier.update(data[, input_encoding])\tcrypto",
+            "contents": "verifier.update(${1:data}, ${2:[, input_encoding]});$0"
         },
         {
             "trigger": "verifier.verify(object, signature[, signature_format])\tcrypto",
