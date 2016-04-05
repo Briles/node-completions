@@ -202,20 +202,12 @@
             "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, str, position, [encoding])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:str}, ${3:position}, ${4:[, encoding]});$0"
-        },
-        {
             "trigger": "fs.read(fd, buffer, offset, length, position, [callback])\tfs",
             "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
         },
         {
             "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfs",
             "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
-        },
-        {
-            "trigger": "fs.readSync(fd, length, position, encoding)\tfs",
-            "contents": "fs.readSync(${1:fd}, ${2:length}, ${3:position}, ${4:encoding});$0"
         },
         {
             "trigger": "fs.readFile(filename, [encoding], [callback])\tfs",
