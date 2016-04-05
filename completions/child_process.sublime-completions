@@ -2,27 +2,11 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "child_process.spawn(command, [args], [options])\tchild_process",
-            "contents": "child_process.spawn(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "child_process.exec(command, [options], callback)\tchild_process",
-            "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:callback});$0"
-        },
-        {
-            "trigger": "child_process.execFile(file, [args], [options], [callback])\tchild_process",
-            "contents": "child_process.execFile(${1:file}, ${2:[, args]}, ${3:[, options]}, ${4:[, callback]});$0"
-        },
-        {
-            "trigger": "child_process.fork(modulePath, [args], [options])\tchild_process",
-            "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
             "trigger": "child.kill([signal])\tchild_process",
             "contents": "child.kill(${1:[, signal]});$0"
         },
         {
-            "trigger": "child.send(message, [sendHandle])\tchild_process",
+            "trigger": "child.send(message[, sendHandle])\tchild_process",
             "contents": "child.send(${1:message}, ${2:[, sendHandle]});$0"
         },
         {
@@ -72,6 +56,46 @@
         {
             "trigger": "message\tchild_process",
             "contents": "message$0"
+        },
+        {
+            "trigger": "child_process.spawn(command[, args][, options])\tchild_process",
+            "contents": "child_process.spawn(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.exec(command[, options], callback)\tchild_process",
+            "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "child_process.execFile(file[, args][, options][, callback])\tchild_process",
+            "contents": "child_process.execFile(${1:file}, ${2:[, args]}, ${3:[, options]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "child_process.fork(modulePath[, args][, options])\tchild_process",
+            "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "ChildProcess.stdio\tchild_process",
+            "contents": "ChildProcess.stdio$0"
+        },
+        {
+            "trigger": "asynchronous_process_creation.detached\tchild_process",
+            "contents": "asynchronous_process_creation.detached$0"
+        },
+        {
+            "trigger": "asynchronous_process_creation.customFds\tchild_process",
+            "contents": "asynchronous_process_creation.customFds$0"
+        },
+        {
+            "trigger": "child_process.spawnSync(command[, args][, options])\tchild_process",
+            "contents": "child_process.spawnSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.execFileSync(command[, args][, options])\tchild_process",
+            "contents": "child_process.execFileSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.execSync(command[, options])\tchild_process",
+            "contents": "child_process.execSync(${1:command}, ${2:[, options]});$0"
         }
     ]
 }
