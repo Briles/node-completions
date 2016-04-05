@@ -74,6 +74,14 @@
             "contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid});$0"
         },
         {
+            "trigger": "fs.fdatasync(fd, callback)\tfs",
+            "contents": "fs.fdatasync(${1:fd}, ${2:callback});$0"
+        },
+        {
+            "trigger": "fs.fdatasyncSync(fd)\tfs",
+            "contents": "fs.fdatasyncSync(${1:fd});$0"
+        },
+        {
             "trigger": "fs.fstat(fd, callback)\tfs",
             "contents": "fs.fstat(${1:fd}, ${2:callback});$0"
         },
@@ -267,7 +275,7 @@
         },
         {
             "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]}, ${5:callback});$0"
+            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]}, ${5:callback});$0"
         },
         {
             "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
@@ -279,11 +287,11 @@
         },
         {
             "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "watcher.close()\tfs",
