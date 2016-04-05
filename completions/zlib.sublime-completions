@@ -30,32 +30,32 @@
             "contents": "zlib.createUnzip(${1:[, options]});$0"
         },
         {
-            "trigger": "zlib.deflate(buf, [options], callback)\tzlib",
-            "contents": "zlib.deflate(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.deflate(buf, callback)\tzlib",
+            "contents": "zlib.deflate(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.deflateRaw(buf, [options], callback)\tzlib",
-            "contents": "zlib.deflateRaw(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.deflateRaw(buf, callback)\tzlib",
+            "contents": "zlib.deflateRaw(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.gzip(buf, [options], callback)\tzlib",
-            "contents": "zlib.gzip(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.gzip(buf, callback)\tzlib",
+            "contents": "zlib.gzip(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.gunzip(buf, [options], callback)\tzlib",
-            "contents": "zlib.gunzip(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.gunzip(buf, callback)\tzlib",
+            "contents": "zlib.gunzip(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.inflate(buf, [options], callback)\tzlib",
-            "contents": "zlib.inflate(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.inflate(buf, callback)\tzlib",
+            "contents": "zlib.inflate(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.inflateRaw(buf, [options], callback)\tzlib",
-            "contents": "zlib.inflateRaw(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.inflateRaw(buf, callback)\tzlib",
+            "contents": "zlib.inflateRaw(${1:buf}, ${2:callback});$0"
         },
         {
-            "trigger": "zlib.unzip(buf, [options], callback)\tzlib",
-            "contents": "zlib.unzip(${1:buf}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "zlib.unzip(buf, callback)\tzlib",
+            "contents": "zlib.unzip(${1:buf}, ${2:callback});$0"
         },
         {
             "trigger": "zlib.flush(callback)\tzlib",
