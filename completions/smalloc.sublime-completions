@@ -1,0 +1,21 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "smalloc.alloc(length[, receiver][, type])\tsmalloc",
+            "contents": "smalloc.alloc(${1:length}, ${2:receiver}, ${3:type});$0"
+        },
+        {
+            "trigger": "smalloc.dispose(obj)\tsmalloc",
+            "contents": "smalloc.dispose(${1:obj});$0"
+        },
+        {
+            "trigger": "smalloc.kMaxLength\tsmalloc",
+            "contents": "smalloc.kMaxLength$0"
+        },
+        {
+            "trigger": "smalloc.Types\tsmalloc",
+            "contents": "smalloc.Types$0"
+        }
+    ]
+}
