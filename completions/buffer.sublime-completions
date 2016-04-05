@@ -154,12 +154,20 @@
             "contents": "Buffer.concat(${1:list}, ${2:[, totalLength]});$0"
         },
         {
-            "trigger": "buffer[index]\tbuffer",
-            "contents": "buffer[index]$0"
+            "trigger": "Buffer.alloc(length, [receiver])\tbuffer",
+            "contents": "Buffer.alloc(${1:length}, ${2:[, receiver]});$0"
+        },
+        {
+            "trigger": "Buffer.dispose(obj)\tbuffer",
+            "contents": "Buffer.dispose(${1:obj});$0"
         },
         {
             "trigger": "buf.length\tbuffer",
             "contents": "buf.length$0"
+        },
+        {
+            "trigger": "buffer[index]\tbuffer",
+            "contents": "buffer[index]$0"
         },
         {
             "trigger": "buffer.INSPECT_MAX_BYTES\tbuffer",
