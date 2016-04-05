@@ -126,6 +126,10 @@
             "contents": "process.execPath$0"
         },
         {
+            "trigger": "process.execArgv\tglobals",
+            "contents": "process.execArgv$0"
+        },
+        {
             "trigger": "process.env\tglobals",
             "contents": "process.env$0"
         },
