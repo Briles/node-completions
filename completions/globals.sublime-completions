@@ -2,6 +2,42 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "console.log([data], [...])\tglobals",
+            "contents": "console.log(${1:[, data]}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "console.info([data], [...])\tglobals",
+            "contents": "console.info(${1:[, data]}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "console.error([data], [...])\tglobals",
+            "contents": "console.error(${1:[, data]}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "console.warn([data], [...])\tglobals",
+            "contents": "console.warn(${1:[, data]}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "console.dir(obj)\tglobals",
+            "contents": "console.dir(${1:obj});$0"
+        },
+        {
+            "trigger": "console.time(label)\tglobals",
+            "contents": "console.time(${1:label});$0"
+        },
+        {
+            "trigger": "console.timeEnd(label)\tglobals",
+            "contents": "console.timeEnd(${1:label});$0"
+        },
+        {
+            "trigger": "console.trace(message, [...])\tglobals",
+            "contents": "console.trace(${1:message}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "console.assert(value, [message], [...])\tglobals",
+            "contents": "console.assert(${1:value}, ${2:[, message]}, ${3:[, ...]});$0"
+        },
+        {
             "trigger": "process.abort()\tglobals",
             "contents": "process.abort();$0"
         },
@@ -14,43 +50,39 @@
             "contents": "process.cwd();$0"
         },
         {
-            "trigger": "process.disconnect()\tglobals",
-            "contents": "process.disconnect();$0"
-        },
-        {
             "trigger": "process.exit([code])\tglobals",
             "contents": "process.exit(${1:[, code]});$0"
-        },
-        {
-            "trigger": "process.getegid()\tglobals",
-            "contents": "process.getegid();$0"
-        },
-        {
-            "trigger": "process.geteuid()\tglobals",
-            "contents": "process.geteuid();$0"
         },
         {
             "trigger": "process.getgid()\tglobals",
             "contents": "process.getgid();$0"
         },
         {
-            "trigger": "process.getgroups()\tglobals",
-            "contents": "process.getgroups();$0"
+            "trigger": "process.setgid(id)\tglobals",
+            "contents": "process.setgid(${1:id});$0"
         },
         {
             "trigger": "process.getuid()\tglobals",
             "contents": "process.getuid();$0"
         },
         {
-            "trigger": "process.hrtime()\tglobals",
-            "contents": "process.hrtime();$0"
+            "trigger": "process.setuid(id)\tglobals",
+            "contents": "process.setuid(${1:id});$0"
+        },
+        {
+            "trigger": "process.getgroups()\tglobals",
+            "contents": "process.getgroups();$0"
+        },
+        {
+            "trigger": "process.setgroups(groups)\tglobals",
+            "contents": "process.setgroups(${1:groups});$0"
         },
         {
             "trigger": "process.initgroups(user, extra_group)\tglobals",
             "contents": "process.initgroups(${1:user}, ${2:extra_group});$0"
         },
         {
-            "trigger": "process.kill(pid[, signal])\tglobals",
+            "trigger": "process.kill(pid, [signal])\tglobals",
             "contents": "process.kill(${1:pid}, ${2:[, signal]});$0"
         },
         {
@@ -58,32 +90,8 @@
             "contents": "process.memoryUsage();$0"
         },
         {
-            "trigger": "process.nextTick(callback[, arg][, ...])\tglobals",
-            "contents": "process.nextTick(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
-        },
-        {
-            "trigger": "process.send(message[, sendHandle][, callback])\tglobals",
-            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "process.setegid(id)\tglobals",
-            "contents": "process.setegid(${1:id});$0"
-        },
-        {
-            "trigger": "process.seteuid(id)\tglobals",
-            "contents": "process.seteuid(${1:id});$0"
-        },
-        {
-            "trigger": "process.setgid(id)\tglobals",
-            "contents": "process.setgid(${1:id});$0"
-        },
-        {
-            "trigger": "process.setgroups(groups)\tglobals",
-            "contents": "process.setgroups(${1:groups});$0"
-        },
-        {
-            "trigger": "process.setuid(id)\tglobals",
-            "contents": "process.setuid(${1:id});$0"
+            "trigger": "process.nextTick(callback)\tglobals",
+            "contents": "process.nextTick(${1:callback});$0"
         },
         {
             "trigger": "process.umask([mask])\tglobals",
@@ -94,52 +102,12 @@
             "contents": "process.uptime();$0"
         },
         {
-            "trigger": "process.arch\tglobals",
-            "contents": "process.arch$0"
+            "trigger": "process.hrtime()\tglobals",
+            "contents": "process.hrtime();$0"
         },
         {
-            "trigger": "process.argv\tglobals",
-            "contents": "process.argv$0"
-        },
-        {
-            "trigger": "process.config\tglobals",
-            "contents": "process.config$0"
-        },
-        {
-            "trigger": "process.connected\tglobals",
-            "contents": "process.connected$0"
-        },
-        {
-            "trigger": "process.env\tglobals",
-            "contents": "process.env$0"
-        },
-        {
-            "trigger": "process.execArgv\tglobals",
-            "contents": "process.execArgv$0"
-        },
-        {
-            "trigger": "process.execPath\tglobals",
-            "contents": "process.execPath$0"
-        },
-        {
-            "trigger": "process.exitCode\tglobals",
-            "contents": "process.exitCode$0"
-        },
-        {
-            "trigger": "process.mainModule\tglobals",
-            "contents": "process.mainModule$0"
-        },
-        {
-            "trigger": "process.pid\tglobals",
-            "contents": "process.pid$0"
-        },
-        {
-            "trigger": "process.platform\tglobals",
-            "contents": "process.platform$0"
-        },
-        {
-            "trigger": "process.release\tglobals",
-            "contents": "process.release$0"
+            "trigger": "process.stdout\tglobals",
+            "contents": "process.stdout$0"
         },
         {
             "trigger": "process.stderr\tglobals",
@@ -150,12 +118,20 @@
             "contents": "process.stdin$0"
         },
         {
-            "trigger": "process.stdout\tglobals",
-            "contents": "process.stdout$0"
+            "trigger": "process.argv\tglobals",
+            "contents": "process.argv$0"
         },
         {
-            "trigger": "process.title\tglobals",
-            "contents": "process.title$0"
+            "trigger": "process.execPath\tglobals",
+            "contents": "process.execPath$0"
+        },
+        {
+            "trigger": "process.execArgv\tglobals",
+            "contents": "process.execArgv$0"
+        },
+        {
+            "trigger": "process.env\tglobals",
+            "contents": "process.env$0"
         },
         {
             "trigger": "process.version\tglobals",
@@ -166,28 +142,36 @@
             "contents": "process.versions$0"
         },
         {
-            "trigger": "beforeExit\tglobals",
-            "contents": "beforeExit$0"
+            "trigger": "process.config\tglobals",
+            "contents": "process.config$0"
+        },
+        {
+            "trigger": "process.pid\tglobals",
+            "contents": "process.pid$0"
+        },
+        {
+            "trigger": "process.title\tglobals",
+            "contents": "process.title$0"
+        },
+        {
+            "trigger": "process.arch\tglobals",
+            "contents": "process.arch$0"
+        },
+        {
+            "trigger": "process.platform\tglobals",
+            "contents": "process.platform$0"
+        },
+        {
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
         },
         {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
         },
         {
-            "trigger": "message\tglobals",
-            "contents": "message$0"
-        },
-        {
-            "trigger": "rejectionHandled\tglobals",
-            "contents": "rejectionHandled$0"
-        },
-        {
             "trigger": "uncaughtException\tglobals",
             "contents": "uncaughtException$0"
-        },
-        {
-            "trigger": "unhandledRejection\tglobals",
-            "contents": "unhandledRejection$0"
         },
         {
             "trigger": "SIGINT, SIGHUP, etc.\tglobals",
