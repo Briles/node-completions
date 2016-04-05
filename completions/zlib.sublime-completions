@@ -56,14 +56,6 @@
         {
             "trigger": "zlib.unzip(buf, callback)\tzlib",
             "contents": "zlib.unzip(${1:buf}, ${2:callback});$0"
-        },
-        {
-            "trigger": "zlib.flush(callback)\tzlib",
-            "contents": "zlib.flush(${1:callback});$0"
-        },
-        {
-            "trigger": "zlib.reset()\tzlib",
-            "contents": "zlib.reset();$0"
         }
     ]
 }

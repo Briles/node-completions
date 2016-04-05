@@ -10,12 +10,12 @@
             "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "child_process.execFile(file, [args], [options], [callback])\tchild_process",
-            "contents": "child_process.execFile(${1:file}, ${2:[, args]}, ${3:[, options]}, ${4:[, callback]});$0"
+            "trigger": "child_process.execFile(file, args, options, callback)\tchild_process",
+            "contents": "child_process.execFile(${1:file}, ${2:args}, ${3:options}, ${4:callback});$0"
         },
         {
-            "trigger": "child_process.fork(modulePath, [args], [options])\tchild_process",
-            "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
+            "trigger": "child\\_process.fork(modulePath, [args], [options])\tchild_process",
+            "contents": "child\\_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
         },
         {
             "trigger": "child.kill([signal])\tchild_process",
@@ -44,14 +44,6 @@
         {
             "trigger": "grep.pid\tchild_process",
             "contents": "grep.pid$0"
-        },
-        {
-            "trigger": "childprocess.connected\tchild_process",
-            "contents": "childprocess.connected$0"
-        },
-        {
-            "trigger": "error\tchild_process",
-            "contents": "error$0"
         },
         {
             "trigger": "exit\tchild_process",
