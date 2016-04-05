@@ -206,8 +206,48 @@
             "contents": "finish$0"
         },
         {
-            "trigger": "http.IncomingMessage\thttp",
-            "contents": "http.IncomingMessage$0"
+            "trigger": "message.setTimeout(msecs, callback)\thttp",
+            "contents": "message.setTimeout(${1:msecs}, ${2:callback});$0"
+        },
+        {
+            "trigger": "request.headers\thttp",
+            "contents": "request.headers$0"
+        },
+        {
+            "trigger": "response.httpVersion\thttp",
+            "contents": "response.httpVersion$0"
+        },
+        {
+            "trigger": "http.incomingmessage.method\thttp",
+            "contents": "http.incomingmessage.method$0"
+        },
+        {
+            "trigger": "request.rawHeaders\thttp",
+            "contents": "request.rawHeaders$0"
+        },
+        {
+            "trigger": "http.incomingmessage.rawTrailers\thttp",
+            "contents": "http.incomingmessage.rawTrailers$0"
+        },
+        {
+            "trigger": "http.incomingmessage.statusCode\thttp",
+            "contents": "http.incomingmessage.statusCode$0"
+        },
+        {
+            "trigger": "http.incomingmessage.statusMessage\thttp",
+            "contents": "http.incomingmessage.statusMessage$0"
+        },
+        {
+            "trigger": "net.Socket\thttp",
+            "contents": "net.Socket$0"
+        },
+        {
+            "trigger": "http.incomingmessage.trailers\thttp",
+            "contents": "http.incomingmessage.trailers$0"
+        },
+        {
+            "trigger": "request.url\thttp",
+            "contents": "request.url$0"
         },
         {
             "trigger": "http.METHODS\thttp",
