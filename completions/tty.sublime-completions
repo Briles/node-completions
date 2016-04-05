@@ -18,12 +18,12 @@
             "contents": "readstream.isRaw$0"
         },
         {
-            "trigger": "class_writestream.columns\ttty",
-            "contents": "class_writestream.columns$0"
+            "trigger": "writestream.columns\ttty",
+            "contents": "writestream.columns$0"
         },
         {
-            "trigger": "class_writestream.rows\ttty",
-            "contents": "class_writestream.rows$0"
+            "trigger": "writestream.rows\ttty",
+            "contents": "writestream.rows$0"
         },
         {
             "trigger": "resize\ttty",

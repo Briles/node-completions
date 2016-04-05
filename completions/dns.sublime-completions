@@ -2,44 +2,52 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "dns.lookup(domain, [family], callback)\tdns",
-            "contents": "dns.lookup(${1:domain}, ${2:[, family]}, ${3:callback});$0"
+            "trigger": "dns.lookup(hostname, [family], callback)\tdns",
+            "contents": "dns.lookup(${1:hostname}, ${2:[, family]}, ${3:callback});$0"
         },
         {
-            "trigger": "dns.resolve(domain, [rrtype], callback)\tdns",
-            "contents": "dns.resolve(${1:domain}, ${2:[, rrtype]}, ${3:callback});$0"
+            "trigger": "dns.resolve(hostname, [rrtype], callback)\tdns",
+            "contents": "dns.resolve(${1:hostname}, ${2:[, rrtype]}, ${3:callback});$0"
         },
         {
-            "trigger": "dns.resolve4(domain, callback)\tdns",
-            "contents": "dns.resolve4(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolve4(hostname, callback)\tdns",
+            "contents": "dns.resolve4(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolve6(domain, callback)\tdns",
-            "contents": "dns.resolve6(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolve6(hostname, callback)\tdns",
+            "contents": "dns.resolve6(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolveMx(domain, callback)\tdns",
-            "contents": "dns.resolveMx(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolveMx(hostname, callback)\tdns",
+            "contents": "dns.resolveMx(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolveTxt(domain, callback)\tdns",
-            "contents": "dns.resolveTxt(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolveTxt(hostname, callback)\tdns",
+            "contents": "dns.resolveTxt(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolveSrv(domain, callback)\tdns",
-            "contents": "dns.resolveSrv(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolveSrv(hostname, callback)\tdns",
+            "contents": "dns.resolveSrv(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolveNs(domain, callback)\tdns",
-            "contents": "dns.resolveNs(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolveNs(hostname, callback)\tdns",
+            "contents": "dns.resolveNs(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolveCname(domain, callback)\tdns",
-            "contents": "dns.resolveCname(${1:domain}, ${2:callback});$0"
+            "trigger": "dns.resolveCname(hostname, callback)\tdns",
+            "contents": "dns.resolveCname(${1:hostname}, ${2:callback});$0"
         },
         {
             "trigger": "dns.reverse(ip, callback)\tdns",
             "contents": "dns.reverse(${1:ip}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.getServers()\tdns",
+            "contents": "dns.getServers();$0"
+        },
+        {
+            "trigger": "dns.setServers(servers)\tdns",
+            "contents": "dns.setServers(${1:servers});$0"
         }
     ]
 }

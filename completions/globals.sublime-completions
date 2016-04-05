@@ -70,6 +70,18 @@
             "contents": "process.setuid(${1:id});$0"
         },
         {
+            "trigger": "process.getgroups()\tglobals",
+            "contents": "process.getgroups();$0"
+        },
+        {
+            "trigger": "process.setgroups(groups)\tglobals",
+            "contents": "process.setgroups(${1:groups});$0"
+        },
+        {
+            "trigger": "process.initgroups(user, extra_group)\tglobals",
+            "contents": "process.initgroups(${1:user}, ${2:extra_group});$0"
+        },
+        {
             "trigger": "process.kill(pid, [signal])\tglobals",
             "contents": "process.kill(${1:pid}, ${2:[, signal]});$0"
         },
@@ -114,8 +126,16 @@
             "contents": "process.execPath$0"
         },
         {
+            "trigger": "process.execArgv\tglobals",
+            "contents": "process.execArgv$0"
+        },
+        {
             "trigger": "process.env\tglobals",
             "contents": "process.env$0"
+        },
+        {
+            "trigger": "process.exitCode\tglobals",
+            "contents": "process.exitCode$0"
         },
         {
             "trigger": "process.version\tglobals",
@@ -154,8 +174,8 @@
             "contents": "uncaughtException$0"
         },
         {
-            "trigger": "SIGINT, SIGUSR1, etc.\tglobals",
-            "contents": "SIGINT, SIGUSR1, etc.$0"
+            "trigger": "SIGINT, SIGHUP, etc.\tglobals",
+            "contents": "SIGINT, SIGHUP, etc.$0"
         }
     ]
 }

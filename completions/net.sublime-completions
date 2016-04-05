@@ -62,6 +62,18 @@
             "contents": "server.address();$0"
         },
         {
+            "trigger": "server.unref()\tnet",
+            "contents": "server.unref();$0"
+        },
+        {
+            "trigger": "server.ref()\tnet",
+            "contents": "server.ref();$0"
+        },
+        {
+            "trigger": "server.getConnections(callback)\tnet",
+            "contents": "server.getConnections(${1:callback});$0"
+        },
+        {
             "trigger": "net.server.maxConnections\tnet",
             "contents": "net.server.maxConnections$0"
         },
@@ -138,6 +150,14 @@
             "contents": "socket.address();$0"
         },
         {
+            "trigger": "socket.unref()\tnet",
+            "contents": "socket.unref();$0"
+        },
+        {
+            "trigger": "socket.ref()\tnet",
+            "contents": "socket.ref();$0"
+        },
+        {
             "trigger": "net.socket.bufferSize\tnet",
             "contents": "net.socket.bufferSize$0"
         },
@@ -150,12 +170,24 @@
             "contents": "net.socket.remotePort$0"
         },
         {
+            "trigger": "net.socket.localAddress\tnet",
+            "contents": "net.socket.localAddress$0"
+        },
+        {
+            "trigger": "net.socket.localPort\tnet",
+            "contents": "net.socket.localPort$0"
+        },
+        {
             "trigger": "net.socket.bytesRead\tnet",
             "contents": "net.socket.bytesRead$0"
         },
         {
             "trigger": "net.socket.bytesWritten\tnet",
             "contents": "net.socket.bytesWritten$0"
+        },
+        {
+            "trigger": "lookup\tnet",
+            "contents": "lookup$0"
         },
         {
             "trigger": "connect\tnet",
