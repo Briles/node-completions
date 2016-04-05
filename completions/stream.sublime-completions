@@ -18,10 +18,6 @@
             "contents": "stream.destroy();$0"
         },
         {
-            "trigger": "stream.destroySoon()\tstream",
-            "contents": "stream.destroySoon();$0"
-        },
-        {
             "trigger": "stream.pipe(destination, [options])\tstream",
             "contents": "stream.pipe(${1:destination}, ${2:[, options]});$0"
         },
@@ -64,6 +60,10 @@
         {
             "trigger": "stream.end(buffer)\tstream",
             "contents": "stream.end(${1:buffer});$0"
+        },
+        {
+            "trigger": "stream.destroySoon()\tstream",
+            "contents": "stream.destroySoon();$0"
         },
         {
             "trigger": "writable stream.writable\tstream",
