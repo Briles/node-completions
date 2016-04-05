@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "vm.runInThisContext(code[, options])\tvm",
+            "contents": "vm.runInThisContext(${1:code}, ${2:[, options]});$0"
+        },
+        {
             "trigger": "vm.createContext([sandbox])\tvm",
             "contents": "vm.createContext(${1:[, sandbox]});$0"
         },
@@ -14,20 +18,20 @@
             "contents": "vm.runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:[, options]});$0"
         },
         {
-            "trigger": "vm.runInDebugContext(code)\tvm",
-            "contents": "vm.runInDebugContext(${1:code});$0"
-        },
-        {
             "trigger": "vm.runInNewContext(code[, sandbox][, options])\tvm",
             "contents": "vm.runInNewContext(${1:code}, ${2:[, sandbox]}, ${3:[, options]});$0"
         },
         {
-            "trigger": "vm.runInThisContext(code[, options])\tvm",
-            "contents": "vm.runInThisContext(${1:code}, ${2:[, options]});$0"
+            "trigger": "vm.runInDebugContext(code)\tvm",
+            "contents": "vm.runInDebugContext(${1:code});$0"
         },
         {
             "trigger": "new vm.Script(code, options)\tvm",
             "contents": "new vm.Script(${1:code}, ${2:options});$0"
+        },
+        {
+            "trigger": "script.runInThisContext([options])\tvm",
+            "contents": "script.runInThisContext(${1:[, options]});$0"
         },
         {
             "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",
@@ -36,10 +40,6 @@
         {
             "trigger": "script.runInNewContext([sandbox][, options])\tvm",
             "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "script.runInThisContext([options])\tvm",
-            "contents": "script.runInThisContext(${1:[, options]});$0"
         }
     ]
 }

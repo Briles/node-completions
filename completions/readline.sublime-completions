@@ -2,14 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "readline.clearLine(stream, dir)\treadline",
-            "contents": "readline.clearLine(${1:stream}, ${2:dir});$0"
-        },
-        {
-            "trigger": "readline.clearScreenDown(stream)\treadline",
-            "contents": "readline.clearScreenDown(${1:stream});$0"
-        },
-        {
             "trigger": "readline.createInterface(options)\treadline",
             "contents": "readline.createInterface(${1:options});$0"
         },
@@ -22,12 +14,16 @@
             "contents": "readline.moveCursor(${1:stream}, ${2:dx}, ${3:dy});$0"
         },
         {
-            "trigger": "rl.close()\treadline",
-            "contents": "rl.close();$0"
+            "trigger": "readline.clearLine(stream, dir)\treadline",
+            "contents": "readline.clearLine(${1:stream}, ${2:dir});$0"
         },
         {
-            "trigger": "rl.pause()\treadline",
-            "contents": "rl.pause();$0"
+            "trigger": "readline.clearScreenDown(stream)\treadline",
+            "contents": "readline.clearScreenDown(${1:stream});$0"
+        },
+        {
+            "trigger": "rl.setPrompt(prompt)\treadline",
+            "contents": "rl.setPrompt(${1:prompt});$0"
         },
         {
             "trigger": "rl.prompt([preserveCursor])\treadline",
@@ -38,20 +34,20 @@
             "contents": "rl.question(${1:query}, ${2:callback});$0"
         },
         {
+            "trigger": "rl.pause()\treadline",
+            "contents": "rl.pause();$0"
+        },
+        {
             "trigger": "rl.resume()\treadline",
             "contents": "rl.resume();$0"
         },
         {
-            "trigger": "rl.setPrompt(prompt)\treadline",
-            "contents": "rl.setPrompt(${1:prompt});$0"
+            "trigger": "rl.close()\treadline",
+            "contents": "rl.close();$0"
         },
         {
             "trigger": "rl.write(data[, key])\treadline",
             "contents": "rl.write(${1:data}, ${2:[, key]});$0"
-        },
-        {
-            "trigger": "close\treadline",
-            "contents": "close$0"
         },
         {
             "trigger": "line\treadline",
@@ -66,8 +62,8 @@
             "contents": "resume$0"
         },
         {
-            "trigger": "SIGCONT\treadline",
-            "contents": "SIGCONT$0"
+            "trigger": "close\treadline",
+            "contents": "close$0"
         },
         {
             "trigger": "SIGINT\treadline",
@@ -76,6 +72,10 @@
         {
             "trigger": "SIGTSTP\treadline",
             "contents": "SIGTSTP$0"
+        },
+        {
+            "trigger": "SIGCONT\treadline",
+            "contents": "SIGCONT$0"
         }
     ]
 }

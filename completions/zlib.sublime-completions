@@ -2,24 +2,24 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "zlib.createDeflate([options])\tzlib",
-            "contents": "zlib.createDeflate(${1:[, options]});$0"
-        },
-        {
-            "trigger": "zlib.createDeflateRaw([options])\tzlib",
-            "contents": "zlib.createDeflateRaw(${1:[, options]});$0"
+            "trigger": "zlib.createGzip([options])\tzlib",
+            "contents": "zlib.createGzip(${1:[, options]});$0"
         },
         {
             "trigger": "zlib.createGunzip([options])\tzlib",
             "contents": "zlib.createGunzip(${1:[, options]});$0"
         },
         {
-            "trigger": "zlib.createGzip([options])\tzlib",
-            "contents": "zlib.createGzip(${1:[, options]});$0"
+            "trigger": "zlib.createDeflate([options])\tzlib",
+            "contents": "zlib.createDeflate(${1:[, options]});$0"
         },
         {
             "trigger": "zlib.createInflate([options])\tzlib",
             "contents": "zlib.createInflate(${1:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.createDeflateRaw([options])\tzlib",
+            "contents": "zlib.createDeflateRaw(${1:[, options]});$0"
         },
         {
             "trigger": "zlib.createInflateRaw([options])\tzlib",
@@ -28,6 +28,62 @@
         {
             "trigger": "zlib.createUnzip([options])\tzlib",
             "contents": "zlib.createUnzip(${1:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.deflate(buf[, options], callback)\tzlib",
+            "contents": "zlib.deflate(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.deflateSync(buf[, options])\tzlib",
+            "contents": "zlib.deflateSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.deflateRaw(buf[, options], callback)\tzlib",
+            "contents": "zlib.deflateRaw(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.deflateRawSync(buf[, options])\tzlib",
+            "contents": "zlib.deflateRawSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gzip(buf[, options], callback)\tzlib",
+            "contents": "zlib.gzip(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gzipSync(buf[, options])\tzlib",
+            "contents": "zlib.gzipSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gunzip(buf[, options], callback)\tzlib",
+            "contents": "zlib.gunzip(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gunzipSync(buf[, options])\tzlib",
+            "contents": "zlib.gunzipSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflate(buf[, options], callback)\tzlib",
+            "contents": "zlib.inflate(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflateSync(buf[, options])\tzlib",
+            "contents": "zlib.inflateSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflateRaw(buf[, options], callback)\tzlib",
+            "contents": "zlib.inflateRaw(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflateRawSync(buf[, options])\tzlib",
+            "contents": "zlib.inflateRawSync(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.unzip(buf[, options], callback)\tzlib",
+            "contents": "zlib.unzip(${1:buf}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.unzipSync(buf[, options])\tzlib",
+            "contents": "zlib.unzipSync(${1:buf}, ${2:[, options]});$0"
         },
         {
             "trigger": "zlib.flush([kind], callback)\tzlib",
