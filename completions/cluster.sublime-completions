@@ -18,8 +18,8 @@
             "contents": "worker.send(${1:message}, ${2:[, sendHandle]});$0"
         },
         {
-            "trigger": "worker.kill([signal='SIGTERM'])\tcluster",
-            "contents": "worker.kill(${1:[, signal]});$0"
+            "trigger": "worker.destroy()\tcluster",
+            "contents": "worker.destroy();$0"
         },
         {
             "trigger": "worker.disconnect()\tcluster",
