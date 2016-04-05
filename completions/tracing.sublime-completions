@@ -1,0 +1,13 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "getHeapStatistics()\ttracing",
+            "contents": "getHeapStatistics();$0"
+        },
+        {
+            "trigger": "gc\ttracing",
+            "contents": "gc$0"
+        }
+    ]
+}

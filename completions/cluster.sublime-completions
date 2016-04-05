@@ -26,6 +26,14 @@
             "contents": "worker.disconnect();$0"
         },
         {
+            "trigger": "worker.isDead()\tcluster",
+            "contents": "worker.isDead();$0"
+        },
+        {
+            "trigger": "worker.isConnected()\tcluster",
+            "contents": "worker.isConnected();$0"
+        },
+        {
             "trigger": "worker.id\tcluster",
             "contents": "worker.id$0"
         },
@@ -60,6 +68,10 @@
         {
             "trigger": "error\tcluster",
             "contents": "error$0"
+        },
+        {
+            "trigger": "cluster.schedulingPolicy\tcluster",
+            "contents": "cluster.schedulingPolicy$0"
         },
         {
             "trigger": "cluster.settings\tcluster",
