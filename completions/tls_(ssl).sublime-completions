@@ -92,6 +92,10 @@
         {
             "trigger": "secureConnect\ttls_(ssl)",
             "contents": "secureConnect$0"
+        },
+        {
+            "trigger": "tls_(ssl).SLAB_BUFFER_SIZE\ttls_(ssl)",
+            "contents": "tls_(ssl).SLAB_BUFFER_SIZE$0"
         }
     ]
 }
