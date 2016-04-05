@@ -26,10 +26,6 @@
             "contents": "child.send(${1:message}, ${2:[, sendHandle]});$0"
         },
         {
-            "trigger": "child.disconnect()\tchild_process",
-            "contents": "child.disconnect();$0"
-        },
-        {
             "trigger": "childprocess.stdin\tchild_process",
             "contents": "childprocess.stdin$0"
         },
@@ -48,18 +44,6 @@
         {
             "trigger": "exit\tchild_process",
             "contents": "exit$0"
-        },
-        {
-            "trigger": "close\tchild_process",
-            "contents": "close$0"
-        },
-        {
-            "trigger": "disconnect\tchild_process",
-            "contents": "disconnect$0"
-        },
-        {
-            "trigger": "message\tchild_process",
-            "contents": "message$0"
         }
     ]
 }
