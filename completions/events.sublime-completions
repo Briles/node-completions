@@ -40,6 +40,10 @@
         {
             "trigger": "newListener\tEvents",
             "contents": "newListener$0"
+        },
+        {
+            "trigger": "removeListener\tEvents",
+            "contents": "removeListener$0"
         }
     ]
 }
