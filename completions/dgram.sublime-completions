@@ -3,7 +3,11 @@
     "completions": [
         {
             "trigger": "dgram.createSocket(type, [callback])\tdgram",
-            "contents": "dgram.createSocket(${1:type}, ${2:[, callback]});$0"
+            "contents": "dgram.createSocket(${1:type}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "dgram.createSocket(options, [callback])\tdgram",
+            "contents": "dgram.createSocket(${1:type}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "socket.send(buf, offset, length, port, address, [callback])\tdgram",

@@ -14,6 +14,14 @@
             "contents": "buf.toJSON();$0"
         },
         {
+            "trigger": "buf.equals(otherBuffer)\tbuffer",
+            "contents": "buf.equals(${1:otherBuffer});$0"
+        },
+        {
+            "trigger": "buf.compare(otherBuffer)\tbuffer",
+            "contents": "buf.compare(${1:otherBuffer});$0"
+        },
+        {
             "trigger": "buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd])\tbuffer",
             "contents": "buf.copy(${1:targetBuffer}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
         },
@@ -138,6 +146,10 @@
             "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]});$0"
         },
         {
+            "trigger": "buf.toArrayBuffer()\tbuffer",
+            "contents": "buf.toArrayBuffer();$0"
+        },
+        {
             "trigger": "Buffer.isEncoding(encoding)\tbuffer",
             "contents": "Buffer.isEncoding(${1:encoding});$0"
         },
@@ -154,12 +166,16 @@
             "contents": "Buffer.concat(${1:list}, ${2:[, totalLength]});$0"
         },
         {
-            "trigger": "buffer[index]\tbuffer",
-            "contents": "buffer[index]$0"
+            "trigger": "Buffer.compare(buf1, buf2)\tbuffer",
+            "contents": "Buffer.compare(${1:buf1}, ${2:buf2});$0"
         },
         {
             "trigger": "buf.length\tbuffer",
             "contents": "buf.length$0"
+        },
+        {
+            "trigger": "buffer[index]\tbuffer",
+            "contents": "buffer[index]$0"
         },
         {
             "trigger": "buffer.INSPECT_MAX_BYTES\tbuffer",

@@ -1,0 +1,21 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "tracing.createAsyncListener(callbacksObj[, userData])\tasync_listeners",
+            "contents": "tracing.createAsyncListener(${1:callbacksObj}, ${2:userData});$0"
+        },
+        {
+            "trigger": "tracing.addAsyncListener(callbacksObj[, userData])\tasync_listeners",
+            "contents": "tracing.addAsyncListener(${1:asyncListener});$0"
+        },
+        {
+            "trigger": "tracing.addAsyncListener(asyncListener)\tasync_listeners",
+            "contents": "tracing.addAsyncListener(${1:asyncListener});$0"
+        },
+        {
+            "trigger": "tracing.removeAsyncListener(asyncListener)\tasync_listeners",
+            "contents": "tracing.removeAsyncListener(${1:asyncListener});$0"
+        }
+    ]
+}
