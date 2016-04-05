@@ -28,14 +28,6 @@
         {
             "trigger": "path.extname(p)\tpath",
             "contents": "path.extname(${1:p});$0"
-        },
-        {
-            "trigger": "path.exists(p, [callback])\tpath",
-            "contents": "path.exists(${1:p}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "path.existsSync(p)\tpath",
-            "contents": "path.existsSync(${1:p});$0"
         }
     ]
 }
