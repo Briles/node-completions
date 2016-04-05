@@ -78,12 +78,12 @@
             "contents": "child_process.spawnSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
         },
         {
-            "trigger": "child_process.execFileSync(command[, args][, options])\tchild_process",
-            "contents": "child_process.execFileSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
             "trigger": "child_process.execSync(command[, options])\tchild_process",
             "contents": "child_process.execSync(${1:command}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "child_process.execFileSync(file[, args][, options])\tchild_process",
+            "contents": "child_process.execFileSync(${1:file}, ${2:[, args]}, ${3:[, options]});$0"
         }
     ]
 }
