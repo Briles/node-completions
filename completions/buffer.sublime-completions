@@ -18,8 +18,8 @@
             "contents": "buf.equals(${1:otherBuffer});$0"
         },
         {
-            "trigger": "buf.fill(value[, offset[, end]])\tbuffer",
-            "contents": "buf.fill(${1:value}, ${2:offset}, ${3:[, end]});$0"
+            "trigger": "buf.fill(value[, offset[, end]][, encoding])\tbuffer",
+            "contents": "buf.fill(${1:value}, ${2:offset}, ${3:[, end]}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "buf.indexOf(value[, byteOffset][, encoding])\tbuffer",
