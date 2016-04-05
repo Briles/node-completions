@@ -162,6 +162,18 @@
             "contents": "diffieHellman.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
         },
         {
+            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
+            "contents": "Certificate.verifySpkac(${1:spkac});$0"
+        },
+        {
+            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
+            "contents": "Certificate.exportChallenge(${1:spkac});$0"
+        },
+        {
+            "trigger": "Certificate.exportPublicKey(spkac)\tcrypto",
+            "contents": "Certificate.exportPublicKey(${1:spkac});$0"
+        },
+        {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
             "contents": "crypto.DEFAULT_ENCODING$0"
         }

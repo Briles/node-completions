@@ -18,6 +18,10 @@
             "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
+            "trigger": "new tls.TLSSocket(socket, options)\ttls_(ssl)",
+            "contents": "new tls.TLSSocket(${1:socket}, ${2:options});$0"
+        },
+        {
             "trigger": "tls.createSecurePair([credentials], [isServer], [requestCert], [rejectUnauthorized])\ttls_(ssl)",
             "contents": "tls.createSecurePair(${1:[, credentials]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]});$0"
         },
@@ -70,40 +74,48 @@
             "contents": "cryptostream.bytesWritten$0"
         },
         {
-            "trigger": "cleartextStream.getPeerCertificate()\ttls_(ssl)",
-            "contents": "cleartextStream.getPeerCertificate();$0"
+            "trigger": "tlsSocket.getPeerCertificate()\ttls_(ssl)",
+            "contents": "tlsSocket.getPeerCertificate();$0"
         },
         {
-            "trigger": "cleartextStream.getCipher()\ttls_(ssl)",
-            "contents": "cleartextStream.getCipher();$0"
+            "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
+            "contents": "tlsSocket.getCipher();$0"
         },
         {
-            "trigger": "cleartextStream.address()\ttls_(ssl)",
-            "contents": "cleartextStream.address();$0"
+            "trigger": "tlsSocket.renegotiate(options, callback)\ttls_(ssl)",
+            "contents": "tlsSocket.renegotiate(${1:options}, ${2:callback});$0"
         },
         {
-            "trigger": "tls.cleartextstream.authorized\ttls_(ssl)",
-            "contents": "tls.cleartextstream.authorized$0"
+            "trigger": "tlsSocket.address()\ttls_(ssl)",
+            "contents": "tlsSocket.address();$0"
         },
         {
-            "trigger": "tls.cleartextstream.authorizationError\ttls_(ssl)",
-            "contents": "tls.cleartextstream.authorizationError$0"
+            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
+            "contents": "tls.tlssocket.authorized$0"
         },
         {
-            "trigger": "tls.cleartextstream.remoteAddress\ttls_(ssl)",
-            "contents": "tls.cleartextstream.remoteAddress$0"
+            "trigger": "tls.tlssocket.authorizationError\ttls_(ssl)",
+            "contents": "tls.tlssocket.authorizationError$0"
         },
         {
-            "trigger": "tls.cleartextstream.remotePort\ttls_(ssl)",
-            "contents": "tls.cleartextstream.remotePort$0"
+            "trigger": "tls.tlssocket.remoteAddress\ttls_(ssl)",
+            "contents": "tls.tlssocket.remoteAddress$0"
+        },
+        {
+            "trigger": "tls.tlssocket.remotePort\ttls_(ssl)",
+            "contents": "tls.tlssocket.remotePort$0"
+        },
+        {
+            "trigger": "tls.tlssocket.localAddress\ttls_(ssl)",
+            "contents": "tls.tlssocket.localAddress$0"
+        },
+        {
+            "trigger": "tls.tlssocket.localPort\ttls_(ssl)",
+            "contents": "tls.tlssocket.localPort$0"
         },
         {
             "trigger": "secureConnect\ttls_(ssl)",
             "contents": "secureConnect$0"
-        },
-        {
-            "trigger": "tls_(ssl).SLAB_BUFFER_SIZE\ttls_(ssl)",
-            "contents": "tls_(ssl).SLAB_BUFFER_SIZE$0"
         }
     ]
 }
