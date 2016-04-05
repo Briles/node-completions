@@ -106,10 +106,6 @@
             "contents": "process.config$0"
         },
         {
-            "trigger": "process.connected\tglobals",
-            "contents": "process.connected$0"
-        },
-        {
             "trigger": "process.env\tglobals",
             "contents": "process.env$0"
         },

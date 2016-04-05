@@ -34,10 +34,6 @@
             "contents": "buf.indexOf(${1:value}, ${2:[, byteOffset]});$0"
         },
         {
-            "trigger": "buf.includes(value[, byteOffset][, encoding])\tbuffer",
-            "contents": "buf.includes(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
-        },
-        {
             "trigger": "buf.readDoubleBE(offset[, noAssert])\tbuffer",
             "contents": "buf.readDoubleBE(${1:offset}, ${2:[, noAssert]});$0"
         },
