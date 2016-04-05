@@ -18,8 +18,8 @@
             "contents": "console.warn(${1:[, data]}, ${2:[, ...]});$0"
         },
         {
-            "trigger": "console.dir(obj, [options])\tglobals",
-            "contents": "console.dir(${1:obj}, ${2:[, options]});$0"
+            "trigger": "console.dir(obj)\tglobals",
+            "contents": "console.dir(${1:obj});$0"
         },
         {
             "trigger": "console.time(label)\tglobals",
@@ -134,10 +134,6 @@
             "contents": "process.env$0"
         },
         {
-            "trigger": "process.exitCode\tglobals",
-            "contents": "process.exitCode$0"
-        },
-        {
             "trigger": "process.version\tglobals",
             "contents": "process.version$0"
         },
@@ -166,16 +162,12 @@
             "contents": "process.platform$0"
         },
         {
-            "trigger": "process.mainModule\tglobals",
-            "contents": "process.mainModule$0"
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
         },
         {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
-        },
-        {
-            "trigger": "beforeExit\tglobals",
-            "contents": "beforeExit$0"
         },
         {
             "trigger": "uncaughtException\tglobals",

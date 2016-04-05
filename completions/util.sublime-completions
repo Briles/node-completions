@@ -2,12 +2,24 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "util.debuglog(section)\tutil",
-            "contents": "util.debuglog(${1:section});$0"
-        },
-        {
             "trigger": "util.format(format, [...])\tutil",
             "contents": "util.format(${1:format}, ${2:[, ...]});$0"
+        },
+        {
+            "trigger": "util.debug(string)\tutil",
+            "contents": "util.debug(${1:string});$0"
+        },
+        {
+            "trigger": "util.error([...])\tutil",
+            "contents": "util.error(${1:[, ...]});$0"
+        },
+        {
+            "trigger": "util.puts([...])\tutil",
+            "contents": "util.puts(${1:[, ...]});$0"
+        },
+        {
+            "trigger": "util.print([...])\tutil",
+            "contents": "util.print(${1:[, ...]});$0"
         },
         {
             "trigger": "util.log(string)\tutil",
@@ -34,32 +46,12 @@
             "contents": "util.isError(${1:object});$0"
         },
         {
-            "trigger": "util.inherits(constructor, superConstructor)\tutil",
-            "contents": "util.inherits(${1:constructor}, ${2:superConstructor});$0"
-        },
-        {
-            "trigger": "util.deprecate(function, string)\tutil",
-            "contents": "util.deprecate(${1:function}, ${2:string});$0"
-        },
-        {
-            "trigger": "util.debug(string)\tutil",
-            "contents": "util.debug(${1:string});$0"
-        },
-        {
-            "trigger": "util.error([...])\tutil",
-            "contents": "util.error(${1:[, ...]});$0"
-        },
-        {
-            "trigger": "util.puts([...])\tutil",
-            "contents": "util.puts(${1:[, ...]});$0"
-        },
-        {
-            "trigger": "util.print([...])\tutil",
-            "contents": "util.print(${1:[, ...]});$0"
-        },
-        {
             "trigger": "util.pump(readableStream, writableStream, [callback])\tutil",
             "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "util.inherits(constructor, superConstructor)\tutil",
+            "contents": "util.inherits(${1:constructor}, ${2:superConstructor});$0"
         }
     ]
 }

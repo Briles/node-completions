@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "writable.\\_writev(chunks, callback)\tstream",
-            "contents": "writable.\\_writev(${1:chunks}, ${2:callback});$0"
-        },
-        {
             "trigger": "readable.read([size])\tstream",
             "contents": "readable.read(${1:[, size]});$0"
         },
@@ -20,10 +16,6 @@
         {
             "trigger": "readable.pause()\tstream",
             "contents": "readable.pause();$0"
-        },
-        {
-            "trigger": "readable.isPaused()\tstream",
-            "contents": "readable.isPaused();$0"
         },
         {
             "trigger": "readable.pipe(destination, [options])\tstream",
@@ -64,14 +56,6 @@
         {
             "trigger": "writable.write(chunk, [encoding], [callback])\tstream",
             "contents": "writable.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "writable.cork()\tstream",
-            "contents": "writable.cork();$0"
-        },
-        {
-            "trigger": "writable.uncork()\tstream",
-            "contents": "writable.uncork();$0"
         },
         {
             "trigger": "writable.end([chunk], [encoding], [callback])\tstream",

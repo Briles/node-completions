@@ -38,10 +38,6 @@
             "contents": "EventEmitter.listenerCount(${1:emitter}, ${2:event});$0"
         },
         {
-            "trigger": "EventEmitter.defaultMaxListeners\tEvents",
-            "contents": "EventEmitter.defaultMaxListeners$0"
-        },
-        {
             "trigger": "newListener\tEvents",
             "contents": "newListener$0"
         },
