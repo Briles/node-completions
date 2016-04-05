@@ -179,7 +179,7 @@
         },
         {
             "trigger": "fs.utimes(path, atime, mtime, callback)\tfs",
-            "contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime});$0"
+            "contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime}, ${4:callback});$0"
         },
         {
             "trigger": "fs.utimesSync(path, atime, mtime)\tfs",
@@ -187,7 +187,7 @@
         },
         {
             "trigger": "fs.futimes(fd, atime, mtime, callback)\tfs",
-            "contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime});$0"
+            "contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime}, ${4:callback});$0"
         },
         {
             "trigger": "fs.futimesSync(fd, atime, mtime)\tfs",
