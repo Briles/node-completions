@@ -2,36 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "buf.write(string[, offset][, length][, encoding])\tbuffer",
-            "contents": "buf.write(${1:string}, ${2:[, offset]}, ${3:[, length]}, ${4:[, encoding]});$0"
+            "trigger": "buffer.entries()\tbuffer",
+            "contents": "buffer.entries();$0"
         },
         {
-            "trigger": "buf.writeIntLE(value, offset, byteLength[, noAssert])\tbuffer",
-            "contents": "buf.writeIntLE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
+            "trigger": "buffer.keys()\tbuffer",
+            "contents": "buffer.keys();$0"
         },
         {
-            "trigger": "buf.writeIntBE(value, offset, byteLength[, noAssert])\tbuffer",
-            "contents": "buf.writeIntBE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readIntLE(offset, byteLength[, noAssert])\tbuffer",
-            "contents": "buf.readIntLE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readIntBE(offset, byteLength[, noAssert])\tbuffer",
-            "contents": "buf.readIntBE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.toString([encoding][, start][, end])\tbuffer",
-            "contents": "buf.toString(${1:[, encoding]}, ${2:[, start]}, ${3:[, end]});$0"
-        },
-        {
-            "trigger": "buf.toJSON()\tbuffer",
-            "contents": "buf.toJSON();$0"
-        },
-        {
-            "trigger": "buf.equals(otherBuffer)\tbuffer",
-            "contents": "buf.equals(${1:otherBuffer});$0"
+            "trigger": "buffer.values()\tbuffer",
+            "contents": "buffer.values();$0"
         },
         {
             "trigger": "buf.compare(otherBuffer)\tbuffer",
@@ -42,152 +22,204 @@
             "contents": "buf.copy(${1:targetBuffer}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
         },
         {
-            "trigger": "buf.slice([start][, end])\tbuffer",
-            "contents": "buf.slice(${1:[, start]}, ${2:[, end]});$0"
-        },
-        {
-            "trigger": "buf.readUInt8(offset[, noAssert])\tbuffer",
-            "contents": "buf.readUInt8(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readUInt16LE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readUInt16LE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readUInt16BE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readUInt16BE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readUInt32LE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readUInt32LE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readUInt32BE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readUInt32BE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readInt8(offset[, noAssert])\tbuffer",
-            "contents": "buf.readInt8(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readInt16LE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readInt16LE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readInt16BE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readInt16BE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readInt32LE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readInt32LE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readInt32BE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readInt32BE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readFloatLE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readFloatLE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readFloatBE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readFloatBE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readDoubleLE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readDoubleLE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.readDoubleBE(offset[, noAssert])\tbuffer",
-            "contents": "buf.readDoubleBE(${1:offset}, ${2:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeUInt8(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeUInt8(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeUInt16LE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeUInt16LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeUInt16BE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeUInt16BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeUInt32LE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeUInt32LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeUInt32BE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeUInt32BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeInt8(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeInt8(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeInt16LE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeInt16LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeInt16BE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeInt16BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeInt32LE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeInt32LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeInt32BE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeInt32BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeFloatLE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeFloatLE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeFloatBE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeFloatBE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeDoubleLE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeDoubleLE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
-        },
-        {
-            "trigger": "buf.writeDoubleBE(value, offset[, noAssert])\tbuffer",
-            "contents": "buf.writeDoubleBE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+            "trigger": "buf.equals(otherBuffer)\tbuffer",
+            "contents": "buf.equals(${1:otherBuffer});$0"
         },
         {
             "trigger": "buf.fill(value[, offset][, end])\tbuffer",
             "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]});$0"
         },
         {
-            "trigger": "Buffer.isEncoding(encoding)\tbuffer",
-            "contents": "Buffer.isEncoding(${1:encoding});$0"
+            "trigger": "buf.indexOf(value[, byteOffset])\tbuffer",
+            "contents": "buf.indexOf(${1:value}, ${2:[, byteOffset]});$0"
         },
         {
-            "trigger": "Buffer.isBuffer(obj)\tbuffer",
-            "contents": "Buffer.isBuffer(${1:obj});$0"
+            "trigger": "buf.readDoubleBE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readDoubleBE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readDoubleLE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readDoubleLE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readFloatBE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readFloatBE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readFloatLE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readFloatLE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readInt8(offset[, noAssert])\tbuffer",
+            "contents": "buf.readInt8(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readInt16BE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readInt16BE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readInt16LE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readInt16LE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readInt32BE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readInt32BE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readInt32LE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readInt32LE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readIntBE(offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.readIntBE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readIntLE(offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.readIntLE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUInt8(offset[, noAssert])\tbuffer",
+            "contents": "buf.readUInt8(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUInt16BE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readUInt16BE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUInt16LE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readUInt16LE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUInt32BE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readUInt32BE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUInt32LE(offset[, noAssert])\tbuffer",
+            "contents": "buf.readUInt32LE(${1:offset}, ${2:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUIntBE(offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.readUIntBE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.readUIntLE(offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.readUIntLE(${1:offset}, ${2:byteLength}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.slice([start[, end]])\tbuffer",
+            "contents": "buf.slice(${1:start}, ${2:[, end]});$0"
+        },
+        {
+            "trigger": "buf.toString([encoding][, start][, end])\tbuffer",
+            "contents": "buf.toString(${1:[, encoding]}, ${2:[, start]}, ${3:[, end]});$0"
+        },
+        {
+            "trigger": "buf.toJSON()\tbuffer",
+            "contents": "buf.toJSON();$0"
+        },
+        {
+            "trigger": "buf.write(string[, offset][, length][, encoding])\tbuffer",
+            "contents": "buf.write(${1:string}, ${2:[, offset]}, ${3:[, length]}, ${4:[, encoding]});$0"
+        },
+        {
+            "trigger": "buf.writeDoubleBE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeDoubleBE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeDoubleLE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeDoubleLE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeFloatBE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeFloatBE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeFloatLE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeFloatLE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeInt8(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeInt8(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeInt16BE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeInt16BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeInt16LE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeInt16LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeInt32BE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeInt32BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeInt32LE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeInt32LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeIntBE(value, offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.writeIntBE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeIntLE(value, offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.writeIntLE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUInt8(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeUInt8(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUInt16BE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeUInt16BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUInt16LE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeUInt16LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUInt32BE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeUInt32BE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUInt32LE(value, offset[, noAssert])\tbuffer",
+            "contents": "buf.writeUInt32LE(${1:value}, ${2:offset}, ${3:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUIntBE(value, offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.writeUIntBE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
+        },
+        {
+            "trigger": "buf.writeUIntLE(value, offset, byteLength[, noAssert])\tbuffer",
+            "contents": "buf.writeUIntLE(${1:value}, ${2:offset}, ${3:byteLength}, ${4:[, noAssert]});$0"
         },
         {
             "trigger": "Buffer.byteLength(string[, encoding])\tbuffer",
             "contents": "Buffer.byteLength(${1:string}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "Buffer.concat(list[, totalLength])\tbuffer",
-            "contents": "Buffer.concat(${1:list}, ${2:[, totalLength]});$0"
-        },
-        {
             "trigger": "Buffer.compare(buf1, buf2)\tbuffer",
             "contents": "Buffer.compare(${1:buf1}, ${2:buf2});$0"
         },
         {
-            "trigger": "buf.length\tbuffer",
-            "contents": "buf.length$0"
+            "trigger": "Buffer.concat(list[, totalLength])\tbuffer",
+            "contents": "Buffer.concat(${1:list}, ${2:[, totalLength]});$0"
+        },
+        {
+            "trigger": "Buffer.isBuffer(obj)\tbuffer",
+            "contents": "Buffer.isBuffer(${1:obj});$0"
+        },
+        {
+            "trigger": "Buffer.isEncoding(encoding)\tbuffer",
+            "contents": "Buffer.isEncoding(${1:encoding});$0"
         },
         {
             "trigger": "buffer[index]\tbuffer",
             "contents": "buffer[index]$0"
+        },
+        {
+            "trigger": "buf.length\tbuffer",
+            "contents": "buf.length$0"
         },
         {
             "trigger": "buffer.INSPECT_MAX_BYTES\tbuffer",
