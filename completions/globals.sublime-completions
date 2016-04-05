@@ -70,6 +70,18 @@
             "contents": "process.setuid(${1:id});$0"
         },
         {
+            "trigger": "process.getgroups()\tglobals",
+            "contents": "process.getgroups();$0"
+        },
+        {
+            "trigger": "process.setgroups(groups)\tglobals",
+            "contents": "process.setgroups(${1:groups});$0"
+        },
+        {
+            "trigger": "process.initgroups(user, extra_group)\tglobals",
+            "contents": "process.initgroups(${1:user}, ${2:extra_group});$0"
+        },
+        {
             "trigger": "process.kill(pid, [signal])\tglobals",
             "contents": "process.kill(${1:pid}, ${2:[, signal]});$0"
         },
@@ -144,6 +156,10 @@
         {
             "trigger": "process.platform\tglobals",
             "contents": "process.platform$0"
+        },
+        {
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
         },
         {
             "trigger": "exit\tglobals",
