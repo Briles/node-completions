@@ -86,8 +86,8 @@
             "contents": "request.url$0"
         },
         {
-            "trigger": "http.serverrequest.headers\thttp",
-            "contents": "http.serverrequest.headers$0"
+            "trigger": "request.headers\thttp",
+            "contents": "request.headers$0"
         },
         {
             "trigger": "http.serverrequest.trailers\thttp",
