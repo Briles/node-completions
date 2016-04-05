@@ -162,6 +162,10 @@
             "contents": "process.platform$0"
         },
         {
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
+        },
+        {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
         },

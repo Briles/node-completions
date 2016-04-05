@@ -186,10 +186,6 @@
             "contents": "net.socket.bytesWritten$0"
         },
         {
-            "trigger": "lookup\tnet",
-            "contents": "lookup$0"
-        },
-        {
             "trigger": "connect\tnet",
             "contents": "connect$0"
         },
