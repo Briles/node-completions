@@ -2,60 +2,36 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "new stream.Readable([options])\tstream",
-            "contents": "new stream.Readable(${1:[, options]});$0"
+            "trigger": "stream.setEncoding([encoding])\tstream",
+            "contents": "stream.setEncoding(${1:[, encoding]});$0"
         },
         {
-            "trigger": "readable.\\_read(size)\tstream",
-            "contents": "readable.\\_read(${1:size}, ${2:callback});$0"
+            "trigger": "stream.pause()\tstream",
+            "contents": "stream.pause();$0"
         },
         {
-            "trigger": "readable.push(chunk)\tstream",
-            "contents": "readable.push(${1:chunk});$0"
+            "trigger": "stream.resume()\tstream",
+            "contents": "stream.resume();$0"
         },
         {
-            "trigger": "readable.unshift(chunk)\tstream",
-            "contents": "readable.unshift(${1:chunk});$0"
+            "trigger": "stream.destroy()\tstream",
+            "contents": "stream.destroy();$0"
         },
         {
-            "trigger": "readable.wrap(stream)\tstream",
-            "contents": "readable.wrap(${1:stream});$0"
+            "trigger": "stream.pipe(destination, [options])\tstream",
+            "contents": "stream.pipe(${1:destination}, ${2:[, options]});$0"
         },
         {
-            "trigger": "readable.setEncoding(encoding)\tstream",
-            "contents": "readable.setEncoding(${1:encoding});$0"
-        },
-        {
-            "trigger": "readable.read([size])\tstream",
-            "contents": "readable.read(${1:[, size]});$0"
-        },
-        {
-            "trigger": "readable.pipe(destination, [options])\tstream",
-            "contents": "readable.pipe(${1:destination}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "readable.unpipe([destination])\tstream",
-            "contents": "readable.unpipe(${1:[, destination]});$0"
-        },
-        {
-            "trigger": "readable.pause()\tstream",
-            "contents": "readable.pause();$0"
-        },
-        {
-            "trigger": "readable.resume()\tstream",
-            "contents": "readable.resume();$0"
-        },
-        {
-            "trigger": "readable\tstream",
-            "contents": "readable$0"
-        },
-        {
-            "trigger": "end\tstream",
-            "contents": "end$0"
+            "trigger": "readable stream.readable\tstream",
+            "contents": "readable stream.readable$0"
         },
         {
             "trigger": "data\tstream",
             "contents": "data$0"
+        },
+        {
+            "trigger": "end\tstream",
+            "contents": "end$0"
         },
         {
             "trigger": "error\tstream",
@@ -66,52 +42,40 @@
             "contents": "close$0"
         },
         {
-            "trigger": "new stream.Writable([options])\tstream",
-            "contents": "new stream.Writable(${1:[, options]});$0"
+            "trigger": "stream.write(string, [encoding])\tstream",
+            "contents": "stream.write(${1:string}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "writable.\\_write(chunk, callback)\tstream",
-            "contents": "writable.\\_write(${1:chunk}, ${2:callback});$0"
+            "trigger": "stream.write(buffer)\tstream",
+            "contents": "stream.write(${1:buffer});$0"
         },
         {
-            "trigger": "writable.write(chunk, [encoding], [callback])\tstream",
-            "contents": "writable.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
+            "trigger": "stream.end()\tstream",
+            "contents": "stream.end();$0"
         },
         {
-            "trigger": "writable.end([chunk], [encoding], [callback])\tstream",
-            "contents": "writable.end(${1:[, chunk]}, ${2:[, encoding]}, ${3:[, callback]});$0"
+            "trigger": "stream.end(string, encoding)\tstream",
+            "contents": "stream.end(${1:string}, ${2:encoding});$0"
+        },
+        {
+            "trigger": "stream.end(buffer)\tstream",
+            "contents": "stream.end(${1:buffer});$0"
+        },
+        {
+            "trigger": "stream.destroySoon()\tstream",
+            "contents": "stream.destroySoon();$0"
+        },
+        {
+            "trigger": "writable stream.writable\tstream",
+            "contents": "writable stream.writable$0"
         },
         {
             "trigger": "drain\tstream",
             "contents": "drain$0"
         },
         {
-            "trigger": "finish\tstream",
-            "contents": "finish$0"
-        },
-        {
             "trigger": "pipe\tstream",
             "contents": "pipe$0"
-        },
-        {
-            "trigger": "unpipe\tstream",
-            "contents": "unpipe$0"
-        },
-        {
-            "trigger": "new stream.Duplex(options)\tstream",
-            "contents": "new stream.Duplex(${1:options});$0"
-        },
-        {
-            "trigger": "new stream.Transform([options])\tstream",
-            "contents": "new stream.Transform(${1:[, options]});$0"
-        },
-        {
-            "trigger": "transform.\\_transform(chunk, outputFn, callback)\tstream",
-            "contents": "transform.\\_transform(${1:chunk}, ${2:outputFn}, ${3:callback});$0"
-        },
-        {
-            "trigger": "transform.\\_flush(outputFn, callback)\tstream",
-            "contents": "transform.\\_flush(${1:outputFn}, ${2:callback});$0"
         }
     ]
 }
