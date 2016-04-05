@@ -146,6 +146,10 @@
             "contents": "response.statusCode$0"
         },
         {
+            "trigger": "http.serverresponse.headersSent\thttp",
+            "contents": "http.serverresponse.headersSent$0"
+        },
+        {
             "trigger": "http.serverresponse.sendDate\thttp",
             "contents": "http.serverresponse.sendDate$0"
         },

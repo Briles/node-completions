@@ -62,6 +62,14 @@
             "contents": "server.address();$0"
         },
         {
+            "trigger": "server.unref()\tnet",
+            "contents": "server.unref();$0"
+        },
+        {
+            "trigger": "server.ref()\tnet",
+            "contents": "server.ref();$0"
+        },
+        {
             "trigger": "net.server.maxConnections\tnet",
             "contents": "net.server.maxConnections$0"
         },
@@ -136,6 +144,14 @@
         {
             "trigger": "socket.address()\tnet",
             "contents": "socket.address();$0"
+        },
+        {
+            "trigger": "socket.unref()\tnet",
+            "contents": "socket.unref();$0"
+        },
+        {
+            "trigger": "socket.ref()\tnet",
+            "contents": "socket.ref();$0"
         },
         {
             "trigger": "net.socket.bufferSize\tnet",
