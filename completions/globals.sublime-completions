@@ -30,12 +30,12 @@
             "contents": "console.timeEnd(${1:label});$0"
         },
         {
-            "trigger": "console.trace(label)\tglobals",
-            "contents": "console.trace(${1:label});$0"
+            "trigger": "console.trace(message, [...])\tglobals",
+            "contents": "console.trace(${1:message}, ${2:[, ...]});$0"
         },
         {
-            "trigger": "console.assert(expression, [message])\tglobals",
-            "contents": "console.assert(${1:expression}, ${2:[, message]});$0"
+            "trigger": "console.assert(value, [message], [...])\tglobals",
+            "contents": "console.assert(${1:value}, ${2:[, message]}, ${3:[, ...]});$0"
         },
         {
             "trigger": "process.abort()\tglobals",
@@ -68,6 +68,18 @@
         {
             "trigger": "process.setuid(id)\tglobals",
             "contents": "process.setuid(${1:id});$0"
+        },
+        {
+            "trigger": "process.getgroups()\tglobals",
+            "contents": "process.getgroups();$0"
+        },
+        {
+            "trigger": "process.setgroups(groups)\tglobals",
+            "contents": "process.setgroups(${1:groups});$0"
+        },
+        {
+            "trigger": "process.initgroups(user, extra_group)\tglobals",
+            "contents": "process.initgroups(${1:user}, ${2:extra_group});$0"
         },
         {
             "trigger": "process.kill(pid, [signal])\tglobals",
@@ -114,6 +126,10 @@
             "contents": "process.execPath$0"
         },
         {
+            "trigger": "process.execArgv\tglobals",
+            "contents": "process.execArgv$0"
+        },
+        {
             "trigger": "process.env\tglobals",
             "contents": "process.env$0"
         },
@@ -146,6 +162,10 @@
             "contents": "process.platform$0"
         },
         {
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
+        },
+        {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
         },
@@ -154,8 +174,8 @@
             "contents": "uncaughtException$0"
         },
         {
-            "trigger": "SIGINT, SIGUSR1, etc.\tglobals",
-            "contents": "SIGINT, SIGUSR1, etc.$0"
+            "trigger": "SIGINT, SIGHUP, etc.\tglobals",
+            "contents": "SIGINT, SIGHUP, etc.$0"
         }
     ]
 }
