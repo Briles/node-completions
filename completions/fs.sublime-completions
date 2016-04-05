@@ -202,12 +202,20 @@
             "contents": "fs.fsyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.write(fd, buffer, offset, length, position, callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback});$0"
+            "trigger": "fs.write(fd, buffer, offset, length[, position], callback)\tfs",
+            "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length[}, ${5:position}, ${6:callback});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, buffer, offset, length, position)\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+            "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
+            "contents": "fs.write(${1:fd}, ${2:data[}, ${3:position[}, ${4:encoding}, ${5:callback});$0"
+        },
+        {
+            "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
+            "contents": "fs.writeSync(${1:fd}, ${2:data[}, ${3:position[}, ${4:encoding});$0"
+        },
+        {
+            "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
+            "contents": "fs.writeSync(${1:fd}, ${2:data[}, ${3:position[}, ${4:encoding});$0"
         },
         {
             "trigger": "fs.read(fd, buffer, offset, length, position, callback)\tfs",
