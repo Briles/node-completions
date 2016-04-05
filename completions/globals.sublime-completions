@@ -130,10 +130,6 @@
             "contents": "process.config$0"
         },
         {
-            "trigger": "process.installPrefix\tglobals",
-            "contents": "process.installPrefix$0"
-        },
-        {
             "trigger": "process.pid\tglobals",
             "contents": "process.pid$0"
         },
