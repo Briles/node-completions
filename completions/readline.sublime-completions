@@ -6,22 +6,6 @@
             "contents": "readline.createInterface(${1:options});$0"
         },
         {
-            "trigger": "readline.cursorTo(stream, x, y)\treadline",
-            "contents": "readline.cursorTo(${1:stream}, ${2:x}, ${3:y});$0"
-        },
-        {
-            "trigger": "readline.moveCursor(stream, dx, dy)\treadline",
-            "contents": "readline.moveCursor(${1:stream}, ${2:dx}, ${3:dy});$0"
-        },
-        {
-            "trigger": "readline.clearLine(stream, dir)\treadline",
-            "contents": "readline.clearLine(${1:stream}, ${2:dir});$0"
-        },
-        {
-            "trigger": "readline.clearScreenDown(stream)\treadline",
-            "contents": "readline.clearScreenDown(${1:stream});$0"
-        },
-        {
             "trigger": "rl.setPrompt(prompt, length)\treadline",
             "contents": "rl.setPrompt(${1:prompt}, ${2:length});$0"
         },
