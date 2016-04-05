@@ -2,7 +2,7 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "https.createServer(options, [requestListener])\thttps",
+            "trigger": "https.createServer(options[, requestListener])\thttps",
             "contents": "https.createServer(${1:options}, ${2:[, requestListener]});$0"
         },
         {
@@ -12,6 +12,14 @@
         {
             "trigger": "https.get(options, callback)\thttps",
             "contents": "https.get(${1:options}, ${2:callback});$0"
+        },
+        {
+            "trigger": "server.setTimeout(msecs, callback)\thttps",
+            "contents": "server.setTimeout(${1:msecs}, ${2:callback});$0"
+        },
+        {
+            "trigger": "https.server.timeout\thttps",
+            "contents": "https.server.timeout$0"
         },
         {
             "trigger": "https.globalAgent\thttps",
