@@ -18,10 +18,6 @@
             "contents": "http.request(${1:options}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "agent.createConnection(options[, callback])\thttp",
-            "contents": "agent.createConnection(${1:options}, ${2:[, callback]});$0"
-        },
-        {
             "trigger": "agent.destroy()\thttp",
             "contents": "agent.destroy();$0"
         },
@@ -82,10 +78,6 @@
             "contents": "abort$0"
         },
         {
-            "trigger": "checkExpectation\thttp",
-            "contents": "checkExpectation$0"
-        },
-        {
             "trigger": "connect\thttp",
             "contents": "connect$0"
         },
@@ -124,10 +116,6 @@
         {
             "trigger": "server.setTimeout(msecs, callback)\thttp",
             "contents": "server.setTimeout(${1:msecs}, ${2:callback});$0"
-        },
-        {
-            "trigger": "http.server.listening\thttp",
-            "contents": "http.server.listening$0"
         },
         {
             "trigger": "http.server.maxHeadersCount\thttp",
