@@ -1,0 +1,45 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "rl.createInterface(input, output, completer)\treadline",
+            "contents": "rl.createInterface(${1:input}, ${2:output}, ${3:completer});$0"
+        },
+        {
+            "trigger": "rl.setPrompt(prompt, length)\treadline",
+            "contents": "rl.setPrompt(${1:prompt}, ${2:length});$0"
+        },
+        {
+            "trigger": "rl.prompt()\treadline",
+            "contents": "rl.prompt();$0"
+        },
+        {
+            "trigger": "rl.question(query, callback)\treadline",
+            "contents": "rl.question(${1:query}, ${2:callback});$0"
+        },
+        {
+            "trigger": "rl.close()\treadline",
+            "contents": "rl.close();$0"
+        },
+        {
+            "trigger": "rl.pause()\treadline",
+            "contents": "rl.pause();$0"
+        },
+        {
+            "trigger": "rl.resume()\treadline",
+            "contents": "rl.resume();$0"
+        },
+        {
+            "trigger": "rl.write()\treadline",
+            "contents": "rl.write();$0"
+        },
+        {
+            "trigger": "line\treadline",
+            "contents": "line$0"
+        },
+        {
+            "trigger": "close\treadline",
+            "contents": "close$0"
+        }
+    ]
+}

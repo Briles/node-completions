@@ -1,0 +1,65 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "dgram.createSocket(type, [callback])\tdgram",
+            "contents": "dgram.createSocket(${1:type}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "dgram.send(buf, offset, length, port, address, [callback])\tdgram",
+            "contents": "dgram.send(${1:buf}, ${2:offset}, ${3:length}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
+        },
+        {
+            "trigger": "dgram.bind(port, [address])\tdgram",
+            "contents": "dgram.bind(${1:port}, ${2:[, address]});$0"
+        },
+        {
+            "trigger": "dgram.close()\tdgram",
+            "contents": "dgram.close();$0"
+        },
+        {
+            "trigger": "dgram.address()\tdgram",
+            "contents": "dgram.address();$0"
+        },
+        {
+            "trigger": "dgram.setBroadcast(flag)\tdgram",
+            "contents": "dgram.setBroadcast(${1:flag});$0"
+        },
+        {
+            "trigger": "dgram.setTTL(ttl)\tdgram",
+            "contents": "dgram.setTTL(${1:ttl});$0"
+        },
+        {
+            "trigger": "dgram.setMulticastTTL(ttl)\tdgram",
+            "contents": "dgram.setMulticastTTL(${1:ttl});$0"
+        },
+        {
+            "trigger": "dgram.setMulticastLoopback(flag)\tdgram",
+            "contents": "dgram.setMulticastLoopback(${1:flag});$0"
+        },
+        {
+            "trigger": "dgram.addMembership(multicastAddress, [multicastInterface])\tdgram",
+            "contents": "dgram.addMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
+        },
+        {
+            "trigger": "dgram.dropMembership(multicastAddress, [multicastInterface])\tdgram",
+            "contents": "dgram.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
+        },
+        {
+            "trigger": "message\tdgram",
+            "contents": "message$0"
+        },
+        {
+            "trigger": "listening\tdgram",
+            "contents": "listening$0"
+        },
+        {
+            "trigger": "close\tdgram",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "error\tdgram",
+            "contents": "error$0"
+        }
+    ]
+}

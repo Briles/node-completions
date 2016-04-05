@@ -1,0 +1,41 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "emitter.addListener(event, listener)\tEvents",
+            "contents": "emitter.addListener(${1:event}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.on(event, listener)\tEvents",
+            "contents": "emitter.on(${1:event}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.once(event, listener)\tEvents",
+            "contents": "emitter.once(${1:event}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.removeListener(event, listener)\tEvents",
+            "contents": "emitter.removeListener(${1:event}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.removeAllListeners([event])\tEvents",
+            "contents": "emitter.removeAllListeners(${1:[, event]});$0"
+        },
+        {
+            "trigger": "emitter.setMaxListeners(n)\tEvents",
+            "contents": "emitter.setMaxListeners(${1:n});$0"
+        },
+        {
+            "trigger": "emitter.listeners(event)\tEvents",
+            "contents": "emitter.listeners(${1:event});$0"
+        },
+        {
+            "trigger": "emitter.emit(event, [arg1], [arg2], [...])\tEvents",
+            "contents": "emitter.emit(${1:event}, ${2:[, arg1]}, ${3:[, arg2]}, ${4:[, ...]});$0"
+        },
+        {
+            "trigger": "newListener\tEvents",
+            "contents": "newListener$0"
+        }
+    ]
+}

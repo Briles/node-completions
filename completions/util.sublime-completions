@@ -1,0 +1,45 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "util.format()\tutil",
+            "contents": "util.format();$0"
+        },
+        {
+            "trigger": "util.debug(string)\tutil",
+            "contents": "util.debug(${1:string});$0"
+        },
+        {
+            "trigger": "util.log(string)\tutil",
+            "contents": "util.log(${1:string});$0"
+        },
+        {
+            "trigger": "util.inspect(object, [showHidden], [depth], [colors])\tutil",
+            "contents": "util.inspect(${1:object}, ${2:[, showHidden]}, ${3:[, depth]}, ${4:[, colors]});$0"
+        },
+        {
+            "trigger": "util.isArray(object)\tutil",
+            "contents": "util.isArray(${1:object});$0"
+        },
+        {
+            "trigger": "util.isRegExp(object)\tutil",
+            "contents": "util.isRegExp(${1:object});$0"
+        },
+        {
+            "trigger": "util.isDate(object)\tutil",
+            "contents": "util.isDate(${1:object});$0"
+        },
+        {
+            "trigger": "util.isError(object)\tutil",
+            "contents": "util.isError(${1:object});$0"
+        },
+        {
+            "trigger": "util.pump(readableStream, writableStream, [callback])\tutil",
+            "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "util.inherits(constructor, superConstructor)\tutil",
+            "contents": "util.inherits(${1:constructor}, ${2:superConstructor});$0"
+        }
+    ]
+}

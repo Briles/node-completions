@@ -1,0 +1,81 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "stream.setEncoding(encoding)\tstream",
+            "contents": "stream.setEncoding(${1:encoding});$0"
+        },
+        {
+            "trigger": "stream.pause()\tstream",
+            "contents": "stream.pause();$0"
+        },
+        {
+            "trigger": "stream.resume()\tstream",
+            "contents": "stream.resume();$0"
+        },
+        {
+            "trigger": "stream.destroy()\tstream",
+            "contents": "stream.destroy();$0"
+        },
+        {
+            "trigger": "stream.destroySoon()\tstream",
+            "contents": "stream.destroySoon();$0"
+        },
+        {
+            "trigger": "stream.pipe(destination, [options])\tstream",
+            "contents": "stream.pipe(${1:destination}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "readable stream.readable\tstream",
+            "contents": "readable stream.readable$0"
+        },
+        {
+            "trigger": "data\tstream",
+            "contents": "data$0"
+        },
+        {
+            "trigger": "end\tstream",
+            "contents": "end$0"
+        },
+        {
+            "trigger": "error\tstream",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "close\tstream",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "stream.write(string, [encoding], [fd])\tstream",
+            "contents": "stream.write(${1:string}, ${2:[, encoding]}, ${3:[, fd]});$0"
+        },
+        {
+            "trigger": "stream.write(buffer)\tstream",
+            "contents": "stream.write(${1:buffer});$0"
+        },
+        {
+            "trigger": "stream.end()\tstream",
+            "contents": "stream.end();$0"
+        },
+        {
+            "trigger": "stream.end(string, encoding)\tstream",
+            "contents": "stream.end(${1:string}, ${2:encoding});$0"
+        },
+        {
+            "trigger": "stream.end(buffer)\tstream",
+            "contents": "stream.end(${1:buffer});$0"
+        },
+        {
+            "trigger": "writable stream.writable\tstream",
+            "contents": "writable stream.writable$0"
+        },
+        {
+            "trigger": "drain\tstream",
+            "contents": "drain$0"
+        },
+        {
+            "trigger": "pipe\tstream",
+            "contents": "pipe$0"
+        }
+    ]
+}

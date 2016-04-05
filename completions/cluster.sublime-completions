@@ -1,0 +1,21 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "cluster.fork()\tcluster",
+            "contents": "cluster.fork();$0"
+        },
+        {
+            "trigger": "cluster.isMaster\tcluster",
+            "contents": "cluster.isMaster$0"
+        },
+        {
+            "trigger": "cluster.isWorker\tcluster",
+            "contents": "cluster.isWorker$0"
+        },
+        {
+            "trigger": "death\tcluster",
+            "contents": "death$0"
+        }
+    ]
+}

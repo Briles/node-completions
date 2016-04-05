@@ -1,0 +1,165 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "net.createServer([options], [connectionListener])\tnet",
+            "contents": "net.createServer(${1:[, options]}, ${2:[, connectionListener]});$0"
+        },
+        {
+            "trigger": "net.connect(arguments...)\tnet",
+            "contents": "net.connect(${1:arguments...});$0"
+        },
+        {
+            "trigger": "net.createConnection(arguments...)\tnet",
+            "contents": "net.createConnection(${1:arguments...});$0"
+        },
+        {
+            "trigger": "net.isIP(input)\tnet",
+            "contents": "net.isIP(${1:input});$0"
+        },
+        {
+            "trigger": "net.isIPv4(input)\tnet",
+            "contents": "net.isIPv4(${1:input});$0"
+        },
+        {
+            "trigger": "net.isIPv6(input)\tnet",
+            "contents": "net.isIPv6(${1:input});$0"
+        },
+        {
+            "trigger": "server.listen(port, [host], [listeningListener])\tnet",
+            "contents": "server.listen(${1:port}, ${2:[, host]}, ${3:[, listeningListener]});$0"
+        },
+        {
+            "trigger": "server.listen(path, [listeningListener])\tnet",
+            "contents": "server.listen(${1:path}, ${2:[, listeningListener]});$0"
+        },
+        {
+            "trigger": "server.close()\tnet",
+            "contents": "server.close();$0"
+        },
+        {
+            "trigger": "server.address()\tnet",
+            "contents": "server.address();$0"
+        },
+        {
+            "trigger": "net.server.maxConnections\tnet",
+            "contents": "net.server.maxConnections$0"
+        },
+        {
+            "trigger": "net.server.connections\tnet",
+            "contents": "net.server.connections$0"
+        },
+        {
+            "trigger": "listening\tnet",
+            "contents": "listening$0"
+        },
+        {
+            "trigger": "connection\tnet",
+            "contents": "connection$0"
+        },
+        {
+            "trigger": "close\tnet",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "error\tnet",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "new net.Socket([options])\tnet",
+            "contents": "new net.Socket(${1:[, options]});$0"
+        },
+        {
+            "trigger": "socket.connect(port, [host], [connectListener])\tnet",
+            "contents": "socket.connect(${1:path}, ${2:[, connectListener]});$0"
+        },
+        {
+            "trigger": "socket.connect(path, [connectListener])\tnet",
+            "contents": "socket.connect(${1:path}, ${2:[, connectListener]});$0"
+        },
+        {
+            "trigger": "socket.setEncoding([encoding])\tnet",
+            "contents": "socket.setEncoding(${1:[, encoding]});$0"
+        },
+        {
+            "trigger": "socket.setSecure()\tnet",
+            "contents": "socket.setSecure();$0"
+        },
+        {
+            "trigger": "socket.write(data, [encoding], [callback])\tnet",
+            "contents": "socket.write(${1:data}, ${2:[, encoding]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "socket.end([data], [encoding])\tnet",
+            "contents": "socket.end(${1:[, data]}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "socket.destroy()\tnet",
+            "contents": "socket.destroy();$0"
+        },
+        {
+            "trigger": "socket.pause()\tnet",
+            "contents": "socket.pause();$0"
+        },
+        {
+            "trigger": "socket.resume()\tnet",
+            "contents": "socket.resume();$0"
+        },
+        {
+            "trigger": "socket.setTimeout(timeout, [callback])\tnet",
+            "contents": "socket.setTimeout(${1:timeout}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "socket.setNoDelay([noDelay])\tnet",
+            "contents": "socket.setNoDelay(${1:[, noDelay]});$0"
+        },
+        {
+            "trigger": "socket.setKeepAlive([enable], [initialDelay])\tnet",
+            "contents": "socket.setKeepAlive(${1:[, enable]}, ${2:[, initialDelay]});$0"
+        },
+        {
+            "trigger": "socket.address()\tnet",
+            "contents": "socket.address();$0"
+        },
+        {
+            "trigger": "net.socket.bufferSize\tnet",
+            "contents": "net.socket.bufferSize$0"
+        },
+        {
+            "trigger": "net.socket.remoteAddress\tnet",
+            "contents": "net.socket.remoteAddress$0"
+        },
+        {
+            "trigger": "net.socket.remotePort\tnet",
+            "contents": "net.socket.remotePort$0"
+        },
+        {
+            "trigger": "net.socket.bytesRead\tnet",
+            "contents": "net.socket.bytesRead$0"
+        },
+        {
+            "trigger": "net.socket.bytesWritten\tnet",
+            "contents": "net.socket.bytesWritten$0"
+        },
+        {
+            "trigger": "connect\tnet",
+            "contents": "connect$0"
+        },
+        {
+            "trigger": "data\tnet",
+            "contents": "data$0"
+        },
+        {
+            "trigger": "end\tnet",
+            "contents": "end$0"
+        },
+        {
+            "trigger": "timeout\tnet",
+            "contents": "timeout$0"
+        },
+        {
+            "trigger": "drain\tnet",
+            "contents": "drain$0"
+        }
+    ]
+}

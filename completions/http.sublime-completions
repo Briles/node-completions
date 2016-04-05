@@ -1,0 +1,189 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "http.createServer([requestListener])\thttp",
+            "contents": "http.createServer(${1:[, requestListener]});$0"
+        },
+        {
+            "trigger": "http.request(options, callback)\thttp",
+            "contents": "http.request(${1:options}, ${2:callback});$0"
+        },
+        {
+            "trigger": "http.get(options, callback)\thttp",
+            "contents": "http.get(${1:options}, ${2:callback});$0"
+        },
+        {
+            "trigger": "server.listen(port, [hostname], [callback])\thttp",
+            "contents": "server.listen(${1:port}, ${2:[, hostname]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "server.listen(path, [callback])\thttp",
+            "contents": "server.listen(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "server.close()\thttp",
+            "contents": "server.close();$0"
+        },
+        {
+            "trigger": "request\thttp",
+            "contents": "request$0"
+        },
+        {
+            "trigger": "connection\thttp",
+            "contents": "connection$0"
+        },
+        {
+            "trigger": "close\thttp",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "checkContinue\thttp",
+            "contents": "checkContinue$0"
+        },
+        {
+            "trigger": "upgrade\thttp",
+            "contents": "upgrade$0"
+        },
+        {
+            "trigger": "clientError\thttp",
+            "contents": "clientError$0"
+        },
+        {
+            "trigger": "request.setEncoding([encoding])\thttp",
+            "contents": "request.setEncoding(${1:[, encoding]});$0"
+        },
+        {
+            "trigger": "request.pause()\thttp",
+            "contents": "request.pause();$0"
+        },
+        {
+            "trigger": "request.resume()\thttp",
+            "contents": "request.resume();$0"
+        },
+        {
+            "trigger": "http.serverrequest.method\thttp",
+            "contents": "http.serverrequest.method$0"
+        },
+        {
+            "trigger": "request.url\thttp",
+            "contents": "request.url$0"
+        },
+        {
+            "trigger": "http.serverrequest.headers\thttp",
+            "contents": "http.serverrequest.headers$0"
+        },
+        {
+            "trigger": "http.serverrequest.trailers\thttp",
+            "contents": "http.serverrequest.trailers$0"
+        },
+        {
+            "trigger": "request.httpVersion\thttp",
+            "contents": "request.httpVersion$0"
+        },
+        {
+            "trigger": "request.connection\thttp",
+            "contents": "request.connection$0"
+        },
+        {
+            "trigger": "data\thttp",
+            "contents": "data$0"
+        },
+        {
+            "trigger": "end\thttp",
+            "contents": "end$0"
+        },
+        {
+            "trigger": "response.writeContinue()\thttp",
+            "contents": "response.writeContinue();$0"
+        },
+        {
+            "trigger": "response.writeHead(statusCode, [reasonPhrase], [headers])\thttp",
+            "contents": "response.writeHead(${1:statusCode}, ${2:[, reasonPhrase]}, ${3:[, headers]});$0"
+        },
+        {
+            "trigger": "response.setHeader(name, value)\thttp",
+            "contents": "response.setHeader(${1:name}, ${2:value});$0"
+        },
+        {
+            "trigger": "response.getHeader(name)\thttp",
+            "contents": "response.getHeader(${1:name});$0"
+        },
+        {
+            "trigger": "response.removeHeader(name)\thttp",
+            "contents": "response.removeHeader(${1:name});$0"
+        },
+        {
+            "trigger": "response.write(chunk, [encoding])\thttp",
+            "contents": "response.write(${1:chunk}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "response.addTrailers(headers)\thttp",
+            "contents": "response.addTrailers(${1:headers});$0"
+        },
+        {
+            "trigger": "response.end([data], [encoding])\thttp",
+            "contents": "response.end(${1:[, data]}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "response.statusCode\thttp",
+            "contents": "response.statusCode$0"
+        },
+        {
+            "trigger": "http.agent.maxSockets\thttp",
+            "contents": "http.agent.maxSockets$0"
+        },
+        {
+            "trigger": "http.agent.sockets\thttp",
+            "contents": "http.agent.sockets$0"
+        },
+        {
+            "trigger": "http.agent.requests\thttp",
+            "contents": "http.agent.requests$0"
+        },
+        {
+            "trigger": "request.write(chunk, [encoding])\thttp",
+            "contents": "request.write(${1:chunk}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "request.end([data], [encoding])\thttp",
+            "contents": "request.end(${1:[, data]}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "request.abort()\thttp",
+            "contents": "request.abort();$0"
+        },
+        {
+            "trigger": "request.setTimeout(timeout, [callback])\thttp",
+            "contents": "request.setTimeout(${1:timeout}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "request.setNoDelay([noDelay])\thttp",
+            "contents": "request.setNoDelay(${1:[, noDelay]});$0"
+        },
+        {
+            "trigger": "request.setSocketKeepAlive([enable], [initialDelay])\thttp",
+            "contents": "request.setSocketKeepAlive(${1:[, enable]}, ${2:[, initialDelay]});$0"
+        },
+        {
+            "trigger": "response\thttp",
+            "contents": "response$0"
+        },
+        {
+            "trigger": "socket\thttp",
+            "contents": "socket$0"
+        },
+        {
+            "trigger": "continue\thttp",
+            "contents": "continue$0"
+        },
+        {
+            "trigger": "http.globalAgent\thttp",
+            "contents": "http.globalAgent$0"
+        },
+        {
+            "trigger": "http.ClientResponse\thttp",
+            "contents": "http.ClientResponse$0"
+        }
+    ]
+}

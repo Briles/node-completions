@@ -1,0 +1,33 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "vm.runInThisContext(code, [filename])\tvm",
+            "contents": "vm.runInThisContext(${1:code}, ${2:[, filename]});$0"
+        },
+        {
+            "trigger": "vm.runInNewContext(code, [sandbox], [filename])\tvm",
+            "contents": "vm.runInNewContext(${1:code}, ${2:[, sandbox]}, ${3:[, filename]});$0"
+        },
+        {
+            "trigger": "vm.runInContext(code, context, [filename])\tvm",
+            "contents": "vm.runInContext(${1:code}, ${2:context}, ${3:[, filename]});$0"
+        },
+        {
+            "trigger": "vm.createContext([initSandbox])\tvm",
+            "contents": "vm.createContext(${1:[, initSandbox]});$0"
+        },
+        {
+            "trigger": "vm.createScript(code, [filename])\tvm",
+            "contents": "vm.createScript(${1:code}, ${2:[, filename]});$0"
+        },
+        {
+            "trigger": "script.runInThisContext()\tvm",
+            "contents": "script.runInThisContext();$0"
+        },
+        {
+            "trigger": "script.runInNewContext([sandbox])\tvm",
+            "contents": "script.runInNewContext(${1:[, sandbox]});$0"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "tty.isatty(fd)\ttty",
+            "contents": "tty.isatty(${1:fd});$0"
+        },
+        {
+            "trigger": "tty.setRawMode(mode)\ttty",
+            "contents": "tty.setRawMode(${1:mode});$0"
+        }
+    ]
+}

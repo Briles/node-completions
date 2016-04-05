@@ -1,0 +1,21 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "setTimeout(callback, delay, [arg], [...])\ttimers",
+            "contents": "setTimeout(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
+        },
+        {
+            "trigger": "clearTimeout(timeoutId)\ttimers",
+            "contents": "clearTimeout(${1:timeoutId});$0"
+        },
+        {
+            "trigger": "setInterval(callback, delay, [arg], [...])\ttimers",
+            "contents": "setInterval(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
+        },
+        {
+            "trigger": "clearInterval(intervalId)\ttimers",
+            "contents": "clearInterval(${1:intervalId});$0"
+        }
+    ]
+}

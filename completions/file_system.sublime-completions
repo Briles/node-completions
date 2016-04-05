@@ -1,0 +1,277 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "fs.rename(path1, path2, [callback])\tfile_system",
+            "contents": "fs.rename(${1:path1}, ${2:path2}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.renameSync(path1, path2)\tfile_system",
+            "contents": "fs.renameSync(${1:path1}, ${2:path2});$0"
+        },
+        {
+            "trigger": "fs.truncate(fd, len, [callback])\tfile_system",
+            "contents": "fs.truncate(${1:fd}, ${2:len}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.truncateSync(fd, len)\tfile_system",
+            "contents": "fs.truncateSync(${1:fd}, ${2:len});$0"
+        },
+        {
+            "trigger": "fs.chown(path, uid, gid, [callback])\tfile_system",
+            "contents": "fs.chown(${1:path}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.chownSync(path, uid, gid)\tfile_system",
+            "contents": "fs.chownSync(${1:path}, ${2:uid}, ${3:gid});$0"
+        },
+        {
+            "trigger": "fs.fchown(fd, uid, gid, [callback])\tfile_system",
+            "contents": "fs.fchown(${1:fd}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.fchownSync(fd, uid, gid)\tfile_system",
+            "contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid});$0"
+        },
+        {
+            "trigger": "fs.lchown(path, uid, gid, [callback])\tfile_system",
+            "contents": "fs.lchown(${1:path}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.lchownSync(path, uid, gid)\tfile_system",
+            "contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid});$0"
+        },
+        {
+            "trigger": "fs.chmod(path, mode, [callback])\tfile_system",
+            "contents": "fs.chmod(${1:path}, ${2:mode}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.chmodSync(path, mode)\tfile_system",
+            "contents": "fs.chmodSync(${1:path}, ${2:mode});$0"
+        },
+        {
+            "trigger": "fs.fchmod(fd, mode, [callback])\tfile_system",
+            "contents": "fs.fchmod(${1:fd}, ${2:mode}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.fchmodSync(fd, mode)\tfile_system",
+            "contents": "fs.fchmodSync(${1:fd}, ${2:mode});$0"
+        },
+        {
+            "trigger": "fs.lchmod(path, mode, [callback])\tfile_system",
+            "contents": "fs.lchmod(${1:path}, ${2:mode}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.lchmodSync(path, mode)\tfile_system",
+            "contents": "fs.lchmodSync(${1:path}, ${2:mode});$0"
+        },
+        {
+            "trigger": "fs.stat(path, [callback])\tfile_system",
+            "contents": "fs.stat(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.lstat(path, [callback])\tfile_system",
+            "contents": "fs.lstat(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.fstat(fd, [callback])\tfile_system",
+            "contents": "fs.fstat(${1:fd}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.statSync(path)\tfile_system",
+            "contents": "fs.statSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.lstatSync(path)\tfile_system",
+            "contents": "fs.lstatSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.fstatSync(fd)\tfile_system",
+            "contents": "fs.fstatSync(${1:fd});$0"
+        },
+        {
+            "trigger": "fs.link(srcpath, dstpath, [callback])\tfile_system",
+            "contents": "fs.link(${1:srcpath}, ${2:dstpath}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.linkSync(srcpath, dstpath)\tfile_system",
+            "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
+        },
+        {
+            "trigger": "fs.symlink(linkdata, path, [type], [callback])\tfile_system",
+            "contents": "fs.symlink(${1:linkdata}, ${2:path}, ${3:[, type]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.symlinkSync(linkdata, path, [type])\tfile_system",
+            "contents": "fs.symlinkSync(${1:linkdata}, ${2:path}, ${3:[, type]});$0"
+        },
+        {
+            "trigger": "fs.readlink(path, [callback])\tfile_system",
+            "contents": "fs.readlink(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.readlinkSync(path)\tfile_system",
+            "contents": "fs.readlinkSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.realpath(path, [callback])\tfile_system",
+            "contents": "fs.realpath(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.realpathSync(path)\tfile_system",
+            "contents": "fs.realpathSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.unlink(path, [callback])\tfile_system",
+            "contents": "fs.unlink(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.unlinkSync(path)\tfile_system",
+            "contents": "fs.unlinkSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.rmdir(path, [callback])\tfile_system",
+            "contents": "fs.rmdir(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.rmdirSync(path)\tfile_system",
+            "contents": "fs.rmdirSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.mkdir(path, [mode], [callback])\tfile_system",
+            "contents": "fs.mkdir(${1:path}, ${2:[, mode]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.mkdirSync(path, [mode])\tfile_system",
+            "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
+        },
+        {
+            "trigger": "fs.readdir(path, [callback])\tfile_system",
+            "contents": "fs.readdir(${1:path}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.readdirSync(path)\tfile_system",
+            "contents": "fs.readdirSync(${1:path});$0"
+        },
+        {
+            "trigger": "fs.close(fd, [callback])\tfile_system",
+            "contents": "fs.close(${1:fd}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.closeSync(fd)\tfile_system",
+            "contents": "fs.closeSync(${1:fd});$0"
+        },
+        {
+            "trigger": "fs.open(path, flags, [mode], [callback])\tfile_system",
+            "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.openSync(path, flags, [mode])\tfile_system",
+            "contents": "fs.openSync(${1:path}, ${2:flags}, ${3:[, mode]});$0"
+        },
+        {
+            "trigger": "fs.utimes(path, atime, mtime, [callback])\tfile_system",
+            "contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime});$0"
+        },
+        {
+            "trigger": "fs.utimesSync(path, atime, mtime)\tfile_system",
+            "contents": "fs.utimesSync(${1:path}, ${2:atime}, ${3:mtime});$0"
+        },
+        {
+            "trigger": "fs.futimes(fd, atime, mtime, [callback])\tfile_system",
+            "contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime});$0"
+        },
+        {
+            "trigger": "fs.futimesSync(fd, atime, mtime)\tfile_system",
+            "contents": "fs.futimesSync(${1:fd}, ${2:atime}, ${3:mtime});$0"
+        },
+        {
+            "trigger": "fs.fsync(fd, [callback])\tfile_system",
+            "contents": "fs.fsync(${1:fd}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.fsyncSync(fd)\tfile_system",
+            "contents": "fs.fsyncSync(${1:fd});$0"
+        },
+        {
+            "trigger": "fs.write(fd, buffer, offset, length, position, [callback])\tfile_system",
+            "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.writeSync(fd, buffer, offset, length, position)\tfile_system",
+            "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+        },
+        {
+            "trigger": "fs.writeSync(fd, str, position, [encoding])\tfile_system",
+            "contents": "fs.writeSync(${1:fd}, ${2:str}, ${3:position}, ${4:[, encoding]});$0"
+        },
+        {
+            "trigger": "fs.read(fd, buffer, offset, length, position, [callback])\tfile_system",
+            "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfile_system",
+            "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+        },
+        {
+            "trigger": "fs.readSync(fd, length, position, encoding)\tfile_system",
+            "contents": "fs.readSync(${1:fd}, ${2:length}, ${3:position}, ${4:encoding});$0"
+        },
+        {
+            "trigger": "fs.readFile(filename, [encoding], [callback])\tfile_system",
+            "contents": "fs.readFile(${1:filename}, ${2:[, encoding]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.readFileSync(filename, [encoding])\tfile_system",
+            "contents": "fs.readFileSync(${1:filename}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "fs.writeFile(filename, data, [encoding], [callback])\tfile_system",
+            "contents": "fs.writeFile(${1:filename}, ${2:data}, ${3:[, encoding]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.writeFileSync(filename, data, [encoding])\tfile_system",
+            "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[, encoding]});$0"
+        },
+        {
+            "trigger": "fs.watchFile(filename, [options], listener)\tfile_system",
+            "contents": "fs.watchFile(${1:filename}, ${2:[, options]}, ${3:listener});$0"
+        },
+        {
+            "trigger": "fs.unwatchFile(filename)\tfile_system",
+            "contents": "fs.unwatchFile(${1:filename});$0"
+        },
+        {
+            "trigger": "fs.watch(filename, [options], listener)\tfile_system",
+            "contents": "fs.watch(${1:filename}, ${2:[, options]}, ${3:listener});$0"
+        },
+        {
+            "trigger": "fs.createReadStream(path, [options])\tfile_system",
+            "contents": "fs.createReadStream(${1:path}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "fs.createWriteStream(path, [options])\tfile_system",
+            "contents": "fs.createWriteStream(${1:path}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "open\tfile_system",
+            "contents": "open$0"
+        },
+        {
+            "trigger": "watcher.close()\tfile_system",
+            "contents": "watcher.close();$0"
+        },
+        {
+            "trigger": "change\tfile_system",
+            "contents": "change$0"
+        },
+        {
+            "trigger": "error\tfile_system",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "file_system.WriteStream\tfile_system",
+            "contents": "file_system.WriteStream$0"
+        }
+    ]
+}

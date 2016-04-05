@@ -1,0 +1,153 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "console.log()\tglobals",
+            "contents": "console.log();$0"
+        },
+        {
+            "trigger": "console.info()\tglobals",
+            "contents": "console.info();$0"
+        },
+        {
+            "trigger": "console.warn()\tglobals",
+            "contents": "console.warn();$0"
+        },
+        {
+            "trigger": "console.error()\tglobals",
+            "contents": "console.error();$0"
+        },
+        {
+            "trigger": "console.dir(obj)\tglobals",
+            "contents": "console.dir(${1:obj});$0"
+        },
+        {
+            "trigger": "console.time(label)\tglobals",
+            "contents": "console.time(${1:label});$0"
+        },
+        {
+            "trigger": "console.timeEnd(label)\tglobals",
+            "contents": "console.timeEnd(${1:label});$0"
+        },
+        {
+            "trigger": "console.trace()\tglobals",
+            "contents": "console.trace();$0"
+        },
+        {
+            "trigger": "console.assert()\tglobals",
+            "contents": "console.assert();$0"
+        },
+        {
+            "trigger": "process.chdir(directory)\tglobals",
+            "contents": "process.chdir(${1:directory});$0"
+        },
+        {
+            "trigger": "process.cwd()\tglobals",
+            "contents": "process.cwd();$0"
+        },
+        {
+            "trigger": "process.exit([code])\tglobals",
+            "contents": "process.exit(${1:[, code]});$0"
+        },
+        {
+            "trigger": "process.getgid()\tglobals",
+            "contents": "process.getgid();$0"
+        },
+        {
+            "trigger": "process.setgid(id)\tglobals",
+            "contents": "process.setgid(${1:id});$0"
+        },
+        {
+            "trigger": "process.getuid()\tglobals",
+            "contents": "process.getuid();$0"
+        },
+        {
+            "trigger": "process.setuid(id)\tglobals",
+            "contents": "process.setuid(${1:id});$0"
+        },
+        {
+            "trigger": "process.kill(pid, [signal])\tglobals",
+            "contents": "process.kill(${1:pid}, ${2:[, signal]});$0"
+        },
+        {
+            "trigger": "process.memoryUsage()\tglobals",
+            "contents": "process.memoryUsage();$0"
+        },
+        {
+            "trigger": "process.nextTick(callback)\tglobals",
+            "contents": "process.nextTick(${1:callback});$0"
+        },
+        {
+            "trigger": "process.umask([mask])\tglobals",
+            "contents": "process.umask(${1:[, mask]});$0"
+        },
+        {
+            "trigger": "process.uptime()\tglobals",
+            "contents": "process.uptime();$0"
+        },
+        {
+            "trigger": "process.stdout\tglobals",
+            "contents": "process.stdout$0"
+        },
+        {
+            "trigger": "process.stderr\tglobals",
+            "contents": "process.stderr$0"
+        },
+        {
+            "trigger": "process.stdin\tglobals",
+            "contents": "process.stdin$0"
+        },
+        {
+            "trigger": "process.argv\tglobals",
+            "contents": "process.argv$0"
+        },
+        {
+            "trigger": "process.execPath\tglobals",
+            "contents": "process.execPath$0"
+        },
+        {
+            "trigger": "process.env\tglobals",
+            "contents": "process.env$0"
+        },
+        {
+            "trigger": "process.version\tglobals",
+            "contents": "process.version$0"
+        },
+        {
+            "trigger": "process.versions\tglobals",
+            "contents": "process.versions$0"
+        },
+        {
+            "trigger": "process.installPrefix\tglobals",
+            "contents": "process.installPrefix$0"
+        },
+        {
+            "trigger": "process.pid\tglobals",
+            "contents": "process.pid$0"
+        },
+        {
+            "trigger": "process.title\tglobals",
+            "contents": "process.title$0"
+        },
+        {
+            "trigger": "process.arch\tglobals",
+            "contents": "process.arch$0"
+        },
+        {
+            "trigger": "process.platform\tglobals",
+            "contents": "process.platform$0"
+        },
+        {
+            "trigger": "exit\tglobals",
+            "contents": "exit$0"
+        },
+        {
+            "trigger": "uncaughtException\tglobals",
+            "contents": "uncaughtException$0"
+        },
+        {
+            "trigger": "SIGINT, SIGUSR1, etc.\tglobals",
+            "contents": "SIGINT, SIGUSR1, etc.$0"
+        }
+    ]
+}
