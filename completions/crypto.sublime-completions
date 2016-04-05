@@ -2,6 +2,14 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "crypto.getCiphers()\tcrypto",
+            "contents": "crypto.getCiphers();$0"
+        },
+        {
+            "trigger": "crypto.getHashes()\tcrypto",
+            "contents": "crypto.getHashes();$0"
+        },
+        {
             "trigger": "crypto.createCredentials(details)\tcrypto",
             "contents": "crypto.createCredentials(${1:details});$0"
         },
@@ -54,8 +62,16 @@
             "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:callback});$0"
         },
         {
+            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen)\tcrypto",
+            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen});$0"
+        },
+        {
             "trigger": "crypto.randomBytes(size, [callback])\tcrypto",
             "contents": "crypto.randomBytes(${1:size}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "crypto.pseudoRandomBytes(size, [callback])\tcrypto",
+            "contents": "crypto.pseudoRandomBytes(${1:size}, ${2:[, callback]});$0"
         },
         {
             "trigger": "hash.update(data, [input_encoding])\tcrypto",
@@ -98,12 +114,12 @@
             "contents": "decipher.setAutoPadding(${1:auto_padding});$0"
         },
         {
-            "trigger": "signer.update(data)\tcrypto",
-            "contents": "signer.update(${1:data});$0"
+            "trigger": "sign.update(data)\tcrypto",
+            "contents": "sign.update(${1:data});$0"
         },
         {
-            "trigger": "signer.sign(private_key, [output_format])\tcrypto",
-            "contents": "signer.sign(${1:private_key}, ${2:[, output_format]});$0"
+            "trigger": "sign.sign(private_key, [output_format])\tcrypto",
+            "contents": "sign.sign(${1:private_key}, ${2:[, output_format]});$0"
         },
         {
             "trigger": "verifier.update(data)\tcrypto",
@@ -142,8 +158,12 @@
             "contents": "diffieHellman.setPublicKey(${1:public_key}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "diffieHellman.setPrivateKey(public_key, [encoding])\tcrypto",
-            "contents": "diffieHellman.setPrivateKey(${1:public_key}, ${2:[, encoding]});$0"
+            "trigger": "diffieHellman.setPrivateKey(private_key, [encoding])\tcrypto",
+            "contents": "diffieHellman.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
+            "contents": "crypto.DEFAULT_ENCODING$0"
         }
     ]
 }
