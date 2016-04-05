@@ -26,8 +26,8 @@
             "contents": "util.log(${1:string});$0"
         },
         {
-            "trigger": "util.inspect(object, [options])\tutil",
-            "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
+            "trigger": "util.inspect(object, [showHidden], [depth], [colors])\tutil",
+            "contents": "util.inspect(${1:object}, ${2:[, showHidden]}, ${3:[, depth]}, ${4:[, colors]});$0"
         },
         {
             "trigger": "util.isArray(object)\tutil",

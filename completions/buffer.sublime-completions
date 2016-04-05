@@ -10,10 +10,6 @@
             "contents": "buf.toString(${1:[, encoding]}, ${2:[, start]}, ${3:[, end]});$0"
         },
         {
-            "trigger": "buf.toJSON()\tbuffer",
-            "contents": "buf.toJSON();$0"
-        },
-        {
             "trigger": "buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd])\tbuffer",
             "contents": "buf.copy(${1:targetBuffer}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
         },
@@ -136,10 +132,6 @@
         {
             "trigger": "buf.fill(value, [offset], [end])\tbuffer",
             "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]});$0"
-        },
-        {
-            "trigger": "Buffer.isEncoding(encoding)\tbuffer",
-            "contents": "Buffer.isEncoding(${1:encoding});$0"
         },
         {
             "trigger": "Buffer.isBuffer(obj)\tbuffer",

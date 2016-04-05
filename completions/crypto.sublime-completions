@@ -2,14 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "crypto.getCiphers()\tcrypto",
-            "contents": "crypto.getCiphers();$0"
-        },
-        {
-            "trigger": "crypto.getHashes()\tcrypto",
-            "contents": "crypto.getHashes();$0"
-        },
-        {
             "trigger": "crypto.createCredentials(details)\tcrypto",
             "contents": "crypto.createCredentials(${1:details});$0"
         },
@@ -60,10 +52,6 @@
         {
             "trigger": "crypto.pbkdf2(password, salt, iterations, keylen, callback)\tcrypto",
             "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:callback});$0"
-        },
-        {
-            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen)\tcrypto",
-            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen});$0"
         },
         {
             "trigger": "crypto.randomBytes(size, [callback])\tcrypto",
@@ -156,10 +144,6 @@
         {
             "trigger": "diffieHellman.setPrivateKey(public_key, [encoding])\tcrypto",
             "contents": "diffieHellman.setPrivateKey(${1:public_key}, ${2:[, encoding]});$0"
-        },
-        {
-            "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
-            "contents": "crypto.DEFAULT_ENCODING$0"
         }
     ]
 }
