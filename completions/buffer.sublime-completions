@@ -142,10 +142,6 @@
             "contents": "Buffer.byteLength(${1:string}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "Buffer.concat(list, [totalLength])\tbuffer",
-            "contents": "Buffer.concat(${1:list}, ${2:[, totalLength]});$0"
-        },
-        {
             "trigger": "buffer[index]\tbuffer",
             "contents": "buffer[index]$0"
         },

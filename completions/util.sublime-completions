@@ -2,24 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "util.format(format, [...])\tutil",
-            "contents": "util.format(${1:format}, ${2:[, ...]});$0"
+            "trigger": "util.format()\tutil",
+            "contents": "util.format();$0"
         },
         {
             "trigger": "util.debug(string)\tutil",
             "contents": "util.debug(${1:string});$0"
-        },
-        {
-            "trigger": "util.error([...])\tutil",
-            "contents": "util.error(${1:[, ...]});$0"
-        },
-        {
-            "trigger": "util.puts([...])\tutil",
-            "contents": "util.puts(${1:[, ...]});$0"
-        },
-        {
-            "trigger": "util.print([...])\tutil",
-            "contents": "util.print(${1:[, ...]});$0"
         },
         {
             "trigger": "util.log(string)\tutil",

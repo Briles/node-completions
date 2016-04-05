@@ -8,26 +8,6 @@
         {
             "trigger": "tty.setRawMode(mode)\ttty",
             "contents": "tty.setRawMode(${1:mode});$0"
-        },
-        {
-            "trigger": "rs.setRawMode(mode)\ttty",
-            "contents": "rs.setRawMode(${1:mode});$0"
-        },
-        {
-            "trigger": "readstream.isRaw\ttty",
-            "contents": "readstream.isRaw$0"
-        },
-        {
-            "trigger": "class_writestream.columns\ttty",
-            "contents": "class_writestream.columns$0"
-        },
-        {
-            "trigger": "class_writestream.rows\ttty",
-            "contents": "class_writestream.rows$0"
-        },
-        {
-            "trigger": "resize\ttty",
-            "contents": "resize$0"
         }
     ]
 }

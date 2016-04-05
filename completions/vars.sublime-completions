@@ -8,10 +8,6 @@
         {
             "trigger": "require.cache\tvars",
             "contents": "require.cache$0"
-        },
-        {
-            "trigger": "require.extensions\tvars",
-            "contents": "require.extensions$0"
         }
     ]
 }

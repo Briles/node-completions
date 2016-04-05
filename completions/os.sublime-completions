@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "os.tmpDir()\tos",
-            "contents": "os.tmpDir();$0"
-        },
-        {
             "trigger": "os.hostname()\tos",
             "contents": "os.hostname();$0"
         },
@@ -48,10 +44,6 @@
         {
             "trigger": "os.networkInterfaces()\tos",
             "contents": "os.networkInterfaces();$0"
-        },
-        {
-            "trigger": "os.EOL\tos",
-            "contents": "os.EOL$0"
         }
     ]
 }

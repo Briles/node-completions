@@ -30,16 +30,16 @@
             "contents": "dns.resolveSrv(${1:domain}, ${2:callback});$0"
         },
         {
+            "trigger": "dns.reverse(ip, callback)\tdns",
+            "contents": "dns.reverse(${1:ip}, ${2:callback});$0"
+        },
+        {
             "trigger": "dns.resolveNs(domain, callback)\tdns",
             "contents": "dns.resolveNs(${1:domain}, ${2:callback});$0"
         },
         {
             "trigger": "dns.resolveCname(domain, callback)\tdns",
             "contents": "dns.resolveCname(${1:domain}, ${2:callback});$0"
-        },
-        {
-            "trigger": "dns.reverse(ip, callback)\tdns",
-            "contents": "dns.reverse(${1:ip}, ${2:callback});$0"
         }
     ]
 }
