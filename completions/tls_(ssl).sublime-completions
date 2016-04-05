@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "tls.getCiphers()\ttls_(ssl)",
+            "contents": "tls.getCiphers();$0"
+        },
+        {
             "trigger": "tls.createServer(options, [secureConnectionListener])\ttls_(ssl)",
             "contents": "tls.createServer(${1:options}, ${2:[, secureConnectionListener]});$0"
         },
