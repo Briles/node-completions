@@ -162,6 +162,10 @@
             "contents": "process.platform$0"
         },
         {
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
+        },
+        {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
         },
@@ -170,8 +174,8 @@
             "contents": "uncaughtException$0"
         },
         {
-            "trigger": "SIGINT, SIGUSR1, etc.\tglobals",
-            "contents": "SIGINT, SIGUSR1, etc.$0"
+            "trigger": "SIGINT, SIGHUP, etc.\tglobals",
+            "contents": "SIGINT, SIGHUP, etc.$0"
         }
     ]
 }
