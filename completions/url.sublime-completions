@@ -2,12 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "url.parse(urlStr[, parseQueryString][, slashesDenoteHost])\turl",
-            "contents": "url.parse(${1:urlStr}, ${2:[, parseQueryString]}, ${3:[, slashesDenoteHost]});$0"
-        },
-        {
             "trigger": "url.format(urlObj)\turl",
             "contents": "url.format(${1:urlObj});$0"
+        },
+        {
+            "trigger": "url.parse(urlStr[, parseQueryString][, slashesDenoteHost])\turl",
+            "contents": "url.parse(${1:urlStr}, ${2:[, parseQueryString]}, ${3:[, slashesDenoteHost]});$0"
         },
         {
             "trigger": "url.resolve(from, to)\turl",
