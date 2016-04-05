@@ -26,8 +26,8 @@
             "contents": "tls.createSecureContext(${1:details});$0"
         },
         {
-            "trigger": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])\ttls_(ssl)",
-            "contents": "tls.createSecurePair(${1:[, context]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]}, ${5:[, options]});$0"
+            "trigger": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized])\ttls_(ssl)",
+            "contents": "tls.createSecurePair(${1:[, context]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]});$0"
         },
         {
             "trigger": "secure\ttls_(ssl)",
@@ -96,10 +96,6 @@
         {
             "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
             "contents": "tlsSocket.getCipher();$0"
-        },
-        {
-            "trigger": "tlsSocket.getEphemeralKeyInfo()\ttls_(ssl)",
-            "contents": "tlsSocket.getEphemeralKeyInfo();$0"
         },
         {
             "trigger": "tlsSocket.renegotiate(options, callback)\ttls_(ssl)",

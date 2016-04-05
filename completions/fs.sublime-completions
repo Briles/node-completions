@@ -226,28 +226,28 @@
             "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
-            "trigger": "fs.readFile(file[, options], callback)\tfs",
-            "contents": "fs.readFile(${1:file}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "fs.readFile(filename[, options], callback)\tfs",
+            "contents": "fs.readFile(${1:filename}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readFileSync(file[, options])\tfs",
-            "contents": "fs.readFileSync(${1:file}, ${2:[, options]});$0"
+            "trigger": "fs.readFileSync(filename[, options])\tfs",
+            "contents": "fs.readFileSync(${1:filename}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
-            "contents": "fs.writeFile(${1:file}, ${2:data}, ${3:[, options]}, ${4:callback});$0"
+            "trigger": "fs.writeFile(filename, data[, options], callback)\tfs",
+            "contents": "fs.writeFile(${1:filename}, ${2:data}, ${3:[, options]}, ${4:callback});$0"
         },
         {
-            "trigger": "fs.writeFileSync(file, data[, options])\tfs",
-            "contents": "fs.writeFileSync(${1:file}, ${2:data}, ${3:[, options]});$0"
+            "trigger": "fs.writeFileSync(filename, data[, options])\tfs",
+            "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[, options]});$0"
         },
         {
-            "trigger": "fs.appendFile(file, data[, options], callback)\tfs",
-            "contents": "fs.appendFile(${1:file}, ${2:data}, ${3:[, options]}, ${4:callback});$0"
+            "trigger": "fs.appendFile(filename, data[, options], callback)\tfs",
+            "contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:[, options]}, ${4:callback});$0"
         },
         {
-            "trigger": "fs.appendFileSync(file, data[, options])\tfs",
-            "contents": "fs.appendFileSync(${1:file}, ${2:data}, ${3:[, options]});$0"
+            "trigger": "fs.appendFileSync(filename, data[, options])\tfs",
+            "contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:[, options]});$0"
         },
         {
             "trigger": "fs.watchFile(filename[, options], listener)\tfs",
