@@ -234,6 +234,14 @@
             "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[, encoding]});$0"
         },
         {
+            "trigger": "fs.appendFile(filename, data, encoding='utf8', [callback])\tfs",
+            "contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:encoding}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.appendFileSync(filename, data, encoding='utf8')\tfs",
+            "contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:encoding});$0"
+        },
+        {
             "trigger": "fs.watchFile(filename, [options], listener)\tfs",
             "contents": "fs.watchFile(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
@@ -244,6 +252,14 @@
         {
             "trigger": "fs.watch(filename, [options], listener)\tfs",
             "contents": "fs.watch(${1:filename}, ${2:[, options]}, ${3:listener});$0"
+        },
+        {
+            "trigger": "fs.exists(p, [callback])\tfs",
+            "contents": "fs.exists(${1:p}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.existsSync(p)\tfs",
+            "contents": "fs.existsSync(${1:p});$0"
         },
         {
             "trigger": "fs.createReadStream(path, [options])\tfs",

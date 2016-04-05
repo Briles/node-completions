@@ -22,8 +22,12 @@
             "contents": "server.listen(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "server.close()\thttp",
-            "contents": "server.close();$0"
+            "trigger": "server.close([cb])\thttp",
+            "contents": "server.close(${1:[, cb]});$0"
+        },
+        {
+            "trigger": "http.server.maxHeadersCount\thttp",
+            "contents": "http.server.maxHeadersCount$0"
         },
         {
             "trigger": "request\thttp",
@@ -40,6 +44,10 @@
         {
             "trigger": "checkContinue\thttp",
             "contents": "checkContinue$0"
+        },
+        {
+            "trigger": "connect\thttp",
+            "contents": "connect$0"
         },
         {
             "trigger": "upgrade\thttp",
@@ -128,6 +136,10 @@
         {
             "trigger": "response.statusCode\thttp",
             "contents": "response.statusCode$0"
+        },
+        {
+            "trigger": "http.serverresponse.sendDate\thttp",
+            "contents": "http.serverresponse.sendDate$0"
         },
         {
             "trigger": "http.agent.maxSockets\thttp",
