@@ -1,0 +1,57 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "dns.resolve(hostname[, rrtype], callback)\tmethods",
+            "contents": "dns.resolve(${1:hostname}, ${2:[, rrtype]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "dns.resolve4(hostname, callback)\tmethods",
+            "contents": "dns.resolve4(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolve6(hostname, callback)\tmethods",
+            "contents": "dns.resolve6(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveMx(hostname, callback)\tmethods",
+            "contents": "dns.resolveMx(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveTxt(hostname, callback)\tmethods",
+            "contents": "dns.resolveTxt(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveSrv(hostname, callback)\tmethods",
+            "contents": "dns.resolveSrv(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveSoa(hostname, callback)\tmethods",
+            "contents": "dns.resolveSoa(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveNs(hostname, callback)\tmethods",
+            "contents": "dns.resolveNs(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveCname(hostname, callback)\tmethods",
+            "contents": "dns.resolveCname(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.reverse(ip, callback)\tmethods",
+            "contents": "dns.reverse(${1:ip}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.getServers()\tmethods",
+            "contents": "dns.getServers();$0"
+        },
+        {
+            "trigger": "dns.setServers(servers)\tmethods",
+            "contents": "dns.setServers(${1:servers});$0"
+        },
+        {
+            "trigger": "dns.lookup\tmethods",
+            "contents": "dns.lookup$0"
+        }
+    ]
+}
