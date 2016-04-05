@@ -46,6 +46,10 @@
             "contents": "grep.pid$0"
         },
         {
+            "trigger": "error\tchild_process",
+            "contents": "error$0"
+        },
+        {
             "trigger": "exit\tchild_process",
             "contents": "exit$0"
         },
