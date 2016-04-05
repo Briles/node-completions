@@ -6,8 +6,8 @@
             "contents": "child.kill(${1:[, signal]});$0"
         },
         {
-            "trigger": "child.send(message[, sendHandle])\tchild_process",
-            "contents": "child.send(${1:message}, ${2:[, sendHandle]});$0"
+            "trigger": "child.send(message[, sendHandle][, callback])\tchild_process",
+            "contents": "child.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "child.disconnect()\tchild_process",
@@ -72,18 +72,6 @@
         {
             "trigger": "child_process.fork(modulePath[, args][, options])\tchild_process",
             "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "ChildProcess.stdio\tchild_process",
-            "contents": "ChildProcess.stdio$0"
-        },
-        {
-            "trigger": "asynchronous_process_creation.detached\tchild_process",
-            "contents": "asynchronous_process_creation.detached$0"
-        },
-        {
-            "trigger": "asynchronous_process_creation.customFds\tchild_process",
-            "contents": "asynchronous_process_creation.customFds$0"
         },
         {
             "trigger": "child_process.spawnSync(command[, args][, options])\tchild_process",

@@ -6,12 +6,12 @@
             "contents": "net.createServer(${1:[, options]}, ${2:[, connectionListener]});$0"
         },
         {
-            "trigger": "net.connect(options[, connectionListener])\tnet",
-            "contents": "net.connect(${1:options}, ${2:[, connectionListener]});$0"
+            "trigger": "net.connect(options[, connectListener])\tnet",
+            "contents": "net.connect(${1:options}, ${2:[, connectListener]});$0"
         },
         {
-            "trigger": "net.createConnection(options[, connectionListener])\tnet",
-            "contents": "net.createConnection(${1:options}, ${2:[, connectionListener]});$0"
+            "trigger": "net.createConnection(options[, connectListener])\tnet",
+            "contents": "net.createConnection(${1:options}, ${2:[, connectListener]});$0"
         },
         {
             "trigger": "net.connect(port[, host][, connectListener])\tnet",
@@ -42,8 +42,8 @@
             "contents": "net.isIPv6(${1:input});$0"
         },
         {
-            "trigger": "server.listen(port[, host][, backlog][, callback])\tnet",
-            "contents": "server.listen(${1:port}, ${2:[, host]}, ${3:[, backlog]}, ${4:[, callback]});$0"
+            "trigger": "server.listen(port[, hostname][, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:port}, ${2:[, hostname]}, ${3:[, backlog]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "server.listen(path[, callback])\tnet",
@@ -104,6 +104,10 @@
         {
             "trigger": "new net.Socket([options])\tnet",
             "contents": "new net.Socket(${1:[, options]});$0"
+        },
+        {
+            "trigger": "socket.connect(options[, connectListener])\tnet",
+            "contents": "socket.connect(${1:options}, ${2:[, connectListener]});$0"
         },
         {
             "trigger": "socket.connect(port[, host][, connectListener])\tnet",

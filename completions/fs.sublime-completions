@@ -106,12 +106,12 @@
             "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
         },
         {
-            "trigger": "fs.symlink(srcpath, dstpath[, type], callback)\tfs",
-            "contents": "fs.symlink(${1:srcpath}, ${2:dstpath}, ${3:[, type]}, ${4:callback});$0"
+            "trigger": "fs.symlink(destination, path[, type], callback)\tfs",
+            "contents": "fs.symlink(${1:destination}, ${2:path}, ${3:[, type]}, ${4:callback});$0"
         },
         {
-            "trigger": "fs.symlinkSync(srcpath, dstpath[, type])\tfs",
-            "contents": "fs.symlinkSync(${1:srcpath}, ${2:dstpath}, ${3:[, type]});$0"
+            "trigger": "fs.symlinkSync(destination, path[, type])\tfs",
+            "contents": "fs.symlinkSync(${1:destination}, ${2:path}, ${3:[, type]});$0"
         },
         {
             "trigger": "fs.readlink(path, callback)\tfs",

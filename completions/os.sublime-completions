@@ -6,6 +6,10 @@
             "contents": "os.tmpdir();$0"
         },
         {
+            "trigger": "os.homedir()\tos",
+            "contents": "os.homedir();$0"
+        },
+        {
             "trigger": "os.endianness()\tos",
             "contents": "os.endianness();$0"
         },

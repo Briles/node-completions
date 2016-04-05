@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "writable.\\_writev(chunks, callback)\tstream",
-            "contents": "writable.\\_writev(${1:chunks}, ${2:callback});$0"
-        },
-        {
             "trigger": "readable.read([size])\tstream",
             "contents": "readable.read(${1:[, size]});$0"
         },
