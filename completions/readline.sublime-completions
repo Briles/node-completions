@@ -6,8 +6,8 @@
             "contents": "readline.createInterface(${1:options});$0"
         },
         {
-            "trigger": "rl.setPrompt(prompt, length)\treadline",
-            "contents": "rl.setPrompt(${1:prompt}, ${2:length});$0"
+            "trigger": "rl.setPrompt(prompt)\treadline",
+            "contents": "rl.setPrompt(${1:prompt});$0"
         },
         {
             "trigger": "rl.prompt([preserveCursor])\treadline",
