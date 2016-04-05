@@ -134,10 +134,6 @@
             "contents": "process.env$0"
         },
         {
-            "trigger": "process.exitCode\tglobals",
-            "contents": "process.exitCode$0"
-        },
-        {
             "trigger": "process.version\tglobals",
             "contents": "process.version$0"
         },
@@ -166,12 +162,12 @@
             "contents": "process.platform$0"
         },
         {
-            "trigger": "exit\tglobals",
-            "contents": "exit$0"
+            "trigger": "process.maxTickDepth\tglobals",
+            "contents": "process.maxTickDepth$0"
         },
         {
-            "trigger": "beforeExit\tglobals",
-            "contents": "beforeExit$0"
+            "trigger": "exit\tglobals",
+            "contents": "exit$0"
         },
         {
             "trigger": "uncaughtException\tglobals",

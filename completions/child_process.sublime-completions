@@ -18,18 +18,6 @@
             "contents": "child_process.fork(${1:modulePath}, ${2:[, args]}, ${3:[, options]});$0"
         },
         {
-            "trigger": "child_process.spawnSync(command, [args], [options])\tchild_process",
-            "contents": "child_process.spawnSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "child_process.execFileSync(command, [args], [options])\tchild_process",
-            "contents": "child_process.execFileSync(${1:command}, ${2:[, args]}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "child_process.execSync(command, [options])\tchild_process",
-            "contents": "child_process.execSync(${1:command}, ${2:[, options]});$0"
-        },
-        {
             "trigger": "child.kill([signal])\tchild_process",
             "contents": "child.kill(${1:[, signal]});$0"
         },
