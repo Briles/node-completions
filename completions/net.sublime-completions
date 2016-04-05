@@ -6,28 +6,12 @@
             "contents": "net.createServer(${1:[, options]}, ${2:[, connectionListener]});$0"
         },
         {
-            "trigger": "net.connect(options, [connectionListener])\tnet",
-            "contents": "net.connect(${1:options}, ${2:[, connectionListener]});$0"
+            "trigger": "net.connect(arguments...)\tnet",
+            "contents": "net.connect(${1:arguments...});$0"
         },
         {
-            "trigger": "net.createConnection(options, [connectionListener])\tnet",
-            "contents": "net.createConnection(${1:options}, ${2:[, connectionListener]});$0"
-        },
-        {
-            "trigger": "net.connect(port, [host], [connectListener])\tnet",
-            "contents": "net.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.createConnection(port, [host], [connectListener])\tnet",
-            "contents": "net.createConnection(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.connect(path, [connectListener])\tnet",
-            "contents": "net.connect(${1:path}, ${2:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.createConnection(path, [connectListener])\tnet",
-            "contents": "net.createConnection(${1:path}, ${2:[, connectListener]});$0"
+            "trigger": "net.createConnection(arguments...)\tnet",
+            "contents": "net.createConnection(${1:arguments...});$0"
         },
         {
             "trigger": "net.isIP(input)\tnet",
@@ -50,8 +34,8 @@
             "contents": "server.listen(${1:path}, ${2:[, listeningListener]});$0"
         },
         {
-            "trigger": "server.close([cb])\tnet",
-            "contents": "server.close(${1:[, cb]});$0"
+            "trigger": "server.close()\tnet",
+            "contents": "server.close();$0"
         },
         {
             "trigger": "server.address()\tnet",
@@ -96,6 +80,10 @@
         {
             "trigger": "socket.setEncoding([encoding])\tnet",
             "contents": "socket.setEncoding(${1:[, encoding]});$0"
+        },
+        {
+            "trigger": "socket.setSecure()\tnet",
+            "contents": "socket.setSecure();$0"
         },
         {
             "trigger": "socket.write(data, [encoding], [callback])\tnet",
