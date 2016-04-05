@@ -6,16 +6,16 @@
             "contents": "setTimeout(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
-            "trigger": "clearTimeout(timeoutId)\ttimers",
-            "contents": "clearTimeout(${1:timeoutId});$0"
+            "trigger": "clearTimeout(timeoutObject)\ttimers",
+            "contents": "clearTimeout(${1:timeoutObject});$0"
         },
         {
             "trigger": "setInterval(callback, delay, [arg], [...])\ttimers",
             "contents": "setInterval(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
-            "trigger": "clearInterval(intervalId)\ttimers",
-            "contents": "clearInterval(${1:intervalId});$0"
+            "trigger": "clearInterval(intervalObject)\ttimers",
+            "contents": "clearInterval(${1:intervalObject});$0"
         },
         {
             "trigger": "unref()\ttimers",
@@ -30,8 +30,8 @@
             "contents": "setImmediate(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "clearImmediate(immediateId)\ttimers",
-            "contents": "clearImmediate(${1:immediateId});$0"
+            "trigger": "clearImmediate(immediateObject)\ttimers",
+            "contents": "clearImmediate(${1:immediateObject});$0"
         }
     ]
 }
