@@ -126,6 +126,10 @@
             "contents": "http.serverresponse.sendDate$0"
         },
         {
+            "trigger": "http.serverresponse.finished\thttp",
+            "contents": "http.serverresponse.finished$0"
+        },
+        {
             "trigger": "finish\thttp",
             "contents": "finish$0"
         },
@@ -196,6 +200,10 @@
         {
             "trigger": "continue\thttp",
             "contents": "continue$0"
+        },
+        {
+            "trigger": "abort\thttp",
+            "contents": "abort$0"
         },
         {
             "trigger": "http.METHODS\thttp",

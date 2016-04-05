@@ -14,16 +14,16 @@
             "contents": "socket.send(${1:buf}, ${2:offset}, ${3:length}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
         },
         {
-            "trigger": "socket.bind(port[, address][, callback])\tdgram",
-            "contents": "socket.bind(${1:port}, ${2:[, address]}, ${3:[, callback]});$0"
+            "trigger": "socket.bind([port][, address][, callback])\tdgram",
+            "contents": "socket.bind(${1:[, port]}, ${2:[, address]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "socket.bind(options[, callback])\tdgram",
             "contents": "socket.bind(${1:options}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "socket.close()\tdgram",
-            "contents": "socket.close();$0"
+            "trigger": "socket.close([callback])\tdgram",
+            "contents": "socket.close(${1:[, callback]});$0"
         },
         {
             "trigger": "socket.address()\tdgram",

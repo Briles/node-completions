@@ -14,6 +14,10 @@
             "contents": "crypto.getHashes();$0"
         },
         {
+            "trigger": "crypto.getCurves()\tcrypto",
+            "contents": "crypto.getCurves();$0"
+        },
+        {
             "trigger": "crypto.createCredentials(details)\tcrypto",
             "contents": "crypto.createCredentials(${1:details});$0"
         },
@@ -78,16 +82,20 @@
             "contents": "crypto.randomBytes(${1:size}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "crypto.pseudoRandomBytes(size[, callback])\tcrypto",
-            "contents": "crypto.pseudoRandomBytes(${1:size}, ${2:[, callback]});$0"
-        },
-        {
             "trigger": "crypto.publicEncrypt(public_key, buffer)\tcrypto",
             "contents": "crypto.publicEncrypt(${1:public_key}, ${2:buffer});$0"
         },
         {
+            "trigger": "crypto.publicDecrypt(public_key, buffer)\tcrypto",
+            "contents": "crypto.publicDecrypt(${1:public_key}, ${2:buffer});$0"
+        },
+        {
             "trigger": "crypto.privateDecrypt(private_key, buffer)\tcrypto",
             "contents": "crypto.privateDecrypt(${1:private_key}, ${2:buffer});$0"
+        },
+        {
+            "trigger": "crypto.privateEncrypt(private_key, buffer)\tcrypto",
+            "contents": "crypto.privateEncrypt(${1:private_key}, ${2:buffer});$0"
         },
         {
             "trigger": "hash.update(data[, input_encoding])\tcrypto",

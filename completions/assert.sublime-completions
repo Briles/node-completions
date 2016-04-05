@@ -34,12 +34,20 @@
             "contents": "assert.notStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
+            "trigger": "assert.deepStrictEqual(actual, expected[, message])\tassert",
+            "contents": "assert.deepStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
+        },
+        {
+            "trigger": "assert.notDeepStrictEqual(actual, expected[, message])\tassert",
+            "contents": "assert.notDeepStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
+        },
+        {
             "trigger": "assert.throws(block[, error][, message])\tassert",
             "contents": "assert.throws(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.doesNotThrow(block[, message])\tassert",
-            "contents": "assert.doesNotThrow(${1:block}, ${2:[, message]});$0"
+            "trigger": "assert.doesNotThrow(block[, error][, message])\tassert",
+            "contents": "assert.doesNotThrow(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
         {
             "trigger": "assert.ifError(value)\tassert",
