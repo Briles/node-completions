@@ -54,6 +54,14 @@
             "contents": "clientError$0"
         },
         {
+            "trigger": "newSession\ttls_(ssl)",
+            "contents": "newSession$0"
+        },
+        {
+            "trigger": "resumeSession\ttls_(ssl)",
+            "contents": "resumeSession$0"
+        },
+        {
             "trigger": "cleartextStream.getPeerCertificate()\ttls_(ssl)",
             "contents": "cleartextStream.getPeerCertificate();$0"
         },
