@@ -66,6 +66,50 @@
             "contents": "clientError$0"
         },
         {
+            "trigger": "request.setEncoding([encoding])\thttp",
+            "contents": "request.setEncoding(${1:[, encoding]});$0"
+        },
+        {
+            "trigger": "request.pause()\thttp",
+            "contents": "request.pause();$0"
+        },
+        {
+            "trigger": "request.resume()\thttp",
+            "contents": "request.resume();$0"
+        },
+        {
+            "trigger": "http.serverrequest.method\thttp",
+            "contents": "http.serverrequest.method$0"
+        },
+        {
+            "trigger": "request.url\thttp",
+            "contents": "request.url$0"
+        },
+        {
+            "trigger": "request.headers\thttp",
+            "contents": "request.headers$0"
+        },
+        {
+            "trigger": "http.serverrequest.trailers\thttp",
+            "contents": "http.serverrequest.trailers$0"
+        },
+        {
+            "trigger": "request.httpVersion\thttp",
+            "contents": "request.httpVersion$0"
+        },
+        {
+            "trigger": "request.connection\thttp",
+            "contents": "request.connection$0"
+        },
+        {
+            "trigger": "data\thttp",
+            "contents": "data$0"
+        },
+        {
+            "trigger": "end\thttp",
+            "contents": "end$0"
+        },
+        {
             "trigger": "response.writeContinue()\thttp",
             "contents": "response.writeContinue();$0"
         },
@@ -100,10 +144,6 @@
         {
             "trigger": "response.statusCode\thttp",
             "contents": "response.statusCode$0"
-        },
-        {
-            "trigger": "http.serverresponse.headersSent\thttp",
-            "contents": "http.serverresponse.headersSent$0"
         },
         {
             "trigger": "http.serverresponse.sendDate\thttp",
@@ -166,8 +206,8 @@
             "contents": "http.globalAgent$0"
         },
         {
-            "trigger": "http.IncomingMessage\thttp",
-            "contents": "http.IncomingMessage$0"
+            "trigger": "http.ClientResponse\thttp",
+            "contents": "http.ClientResponse$0"
         }
     ]
 }

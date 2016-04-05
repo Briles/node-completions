@@ -10,20 +10,12 @@
             "contents": "fs.renameSync(${1:oldPath}, ${2:newPath});$0"
         },
         {
-            "trigger": "fs.ftruncate(fd, len, [callback])\tfs",
-            "contents": "fs.ftruncate(${1:fd}, ${2:len}, ${3:[, callback]});$0"
+            "trigger": "fs.truncate(fd, len, [callback])\tfs",
+            "contents": "fs.truncate(${1:fd}, ${2:len}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.ftruncateSync(fd, len)\tfs",
-            "contents": "fs.ftruncateSync(${1:fd}, ${2:len});$0"
-        },
-        {
-            "trigger": "fs.truncate(path, len, [callback])\tfs",
-            "contents": "fs.truncate(${1:path}, ${2:len}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "fs.truncateSync(path, len)\tfs",
-            "contents": "fs.truncateSync(${1:path}, ${2:len});$0"
+            "trigger": "fs.truncateSync(fd, len)\tfs",
+            "contents": "fs.truncateSync(${1:fd}, ${2:len});$0"
         },
         {
             "trigger": "fs.chown(path, uid, gid, [callback])\tfs",

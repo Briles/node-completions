@@ -54,18 +54,6 @@
             "contents": "clientError$0"
         },
         {
-            "trigger": "newSession\ttls_(ssl)",
-            "contents": "newSession$0"
-        },
-        {
-            "trigger": "resumeSession\ttls_(ssl)",
-            "contents": "resumeSession$0"
-        },
-        {
-            "trigger": "cryptostream.bytesWritten\ttls_(ssl)",
-            "contents": "cryptostream.bytesWritten$0"
-        },
-        {
             "trigger": "cleartextStream.getPeerCertificate()\ttls_(ssl)",
             "contents": "cleartextStream.getPeerCertificate();$0"
         },
@@ -96,10 +84,6 @@
         {
             "trigger": "secureConnect\ttls_(ssl)",
             "contents": "secureConnect$0"
-        },
-        {
-            "trigger": "tls_(ssl).SLAB_BUFFER_SIZE\ttls_(ssl)",
-            "contents": "tls_(ssl).SLAB_BUFFER_SIZE$0"
         }
     ]
 }
