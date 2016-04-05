@@ -46,6 +46,14 @@
             "contents": "dgram.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
+            "trigger": "dgram.unref()\tdgram",
+            "contents": "dgram.unref();$0"
+        },
+        {
+            "trigger": "dgram.ref()\tdgram",
+            "contents": "dgram.ref();$0"
+        },
+        {
             "trigger": "message\tdgram",
             "contents": "message$0"
         },
