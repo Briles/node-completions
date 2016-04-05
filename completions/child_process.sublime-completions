@@ -30,16 +30,20 @@
             "contents": "child.disconnect();$0"
         },
         {
-            "trigger": "childprocess.stdin\tchild_process",
-            "contents": "childprocess.stdin$0"
+            "trigger": "child.stdin\tchild_process",
+            "contents": "child.stdin$0"
         },
         {
-            "trigger": "childprocess.stdout\tchild_process",
-            "contents": "childprocess.stdout$0"
+            "trigger": "child.stdout\tchild_process",
+            "contents": "child.stdout$0"
         },
         {
-            "trigger": "childprocess.stderr\tchild_process",
-            "contents": "childprocess.stderr$0"
+            "trigger": "child.stderr\tchild_process",
+            "contents": "child.stderr$0"
+        },
+        {
+            "trigger": "child.stdio\tchild_process",
+            "contents": "child.stdio$0"
         },
         {
             "trigger": "grep.pid\tchild_process",
