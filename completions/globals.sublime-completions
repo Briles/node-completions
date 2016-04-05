@@ -38,6 +38,10 @@
             "contents": "console.assert();$0"
         },
         {
+            "trigger": "process.abort()\tglobals",
+            "contents": "process.abort();$0"
+        },
+        {
             "trigger": "process.chdir(directory)\tglobals",
             "contents": "process.chdir(${1:directory});$0"
         },
@@ -84,6 +88,10 @@
         {
             "trigger": "process.uptime()\tglobals",
             "contents": "process.uptime();$0"
+        },
+        {
+            "trigger": "process.hrtime()\tglobals",
+            "contents": "process.hrtime();$0"
         },
         {
             "trigger": "process.stdout\tglobals",

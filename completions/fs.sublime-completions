@@ -2,276 +2,292 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "fs.rename(path1, path2, [callback])\tfile_system",
+            "trigger": "fs.rename(path1, path2, [callback])\tfs",
             "contents": "fs.rename(${1:path1}, ${2:path2}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.renameSync(path1, path2)\tfile_system",
+            "trigger": "fs.renameSync(path1, path2)\tfs",
             "contents": "fs.renameSync(${1:path1}, ${2:path2});$0"
         },
         {
-            "trigger": "fs.truncate(fd, len, [callback])\tfile_system",
+            "trigger": "fs.truncate(fd, len, [callback])\tfs",
             "contents": "fs.truncate(${1:fd}, ${2:len}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.truncateSync(fd, len)\tfile_system",
+            "trigger": "fs.truncateSync(fd, len)\tfs",
             "contents": "fs.truncateSync(${1:fd}, ${2:len});$0"
         },
         {
-            "trigger": "fs.chown(path, uid, gid, [callback])\tfile_system",
+            "trigger": "fs.chown(path, uid, gid, [callback])\tfs",
             "contents": "fs.chown(${1:path}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.chownSync(path, uid, gid)\tfile_system",
+            "trigger": "fs.chownSync(path, uid, gid)\tfs",
             "contents": "fs.chownSync(${1:path}, ${2:uid}, ${3:gid});$0"
         },
         {
-            "trigger": "fs.fchown(fd, uid, gid, [callback])\tfile_system",
+            "trigger": "fs.fchown(fd, uid, gid, [callback])\tfs",
             "contents": "fs.fchown(${1:fd}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.fchownSync(fd, uid, gid)\tfile_system",
+            "trigger": "fs.fchownSync(fd, uid, gid)\tfs",
             "contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid});$0"
         },
         {
-            "trigger": "fs.lchown(path, uid, gid, [callback])\tfile_system",
+            "trigger": "fs.lchown(path, uid, gid, [callback])\tfs",
             "contents": "fs.lchown(${1:path}, ${2:uid}, ${3:gid}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.lchownSync(path, uid, gid)\tfile_system",
+            "trigger": "fs.lchownSync(path, uid, gid)\tfs",
             "contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid});$0"
         },
         {
-            "trigger": "fs.chmod(path, mode, [callback])\tfile_system",
+            "trigger": "fs.chmod(path, mode, [callback])\tfs",
             "contents": "fs.chmod(${1:path}, ${2:mode}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.chmodSync(path, mode)\tfile_system",
+            "trigger": "fs.chmodSync(path, mode)\tfs",
             "contents": "fs.chmodSync(${1:path}, ${2:mode});$0"
         },
         {
-            "trigger": "fs.fchmod(fd, mode, [callback])\tfile_system",
+            "trigger": "fs.fchmod(fd, mode, [callback])\tfs",
             "contents": "fs.fchmod(${1:fd}, ${2:mode}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.fchmodSync(fd, mode)\tfile_system",
+            "trigger": "fs.fchmodSync(fd, mode)\tfs",
             "contents": "fs.fchmodSync(${1:fd}, ${2:mode});$0"
         },
         {
-            "trigger": "fs.lchmod(path, mode, [callback])\tfile_system",
+            "trigger": "fs.lchmod(path, mode, [callback])\tfs",
             "contents": "fs.lchmod(${1:path}, ${2:mode}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.lchmodSync(path, mode)\tfile_system",
+            "trigger": "fs.lchmodSync(path, mode)\tfs",
             "contents": "fs.lchmodSync(${1:path}, ${2:mode});$0"
         },
         {
-            "trigger": "fs.stat(path, [callback])\tfile_system",
+            "trigger": "fs.stat(path, [callback])\tfs",
             "contents": "fs.stat(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.lstat(path, [callback])\tfile_system",
+            "trigger": "fs.lstat(path, [callback])\tfs",
             "contents": "fs.lstat(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.fstat(fd, [callback])\tfile_system",
+            "trigger": "fs.fstat(fd, [callback])\tfs",
             "contents": "fs.fstat(${1:fd}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.statSync(path)\tfile_system",
+            "trigger": "fs.statSync(path)\tfs",
             "contents": "fs.statSync(${1:path});$0"
         },
         {
-            "trigger": "fs.lstatSync(path)\tfile_system",
+            "trigger": "fs.lstatSync(path)\tfs",
             "contents": "fs.lstatSync(${1:path});$0"
         },
         {
-            "trigger": "fs.fstatSync(fd)\tfile_system",
+            "trigger": "fs.fstatSync(fd)\tfs",
             "contents": "fs.fstatSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.link(srcpath, dstpath, [callback])\tfile_system",
+            "trigger": "fs.link(srcpath, dstpath, [callback])\tfs",
             "contents": "fs.link(${1:srcpath}, ${2:dstpath}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.linkSync(srcpath, dstpath)\tfile_system",
+            "trigger": "fs.linkSync(srcpath, dstpath)\tfs",
             "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
         },
         {
-            "trigger": "fs.symlink(linkdata, path, [type], [callback])\tfile_system",
+            "trigger": "fs.symlink(linkdata, path, [type], [callback])\tfs",
             "contents": "fs.symlink(${1:linkdata}, ${2:path}, ${3:[, type]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.symlinkSync(linkdata, path, [type])\tfile_system",
+            "trigger": "fs.symlinkSync(linkdata, path, [type])\tfs",
             "contents": "fs.symlinkSync(${1:linkdata}, ${2:path}, ${3:[, type]});$0"
         },
         {
-            "trigger": "fs.readlink(path, [callback])\tfile_system",
+            "trigger": "fs.readlink(path, [callback])\tfs",
             "contents": "fs.readlink(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.readlinkSync(path)\tfile_system",
+            "trigger": "fs.readlinkSync(path)\tfs",
             "contents": "fs.readlinkSync(${1:path});$0"
         },
         {
-            "trigger": "fs.realpath(path, [callback])\tfile_system",
+            "trigger": "fs.realpath(path, [callback])\tfs",
             "contents": "fs.realpath(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.realpathSync(path)\tfile_system",
+            "trigger": "fs.realpathSync(path)\tfs",
             "contents": "fs.realpathSync(${1:path});$0"
         },
         {
-            "trigger": "fs.unlink(path, [callback])\tfile_system",
+            "trigger": "fs.unlink(path, [callback])\tfs",
             "contents": "fs.unlink(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.unlinkSync(path)\tfile_system",
+            "trigger": "fs.unlinkSync(path)\tfs",
             "contents": "fs.unlinkSync(${1:path});$0"
         },
         {
-            "trigger": "fs.rmdir(path, [callback])\tfile_system",
+            "trigger": "fs.rmdir(path, [callback])\tfs",
             "contents": "fs.rmdir(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.rmdirSync(path)\tfile_system",
+            "trigger": "fs.rmdirSync(path)\tfs",
             "contents": "fs.rmdirSync(${1:path});$0"
         },
         {
-            "trigger": "fs.mkdir(path, [mode], [callback])\tfile_system",
+            "trigger": "fs.mkdir(path, [mode], [callback])\tfs",
             "contents": "fs.mkdir(${1:path}, ${2:[, mode]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.mkdirSync(path, [mode])\tfile_system",
+            "trigger": "fs.mkdirSync(path, [mode])\tfs",
             "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
         },
         {
-            "trigger": "fs.readdir(path, [callback])\tfile_system",
+            "trigger": "fs.readdir(path, [callback])\tfs",
             "contents": "fs.readdir(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.readdirSync(path)\tfile_system",
+            "trigger": "fs.readdirSync(path)\tfs",
             "contents": "fs.readdirSync(${1:path});$0"
         },
         {
-            "trigger": "fs.close(fd, [callback])\tfile_system",
+            "trigger": "fs.close(fd, [callback])\tfs",
             "contents": "fs.close(${1:fd}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.closeSync(fd)\tfile_system",
+            "trigger": "fs.closeSync(fd)\tfs",
             "contents": "fs.closeSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.open(path, flags, [mode], [callback])\tfile_system",
+            "trigger": "fs.open(path, flags, [mode], [callback])\tfs",
             "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.openSync(path, flags, [mode])\tfile_system",
+            "trigger": "fs.openSync(path, flags, [mode])\tfs",
             "contents": "fs.openSync(${1:path}, ${2:flags}, ${3:[, mode]});$0"
         },
         {
-            "trigger": "fs.utimes(path, atime, mtime, [callback])\tfile_system",
+            "trigger": "fs.utimes(path, atime, mtime, [callback])\tfs",
             "contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime});$0"
         },
         {
-            "trigger": "fs.utimesSync(path, atime, mtime)\tfile_system",
+            "trigger": "fs.utimesSync(path, atime, mtime)\tfs",
             "contents": "fs.utimesSync(${1:path}, ${2:atime}, ${3:mtime});$0"
         },
         {
-            "trigger": "fs.futimes(fd, atime, mtime, [callback])\tfile_system",
+            "trigger": "fs.futimes(fd, atime, mtime, [callback])\tfs",
             "contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime});$0"
         },
         {
-            "trigger": "fs.futimesSync(fd, atime, mtime)\tfile_system",
+            "trigger": "fs.futimesSync(fd, atime, mtime)\tfs",
             "contents": "fs.futimesSync(${1:fd}, ${2:atime}, ${3:mtime});$0"
         },
         {
-            "trigger": "fs.fsync(fd, [callback])\tfile_system",
+            "trigger": "fs.fsync(fd, [callback])\tfs",
             "contents": "fs.fsync(${1:fd}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.fsyncSync(fd)\tfile_system",
+            "trigger": "fs.fsyncSync(fd)\tfs",
             "contents": "fs.fsyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.write(fd, buffer, offset, length, position, [callback])\tfile_system",
+            "trigger": "fs.write(fd, buffer, offset, length, position, [callback])\tfs",
             "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, buffer, offset, length, position)\tfile_system",
+            "trigger": "fs.writeSync(fd, buffer, offset, length, position)\tfs",
             "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, str, position, [encoding])\tfile_system",
+            "trigger": "fs.writeSync(fd, str, position, [encoding])\tfs",
             "contents": "fs.writeSync(${1:fd}, ${2:str}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
-            "trigger": "fs.read(fd, buffer, offset, length, position, [callback])\tfile_system",
+            "trigger": "fs.read(fd, buffer, offset, length, position, [callback])\tfs",
             "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
         },
         {
-            "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfile_system",
+            "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfs",
             "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
-            "trigger": "fs.readSync(fd, length, position, encoding)\tfile_system",
+            "trigger": "fs.readSync(fd, length, position, encoding)\tfs",
             "contents": "fs.readSync(${1:fd}, ${2:length}, ${3:position}, ${4:encoding});$0"
         },
         {
-            "trigger": "fs.readFile(filename, [encoding], [callback])\tfile_system",
+            "trigger": "fs.readFile(filename, [encoding], [callback])\tfs",
             "contents": "fs.readFile(${1:filename}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.readFileSync(filename, [encoding])\tfile_system",
+            "trigger": "fs.readFileSync(filename, [encoding])\tfs",
             "contents": "fs.readFileSync(${1:filename}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "fs.writeFile(filename, data, [encoding], [callback])\tfile_system",
+            "trigger": "fs.writeFile(filename, data, [encoding], [callback])\tfs",
             "contents": "fs.writeFile(${1:filename}, ${2:data}, ${3:[, encoding]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.writeFileSync(filename, data, [encoding])\tfile_system",
+            "trigger": "fs.writeFileSync(filename, data, [encoding])\tfs",
             "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[, encoding]});$0"
         },
         {
-            "trigger": "fs.watchFile(filename, [options], listener)\tfile_system",
+            "trigger": "fs.appendFile(filename, data, encoding='utf8', [callback])\tfs",
+            "contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:encoding}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.appendFileSync(filename, data, encoding='utf8')\tfs",
+            "contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:encoding});$0"
+        },
+        {
+            "trigger": "fs.watchFile(filename, [options], listener)\tfs",
             "contents": "fs.watchFile(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
         {
-            "trigger": "fs.unwatchFile(filename)\tfile_system",
+            "trigger": "fs.unwatchFile(filename)\tfs",
             "contents": "fs.unwatchFile(${1:filename});$0"
         },
         {
-            "trigger": "fs.watch(filename, [options], listener)\tfile_system",
+            "trigger": "fs.watch(filename, [options], listener)\tfs",
             "contents": "fs.watch(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
         {
-            "trigger": "fs.createReadStream(path, [options])\tfile_system",
+            "trigger": "fs.exists(p, [callback])\tfs",
+            "contents": "fs.exists(${1:p}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "fs.existsSync(p)\tfs",
+            "contents": "fs.existsSync(${1:p});$0"
+        },
+        {
+            "trigger": "fs.createReadStream(path, [options])\tfs",
             "contents": "fs.createReadStream(${1:path}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.createWriteStream(path, [options])\tfile_system",
+            "trigger": "fs.createWriteStream(path, [options])\tfs",
             "contents": "fs.createWriteStream(${1:path}, ${2:[, options]});$0"
         },
         {
-            "trigger": "open\tfile_system",
+            "trigger": "open\tfs",
             "contents": "open$0"
         },
         {
-            "trigger": "watcher.close()\tfile_system",
+            "trigger": "watcher.close()\tfs",
             "contents": "watcher.close();$0"
         },
         {
-            "trigger": "change\tfile_system",
+            "trigger": "change\tfs",
             "contents": "change$0"
         },
         {
-            "trigger": "error\tfile_system",
+            "trigger": "error\tfs",
             "contents": "error$0"
         },
         {
-            "trigger": "file_system.WriteStream\tfile_system",
-            "contents": "file_system.WriteStream$0"
+            "trigger": "fs.WriteStream\tfs",
+            "contents": "fs.WriteStream$0"
         }
     ]
 }
