@@ -78,6 +78,10 @@
             "contents": "drain$0"
         },
         {
+            "trigger": "finish\tstream",
+            "contents": "finish$0"
+        },
+        {
             "trigger": "pipe\tstream",
             "contents": "pipe$0"
         },
