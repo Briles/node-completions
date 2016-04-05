@@ -16,22 +16,6 @@
         {
             "trigger": "clearInterval(intervalId)\ttimers",
             "contents": "clearInterval(${1:intervalId});$0"
-        },
-        {
-            "trigger": "unref()\ttimers",
-            "contents": "unref();$0"
-        },
-        {
-            "trigger": "ref()\ttimers",
-            "contents": "ref();$0"
-        },
-        {
-            "trigger": "setImmediate(callback, [arg], [...])\ttimers",
-            "contents": "setImmediate(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
-        },
-        {
-            "trigger": "clearImmediate(immediateId)\ttimers",
-            "contents": "clearImmediate(${1:immediateId});$0"
         }
     ]
 }
