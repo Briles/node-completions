@@ -42,8 +42,8 @@
             "contents": "close$0"
         },
         {
-            "trigger": "stream.write(string, [encoding], [fd])\tstream",
-            "contents": "stream.write(${1:string}, ${2:[, encoding]}, ${3:[, fd]});$0"
+            "trigger": "stream.write(string, [encoding])\tstream",
+            "contents": "stream.write(${1:string}, ${2:[, encoding]});$0"
         },
         {
             "trigger": "stream.write(buffer)\tstream",

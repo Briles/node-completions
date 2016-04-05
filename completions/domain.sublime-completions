@@ -18,12 +18,12 @@
             "contents": "domain.remove(${1:emitter});$0"
         },
         {
-            "trigger": "domain.bind(cb)\tdomain",
-            "contents": "domain.bind(${1:cb});$0"
+            "trigger": "domain.bind(callback)\tdomain",
+            "contents": "domain.bind(${1:callback});$0"
         },
         {
-            "trigger": "domain.intercept(cb)\tdomain",
-            "contents": "domain.intercept(${1:cb});$0"
+            "trigger": "domain.intercept(callback)\tdomain",
+            "contents": "domain.intercept(${1:callback});$0"
         },
         {
             "trigger": "domain.dispose()\tdomain",

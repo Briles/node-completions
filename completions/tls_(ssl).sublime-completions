@@ -6,12 +6,12 @@
             "contents": "tls.createServer(${1:options}, ${2:[, secureConnectionListener]});$0"
         },
         {
-            "trigger": "tls.connect(options, [secureConnectListener])\ttls_(ssl)",
-            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, secureConnectListener]});$0"
+            "trigger": "tls.connect(options, [callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "tls.connect(port, [host], [options], [secureConnectListener])\ttls_(ssl)",
-            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, secureConnectListener]});$0"
+            "trigger": "tls.connect(port, [host], [options], [callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "tls.createSecurePair([credentials], [isServer], [requestCert], [rejectUnauthorized])\ttls_(ssl)",
