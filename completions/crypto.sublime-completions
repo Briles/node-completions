@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "crypto.setEngine(engine, [flags])\tcrypto",
+            "contents": "crypto.setEngine(${1:engine}, ${2:[, flags]});$0"
+        },
+        {
             "trigger": "crypto.getCiphers()\tcrypto",
             "contents": "crypto.getCiphers();$0"
         },
@@ -58,12 +62,12 @@
             "contents": "crypto.getDiffieHellman(${1:group_name});$0"
         },
         {
-            "trigger": "crypto.pbkdf2(password, salt, iterations, keylen, callback)\tcrypto",
-            "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:callback});$0"
+            "trigger": "crypto.pbkdf2(password, salt, iterations, keylen, [digest], callback)\tcrypto",
+            "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:[, digest]}, ${6:callback});$0"
         },
         {
-            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen)\tcrypto",
-            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen});$0"
+            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen, [digest])\tcrypto",
+            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:[, digest]});$0"
         },
         {
             "trigger": "crypto.randomBytes(size, [callback])\tcrypto",
@@ -102,6 +106,10 @@
             "contents": "cipher.setAutoPadding(${1:auto_padding});$0"
         },
         {
+            "trigger": "cipher.getAuthTag()\tcrypto",
+            "contents": "cipher.getAuthTag();$0"
+        },
+        {
             "trigger": "decipher.update(data, [input_encoding], [output_encoding])\tcrypto",
             "contents": "decipher.update(${1:data}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
         },
@@ -112,6 +120,10 @@
         {
             "trigger": "decipher.setAutoPadding(auto_padding=true)\tcrypto",
             "contents": "decipher.setAutoPadding(${1:auto_padding});$0"
+        },
+        {
+            "trigger": "decipher.setAuthTag(buffer)\tcrypto",
+            "contents": "decipher.setAuthTag(${1:buffer});$0"
         },
         {
             "trigger": "sign.update(data)\tcrypto",
@@ -160,6 +172,18 @@
         {
             "trigger": "diffieHellman.setPrivateKey(private_key, [encoding])\tcrypto",
             "contents": "diffieHellman.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
+            "contents": "Certificate.verifySpkac(${1:spkac});$0"
+        },
+        {
+            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
+            "contents": "Certificate.exportChallenge(${1:spkac});$0"
+        },
+        {
+            "trigger": "Certificate.exportPublicKey(spkac)\tcrypto",
+            "contents": "Certificate.exportPublicKey(${1:spkac});$0"
         },
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
