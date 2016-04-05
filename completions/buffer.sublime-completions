@@ -42,8 +42,8 @@
             "contents": "buf.copy(${1:targetBuffer}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
         },
         {
-            "trigger": "buf.slice([start][, end])\tbuffer",
-            "contents": "buf.slice(${1:[, start]}, ${2:[, end]});$0"
+            "trigger": "buf.slice([start[, end]])\tbuffer",
+            "contents": "buf.slice(${1:start}, ${2:[, end]});$0"
         },
         {
             "trigger": "buf.indexOf(value[, byteOffset])\tbuffer",
