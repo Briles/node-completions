@@ -102,10 +102,6 @@
             "contents": "cipher.setAutoPadding(${1:auto_padding});$0"
         },
         {
-            "trigger": "cipher.getAuthTag()\tcrypto",
-            "contents": "cipher.getAuthTag();$0"
-        },
-        {
             "trigger": "decipher.update(data, [input_encoding], [output_encoding])\tcrypto",
             "contents": "decipher.update(${1:data}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
         },
@@ -116,10 +112,6 @@
         {
             "trigger": "decipher.setAutoPadding(auto_padding=true)\tcrypto",
             "contents": "decipher.setAutoPadding(${1:auto_padding});$0"
-        },
-        {
-            "trigger": "decipher.setAuthTag(buffer)\tcrypto",
-            "contents": "decipher.setAuthTag(${1:buffer});$0"
         },
         {
             "trigger": "sign.update(data)\tcrypto",
@@ -168,18 +160,6 @@
         {
             "trigger": "diffieHellman.setPrivateKey(private_key, [encoding])\tcrypto",
             "contents": "diffieHellman.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
-        },
-        {
-            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
-            "contents": "Certificate.verifySpkac(${1:spkac});$0"
-        },
-        {
-            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
-            "contents": "Certificate.exportChallenge(${1:spkac});$0"
-        },
-        {
-            "trigger": "Certificate.exportPublicKey(spkac)\tcrypto",
-            "contents": "Certificate.exportPublicKey(${1:spkac});$0"
         },
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",

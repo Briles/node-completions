@@ -10,8 +10,8 @@
             "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "child_process.execFile(file, args, options, callback)\tchild_process",
-            "contents": "child_process.execFile(${1:file}, ${2:args}, ${3:options}, ${4:callback});$0"
+            "trigger": "child_process.execFile(file, [args], [options], [callback])\tchild_process",
+            "contents": "child_process.execFile(${1:file}, ${2:[, args]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "child_process.fork(modulePath, [args], [options])\tchild_process",
