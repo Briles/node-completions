@@ -78,6 +78,10 @@
             "contents": "abort$0"
         },
         {
+            "trigger": "checkExpectation\thttp",
+            "contents": "checkExpectation$0"
+        },
+        {
             "trigger": "connect\thttp",
             "contents": "connect$0"
         },

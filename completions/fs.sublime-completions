@@ -267,7 +267,7 @@
         },
         {
             "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]}, ${5:callback});$0"
+            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]}, ${5:callback});$0"
         },
         {
             "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
@@ -279,11 +279,11 @@
         },
         {
             "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "watcher.close()\tfs",
@@ -298,12 +298,20 @@
             "contents": "error$0"
         },
         {
+            "trigger": "fs.readstream.path\tfs",
+            "contents": "fs.readstream.path$0"
+        },
+        {
             "trigger": "open\tfs",
             "contents": "open$0"
         },
         {
             "trigger": "fs.writestream.bytesWritten\tfs",
             "contents": "fs.writestream.bytesWritten$0"
+        },
+        {
+            "trigger": "fs.writestream.path\tfs",
+            "contents": "fs.writestream.path$0"
         }
     ]
 }
