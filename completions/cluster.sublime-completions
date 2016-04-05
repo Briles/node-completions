@@ -58,6 +58,10 @@
             "contents": "exit$0"
         },
         {
+            "trigger": "error\tcluster",
+            "contents": "error$0"
+        },
+        {
             "trigger": "cluster.settings\tcluster",
             "contents": "cluster.settings$0"
         },
