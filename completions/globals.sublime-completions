@@ -2,20 +2,20 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "console.log()\tglobals",
-            "contents": "console.log();$0"
+            "trigger": "console.log([data], [...])\tglobals",
+            "contents": "console.log(${1:[, data]}, ${2:[, ...]});$0"
         },
         {
-            "trigger": "console.info()\tglobals",
-            "contents": "console.info();$0"
+            "trigger": "console.info([data], [...])\tglobals",
+            "contents": "console.info(${1:[, data]}, ${2:[, ...]});$0"
         },
         {
-            "trigger": "console.warn()\tglobals",
-            "contents": "console.warn();$0"
+            "trigger": "console.error([data], [...])\tglobals",
+            "contents": "console.error(${1:[, data]}, ${2:[, ...]});$0"
         },
         {
-            "trigger": "console.error()\tglobals",
-            "contents": "console.error();$0"
+            "trigger": "console.warn([data], [...])\tglobals",
+            "contents": "console.warn(${1:[, data]}, ${2:[, ...]});$0"
         },
         {
             "trigger": "console.dir(obj)\tglobals",
@@ -30,12 +30,16 @@
             "contents": "console.timeEnd(${1:label});$0"
         },
         {
-            "trigger": "console.trace()\tglobals",
-            "contents": "console.trace();$0"
+            "trigger": "console.trace(label)\tglobals",
+            "contents": "console.trace(${1:label});$0"
         },
         {
-            "trigger": "console.assert()\tglobals",
-            "contents": "console.assert();$0"
+            "trigger": "console.assert(expression, [message])\tglobals",
+            "contents": "console.assert(${1:expression}, ${2:[, message]});$0"
+        },
+        {
+            "trigger": "process.abort()\tglobals",
+            "contents": "process.abort();$0"
         },
         {
             "trigger": "process.chdir(directory)\tglobals",
@@ -86,6 +90,10 @@
             "contents": "process.uptime();$0"
         },
         {
+            "trigger": "process.hrtime()\tglobals",
+            "contents": "process.hrtime();$0"
+        },
+        {
             "trigger": "process.stdout\tglobals",
             "contents": "process.stdout$0"
         },
@@ -116,6 +124,10 @@
         {
             "trigger": "process.versions\tglobals",
             "contents": "process.versions$0"
+        },
+        {
+            "trigger": "process.config\tglobals",
+            "contents": "process.config$0"
         },
         {
             "trigger": "process.installPrefix\tglobals",
