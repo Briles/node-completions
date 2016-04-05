@@ -18,6 +18,10 @@
             "contents": "rl.question(${1:query}, ${2:callback});$0"
         },
         {
+            "trigger": "rl.close()\treadline",
+            "contents": "rl.close();$0"
+        },
+        {
             "trigger": "rl.pause()\treadline",
             "contents": "rl.pause();$0"
         },
@@ -34,24 +38,8 @@
             "contents": "line$0"
         },
         {
-            "trigger": "pause\treadline",
-            "contents": "pause$0"
-        },
-        {
-            "trigger": "resume\treadline",
-            "contents": "resume$0"
-        },
-        {
-            "trigger": "SIGINT\treadline",
-            "contents": "SIGINT$0"
-        },
-        {
-            "trigger": "SIGTSTP\treadline",
-            "contents": "SIGTSTP$0"
-        },
-        {
-            "trigger": "SIGCONT\treadline",
-            "contents": "SIGCONT$0"
+            "trigger": "close\treadline",
+            "contents": "close$0"
         }
     ]
 }

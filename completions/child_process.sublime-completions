@@ -44,10 +44,6 @@
         {
             "trigger": "exit\tchild_process",
             "contents": "exit$0"
-        },
-        {
-            "trigger": "disconnect\tchild_process",
-            "contents": "disconnect$0"
         }
     ]
 }
