@@ -58,6 +58,10 @@
             "contents": "exit$0"
         },
         {
+            "trigger": "cluster.schedulingPolicy\tcluster",
+            "contents": "cluster.schedulingPolicy$0"
+        },
+        {
             "trigger": "cluster.settings\tcluster",
             "contents": "cluster.settings$0"
         },

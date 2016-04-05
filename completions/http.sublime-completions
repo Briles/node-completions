@@ -122,12 +122,28 @@
             "contents": "http.serverresponse.sendDate$0"
         },
         {
+            "trigger": "agent.destroy()\thttp",
+            "contents": "agent.destroy();$0"
+        },
+        {
+            "trigger": "agent.getName(options)\thttp",
+            "contents": "agent.getName(${1:options});$0"
+        },
+        {
             "trigger": "http.agent.maxSockets\thttp",
             "contents": "http.agent.maxSockets$0"
         },
         {
+            "trigger": "http.agent.maxFreeSockets\thttp",
+            "contents": "http.agent.maxFreeSockets$0"
+        },
+        {
             "trigger": "http.agent.sockets\thttp",
             "contents": "http.agent.sockets$0"
+        },
+        {
+            "trigger": "http.agent.freeSockets\thttp",
+            "contents": "http.agent.freeSockets$0"
         },
         {
             "trigger": "http.agent.requests\thttp",
