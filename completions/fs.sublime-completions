@@ -2,12 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "fs.rename(oldPath, newPath, [callback])\tfs",
-            "contents": "fs.rename(${1:oldPath}, ${2:newPath}, ${3:[, callback]});$0"
+            "trigger": "fs.rename(path1, path2, [callback])\tfs",
+            "contents": "fs.rename(${1:path1}, ${2:path2}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "fs.renameSync(oldPath, newPath)\tfs",
-            "contents": "fs.renameSync(${1:oldPath}, ${2:newPath});$0"
+            "trigger": "fs.renameSync(path1, path2)\tfs",
+            "contents": "fs.renameSync(${1:path1}, ${2:path2});$0"
         },
         {
             "trigger": "fs.truncate(fd, len, [callback])\tfs",
@@ -98,12 +98,12 @@
             "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
         },
         {
-            "trigger": "fs.symlink(destination, path, [type], [callback])\tfs",
-            "contents": "fs.symlink(${1:destination}, ${2:path}, ${3:[, type]}, ${4:[, callback]});$0"
+            "trigger": "fs.symlink(linkdata, path, [type], [callback])\tfs",
+            "contents": "fs.symlink(${1:linkdata}, ${2:path}, ${3:[, type]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "fs.symlinkSync(destination, path, [type])\tfs",
-            "contents": "fs.symlinkSync(${1:destination}, ${2:path}, ${3:[, type]});$0"
+            "trigger": "fs.symlinkSync(linkdata, path, [type])\tfs",
+            "contents": "fs.symlinkSync(${1:linkdata}, ${2:path}, ${3:[, type]});$0"
         },
         {
             "trigger": "fs.readlink(path, [callback])\tfs",
@@ -114,12 +114,12 @@
             "contents": "fs.readlinkSync(${1:path});$0"
         },
         {
-            "trigger": "fs.realpath(path, [cache], callback)\tfs",
-            "contents": "fs.realpath(${1:path}, ${2:[, cache]}, ${3:callback});$0"
+            "trigger": "fs.realpath(path, [callback])\tfs",
+            "contents": "fs.realpath(${1:path}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "fs.realpathSync(path, [cache])\tfs",
-            "contents": "fs.realpathSync(${1:path}, ${2:[, cache]});$0"
+            "trigger": "fs.realpathSync(path)\tfs",
+            "contents": "fs.realpathSync(${1:path});$0"
         },
         {
             "trigger": "fs.unlink(path, [callback])\tfs",
@@ -202,12 +202,20 @@
             "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
+            "trigger": "fs.writeSync(fd, str, position, [encoding])\tfs",
+            "contents": "fs.writeSync(${1:fd}, ${2:str}, ${3:position}, ${4:[, encoding]});$0"
+        },
+        {
             "trigger": "fs.read(fd, buffer, offset, length, position, [callback])\tfs",
             "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:[, callback]});$0"
         },
         {
             "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfs",
             "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+        },
+        {
+            "trigger": "fs.readSync(fd, length, position, encoding)\tfs",
+            "contents": "fs.readSync(${1:fd}, ${2:length}, ${3:position}, ${4:encoding});$0"
         },
         {
             "trigger": "fs.readFile(filename, [encoding], [callback])\tfs",
@@ -226,14 +234,6 @@
             "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[, encoding]});$0"
         },
         {
-            "trigger": "fs.appendFile(filename, data, encoding='utf8', [callback])\tfs",
-            "contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:encoding}, ${4:[, callback]});$0"
-        },
-        {
-            "trigger": "fs.appendFileSync(filename, data, encoding='utf8')\tfs",
-            "contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:encoding});$0"
-        },
-        {
             "trigger": "fs.watchFile(filename, [options], listener)\tfs",
             "contents": "fs.watchFile(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
@@ -242,16 +242,8 @@
             "contents": "fs.unwatchFile(${1:filename});$0"
         },
         {
-            "trigger": "fs.watch(filename, [options], [listener])\tfs",
-            "contents": "fs.watch(${1:filename}, ${2:[, options]}, ${3:[, listener]});$0"
-        },
-        {
-            "trigger": "fs.exists(path, [callback])\tfs",
-            "contents": "fs.exists(${1:path}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "fs.existsSync(path)\tfs",
-            "contents": "fs.existsSync(${1:path});$0"
+            "trigger": "fs.watch(filename, [options], listener)\tfs",
+            "contents": "fs.watch(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
         {
             "trigger": "fs.createReadStream(path, [options])\tfs",

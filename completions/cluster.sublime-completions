@@ -2,64 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "cluster.setupMaster([settings])\tcluster",
-            "contents": "cluster.setupMaster(${1:[, settings]});$0"
-        },
-        {
-            "trigger": "cluster.fork([env])\tcluster",
-            "contents": "cluster.fork(${1:[, env]});$0"
-        },
-        {
-            "trigger": "cluster.disconnect([callback])\tcluster",
-            "contents": "cluster.disconnect(${1:[, callback]});$0"
-        },
-        {
-            "trigger": "worker.send(message, [sendHandle])\tcluster",
-            "contents": "worker.send(${1:message}, ${2:[, sendHandle]});$0"
-        },
-        {
-            "trigger": "worker.destroy()\tcluster",
-            "contents": "worker.destroy();$0"
-        },
-        {
-            "trigger": "worker.disconnect()\tcluster",
-            "contents": "worker.disconnect();$0"
-        },
-        {
-            "trigger": "worker.id\tcluster",
-            "contents": "worker.id$0"
-        },
-        {
-            "trigger": "worker.process\tcluster",
-            "contents": "worker.process$0"
-        },
-        {
-            "trigger": "worker.suicide\tcluster",
-            "contents": "worker.suicide$0"
-        },
-        {
-            "trigger": "message\tcluster",
-            "contents": "message$0"
-        },
-        {
-            "trigger": "online\tcluster",
-            "contents": "online$0"
-        },
-        {
-            "trigger": "listening\tcluster",
-            "contents": "listening$0"
-        },
-        {
-            "trigger": "disconnect\tcluster",
-            "contents": "disconnect$0"
-        },
-        {
-            "trigger": "exit\tcluster",
-            "contents": "exit$0"
-        },
-        {
-            "trigger": "cluster.settings\tcluster",
-            "contents": "cluster.settings$0"
+            "trigger": "cluster.fork()\tcluster",
+            "contents": "cluster.fork();$0"
         },
         {
             "trigger": "cluster.isMaster\tcluster",
@@ -70,16 +14,8 @@
             "contents": "cluster.isWorker$0"
         },
         {
-            "trigger": "cluster.workers\tcluster",
-            "contents": "cluster.workers$0"
-        },
-        {
-            "trigger": "fork\tcluster",
-            "contents": "fork$0"
-        },
-        {
-            "trigger": "setup\tcluster",
-            "contents": "setup$0"
+            "trigger": "death\tcluster",
+            "contents": "death$0"
         }
     ]
 }

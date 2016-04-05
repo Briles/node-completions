@@ -1,9 +1,0 @@
-{
-    "scope": "source.js",
-    "completions": [
-        {
-            "trigger": "StringDecoder.write(buffer)\tstringdecoder",
-            "contents": "StringDecoder.write(${1:buffer});$0"
-        }
-    ]
-}

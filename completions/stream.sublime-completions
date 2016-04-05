@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "stream.setEncoding([encoding])\tstream",
-            "contents": "stream.setEncoding(${1:[, encoding]});$0"
+            "trigger": "stream.setEncoding(encoding)\tstream",
+            "contents": "stream.setEncoding(${1:encoding});$0"
         },
         {
             "trigger": "stream.pause()\tstream",
