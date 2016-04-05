@@ -6,39 +6,39 @@
             "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:message}, ${4:operator});$0"
         },
         {
-            "trigger": "assert(value[, message]), assert.ok(value[, message])\tassert",
-            "contents": "assert(${1:value}, ${2:message])}, ${3:assert.ok(value}, ${4:[, message]});$0"
+            "trigger": "assert(value, [message]), assert.ok(value, [message])\tassert",
+            "contents": "assert(${1:value}, ${2:[, message)]}, ${3:assert.ok(value}, ${4:[, message]});$0"
         },
         {
-            "trigger": "assert.equal(actual, expected[, message])\tassert",
+            "trigger": "assert.equal(actual, expected, [message])\tassert",
             "contents": "assert.equal(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.notEqual(actual, expected[, message])\tassert",
+            "trigger": "assert.notEqual(actual, expected, [message])\tassert",
             "contents": "assert.notEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.deepEqual(actual, expected[, message])\tassert",
+            "trigger": "assert.deepEqual(actual, expected, [message])\tassert",
             "contents": "assert.deepEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.notDeepEqual(actual, expected[, message])\tassert",
+            "trigger": "assert.notDeepEqual(actual, expected, [message])\tassert",
             "contents": "assert.notDeepEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.strictEqual(actual, expected[, message])\tassert",
+            "trigger": "assert.strictEqual(actual, expected, [message])\tassert",
             "contents": "assert.strictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.notStrictEqual(actual, expected[, message])\tassert",
+            "trigger": "assert.notStrictEqual(actual, expected, [message])\tassert",
             "contents": "assert.notStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.throws(block[, error][, message])\tassert",
+            "trigger": "assert.throws(block, [error], [message])\tassert",
             "contents": "assert.throws(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.doesNotThrow(block[, message])\tassert",
+            "trigger": "assert.doesNotThrow(block, [message])\tassert",
             "contents": "assert.doesNotThrow(${1:block}, ${2:[, message]});$0"
         },
         {
