@@ -6,6 +6,10 @@
             "contents": "getHeapStatistics();$0"
         },
         {
+            "trigger": "getHeapSpaceStatistics()\tv8",
+            "contents": "getHeapSpaceStatistics();$0"
+        },
+        {
             "trigger": "setFlagsFromString(string)\tv8",
             "contents": "setFlagsFromString(${1:string});$0"
         }

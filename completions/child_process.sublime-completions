@@ -14,8 +14,8 @@
             "contents": "child.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "childprocess.connected\tchild_process",
-            "contents": "childprocess.connected$0"
+            "trigger": "child.connected\tchild_process",
+            "contents": "child.connected$0"
         },
         {
             "trigger": "grep.pid\tchild_process",
@@ -58,8 +58,8 @@
             "contents": "message$0"
         },
         {
-            "trigger": "child_process.exec(command[, options], callback)\tchild_process",
-            "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "child_process.exec(command[, options][, callback])\tchild_process",
+            "contents": "child_process.exec(${1:command}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "child_process.execFile(file[, args][, options][, callback])\tchild_process",
