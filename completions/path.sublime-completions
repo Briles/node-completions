@@ -14,6 +14,10 @@
             "contents": "path.resolve(${1:[, from ...]}, ${2:to});$0"
         },
         {
+            "trigger": "path.isAbsolute(path)\tpath",
+            "contents": "path.isAbsolute(${1:path});$0"
+        },
+        {
             "trigger": "path.relative(from, to)\tpath",
             "contents": "path.relative(${1:from}, ${2:to});$0"
         },
