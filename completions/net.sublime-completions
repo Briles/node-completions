@@ -50,6 +50,10 @@
             "contents": "server.listen(${1:path}, ${2:[, listeningListener]});$0"
         },
         {
+            "trigger": "server.listen(handle, [listeningListener])\tnet",
+            "contents": "server.listen(${1:handle}, ${2:[, listeningListener]});$0"
+        },
+        {
             "trigger": "server.close([cb])\tnet",
             "contents": "server.close(${1:[, cb]});$0"
         },

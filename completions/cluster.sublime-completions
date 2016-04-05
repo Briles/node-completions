@@ -26,8 +26,8 @@
             "contents": "worker.disconnect();$0"
         },
         {
-            "trigger": "worker.uniqueID\tcluster",
-            "contents": "worker.uniqueID$0"
+            "trigger": "worker.id\tcluster",
+            "contents": "worker.id$0"
         },
         {
             "trigger": "worker.process\tcluster",

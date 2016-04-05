@@ -26,6 +26,10 @@
             "contents": "server.listen(${1:path}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "server.listen(handle, [listeningListener])\thttp",
+            "contents": "server.listen(${1:handle}, ${2:[, listeningListener]});$0"
+        },
+        {
             "trigger": "server.close([cb])\thttp",
             "contents": "server.close(${1:[, cb]});$0"
         },
