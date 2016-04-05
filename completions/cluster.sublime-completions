@@ -70,6 +70,10 @@
             "contents": "cluster.isWorker$0"
         },
         {
+            "trigger": "cluster.worker\tcluster",
+            "contents": "cluster.worker$0"
+        },
+        {
             "trigger": "cluster.workers\tcluster",
             "contents": "cluster.workers$0"
         },

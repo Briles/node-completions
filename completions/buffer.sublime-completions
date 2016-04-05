@@ -134,10 +134,6 @@
             "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]});$0"
         },
         {
-            "trigger": "Buffer.isEncoding(encoding)\tbuffer",
-            "contents": "Buffer.isEncoding(${1:encoding});$0"
-        },
-        {
             "trigger": "Buffer.isBuffer(obj)\tbuffer",
             "contents": "Buffer.isBuffer(${1:obj});$0"
         },
