@@ -274,6 +274,10 @@
             "contents": "open$0"
         },
         {
+            "trigger": "fs.writestream.bytesWritten\tfs",
+            "contents": "fs.writestream.bytesWritten$0"
+        },
+        {
             "trigger": "watcher.close()\tfs",
             "contents": "watcher.close();$0"
         },
@@ -284,10 +288,6 @@
         {
             "trigger": "error\tfs",
             "contents": "error$0"
-        },
-        {
-            "trigger": "fs.WriteStream\tfs",
-            "contents": "fs.WriteStream$0"
         }
     ]
 }
