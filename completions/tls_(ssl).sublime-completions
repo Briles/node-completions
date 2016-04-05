@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
-            "contents": "new tls.TLSSocket(${1:socket}, ${2:[, options]});$0"
-        },
-        {
             "trigger": "tls.connect(options[, callback])\ttls_(ssl)",
             "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
@@ -18,8 +14,8 @@
             "contents": "tls.createSecureContext(${1:details});$0"
         },
         {
-            "trigger": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized])\ttls_(ssl)",
-            "contents": "tls.createSecurePair(${1:[, context]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]});$0"
+            "trigger": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])\ttls_(ssl)",
+            "contents": "tls.createSecurePair(${1:[, context]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]}, ${5:[, options]});$0"
         },
         {
             "trigger": "tls.createServer(options[, secureConnectionListener])\ttls_(ssl)",
@@ -88,6 +84,82 @@
         {
             "trigger": "secureConnection\ttls_(ssl)",
             "contents": "secureConnection$0"
+        },
+        {
+            "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
+            "contents": "new tls.TLSSocket(${1:socket}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "tlsSocket.address()\ttls_(ssl)",
+            "contents": "tlsSocket.address();$0"
+        },
+        {
+            "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
+            "contents": "tlsSocket.getCipher();$0"
+        },
+        {
+            "trigger": "tlsSocket.getEphemeralKeyInfo()\ttls_(ssl)",
+            "contents": "tlsSocket.getEphemeralKeyInfo();$0"
+        },
+        {
+            "trigger": "tlsSocket.getPeerCertificate([ detailed ])\ttls_(ssl)",
+            "contents": "tlsSocket.getPeerCertificate(${1:[, detailed]});$0"
+        },
+        {
+            "trigger": "tlsSocket.getSession()\ttls_(ssl)",
+            "contents": "tlsSocket.getSession();$0"
+        },
+        {
+            "trigger": "tlsSocket.getTLSTicket()\ttls_(ssl)",
+            "contents": "tlsSocket.getTLSTicket();$0"
+        },
+        {
+            "trigger": "tlsSocket.renegotiate(options, callback)\ttls_(ssl)",
+            "contents": "tlsSocket.renegotiate(${1:options}, ${2:callback});$0"
+        },
+        {
+            "trigger": "tlsSocket.setMaxSendFragment(size)\ttls_(ssl)",
+            "contents": "tlsSocket.setMaxSendFragment(${1:size});$0"
+        },
+        {
+            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
+            "contents": "tls.tlssocket.authorized$0"
+        },
+        {
+            "trigger": "tls.tlssocket.authorizationError\ttls_(ssl)",
+            "contents": "tls.tlssocket.authorizationError$0"
+        },
+        {
+            "trigger": "tls.tlssocket.encrypted\ttls_(ssl)",
+            "contents": "tls.tlssocket.encrypted$0"
+        },
+        {
+            "trigger": "tls.tlssocket.localAddress\ttls_(ssl)",
+            "contents": "tls.tlssocket.localAddress$0"
+        },
+        {
+            "trigger": "tls.tlssocket.localPort\ttls_(ssl)",
+            "contents": "tls.tlssocket.localPort$0"
+        },
+        {
+            "trigger": "tls.tlssocket.remoteAddress\ttls_(ssl)",
+            "contents": "tls.tlssocket.remoteAddress$0"
+        },
+        {
+            "trigger": "tls.tlssocket.remoteFamily\ttls_(ssl)",
+            "contents": "tls.tlssocket.remoteFamily$0"
+        },
+        {
+            "trigger": "tls.tlssocket.remotePort\ttls_(ssl)",
+            "contents": "tls.tlssocket.remotePort$0"
+        },
+        {
+            "trigger": "OCSPResponse\ttls_(ssl)",
+            "contents": "OCSPResponse$0"
+        },
+        {
+            "trigger": "secureConnect\ttls_(ssl)",
+            "contents": "secureConnect$0"
         }
     ]
 }

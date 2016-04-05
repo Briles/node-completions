@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "dgram.createSocket(options[, callback])\tdgram",
-            "contents": "dgram.createSocket(${1:options}, ${2:[, callback]});$0"
-        },
-        {
             "trigger": "dgram.createSocket(type[, callback])\tdgram",
             "contents": "dgram.createSocket(${1:type}, ${2:[, callback]});$0"
         },
@@ -16,10 +12,6 @@
         {
             "trigger": "socket.address()\tdgram",
             "contents": "socket.address();$0"
-        },
-        {
-            "trigger": "socket.bind([port][, address][, callback])\tdgram",
-            "contents": "socket.bind(${1:[, port]}, ${2:[, address]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "socket.bind(options[, callback])\tdgram",
@@ -76,6 +68,10 @@
         {
             "trigger": "message\tdgram",
             "contents": "message$0"
+        },
+        {
+            "trigger": "dgram.createSocket(options[, callback])\tdgram",
+            "contents": "dgram.createSocket(${1:options}, ${2:[, callback]});$0"
         }
     ]
 }

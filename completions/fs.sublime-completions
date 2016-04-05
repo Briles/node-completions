@@ -218,12 +218,12 @@
             "contents": "fs.statSync(${1:path});$0"
         },
         {
-            "trigger": "fs.symlink(destination, path[, type], callback)\tfs",
-            "contents": "fs.symlink(${1:destination}, ${2:path}, ${3:[, type]}, ${4:callback});$0"
+            "trigger": "fs.symlink(target, path[, type], callback)\tfs",
+            "contents": "fs.symlink(${1:target}, ${2:path}, ${3:[, type]}, ${4:callback});$0"
         },
         {
-            "trigger": "fs.symlinkSync(destination, path[, type])\tfs",
-            "contents": "fs.symlinkSync(${1:destination}, ${2:path}, ${3:[, type]});$0"
+            "trigger": "fs.symlinkSync(target, path[, type])\tfs",
+            "contents": "fs.symlinkSync(${1:target}, ${2:path}, ${3:[, type]});$0"
         },
         {
             "trigger": "fs.truncate(path, len, callback)\tfs",
@@ -267,7 +267,7 @@
         },
         {
             "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]}, ${5:callback});$0"
+            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]}, ${5:callback});$0"
         },
         {
             "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
@@ -279,11 +279,11 @@
         },
         {
             "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "watcher.close()\tfs",

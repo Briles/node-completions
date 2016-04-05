@@ -56,10 +56,6 @@
         {
             "trigger": "dns.setServers(servers)\tdns",
             "contents": "dns.setServers(${1:servers});$0"
-        },
-        {
-            "trigger": "dns.lookup\tdns",
-            "contents": "dns.lookup$0"
         }
     ]
 }

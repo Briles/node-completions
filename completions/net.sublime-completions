@@ -54,16 +54,16 @@
             "contents": "server.getConnections(${1:callback});$0"
         },
         {
-            "trigger": "server.listen(handle[, callback])\tnet",
-            "contents": "server.listen(${1:handle}, ${2:[, callback]});$0"
+            "trigger": "server.listen(handle[, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:handle}, ${2:[, backlog]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "server.listen(options[, callback])\tnet",
             "contents": "server.listen(${1:options}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "server.listen(path[, callback])\tnet",
-            "contents": "server.listen(${1:path}, ${2:[, callback]});$0"
+            "trigger": "server.listen(path[, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:path}, ${2:[, backlog]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "server.listen(port[, hostname][, backlog][, callback])\tnet",
