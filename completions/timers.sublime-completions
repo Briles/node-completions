@@ -2,7 +2,7 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "setTimeout(callback, delay[, arg][, ...])\ttimers",
+            "trigger": "setTimeout(callback, delay, [arg], [...])\ttimers",
             "contents": "setTimeout(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
@@ -10,7 +10,7 @@
             "contents": "clearTimeout(${1:timeoutObject});$0"
         },
         {
-            "trigger": "setInterval(callback, delay[, arg][, ...])\ttimers",
+            "trigger": "setInterval(callback, delay, [arg], [...])\ttimers",
             "contents": "setInterval(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
@@ -26,7 +26,7 @@
             "contents": "ref();$0"
         },
         {
-            "trigger": "setImmediate(callback[, arg][, ...])\ttimers",
+            "trigger": "setImmediate(callback, [arg], [...])\ttimers",
             "contents": "setImmediate(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
