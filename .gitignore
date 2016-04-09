@@ -1,3 +1,4 @@
 *.json
 *.js
+*.ps1
 node_modules/
