@@ -154,14 +154,6 @@
             "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
         },
         {
-            "trigger": "fs.mkdtemp(prefix, callback)\tfs",
-            "contents": "fs.mkdtemp(${1:prefix}, ${2:callback});$0"
-        },
-        {
-            "trigger": "fs.mkdtempSync(template)\tfs",
-            "contents": "fs.mkdtempSync(${1:template});$0"
-        },
-        {
             "trigger": "fs.open(path, flags[, mode], callback)\tfs",
             "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:callback});$0"
         },
