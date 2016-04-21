@@ -99,7 +99,7 @@
         },
         {
             "trigger": "ecdh.generateKeys([encoding[, format]])\tcrypto",
-            "contents": "ecdh.generateKeys(${1:encoding}, ${2:[, format]});$0"
+            "contents": "ecdh.generateKeys(${1:[, encoding]}, ${2:[, format]});$0"
         },
         {
             "trigger": "ecdh.getPrivateKey([encoding])\tcrypto",
@@ -107,7 +107,7 @@
         },
         {
             "trigger": "ecdh.getPublicKey([encoding[, format]])\tcrypto",
-            "contents": "ecdh.getPublicKey(${1:encoding}, ${2:[, format]});$0"
+            "contents": "ecdh.getPublicKey(${1:[, encoding]}, ${2:[, format]});$0"
         },
         {
             "trigger": "ecdh.setPrivateKey(private_key[, encoding])\tcrypto",

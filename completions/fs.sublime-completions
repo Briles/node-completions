@@ -154,6 +154,14 @@
             "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
         },
         {
+            "trigger": "fs.mkdtemp(prefix, callback)\tfs",
+            "contents": "fs.mkdtemp(${1:prefix}, ${2:callback});$0"
+        },
+        {
+            "trigger": "fs.mkdtempSync(template)\tfs",
+            "contents": "fs.mkdtempSync(${1:template});$0"
+        },
+        {
             "trigger": "fs.open(path, flags[, mode], callback)\tfs",
             "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:callback});$0"
         },
@@ -275,7 +283,7 @@
         },
         {
             "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]}, ${5:callback});$0"
+            "contents": "fs.write(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]}, ${5:callback});$0"
         },
         {
             "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
@@ -287,11 +295,11 @@
         },
         {
             "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:position}, ${4:[, encoding]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "watcher.close()\tfs",
