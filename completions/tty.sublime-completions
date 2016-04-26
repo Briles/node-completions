@@ -6,10 +6,6 @@
             "contents": "tty.isatty(${1:fd});$0"
         },
         {
-            "trigger": "tty.setRawMode(mode)\ttty",
-            "contents": "tty.setRawMode(${1:mode});$0"
-        },
-        {
             "trigger": "rs.setRawMode(mode)\ttty",
             "contents": "rs.setRawMode(${1:mode});$0"
         },

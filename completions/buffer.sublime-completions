@@ -34,6 +34,10 @@
             "contents": "buf.keys();$0"
         },
         {
+            "trigger": "buf.lastIndexOf(value[, byteOffset][, encoding])\tbuffer",
+            "contents": "buf.lastIndexOf(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
+        },
+        {
             "trigger": "buf.readDoubleBE(offset[, noAssert])\tbuffer",
             "contents": "buf.readDoubleBE(${1:offset}, ${2:[, noAssert]});$0"
         },
@@ -212,6 +216,10 @@
         {
             "trigger": "Buffer.allocUnsafe(size)\tbuffer",
             "contents": "Buffer.allocUnsafe(${1:size});$0"
+        },
+        {
+            "trigger": "Buffer.allocUnsafeSlow(size)\tbuffer",
+            "contents": "Buffer.allocUnsafeSlow(${1:size});$0"
         },
         {
             "trigger": "Buffer.byteLength(string[, encoding])\tbuffer",

@@ -214,12 +214,12 @@
             "contents": "crypto.getHashes();$0"
         },
         {
-            "trigger": "crypto.pbkdf2(password, salt, iterations, keylen[, digest], callback)\tcrypto",
-            "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:[, digest]}, ${6:callback});$0"
+            "trigger": "crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)\tcrypto",
+            "contents": "crypto.pbkdf2(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest}, ${6:callback});$0"
         },
         {
-            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen[, digest])\tcrypto",
-            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:[, digest]});$0"
+            "trigger": "crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)\tcrypto",
+            "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest});$0"
         },
         {
             "trigger": "crypto.privateDecrypt(private_key, buffer)\tcrypto",
@@ -248,6 +248,10 @@
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
             "contents": "crypto.DEFAULT_ENCODING$0"
+        },
+        {
+            "trigger": "`crypto`_module_methods_and_properties.fips\tcrypto",
+            "contents": "`crypto`_module_methods_and_properties.fips$0"
         }
     ]
 }

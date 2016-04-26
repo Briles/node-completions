@@ -66,8 +66,8 @@
             "contents": "tls.server.maxConnections$0"
         },
         {
-            "trigger": "clientError\ttls_(ssl)",
-            "contents": "clientError$0"
+            "trigger": "tlsClientError\ttls_(ssl)",
+            "contents": "tlsClientError$0"
         },
         {
             "trigger": "newSession\ttls_(ssl)",
