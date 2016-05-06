@@ -1,0 +1,13 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "getHeapStatistics()\tv8",
+            "contents": "getHeapStatistics();$0"
+        },
+        {
+            "trigger": "setFlagsFromString(string)\tv8",
+            "contents": "setFlagsFromString(${1:string});$0"
+        }
+    ]
+}
