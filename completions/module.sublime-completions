@@ -2,20 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "module.children\tmodule",
-            "contents": "module.children$0"
-        },
-        {
             "trigger": "module.exports\tmodule",
             "contents": "module.exports$0"
         },
         {
-            "trigger": "module.filename\tmodule",
-            "contents": "module.filename$0"
-        },
-        {
             "trigger": "module.id\tmodule",
             "contents": "module.id$0"
+        },
+        {
+            "trigger": "module.filename\tmodule",
+            "contents": "module.filename$0"
         },
         {
             "trigger": "module.loaded\tmodule",
@@ -24,6 +20,10 @@
         {
             "trigger": "module.parent\tmodule",
             "contents": "module.parent$0"
+        },
+        {
+            "trigger": "module.children\tmodule",
+            "contents": "module.children$0"
         },
         {
             "trigger": "module.require(id)\tmodule",
