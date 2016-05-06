@@ -182,6 +182,10 @@
             "contents": "net.socket.bytesWritten$0"
         },
         {
+            "trigger": "net.socket.connecting\tnet",
+            "contents": "net.socket.connecting$0"
+        },
+        {
             "trigger": "net.socket.localAddress\tnet",
             "contents": "net.socket.localAddress$0"
         },

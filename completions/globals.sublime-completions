@@ -10,6 +10,10 @@
             "contents": "process.chdir(${1:directory});$0"
         },
         {
+            "trigger": "process.cpuUsage([previousValue])\tglobals",
+            "contents": "process.cpuUsage(${1:[, previousValue]});$0"
+        },
+        {
             "trigger": "process.cwd()\tglobals",
             "contents": "process.cwd();$0"
         },

@@ -322,6 +322,10 @@
             "contents": "open$0"
         },
         {
+            "trigger": "close\tfs",
+            "contents": "close$0"
+        },
+        {
             "trigger": "fs.writestream.bytesWritten\tfs",
             "contents": "fs.writestream.bytesWritten$0"
         },
