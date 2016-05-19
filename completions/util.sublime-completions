@@ -98,12 +98,12 @@
             "contents": "util.print(${1:[, ...]});$0"
         },
         {
-            "trigger": "util.pump(readableStream, writableStream[, callback])\tutil",
-            "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[, callback]});$0"
-        },
-        {
             "trigger": "util.puts([...])\tutil",
             "contents": "util.puts(${1:[, ...]});$0"
+        },
+        {
+            "trigger": "util._extend(obj)\tutil",
+            "contents": "util._extend(${1:obj});$0"
         }
     ]
 }
