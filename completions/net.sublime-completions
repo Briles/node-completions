@@ -82,10 +82,6 @@
             "contents": "net.server.connections$0"
         },
         {
-            "trigger": "net.server.listening\tnet",
-            "contents": "net.server.listening$0"
-        },
-        {
             "trigger": "net.server.maxConnections\tnet",
             "contents": "net.server.maxConnections$0"
         },
@@ -180,10 +176,6 @@
         {
             "trigger": "net.socket.bytesWritten\tnet",
             "contents": "net.socket.bytesWritten$0"
-        },
-        {
-            "trigger": "net.socket.connecting\tnet",
-            "contents": "net.socket.connecting$0"
         },
         {
             "trigger": "net.socket.localAddress\tnet",
