@@ -2,16 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "path.basename(p[, ext])\tpath",
-            "contents": "path.basename(${1:p}, ${2:[, ext]});$0"
+            "trigger": "path.basename(path[, ext])\tpath",
+            "contents": "path.basename(${1:path}, ${2:[, ext]});$0"
         },
         {
-            "trigger": "path.dirname(p)\tpath",
-            "contents": "path.dirname(${1:p});$0"
+            "trigger": "path.dirname(path)\tpath",
+            "contents": "path.dirname(${1:path});$0"
         },
         {
-            "trigger": "path.extname(p)\tpath",
-            "contents": "path.extname(${1:p});$0"
+            "trigger": "path.extname(path)\tpath",
+            "contents": "path.extname(${1:path});$0"
         },
         {
             "trigger": "path.format(pathObject)\tpath",
@@ -26,12 +26,12 @@
             "contents": "path.join(${1:[, path1]}, ${2:[, path2]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "path.normalize(p)\tpath",
-            "contents": "path.normalize(${1:p});$0"
+            "trigger": "path.normalize(path)\tpath",
+            "contents": "path.normalize(${1:path});$0"
         },
         {
-            "trigger": "path.parse(pathString)\tpath",
-            "contents": "path.parse(${1:pathString});$0"
+            "trigger": "path.parse(path)\tpath",
+            "contents": "path.parse(${1:path});$0"
         },
         {
             "trigger": "path.relative(from, to)\tpath",

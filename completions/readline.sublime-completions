@@ -18,6 +18,10 @@
             "contents": "readline.cursorTo(${1:stream}, ${2:x}, ${3:y});$0"
         },
         {
+            "trigger": "readline.emitKeypressEvents(stream[, interface])\treadline",
+            "contents": "readline.emitKeypressEvents(${1:stream}, ${2:[, interface]});$0"
+        },
+        {
             "trigger": "readline.moveCursor(stream, dx, dy)\treadline",
             "contents": "readline.moveCursor(${1:stream}, ${2:dx}, ${3:dy});$0"
         },
