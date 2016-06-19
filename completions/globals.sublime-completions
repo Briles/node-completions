@@ -67,7 +67,7 @@
         },
         {
             "trigger": "process.nextTick(callback[, arg][, ...])\tglobals",
-            "contents": "process.nextTick(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
+            "contents": "process.nextTick(${1:callback}, ${2:[, [,]}, ${3:[, ...]});$0"
         },
         {
             "trigger": "process.send(message[, sendHandle[, options]][, callback])\tglobals",

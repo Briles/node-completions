@@ -218,6 +218,10 @@
             "contents": "finish$0"
         },
         {
+            "trigger": "message.destroy([error])\thttp",
+            "contents": "message.destroy(${1:[, error]});$0"
+        },
+        {
             "trigger": "message.setTimeout(msecs, callback)\thttp",
             "contents": "message.setTimeout(${1:msecs}, ${2:callback});$0"
         },

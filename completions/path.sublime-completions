@@ -22,8 +22,8 @@
             "contents": "path.isAbsolute(${1:path});$0"
         },
         {
-            "trigger": "path.join([path1][, path2][, ...])\tpath",
-            "contents": "path.join(${1:[, path1]}, ${2:[, path2]}, ${3:[, ...]});$0"
+            "trigger": "path.join([path[, ...]])\tpath",
+            "contents": "path.join(${1:[, [path[,]}, ${2:[, ...]});$0"
         },
         {
             "trigger": "path.normalize(path)\tpath",
@@ -38,8 +38,8 @@
             "contents": "path.relative(${1:from}, ${2:to});$0"
         },
         {
-            "trigger": "path.resolve([from ...], to)\tpath",
-            "contents": "path.resolve(${1:[, from ...]}, ${2:to});$0"
+            "trigger": "path.resolve([path[, ...]])\tpath",
+            "contents": "path.resolve(${1:[, [path[,]}, ${2:[, ...]});$0"
         },
         {
             "trigger": "path.delimiter\tpath",

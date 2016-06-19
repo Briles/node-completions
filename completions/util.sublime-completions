@@ -22,10 +22,6 @@
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
         },
         {
-            "trigger": "util.isSymbol(object)\tutil",
-            "contents": "util.isSymbol(${1:object});$0"
-        },
-        {
             "trigger": "util.debug(string)\tutil",
             "contents": "util.debug(${1:string});$0"
         },
@@ -84,6 +80,30 @@
         {
             "trigger": "util.isString(object)\tutil",
             "contents": "util.isString(${1:object});$0"
+        },
+        {
+            "trigger": "util.isSymbol(object)\tutil",
+            "contents": "util.isSymbol(${1:object});$0"
+        },
+        {
+            "trigger": "util.isUndefined(object)\tutil",
+            "contents": "util.isUndefined(${1:object});$0"
+        },
+        {
+            "trigger": "util.log(string)\tutil",
+            "contents": "util.log(${1:string});$0"
+        },
+        {
+            "trigger": "util.print([...])\tutil",
+            "contents": "util.print(${1:[, ...]});$0"
+        },
+        {
+            "trigger": "util.puts([...])\tutil",
+            "contents": "util.puts(${1:[, ...]});$0"
+        },
+        {
+            "trigger": "util._extend(obj)\tutil",
+            "contents": "util._extend(${1:obj});$0"
         }
     ]
 }
