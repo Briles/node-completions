@@ -2,64 +2,56 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "os.arch()\tos",
-            "contents": "os.arch();$0"
-        },
-        {
-            "trigger": "os.cpus()\tos",
-            "contents": "os.cpus();$0"
+            "trigger": "os.tmpdir()\tos",
+            "contents": "os.tmpdir();$0"
         },
         {
             "trigger": "os.endianness()\tos",
             "contents": "os.endianness();$0"
         },
         {
-            "trigger": "os.freemem()\tos",
-            "contents": "os.freemem();$0"
-        },
-        {
-            "trigger": "os.homedir()\tos",
-            "contents": "os.homedir();$0"
-        },
-        {
             "trigger": "os.hostname()\tos",
             "contents": "os.hostname();$0"
-        },
-        {
-            "trigger": "os.loadavg()\tos",
-            "contents": "os.loadavg();$0"
-        },
-        {
-            "trigger": "os.networkInterfaces()\tos",
-            "contents": "os.networkInterfaces();$0"
-        },
-        {
-            "trigger": "os.platform()\tos",
-            "contents": "os.platform();$0"
-        },
-        {
-            "trigger": "os.release()\tos",
-            "contents": "os.release();$0"
-        },
-        {
-            "trigger": "os.tmpdir()\tos",
-            "contents": "os.tmpdir();$0"
-        },
-        {
-            "trigger": "os.totalmem()\tos",
-            "contents": "os.totalmem();$0"
         },
         {
             "trigger": "os.type()\tos",
             "contents": "os.type();$0"
         },
         {
+            "trigger": "os.platform()\tos",
+            "contents": "os.platform();$0"
+        },
+        {
+            "trigger": "os.arch()\tos",
+            "contents": "os.arch();$0"
+        },
+        {
+            "trigger": "os.release()\tos",
+            "contents": "os.release();$0"
+        },
+        {
             "trigger": "os.uptime()\tos",
             "contents": "os.uptime();$0"
         },
         {
-            "trigger": "os.userInfo([options])\tos",
-            "contents": "os.userInfo(${1:[, options]});$0"
+            "trigger": "os.loadavg()\tos",
+            "contents": "os.loadavg();$0"
+        },
+        {
+            "trigger": "os.totalmem()\tos",
+            "contents": "os.totalmem();$0"
+        },
+        {
+            "trigger": "os.freemem()\tos",
+            "contents": "os.freemem();$0"
+        },
+        {
+            "trigger": "os.cpus()\tos",
+            "contents": "os.cpus();$0"
+        },
+        {
+            "trigger": "os.networkInterfaces()\tos",
+            "contents": "os.networkInterfaces();$0"
         },
         {
             "trigger": "os.EOL\tos",
