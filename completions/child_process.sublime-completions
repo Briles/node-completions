@@ -10,8 +10,8 @@
             "contents": "child.kill(${1:[, signal]});$0"
         },
         {
-            "trigger": "child.send(message[, sendHandle][, callback])\tchild_process",
-            "contents": "child.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
+            "trigger": "child.send(message[, sendHandle[, options]][, callback])\tchild_process",
+            "contents": "child.send(${1:message}, ${2:[, sendHandle]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "child.connected\tchild_process",
