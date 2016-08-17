@@ -154,6 +154,14 @@
             "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
         },
         {
+            "trigger": "fs.mkdtemp(prefix, callback)\tfs",
+            "contents": "fs.mkdtemp(${1:prefix}, ${2:callback});$0"
+        },
+        {
+            "trigger": "fs.mkdtempSync(prefix)\tfs",
+            "contents": "fs.mkdtempSync(${1:prefix});$0"
+        },
+        {
             "trigger": "fs.open(path, flags[, mode], callback)\tfs",
             "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:callback});$0"
         },
@@ -166,12 +174,12 @@
             "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback});$0"
         },
         {
-            "trigger": "fs.readdir(path, callback)\tfs",
-            "contents": "fs.readdir(${1:path}, ${2:callback});$0"
+            "trigger": "fs.readdir(path[, options], callback)\tfs",
+            "contents": "fs.readdir(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readdirSync(path)\tfs",
-            "contents": "fs.readdirSync(${1:path});$0"
+            "trigger": "fs.readdirSync(path[, options])\tfs",
+            "contents": "fs.readdirSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.readFile(file[, options], callback)\tfs",
@@ -182,24 +190,24 @@
             "contents": "fs.readFileSync(${1:file}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.readlink(path, callback)\tfs",
-            "contents": "fs.readlink(${1:path}, ${2:callback});$0"
+            "trigger": "fs.readlink(path[, options], callback)\tfs",
+            "contents": "fs.readlink(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readlinkSync(path)\tfs",
-            "contents": "fs.readlinkSync(${1:path});$0"
-        },
-        {
-            "trigger": "fs.realpath(path[, cache], callback)\tfs",
-            "contents": "fs.realpath(${1:path}, ${2:[, cache]}, ${3:callback});$0"
+            "trigger": "fs.readlinkSync(path[, options])\tfs",
+            "contents": "fs.readlinkSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.readSync(fd, buffer, offset, length, position)\tfs",
             "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
-            "trigger": "fs.realpathSync(path[, cache])\tfs",
-            "contents": "fs.realpathSync(${1:path}, ${2:[, cache]});$0"
+            "trigger": "fs.realpath(path[, options], callback)\tfs",
+            "contents": "fs.realpath(${1:path}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "fs.realpathSync(path[, options])\tfs",
+            "contents": "fs.realpathSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.rename(oldPath, newPath, callback)\tfs",
@@ -287,7 +295,7 @@
         },
         {
             "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]});$0"
+            "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:[, position]});$0"
         },
         {
             "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
@@ -306,8 +314,12 @@
             "contents": "error$0"
         },
         {
-            "trigger": "fs.readstream.path\tfs",
-            "contents": "fs.readstream.path$0"
+            "trigger": "fs.readstream.bytesRead\tfs",
+            "contents": "fs.readstream.bytesRead$0"
+        },
+        {
+            "trigger": "readStream.path\tfs",
+            "contents": "readStream.path$0"
         },
         {
             "trigger": "open\tfs",
@@ -322,8 +334,12 @@
             "contents": "fs.writestream.bytesWritten$0"
         },
         {
-            "trigger": "fs.writestream.path\tfs",
-            "contents": "fs.writestream.path$0"
+            "trigger": "writeStream.path\tfs",
+            "contents": "writeStream.path$0"
+        },
+        {
+            "trigger": "fs.constants\tfs",
+            "contents": "fs.constants$0"
         }
     ]
 }
