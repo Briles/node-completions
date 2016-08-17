@@ -14,10 +14,6 @@
             "contents": "emitter.emit(${1:eventName}, ${2:[, arg1]}, ${3:[, arg2]}, ${4:[, ...]});$0"
         },
         {
-            "trigger": "emitter.eventNames()\tEvents",
-            "contents": "emitter.eventNames();$0"
-        },
-        {
             "trigger": "emitter.getMaxListeners()\tEvents",
             "contents": "emitter.getMaxListeners();$0"
         },
@@ -36,14 +32,6 @@
         {
             "trigger": "emitter.once(eventName, listener)\tEvents",
             "contents": "emitter.once(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.prependListener(eventName, listener)\tEvents",
-            "contents": "emitter.prependListener(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.prependOnceListener(eventName, listener)\tEvents",
-            "contents": "emitter.prependOnceListener(${1:eventName}, ${2:listener});$0"
         },
         {
             "trigger": "emitter.removeAllListeners([eventName])\tEvents",

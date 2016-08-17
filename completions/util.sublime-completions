@@ -2,12 +2,20 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "util.debug(string)\tutil",
+            "contents": "util.debug(${1:string});$0"
+        },
+        {
             "trigger": "util.debuglog(section)\tutil",
             "contents": "util.debuglog(${1:section});$0"
         },
         {
             "trigger": "util.deprecate(function, string)\tutil",
             "contents": "util.deprecate(${1:function}, ${2:string});$0"
+        },
+        {
+            "trigger": "util.error([...])\tutil",
+            "contents": "util.error(${1:[, ...]});$0"
         },
         {
             "trigger": "util.format(format[, ...])\tutil",
@@ -20,14 +28,6 @@
         {
             "trigger": "util.inspect(object[, options])\tutil",
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "util.debug(string)\tutil",
-            "contents": "util.debug(${1:string});$0"
-        },
-        {
-            "trigger": "util.error([...])\tutil",
-            "contents": "util.error(${1:[, string]});$0"
         },
         {
             "trigger": "util.isArray(object)\tutil",
@@ -82,10 +82,6 @@
             "contents": "util.isString(${1:object});$0"
         },
         {
-            "trigger": "util.isSymbol(object)\tutil",
-            "contents": "util.isSymbol(${1:object});$0"
-        },
-        {
             "trigger": "util.isUndefined(object)\tutil",
             "contents": "util.isUndefined(${1:object});$0"
         },
@@ -98,12 +94,12 @@
             "contents": "util.print(${1:[, ...]});$0"
         },
         {
-            "trigger": "util.puts([...])\tutil",
-            "contents": "util.puts(${1:[, ...]});$0"
+            "trigger": "util.pump(readableStream, writableStream[, callback])\tutil",
+            "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "util._extend(obj)\tutil",
-            "contents": "util._extend(${1:obj});$0"
+            "trigger": "util.puts([...])\tutil",
+            "contents": "util.puts(${1:[, ...]});$0"
         }
     ]
 }
