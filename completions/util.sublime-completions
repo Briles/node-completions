@@ -102,8 +102,8 @@
             "contents": "util.puts(${1:[, ...]});$0"
         },
         {
-            "trigger": "util._extend(obj)\tutil",
-            "contents": "util._extend(${1:obj});$0"
+            "trigger": "util.\\_extend(obj)\tutil",
+            "contents": "util.\\_extend(${1:obj});$0"
         }
     ]
 }
