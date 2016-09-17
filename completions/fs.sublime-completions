@@ -154,12 +154,12 @@
             "contents": "fs.mkdirSync(${1:path}, ${2:[, mode]});$0"
         },
         {
-            "trigger": "fs.mkdtemp(prefix, callback)\tfs",
-            "contents": "fs.mkdtemp(${1:prefix}, ${2:callback});$0"
+            "trigger": "fs.mkdtemp(prefix[, options], callback)\tfs",
+            "contents": "fs.mkdtemp(${1:prefix}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.mkdtempSync(prefix)\tfs",
-            "contents": "fs.mkdtempSync(${1:prefix});$0"
+            "trigger": "fs.mkdtempSync(prefix[, options])\tfs",
+            "contents": "fs.mkdtempSync(${1:prefix}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.open(path, flags[, mode], callback)\tfs",
