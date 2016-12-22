@@ -2,7 +2,7 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "url.parse(urlStr, [parseQueryString], [slashesDenoteHost])\turl",
+            "trigger": "url.parse(urlStr[, parseQueryString][, slashesDenoteHost])\turl",
             "contents": "url.parse(${1:urlStr}, ${2:[, parseQueryString]}, ${3:[, slashesDenoteHost]});$0"
         },
         {
