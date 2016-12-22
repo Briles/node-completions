@@ -130,12 +130,12 @@
             "contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid});$0"
         },
         {
-            "trigger": "fs.link(srcpath, dstpath, callback)\tfs",
-            "contents": "fs.link(${1:srcpath}, ${2:dstpath}, ${3:callback});$0"
+            "trigger": "fs.link(existingPath, newPath, callback)\tfs",
+            "contents": "fs.link(${1:existingPath}, ${2:newPath}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.linkSync(srcpath, dstpath)\tfs",
-            "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
+            "trigger": "fs.linkSync(existingPath, newPath)\tfs",
+            "contents": "fs.linkSync(${1:existingPath}, ${2:newPath});$0"
         },
         {
             "trigger": "fs.lstat(path, callback)\tfs",
@@ -278,12 +278,12 @@
             "contents": "fs.watchFile(${1:filename}, ${2:[, options]}, ${3:listener});$0"
         },
         {
-            "trigger": "fs.write(fd, buffer, offset, length[, position], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:[, position]}, ${6:callback});$0"
+            "trigger": "fs.write(fd, buffer[, offset[, length[, position]]], callback)\tfs",
+            "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:[, offset]}, ${4:[, length]}, ${5:[, position]}, ${6:callback});$0"
         },
         {
-            "trigger": "fs.write(fd, data[, position[, encoding]], callback)\tfs",
-            "contents": "fs.write(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]}, ${5:callback});$0"
+            "trigger": "fs.write(fd, string[, position[, encoding]], callback)\tfs",
+            "contents": "fs.write(${1:fd}, ${2:string}, ${3:[, position]}, ${4:[, encoding]}, ${5:callback});$0"
         },
         {
             "trigger": "fs.writeFile(file, data[, options], callback)\tfs",
@@ -294,12 +294,12 @@
             "contents": "fs.writeFileSync(${1:file}, ${2:data}, ${3:[, options]});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, buffer, offset, length[, position])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:[, position]});$0"
+            "trigger": "fs.writeSync(fd, buffer[, offset[, length[, position]]])\tfs",
+            "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:[, offset]}, ${4:[, length]}, ${5:[, position]});$0"
         },
         {
-            "trigger": "fs.writeSync(fd, data[, position[, encoding]])\tfs",
-            "contents": "fs.writeSync(${1:fd}, ${2:data}, ${3:[, position]}, ${4:[, encoding]});$0"
+            "trigger": "fs.writeSync(fd, string[, position[, encoding]])\tfs",
+            "contents": "fs.writeSync(${1:fd}, ${2:string}, ${3:[, position]}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "watcher.close()\tfs",
