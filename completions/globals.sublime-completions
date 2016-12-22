@@ -10,20 +10,12 @@
             "contents": "process.chdir(${1:directory});$0"
         },
         {
-            "trigger": "process.cpuUsage([previousValue])\tglobals",
-            "contents": "process.cpuUsage(${1:[, previousValue]});$0"
-        },
-        {
             "trigger": "process.cwd()\tglobals",
             "contents": "process.cwd();$0"
         },
         {
             "trigger": "process.disconnect()\tglobals",
             "contents": "process.disconnect();$0"
-        },
-        {
-            "trigger": "process.emitWarning(warning[, name][, ctor])\tglobals",
-            "contents": "process.emitWarning(${1:warning}, ${2:[, name]}, ${3:[, ctor]});$0"
         },
         {
             "trigger": "process.exit([code])\tglobals",
@@ -50,8 +42,8 @@
             "contents": "process.getuid();$0"
         },
         {
-            "trigger": "process.hrtime([time])\tglobals",
-            "contents": "process.hrtime(${1:[, time]});$0"
+            "trigger": "process.hrtime()\tglobals",
+            "contents": "process.hrtime();$0"
         },
         {
             "trigger": "process.initgroups(user, extra_group)\tglobals",
@@ -66,12 +58,12 @@
             "contents": "process.memoryUsage();$0"
         },
         {
-            "trigger": "process.nextTick(callback[, ...args])\tglobals",
-            "contents": "process.nextTick(${1:callback}, ${2:[, ...args]});$0"
+            "trigger": "process.nextTick(callback[, arg][, ...])\tglobals",
+            "contents": "process.nextTick(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "process.send(message[, sendHandle[, options]][, callback])\tglobals",
-            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, options]}, ${4:[, callback]});$0"
+            "trigger": "process.send(message[, sendHandle][, callback])\tglobals",
+            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "process.setegid(id)\tglobals",
@@ -108,14 +100,6 @@
         {
             "trigger": "process.argv\tglobals",
             "contents": "process.argv$0"
-        },
-        {
-            "trigger": "process.argv0\tglobals",
-            "contents": "process.argv0$0"
-        },
-        {
-            "trigger": "process.channel\tglobals",
-            "contents": "process.channel$0"
         },
         {
             "trigger": "process.config\tglobals",
@@ -186,10 +170,6 @@
             "contents": "beforeExit$0"
         },
         {
-            "trigger": "disconnect\tglobals",
-            "contents": "disconnect$0"
-        },
-        {
             "trigger": "exit\tglobals",
             "contents": "exit$0"
         },
@@ -208,10 +188,6 @@
         {
             "trigger": "unhandledRejection\tglobals",
             "contents": "unhandledRejection$0"
-        },
-        {
-            "trigger": "warning\tglobals",
-            "contents": "warning$0"
         },
         {
             "trigger": "SIGINT, SIGHUP, etc.\tglobals",
