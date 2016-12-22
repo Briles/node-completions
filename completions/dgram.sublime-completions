@@ -2,56 +2,64 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "socket.addMembership(multicastAddress[, multicastInterface])\tdgram",
-            "contents": "socket.addMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
+            "trigger": "dgram.createSocket(type, [callback])\tdgram",
+            "contents": "dgram.createSocket(${1:type}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "socket.send(buf, offset, length, port, address, [callback])\tdgram",
+            "contents": "socket.send(${1:buf}, ${2:offset}, ${3:length}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
+        },
+        {
+            "trigger": "socket.bind(port, [address], [callback])\tdgram",
+            "contents": "socket.bind(${1:port}, ${2:[, address]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "socket.close()\tdgram",
+            "contents": "socket.close();$0"
         },
         {
             "trigger": "socket.address()\tdgram",
             "contents": "socket.address();$0"
         },
         {
-            "trigger": "socket.bind([port][, address][, callback])\tdgram",
-            "contents": "socket.bind(${1:[, port]}, ${2:[, address]}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "socket.bind(options[, callback])\tdgram",
-            "contents": "socket.bind(${1:options}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "socket.close([callback])\tdgram",
-            "contents": "socket.close(${1:[, callback]});$0"
-        },
-        {
-            "trigger": "socket.dropMembership(multicastAddress[, multicastInterface])\tdgram",
-            "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
-        },
-        {
-            "trigger": "socket.send(msg, [offset, length,] port, address[, callback])\tdgram",
-            "contents": "socket.send(${1:msg}, ${2:[, offset]}, ${3:[, length]}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
-        },
-        {
             "trigger": "socket.setBroadcast(flag)\tdgram",
             "contents": "socket.setBroadcast(${1:flag});$0"
-        },
-        {
-            "trigger": "socket.setMulticastLoopback(flag)\tdgram",
-            "contents": "socket.setMulticastLoopback(${1:flag});$0"
-        },
-        {
-            "trigger": "socket.setMulticastTTL(ttl)\tdgram",
-            "contents": "socket.setMulticastTTL(${1:ttl});$0"
         },
         {
             "trigger": "socket.setTTL(ttl)\tdgram",
             "contents": "socket.setTTL(${1:ttl});$0"
         },
         {
-            "trigger": "socket.ref()\tdgram",
-            "contents": "socket.ref();$0"
+            "trigger": "socket.setMulticastTTL(ttl)\tdgram",
+            "contents": "socket.setMulticastTTL(${1:ttl});$0"
+        },
+        {
+            "trigger": "socket.setMulticastLoopback(flag)\tdgram",
+            "contents": "socket.setMulticastLoopback(${1:flag});$0"
+        },
+        {
+            "trigger": "socket.addMembership(multicastAddress, [multicastInterface])\tdgram",
+            "contents": "socket.addMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
+        },
+        {
+            "trigger": "socket.dropMembership(multicastAddress, [multicastInterface])\tdgram",
+            "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
             "trigger": "socket.unref()\tdgram",
             "contents": "socket.unref();$0"
+        },
+        {
+            "trigger": "socket.ref()\tdgram",
+            "contents": "socket.ref();$0"
+        },
+        {
+            "trigger": "message\tdgram",
+            "contents": "message$0"
+        },
+        {
+            "trigger": "listening\tdgram",
+            "contents": "listening$0"
         },
         {
             "trigger": "close\tdgram",
@@ -60,22 +68,6 @@
         {
             "trigger": "error\tdgram",
             "contents": "error$0"
-        },
-        {
-            "trigger": "listening\tdgram",
-            "contents": "listening$0"
-        },
-        {
-            "trigger": "message\tdgram",
-            "contents": "message$0"
-        },
-        {
-            "trigger": "dgram.createSocket(options[, callback])\tdgram",
-            "contents": "dgram.createSocket(${1:options}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "dgram.createSocket(type[, callback])\tdgram",
-            "contents": "dgram.createSocket(${1:type}, ${2:[, callback]});$0"
         }
     ]
 }
