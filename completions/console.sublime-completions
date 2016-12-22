@@ -1,0 +1,41 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "console.assert(value[, message][, ...args])\tconsole",
+            "contents": "console.assert(${1:value}, ${2:[, message]}, ${3:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.dir(obj[, options])\tconsole",
+            "contents": "console.dir(${1:obj}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "console.error([data][, ...args])\tconsole",
+            "contents": "console.error(${1:[, data]}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.info([data][, ...args])\tconsole",
+            "contents": "console.info(${1:[, data]}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.log([data][, ...args])\tconsole",
+            "contents": "console.log(${1:[, data]}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.time(label)\tconsole",
+            "contents": "console.time(${1:label});$0"
+        },
+        {
+            "trigger": "console.timeEnd(label)\tconsole",
+            "contents": "console.timeEnd(${1:label});$0"
+        },
+        {
+            "trigger": "console.trace(message[, ...args])\tconsole",
+            "contents": "console.trace(${1:message}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.warn([data][, ...args])\tconsole",
+            "contents": "console.warn(${1:[, data]}, ${2:[, ...args]});$0"
+        }
+    ]
+}

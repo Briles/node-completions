@@ -6,8 +6,8 @@
             "contents": "domain.create();$0"
         },
         {
-            "trigger": "domain.run(fn)\tdomain",
-            "contents": "domain.run(${1:fn});$0"
+            "trigger": "domain.run(fn[, ...args])\tdomain",
+            "contents": "domain.run(${1:fn}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "domain.add(emitter)\tdomain",
