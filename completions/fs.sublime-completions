@@ -130,12 +130,12 @@
             "contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid});$0"
         },
         {
-            "trigger": "fs.link(srcpath, dstpath, callback)\tfs",
-            "contents": "fs.link(${1:srcpath}, ${2:dstpath}, ${3:callback});$0"
+            "trigger": "fs.link(existingPath, newPath, callback)\tfs",
+            "contents": "fs.link(${1:existingPath}, ${2:newPath}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.linkSync(srcpath, dstpath)\tfs",
-            "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath});$0"
+            "trigger": "fs.linkSync(existingPath, newPath)\tfs",
+            "contents": "fs.linkSync(${1:existingPath}, ${2:newPath});$0"
         },
         {
             "trigger": "fs.lstat(path, callback)\tfs",

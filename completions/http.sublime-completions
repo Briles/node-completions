@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "http.createClient([port][, host])\thttp",
-            "contents": "http.createClient(${1:[, port]}, ${2:[, host]});$0"
-        },
-        {
             "trigger": "http.createServer([requestListener])\thttp",
             "contents": "http.createServer(${1:[, requestListener]});$0"
         },
@@ -86,10 +82,6 @@
             "contents": "aborted$0"
         },
         {
-            "trigger": "checkExpectation\thttp",
-            "contents": "checkExpectation$0"
-        },
-        {
             "trigger": "connect\thttp",
             "contents": "connect$0"
         },
@@ -144,6 +136,10 @@
         {
             "trigger": "checkContinue\thttp",
             "contents": "checkContinue$0"
+        },
+        {
+            "trigger": "checkExpectation\thttp",
+            "contents": "checkExpectation$0"
         },
         {
             "trigger": "clientError\thttp",
