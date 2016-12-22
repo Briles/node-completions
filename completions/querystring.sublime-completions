@@ -2,20 +2,20 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "querystring.escape(str)\tquerystring",
-            "contents": "querystring.escape(${1:str});$0"
-        },
-        {
-            "trigger": "querystring.parse(str[, sep[, eq[, options]]])\tquerystring",
-            "contents": "querystring.parse(${1:str}, ${2:[, sep]}, ${3:[, eq]}, ${4:[, options]});$0"
-        },
-        {
-            "trigger": "querystring.stringify(obj[, sep[, eq[, options]]])\tquerystring",
+            "trigger": "querystring.stringify(obj[, sep][, eq][, options])\tquerystring",
             "contents": "querystring.stringify(${1:obj}, ${2:[, sep]}, ${3:[, eq]}, ${4:[, options]});$0"
         },
         {
-            "trigger": "querystring.unescape(str)\tquerystring",
-            "contents": "querystring.unescape(${1:str});$0"
+            "trigger": "querystring.parse(str[, sep][, eq][, options])\tquerystring",
+            "contents": "querystring.parse(${1:str}, ${2:[, sep]}, ${3:[, eq]}, ${4:[, options]});$0"
+        },
+        {
+            "trigger": "querystring.escape\tquerystring",
+            "contents": "querystring.escape$0"
+        },
+        {
+            "trigger": "querystring.unescape\tquerystring",
+            "contents": "querystring.unescape$0"
         }
     ]
 }

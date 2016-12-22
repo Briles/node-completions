@@ -6,12 +6,12 @@
             "contents": "https.createServer(${1:options}, ${2:[, requestListener]});$0"
         },
         {
-            "trigger": "https.get(options, callback)\thttps",
-            "contents": "https.get(${1:options}, ${2:callback});$0"
-        },
-        {
             "trigger": "https.request(options, callback)\thttps",
             "contents": "https.request(${1:options}, ${2:callback});$0"
+        },
+        {
+            "trigger": "https.get(options, callback)\thttps",
+            "contents": "https.get(${1:options}, ${2:callback});$0"
         },
         {
             "trigger": "server.setTimeout(msecs, callback)\thttps",

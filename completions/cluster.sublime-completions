@@ -2,40 +2,36 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "cluster.disconnect([callback])\tcluster",
-            "contents": "cluster.disconnect(${1:[, callback]});$0"
+            "trigger": "cluster.setupMaster([settings])\tcluster",
+            "contents": "cluster.setupMaster(${1:[, settings]});$0"
         },
         {
             "trigger": "cluster.fork([env])\tcluster",
             "contents": "cluster.fork(${1:[, env]});$0"
         },
         {
-            "trigger": "cluster.setupMaster([settings])\tcluster",
-            "contents": "cluster.setupMaster(${1:[, settings]});$0"
+            "trigger": "cluster.disconnect([callback])\tcluster",
+            "contents": "cluster.disconnect(${1:[, callback]});$0"
         },
         {
-            "trigger": "worker.disconnect()\tcluster",
-            "contents": "worker.disconnect();$0"
-        },
-        {
-            "trigger": "worker.isConnected()\tcluster",
-            "contents": "worker.isConnected();$0"
-        },
-        {
-            "trigger": "worker.isDead()\tcluster",
-            "contents": "worker.isDead();$0"
+            "trigger": "worker.send(message[, sendHandle])\tcluster",
+            "contents": "worker.send(${1:message}, ${2:[, sendHandle]});$0"
         },
         {
             "trigger": "worker.kill([signal='SIGTERM'])\tcluster",
             "contents": "worker.kill(${1:[, signal]});$0"
         },
         {
-            "trigger": "worker.send(message[, sendHandle][, callback])\tcluster",
-            "contents": "worker.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
+            "trigger": "worker.disconnect()\tcluster",
+            "contents": "worker.disconnect();$0"
         },
         {
-            "trigger": "worker.exitedAfterDisconnect\tcluster",
-            "contents": "worker.exitedAfterDisconnect$0"
+            "trigger": "worker.isDead()\tcluster",
+            "contents": "worker.isDead();$0"
+        },
+        {
+            "trigger": "worker.isConnected()\tcluster",
+            "contents": "worker.isConnected();$0"
         },
         {
             "trigger": "worker.id\tcluster",
@@ -50,22 +46,6 @@
             "contents": "worker.suicide$0"
         },
         {
-            "trigger": "disconnect\tcluster",
-            "contents": "disconnect$0"
-        },
-        {
-            "trigger": "error\tcluster",
-            "contents": "error$0"
-        },
-        {
-            "trigger": "exit\tcluster",
-            "contents": "exit$0"
-        },
-        {
-            "trigger": "listening\tcluster",
-            "contents": "listening$0"
-        },
-        {
             "trigger": "message\tcluster",
             "contents": "message$0"
         },
@@ -74,12 +54,20 @@
             "contents": "online$0"
         },
         {
-            "trigger": "cluster.isMaster\tcluster",
-            "contents": "cluster.isMaster$0"
+            "trigger": "listening\tcluster",
+            "contents": "listening$0"
         },
         {
-            "trigger": "cluster.isWorker\tcluster",
-            "contents": "cluster.isWorker$0"
+            "trigger": "disconnect\tcluster",
+            "contents": "disconnect$0"
+        },
+        {
+            "trigger": "exit\tcluster",
+            "contents": "exit$0"
+        },
+        {
+            "trigger": "error\tcluster",
+            "contents": "error$0"
         },
         {
             "trigger": "cluster.schedulingPolicy\tcluster",
@@ -88,6 +76,14 @@
         {
             "trigger": "cluster.settings\tcluster",
             "contents": "cluster.settings$0"
+        },
+        {
+            "trigger": "cluster.isMaster\tcluster",
+            "contents": "cluster.isMaster$0"
+        },
+        {
+            "trigger": "cluster.isWorker\tcluster",
+            "contents": "cluster.isWorker$0"
         },
         {
             "trigger": "cluster.worker\tcluster",

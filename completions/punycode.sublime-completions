@@ -10,12 +10,12 @@
             "contents": "punycode.encode(${1:string});$0"
         },
         {
-            "trigger": "punycode.toASCII(domain)\tpunycode",
-            "contents": "punycode.toASCII(${1:domain});$0"
-        },
-        {
             "trigger": "punycode.toUnicode(domain)\tpunycode",
             "contents": "punycode.toUnicode(${1:domain});$0"
+        },
+        {
+            "trigger": "punycode.toASCII(domain)\tpunycode",
+            "contents": "punycode.toASCII(${1:domain});$0"
         },
         {
             "trigger": "punycode.ucs2\tpunycode",
