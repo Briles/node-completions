@@ -22,8 +22,8 @@
             "contents": "readline.clearScreenDown(${1:stream});$0"
         },
         {
-            "trigger": "rl.setPrompt(prompt, length)\treadline",
-            "contents": "rl.setPrompt(${1:prompt}, ${2:length});$0"
+            "trigger": "rl.setPrompt(prompt)\treadline",
+            "contents": "rl.setPrompt(${1:prompt});$0"
         },
         {
             "trigger": "rl.prompt([preserveCursor])\treadline",
@@ -46,7 +46,7 @@
             "contents": "rl.close();$0"
         },
         {
-            "trigger": "rl.write(data, [key])\treadline",
+            "trigger": "rl.write(data[, key])\treadline",
             "contents": "rl.write(${1:data}, ${2:[, key]});$0"
         },
         {

@@ -6,12 +6,16 @@
             "contents": "path.normalize(${1:p});$0"
         },
         {
-            "trigger": "path.join([path1], [path2], [...])\tpath",
+            "trigger": "path.join([path1][, path2][, ...])\tpath",
             "contents": "path.join(${1:[, path1]}, ${2:[, path2]}, ${3:[, ...]});$0"
         },
         {
             "trigger": "path.resolve([from ...], to)\tpath",
             "contents": "path.resolve(${1:[, from ...]}, ${2:to});$0"
+        },
+        {
+            "trigger": "path.isAbsolute(path)\tpath",
+            "contents": "path.isAbsolute(${1:path});$0"
         },
         {
             "trigger": "path.relative(from, to)\tpath",
@@ -22,12 +26,20 @@
             "contents": "path.dirname(${1:p});$0"
         },
         {
-            "trigger": "path.basename(p, [ext])\tpath",
+            "trigger": "path.basename(p[, ext])\tpath",
             "contents": "path.basename(${1:p}, ${2:[, ext]});$0"
         },
         {
             "trigger": "path.extname(p)\tpath",
             "contents": "path.extname(${1:p});$0"
+        },
+        {
+            "trigger": "path.parse(pathString)\tpath",
+            "contents": "path.parse(${1:pathString});$0"
+        },
+        {
+            "trigger": "path.format(pathObject)\tpath",
+            "contents": "path.format(${1:pathObject});$0"
         },
         {
             "trigger": "path.sep\tpath",
@@ -36,6 +48,14 @@
         {
             "trigger": "path.delimiter\tpath",
             "contents": "path.delimiter$0"
+        },
+        {
+            "trigger": "path.posix\tpath",
+            "contents": "path.posix$0"
+        },
+        {
+            "trigger": "path.win32\tpath",
+            "contents": "path.win32$0"
         }
     ]
 }
