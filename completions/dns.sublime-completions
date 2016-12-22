@@ -2,8 +2,64 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "dns.getServers()\tdns",
+            "contents": "dns.getServers();$0"
+        },
+        {
             "trigger": "dns.lookup(hostname[, options], callback)\tdns",
             "contents": "dns.lookup(${1:hostname}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "dns.lookupService(address, port, callback)\tdns",
+            "contents": "dns.lookupService(${1:address}, ${2:port}, ${3:callback});$0"
+        },
+        {
+            "trigger": "dns.resolve(hostname[, rrtype], callback)\tdns",
+            "contents": "dns.resolve(${1:hostname}, ${2:[, rrtype]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "dns.resolve4(hostname, callback)\tdns",
+            "contents": "dns.resolve4(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolve6(hostname, callback)\tdns",
+            "contents": "dns.resolve6(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveCname(hostname, callback)\tdns",
+            "contents": "dns.resolveCname(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveMx(hostname, callback)\tdns",
+            "contents": "dns.resolveMx(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveNaptr(hostname, callback)\tdns",
+            "contents": "dns.resolveNaptr(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveNs(hostname, callback)\tdns",
+            "contents": "dns.resolveNs(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveSoa(hostname, callback)\tdns",
+            "contents": "dns.resolveSoa(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveSrv(hostname, callback)\tdns",
+            "contents": "dns.resolveSrv(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveTxt(hostname, callback)\tdns",
+            "contents": "dns.resolveTxt(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.reverse(ip, callback)\tdns",
+            "contents": "dns.reverse(${1:ip}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.setServers(servers)\tdns",
+            "contents": "dns.setServers(${1:servers});$0"
         }
     ]
 }
