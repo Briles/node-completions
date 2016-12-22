@@ -2,36 +2,36 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "timeout.ref()\ttimers",
-            "contents": "timeout.ref();$0"
+            "trigger": "setTimeout(callback, delay, [arg], [...])\ttimers",
+            "contents": "setTimeout(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
-            "trigger": "timeout.unref()\ttimers",
-            "contents": "timeout.unref();$0"
+            "trigger": "clearTimeout(timeoutObject)\ttimers",
+            "contents": "clearTimeout(${1:timeoutObject});$0"
         },
         {
-            "trigger": "setImmediate(callback[, ...args])\ttimers",
-            "contents": "setImmediate(${1:callback}, ${2:[, ...args]});$0"
+            "trigger": "setInterval(callback, delay, [arg], [...])\ttimers",
+            "contents": "setInterval(${1:callback}, ${2:delay}, ${3:[, arg]}, ${4:[, ...]});$0"
         },
         {
-            "trigger": "setInterval(callback, delay[, ...args])\ttimers",
-            "contents": "setInterval(${1:callback}, ${2:delay}, ${3:[, ...args]});$0"
+            "trigger": "clearInterval(intervalObject)\ttimers",
+            "contents": "clearInterval(${1:intervalObject});$0"
         },
         {
-            "trigger": "setTimeout(callback, delay[, ...args])\ttimers",
-            "contents": "setTimeout(${1:callback}, ${2:delay}, ${3:[, ...args]});$0"
+            "trigger": "unref()\ttimers",
+            "contents": "unref();$0"
         },
         {
-            "trigger": "clearImmediate(immediate)\ttimers",
-            "contents": "clearImmediate(${1:immediate});$0"
+            "trigger": "ref()\ttimers",
+            "contents": "ref();$0"
         },
         {
-            "trigger": "clearInterval(timeout)\ttimers",
-            "contents": "clearInterval(${1:timeout});$0"
+            "trigger": "setImmediate(callback, [arg], [...])\ttimers",
+            "contents": "setImmediate(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "clearTimeout(timeout)\ttimers",
-            "contents": "clearTimeout(${1:timeout});$0"
+            "trigger": "clearImmediate(immediateObject)\ttimers",
+            "contents": "clearImmediate(${1:immediateObject});$0"
         }
     ]
 }

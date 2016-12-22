@@ -2,64 +2,40 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "EventEmitter.listenerCount(emitter, eventName)\tEvents",
-            "contents": "EventEmitter.listenerCount(${1:emitter}, ${2:eventName});$0"
+            "trigger": "emitter.addListener(event, listener)\tEvents",
+            "contents": "emitter.addListener(${1:event}, ${2:listener});$0"
         },
         {
-            "trigger": "emitter.addListener(eventName, listener)\tEvents",
-            "contents": "emitter.addListener(${1:eventName}, ${2:listener});$0"
+            "trigger": "emitter.on(event, listener)\tEvents",
+            "contents": "emitter.on(${1:event}, ${2:listener});$0"
         },
         {
-            "trigger": "emitter.emit(eventName[, ...args])\tEvents",
-            "contents": "emitter.emit(${1:eventName}, ${2:[, ...args]});$0"
+            "trigger": "emitter.once(event, listener)\tEvents",
+            "contents": "emitter.once(${1:event}, ${2:listener});$0"
         },
         {
-            "trigger": "emitter.eventNames()\tEvents",
-            "contents": "emitter.eventNames();$0"
+            "trigger": "emitter.removeListener(event, listener)\tEvents",
+            "contents": "emitter.removeListener(${1:event}, ${2:listener});$0"
         },
         {
-            "trigger": "emitter.getMaxListeners()\tEvents",
-            "contents": "emitter.getMaxListeners();$0"
-        },
-        {
-            "trigger": "emitter.listenerCount(eventName)\tEvents",
-            "contents": "emitter.listenerCount(${1:eventName});$0"
-        },
-        {
-            "trigger": "emitter.listeners(eventName)\tEvents",
-            "contents": "emitter.listeners(${1:eventName});$0"
-        },
-        {
-            "trigger": "emitter.on(eventName, listener)\tEvents",
-            "contents": "emitter.on(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.once(eventName, listener)\tEvents",
-            "contents": "emitter.once(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.prependListener(eventName, listener)\tEvents",
-            "contents": "emitter.prependListener(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.prependOnceListener(eventName, listener)\tEvents",
-            "contents": "emitter.prependOnceListener(${1:eventName}, ${2:listener});$0"
-        },
-        {
-            "trigger": "emitter.removeAllListeners([eventName])\tEvents",
-            "contents": "emitter.removeAllListeners(${1:[, eventName]});$0"
-        },
-        {
-            "trigger": "emitter.removeListener(eventName, listener)\tEvents",
-            "contents": "emitter.removeListener(${1:eventName}, ${2:listener});$0"
+            "trigger": "emitter.removeAllListeners([event])\tEvents",
+            "contents": "emitter.removeAllListeners(${1:[, event]});$0"
         },
         {
             "trigger": "emitter.setMaxListeners(n)\tEvents",
             "contents": "emitter.setMaxListeners(${1:n});$0"
         },
         {
-            "trigger": "EventEmitter.defaultMaxListeners\tEvents",
-            "contents": "EventEmitter.defaultMaxListeners$0"
+            "trigger": "emitter.listeners(event)\tEvents",
+            "contents": "emitter.listeners(${1:event});$0"
+        },
+        {
+            "trigger": "emitter.emit(event, [arg1], [arg2], [...])\tEvents",
+            "contents": "emitter.emit(${1:event}, ${2:[, arg1]}, ${3:[, arg2]}, ${4:[, ...]});$0"
+        },
+        {
+            "trigger": "EventEmitter.listenerCount(emitter, event)\tEvents",
+            "contents": "EventEmitter.listenerCount(${1:emitter}, ${2:event});$0"
         },
         {
             "trigger": "newListener\tEvents",
