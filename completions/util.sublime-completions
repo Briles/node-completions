@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "util.debug(string)\tutil",
-            "contents": "util.debug(${1:string});$0"
-        },
-        {
             "trigger": "util.debuglog(section)\tutil",
             "contents": "util.debuglog(${1:section});$0"
         },
@@ -14,12 +10,8 @@
             "contents": "util.deprecate(${1:function}, ${2:string});$0"
         },
         {
-            "trigger": "util.error([...])\tutil",
-            "contents": "util.error(${1:[, ...]});$0"
-        },
-        {
-            "trigger": "util.format(format[, ...])\tutil",
-            "contents": "util.format(${1:format}, ${2:[, ...]});$0"
+            "trigger": "util.format(format[, ...args])\tutil",
+            "contents": "util.format(${1:format}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "util.inherits(constructor, superConstructor)\tutil",
@@ -28,6 +20,14 @@
         {
             "trigger": "util.inspect(object[, options])\tutil",
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "util.debug(string)\tutil",
+            "contents": "util.debug(${1:string});$0"
+        },
+        {
+            "trigger": "util.error([...strings])\tutil",
+            "contents": "util.error(${1:[, ...strings]});$0"
         },
         {
             "trigger": "util.isArray(object)\tutil",
@@ -82,6 +82,10 @@
             "contents": "util.isString(${1:object});$0"
         },
         {
+            "trigger": "util.isSymbol(object)\tutil",
+            "contents": "util.isSymbol(${1:object});$0"
+        },
+        {
             "trigger": "util.isUndefined(object)\tutil",
             "contents": "util.isUndefined(${1:object});$0"
         },
@@ -90,16 +94,16 @@
             "contents": "util.log(${1:string});$0"
         },
         {
-            "trigger": "util.print([...])\tutil",
-            "contents": "util.print(${1:[, ...]});$0"
+            "trigger": "util.print([...strings])\tutil",
+            "contents": "util.print(${1:[, ...strings]});$0"
         },
         {
-            "trigger": "util.pump(readableStream, writableStream[, callback])\tutil",
-            "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[, callback]});$0"
+            "trigger": "util.puts([...strings])\tutil",
+            "contents": "util.puts(${1:[, ...strings]});$0"
         },
         {
-            "trigger": "util.puts([...])\tutil",
-            "contents": "util.puts(${1:[, ...]});$0"
+            "trigger": "util.\\_extend(target, source)\tutil",
+            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
         }
     ]
 }
