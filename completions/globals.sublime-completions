@@ -114,10 +114,6 @@
             "contents": "process.argv0$0"
         },
         {
-            "trigger": "process.channel\tglobals",
-            "contents": "process.channel$0"
-        },
-        {
             "trigger": "process.config\tglobals",
             "contents": "process.config$0"
         },

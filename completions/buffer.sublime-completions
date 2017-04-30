@@ -2,10 +2,6 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "buffer.transcode(source, fromEnc, toEnc)\tbuffer",
-            "contents": "buffer.transcode(${1:source}, ${2:fromEnc}, ${3:toEnc});$0"
-        },
-        {
             "trigger": "buf.compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])\tbuffer",
             "contents": "buf.compare(${1:target}, ${2:[, targetStart]}, ${3:[, targetEnd]}, ${4:[, sourceStart]}, ${5:[, sourceEnd]});$0"
         },

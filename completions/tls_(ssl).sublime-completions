@@ -154,10 +154,6 @@
             "contents": "secureConnect$0"
         },
         {
-            "trigger": "tls_(ssl).DEFAULT_ECDH_CURVE\ttls_(ssl)",
-            "contents": "tls_(ssl).DEFAULT_ECDH_CURVE$0"
-        },
-        {
             "trigger": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])\ttls_(ssl)",
             "contents": "tls.createSecurePair(${1:[, context]}, ${2:[, isServer]}, ${3:[, requestCert]}, ${4:[, rejectUnauthorized]}, ${5:[, options]});$0"
         },
