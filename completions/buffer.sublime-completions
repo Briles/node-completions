@@ -2,12 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "buf.compare(otherBuffer)\tbuffer",
-            "contents": "buf.compare(${1:otherBuffer});$0"
+            "trigger": "buffer.transcode(source, fromEnc, toEnc)\tbuffer",
+            "contents": "buffer.transcode(${1:source}, ${2:fromEnc}, ${3:toEnc});$0"
         },
         {
-            "trigger": "buf.copy(targetBuffer[, targetStart[, sourceStart[, sourceEnd]]])\tbuffer",
-            "contents": "buf.copy(${1:targetBuffer}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
+            "trigger": "buf.compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])\tbuffer",
+            "contents": "buf.compare(${1:target}, ${2:[, targetStart]}, ${3:[, targetEnd]}, ${4:[, sourceStart]}, ${5:[, sourceEnd]});$0"
+        },
+        {
+            "trigger": "buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]])\tbuffer",
+            "contents": "buf.copy(${1:target}, ${2:[, targetStart]}, ${3:[, sourceStart]}, ${4:[, sourceEnd]});$0"
         },
         {
             "trigger": "buf.entries()\tbuffer",
@@ -18,16 +22,24 @@
             "contents": "buf.equals(${1:otherBuffer});$0"
         },
         {
-            "trigger": "buf.fill(value[, offset[, end]])\tbuffer",
-            "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]});$0"
+            "trigger": "buf.fill(value[, offset[, end]][, encoding])\tbuffer",
+            "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]}, ${4:[, encoding]});$0"
         },
         {
             "trigger": "buf.indexOf(value[, byteOffset][, encoding])\tbuffer",
             "contents": "buf.indexOf(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
         },
         {
+            "trigger": "buf.includes(value[, byteOffset][, encoding])\tbuffer",
+            "contents": "buf.includes(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
+        },
+        {
             "trigger": "buf.keys()\tbuffer",
             "contents": "buf.keys();$0"
+        },
+        {
+            "trigger": "buf.lastIndexOf(value[, byteOffset][, encoding])\tbuffer",
+            "contents": "buf.lastIndexOf(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
         },
         {
             "trigger": "buf.readDoubleBE(offset[, noAssert])\tbuffer",
@@ -104,6 +116,18 @@
         {
             "trigger": "buf.slice([start[, end]])\tbuffer",
             "contents": "buf.slice(${1:[, start]}, ${2:[, end]});$0"
+        },
+        {
+            "trigger": "buf.swap16()\tbuffer",
+            "contents": "buf.swap16();$0"
+        },
+        {
+            "trigger": "buf.swap32()\tbuffer",
+            "contents": "buf.swap32();$0"
+        },
+        {
+            "trigger": "buf.swap64()\tbuffer",
+            "contents": "buf.swap64();$0"
         },
         {
             "trigger": "buf.toString([encoding[, start[, end]]])\tbuffer",
@@ -222,16 +246,16 @@
             "contents": "Buffer.from(${1:array});$0"
         },
         {
-            "trigger": "Buffer.from(arrayBuffer)\tbuffer",
-            "contents": "Buffer.from(${1:arrayBuffer});$0"
+            "trigger": "Buffer.from(arrayBuffer[, byteOffset[, length]])\tbuffer",
+            "contents": "Buffer.from(${1:arrayBuffer}, ${2:[, byteOffset]}, ${3:[, length]});$0"
         },
         {
             "trigger": "Buffer.from(buffer)\tbuffer",
             "contents": "Buffer.from(${1:buffer});$0"
         },
         {
-            "trigger": "Buffer.from(str[, encoding])\tbuffer",
-            "contents": "Buffer.from(${1:str}, ${2:[, encoding]});$0"
+            "trigger": "Buffer.from(string[, encoding])\tbuffer",
+            "contents": "Buffer.from(${1:string}, ${2:[, encoding]});$0"
         },
         {
             "trigger": "Buffer.isBuffer(obj)\tbuffer",
@@ -240,6 +264,10 @@
         {
             "trigger": "Buffer.isEncoding(encoding)\tbuffer",
             "contents": "Buffer.isEncoding(${1:encoding});$0"
+        },
+        {
+            "trigger": "buffer.poolSize\tbuffer",
+            "contents": "buffer.poolSize$0"
         },
         {
             "trigger": "buffer[index]\tbuffer",
@@ -252,6 +280,10 @@
         {
             "trigger": "buffer.INSPECT_MAX_BYTES\tbuffer",
             "contents": "buffer.INSPECT_MAX_BYTES$0"
+        },
+        {
+            "trigger": "buffer.kMaxLength\tbuffer",
+            "contents": "buffer.kMaxLength$0"
         }
     ]
 }
