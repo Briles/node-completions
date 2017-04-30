@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "http.createClient([port][, host])\thttp",
+            "contents": "http.createClient(${1:[, port]}, ${2:[, host]});$0"
+        },
+        {
             "trigger": "http.createServer([requestListener])\thttp",
             "contents": "http.createServer(${1:[, requestListener]});$0"
         },
