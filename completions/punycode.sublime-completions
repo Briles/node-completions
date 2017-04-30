@@ -1,0 +1,29 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "punycode.decode(string)\tpunycode",
+            "contents": "punycode.decode(${1:string});$0"
+        },
+        {
+            "trigger": "punycode.encode(string)\tpunycode",
+            "contents": "punycode.encode(${1:string});$0"
+        },
+        {
+            "trigger": "punycode.toASCII(domain)\tpunycode",
+            "contents": "punycode.toASCII(${1:domain});$0"
+        },
+        {
+            "trigger": "punycode.toUnicode(domain)\tpunycode",
+            "contents": "punycode.toUnicode(${1:domain});$0"
+        },
+        {
+            "trigger": "punycode.ucs2\tpunycode",
+            "contents": "punycode.ucs2$0"
+        },
+        {
+            "trigger": "punycode.version\tpunycode",
+            "contents": "punycode.version$0"
+        }
+    ]
+}

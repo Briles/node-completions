@@ -1,0 +1,61 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "EventEmitter.listenerCount(emitter, eventName)\tEvents",
+            "contents": "EventEmitter.listenerCount(${1:emitter}, ${2:eventName});$0"
+        },
+        {
+            "trigger": "emitter.addListener(eventName, listener)\tEvents",
+            "contents": "emitter.addListener(${1:eventName}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.emit(eventName[, arg1][, arg2][, ...])\tEvents",
+            "contents": "emitter.emit(${1:eventName}, ${2:[, arg1]}, ${3:[, arg2]}, ${4:[, ...]});$0"
+        },
+        {
+            "trigger": "emitter.getMaxListeners()\tEvents",
+            "contents": "emitter.getMaxListeners();$0"
+        },
+        {
+            "trigger": "emitter.listenerCount(eventName)\tEvents",
+            "contents": "emitter.listenerCount(${1:eventName});$0"
+        },
+        {
+            "trigger": "emitter.listeners(eventName)\tEvents",
+            "contents": "emitter.listeners(${1:eventName});$0"
+        },
+        {
+            "trigger": "emitter.on(eventName, listener)\tEvents",
+            "contents": "emitter.on(${1:eventName}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.once(eventName, listener)\tEvents",
+            "contents": "emitter.once(${1:eventName}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.removeAllListeners([eventName])\tEvents",
+            "contents": "emitter.removeAllListeners(${1:[, eventName]});$0"
+        },
+        {
+            "trigger": "emitter.removeListener(eventName, listener)\tEvents",
+            "contents": "emitter.removeListener(${1:eventName}, ${2:listener});$0"
+        },
+        {
+            "trigger": "emitter.setMaxListeners(n)\tEvents",
+            "contents": "emitter.setMaxListeners(${1:n});$0"
+        },
+        {
+            "trigger": "EventEmitter.defaultMaxListeners\tEvents",
+            "contents": "EventEmitter.defaultMaxListeners$0"
+        },
+        {
+            "trigger": "newListener\tEvents",
+            "contents": "newListener$0"
+        },
+        {
+            "trigger": "removeListener\tEvents",
+            "contents": "removeListener$0"
+        }
+    ]
+}
