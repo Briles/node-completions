@@ -40,10 +40,6 @@
         {
             "trigger": "zlib.reset()\tzlib",
             "contents": "zlib.reset();$0"
-        },
-        {
-            "trigger": "zlib.constants\tzlib",
-            "contents": "zlib.constants$0"
         }
     ]
 }
