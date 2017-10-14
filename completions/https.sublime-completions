@@ -18,8 +18,8 @@
             "contents": "server.setTimeout(${1:[, msecs]}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "server.timeout([msecs])\thttps",
-            "contents": "server.timeout(${1:[, msecs]});$0"
+            "trigger": "https.server.timeout\thttps",
+            "contents": "https.server.timeout$0"
         },
         {
             "trigger": "https.globalAgent\thttps",
