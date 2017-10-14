@@ -26,6 +26,18 @@
             "contents": "console.error(${1:[, data]}, ${2:[, ...args]});$0"
         },
         {
+            "trigger": "console.group([...label])\tconsole",
+            "contents": "console.group(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.groupCollapsed()\tconsole",
+            "contents": "console.groupCollapsed();$0"
+        },
+        {
+            "trigger": "console.groupEnd()\tconsole",
+            "contents": "console.groupEnd();$0"
+        },
+        {
             "trigger": "console.info([data][, ...args])\tconsole",
             "contents": "console.info(${1:[, data]}, ${2:[, ...args]});$0"
         },

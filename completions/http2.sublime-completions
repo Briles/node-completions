@@ -142,6 +142,22 @@
             "contents": "http2stream.rstWithNoError();$0"
         },
         {
+            "trigger": "http2stream.rstWithProtocolError()\thttp2",
+            "contents": "http2stream.rstWithProtocolError();$0"
+        },
+        {
+            "trigger": "http2stream.rstWithCancel()\thttp2",
+            "contents": "http2stream.rstWithCancel();$0"
+        },
+        {
+            "trigger": "http2stream.rstWithRefuse()\thttp2",
+            "contents": "http2stream.rstWithRefuse();$0"
+        },
+        {
+            "trigger": "http2stream.rstWithInternalError()\thttp2",
+            "contents": "http2stream.rstWithInternalError();$0"
+        },
+        {
             "trigger": "http2stream.setTimeout(msecs, callback)\thttp2",
             "contents": "http2stream.setTimeout(${1:msecs}, ${2:callback});$0"
         },
@@ -176,6 +192,10 @@
         {
             "trigger": "trailers\thttp2",
             "contents": "trailers$0"
+        },
+        {
+            "trigger": "continue\thttp2",
+            "contents": "continue$0"
         },
         {
             "trigger": "headers\thttp2",
@@ -222,8 +242,16 @@
             "contents": "sessionError$0"
         },
         {
+            "trigger": "streamError\thttp2",
+            "contents": "streamError$0"
+        },
+        {
             "trigger": "request\thttp2",
             "contents": "request$0"
+        },
+        {
+            "trigger": "checkContinue\thttp2",
+            "contents": "checkContinue$0"
         },
         {
             "trigger": "unknownProtocol\thttp2",

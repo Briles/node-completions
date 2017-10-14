@@ -150,24 +150,24 @@
             "contents": "verify.verify(${1:object}, ${2:signature}, ${3:[, signatureFormat]});$0"
         },
         {
-            "trigger": "crypto.createCipher(algorithm, password)\tcrypto",
-            "contents": "crypto.createCipher(${1:algorithm}, ${2:password});$0"
+            "trigger": "crypto.createCipher(algorithm, password[, options])\tcrypto",
+            "contents": "crypto.createCipher(${1:algorithm}, ${2:password}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createCipheriv(algorithm, key, iv)\tcrypto",
-            "contents": "crypto.createCipheriv(${1:algorithm}, ${2:key}, ${3:iv});$0"
+            "trigger": "crypto.createCipheriv(algorithm, key, iv[, options])\tcrypto",
+            "contents": "crypto.createCipheriv(${1:algorithm}, ${2:key}, ${3:iv}, ${4:[, options]});$0"
         },
         {
             "trigger": "crypto.createCredentials(details)\tcrypto",
             "contents": "crypto.createCredentials(${1:details});$0"
         },
         {
-            "trigger": "crypto.createDecipher(algorithm, password)\tcrypto",
-            "contents": "crypto.createDecipher(${1:algorithm}, ${2:password});$0"
+            "trigger": "crypto.createDecipher(algorithm, password[, options])\tcrypto",
+            "contents": "crypto.createDecipher(${1:algorithm}, ${2:password}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createDecipheriv(algorithm, key, iv)\tcrypto",
-            "contents": "crypto.createDecipheriv(${1:algorithm}, ${2:key}, ${3:iv});$0"
+            "trigger": "crypto.createDecipheriv(algorithm, key, iv[, options])\tcrypto",
+            "contents": "crypto.createDecipheriv(${1:algorithm}, ${2:key}, ${3:iv}, ${4:[, options]});$0"
         },
         {
             "trigger": "crypto.createDiffieHellman(prime[, primeEncoding][, generator][, generatorEncoding])\tcrypto",
@@ -182,20 +182,20 @@
             "contents": "crypto.createECDH(${1:curveName});$0"
         },
         {
-            "trigger": "crypto.createHash(algorithm)\tcrypto",
-            "contents": "crypto.createHash(${1:algorithm});$0"
+            "trigger": "crypto.createHash(algorithm[, options])\tcrypto",
+            "contents": "crypto.createHash(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.createHmac(algorithm, key)\tcrypto",
-            "contents": "crypto.createHmac(${1:algorithm}, ${2:key});$0"
+            "trigger": "crypto.createHmac(algorithm, key[, options])\tcrypto",
+            "contents": "crypto.createHmac(${1:algorithm}, ${2:key}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createSign(algorithm)\tcrypto",
-            "contents": "crypto.createSign(${1:algorithm});$0"
+            "trigger": "crypto.createSign(algorithm[, options])\tcrypto",
+            "contents": "crypto.createSign(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.createVerify(algorithm)\tcrypto",
-            "contents": "crypto.createVerify(${1:algorithm});$0"
+            "trigger": "crypto.createVerify(algorithm[, options])\tcrypto",
+            "contents": "crypto.createVerify(${1:algorithm}, ${2:[, options]});$0"
         },
         {
             "trigger": "crypto.getCiphers()\tcrypto",

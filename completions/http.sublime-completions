@@ -246,6 +246,10 @@
             "contents": "http.serverresponse.sendDate$0"
         },
         {
+            "trigger": "res.socket\thttp",
+            "contents": "res.socket$0"
+        },
+        {
             "trigger": "response.statusCode\thttp",
             "contents": "response.statusCode$0"
         },
