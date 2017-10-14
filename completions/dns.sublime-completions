@@ -42,7 +42,7 @@
             "contents": "dns.resolveNs(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolvePtr(hostname)\tdns",
+            "trigger": "dns.resolvePtr(hostname, callback)\tdns",
             "contents": "dns.resolvePtr(${1:hostname}, ${2:callback});$0"
         },
         {

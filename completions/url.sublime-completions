@@ -26,8 +26,8 @@
             "contents": "url_strings_and_url_objects.hash$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.host\turl",
-            "contents": "url_strings_and_url_objects.host$0"
+            "trigger": "sub.host\turl",
+            "contents": "sub.host$0"
         },
         {
             "trigger": "url_strings_and_url_objects.hostname\turl",
