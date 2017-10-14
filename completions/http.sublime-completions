@@ -18,6 +18,14 @@
             "contents": "agent.createConnection(${1:options}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "agent.keepSocketAlive(socket)\thttp",
+            "contents": "agent.keepSocketAlive(${1:socket});$0"
+        },
+        {
+            "trigger": "agent.reuseSocket(socket, request)\thttp",
+            "contents": "agent.reuseSocket(${1:socket}, ${2:request});$0"
+        },
+        {
             "trigger": "agent.destroy()\thttp",
             "contents": "agent.destroy();$0"
         },

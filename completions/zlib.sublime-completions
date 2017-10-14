@@ -42,6 +42,10 @@
             "contents": "zlib.reset();$0"
         },
         {
+            "trigger": "zlib.bytesRead\tzlib",
+            "contents": "zlib.bytesRead$0"
+        },
+        {
             "trigger": "zlib.constants\tzlib",
             "contents": "zlib.constants$0"
         }
