@@ -2,11 +2,11 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "stringDecoder.end([buffer])\tstringdecoder",
+            "trigger": "stringDecoder.end([buffer])\tstring_decoder",
             "contents": "stringDecoder.end(${1:[, buffer]});$0"
         },
         {
-            "trigger": "stringDecoder.write(buffer)\tstringdecoder",
+            "trigger": "stringDecoder.write(buffer)\tstring_decoder",
             "contents": "stringDecoder.write(${1:buffer});$0"
         }
     ]
