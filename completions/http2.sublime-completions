@@ -258,6 +258,46 @@
             "contents": "unknownProtocol$0"
         },
         {
+            "trigger": "request.destroy([error])\thttp2",
+            "contents": "request.destroy(${1:[, error]});$0"
+        },
+        {
+            "trigger": "request.setTimeout(msecs, callback)\thttp2",
+            "contents": "request.setTimeout(${1:msecs}, ${2:callback});$0"
+        },
+        {
+            "trigger": "request.headers\thttp2",
+            "contents": "request.headers$0"
+        },
+        {
+            "trigger": "message.httpVersion\thttp2",
+            "contents": "message.httpVersion$0"
+        },
+        {
+            "trigger": "http2.http2serverrequest.method\thttp2",
+            "contents": "http2.http2serverrequest.method$0"
+        },
+        {
+            "trigger": "request.rawHeaders\thttp2",
+            "contents": "request.rawHeaders$0"
+        },
+        {
+            "trigger": "http2.http2serverrequest.rawTrailers\thttp2",
+            "contents": "http2.http2serverrequest.rawTrailers$0"
+        },
+        {
+            "trigger": "http2.http2serverrequest.stream\thttp2",
+            "contents": "http2.http2serverrequest.stream$0"
+        },
+        {
+            "trigger": "http2.http2serverrequest.trailers\thttp2",
+            "contents": "http2.http2serverrequest.trailers$0"
+        },
+        {
+            "trigger": "request.url\thttp2",
+            "contents": "request.url$0"
+        },
+        {
             "trigger": "response.addTrailers(headers)\thttp2",
             "contents": "response.addTrailers(${1:headers});$0"
         },
@@ -310,48 +350,36 @@
             "contents": "response.createPushResponse(${1:headers}, ${2:callback});$0"
         },
         {
-            "trigger": "message.httpVersion\thttp2",
-            "contents": "message.httpVersion$0"
+            "trigger": "http2.http2serverresponse.connection\thttp2",
+            "contents": "http2.http2serverresponse.connection$0"
         },
         {
-            "trigger": "compatibility_api.connection\thttp2",
-            "contents": "compatibility_api.connection$0"
+            "trigger": "http2.http2serverresponse.finished\thttp2",
+            "contents": "http2.http2serverresponse.finished$0"
         },
         {
-            "trigger": "compatibility_api.finished\thttp2",
-            "contents": "compatibility_api.finished$0"
+            "trigger": "http2.http2serverresponse.headersSent\thttp2",
+            "contents": "http2.http2serverresponse.headersSent$0"
         },
         {
-            "trigger": "compatibility_api.headersSent\thttp2",
-            "contents": "compatibility_api.headersSent$0"
-        },
-        {
-            "trigger": "compatibility_api.sendDate\thttp2",
-            "contents": "compatibility_api.sendDate$0"
-        },
-        {
-            "trigger": "req.socket\thttp2",
-            "contents": "req.socket$0"
+            "trigger": "http2.http2serverresponse.sendDate\thttp2",
+            "contents": "http2.http2serverresponse.sendDate$0"
         },
         {
             "trigger": "response.statusCode\thttp2",
             "contents": "response.statusCode$0"
         },
         {
-            "trigger": "compatibility_api.statusMessage\thttp2",
-            "contents": "compatibility_api.statusMessage$0"
+            "trigger": "http2.http2serverresponse.statusMessage\thttp2",
+            "contents": "http2.http2serverresponse.statusMessage$0"
+        },
+        {
+            "trigger": "http2.http2serverresponse.stream\thttp2",
+            "contents": "http2.http2serverresponse.stream$0"
         },
         {
             "trigger": "finish\thttp2",
             "contents": "finish$0"
-        },
-        {
-            "trigger": "request.destroy([error])\thttp2",
-            "contents": "request.destroy(${1:[, error]});$0"
-        },
-        {
-            "trigger": "request.headers\thttp2",
-            "contents": "request.headers$0"
         }
     ]
 }

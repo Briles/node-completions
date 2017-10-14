@@ -26,6 +26,10 @@
             "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
+            "trigger": "socket.getSendBufferSize(size)\tdgram",
+            "contents": "socket.getSendBufferSize(${1:size});$0"
+        },
+        {
             "trigger": "socket.ref()\tdgram",
             "contents": "socket.ref();$0"
         },
@@ -48,6 +52,14 @@
         {
             "trigger": "socket.setMulticastTTL(ttl)\tdgram",
             "contents": "socket.setMulticastTTL(${1:ttl});$0"
+        },
+        {
+            "trigger": "socket.setRecvBufferSize(size)\tdgram",
+            "contents": "socket.setRecvBufferSize(${1:size});$0"
+        },
+        {
+            "trigger": "socket.setSendBufferSize(size)\tdgram",
+            "contents": "socket.setSendBufferSize(${1:size});$0"
         },
         {
             "trigger": "socket.setTTL(ttl)\tdgram",

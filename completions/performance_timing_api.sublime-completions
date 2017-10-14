@@ -42,10 +42,6 @@
             "contents": "performance.timerify(${1:fn});$0"
         },
         {
-            "trigger": "performance.nodeFrame\tperformance_timing_api",
-            "contents": "performance.nodeFrame$0"
-        },
-        {
             "trigger": "performance.nodeTiming\tperformance_timing_api",
             "contents": "performance.nodeTiming$0"
         },
@@ -72,26 +68,6 @@
         {
             "trigger": "performance.kind\tperformance_timing_api",
             "contents": "performance.kind$0"
-        },
-        {
-            "trigger": "performancenodeframe.frameCheck\tperformance_timing_api",
-            "contents": "performancenodeframe.frameCheck$0"
-        },
-        {
-            "trigger": "performancenodeframe.frameCount\tperformance_timing_api",
-            "contents": "performancenodeframe.frameCount$0"
-        },
-        {
-            "trigger": "performancenodeframe.frameIdle\tperformance_timing_api",
-            "contents": "performancenodeframe.frameIdle$0"
-        },
-        {
-            "trigger": "performancenodeframe.framesPerSecond\tperformance_timing_api",
-            "contents": "performancenodeframe.framesPerSecond$0"
-        },
-        {
-            "trigger": "performancenodeframe.framePrepare\tperformance_timing_api",
-            "contents": "performancenodeframe.framePrepare$0"
         },
         {
             "trigger": "performancenodetiming.bootstrapComplete\tperformance_timing_api",
