@@ -30,8 +30,8 @@
             "contents": "cipher.getAuthTag();$0"
         },
         {
-            "trigger": "cipher.setAutoPadding(auto_padding=true)\tcrypto",
-            "contents": "cipher.setAutoPadding(${1:auto_padding});$0"
+            "trigger": "cipher.setAutoPadding([auto_padding])\tcrypto",
+            "contents": "cipher.setAutoPadding(${1:[, auto_padding]});$0"
         },
         {
             "trigger": "cipher.update(data[, input_encoding][, output_encoding])\tcrypto",
@@ -50,8 +50,8 @@
             "contents": "decipher.setAuthTag(${1:buffer});$0"
         },
         {
-            "trigger": "decipher.setAutoPadding(auto_padding=true)\tcrypto",
-            "contents": "decipher.setAutoPadding(${1:auto_padding});$0"
+            "trigger": "decipher.setAutoPadding([auto_padding])\tcrypto",
+            "contents": "decipher.setAutoPadding(${1:[, auto_padding]});$0"
         },
         {
             "trigger": "decipher.update(data[, input_encoding][, output_encoding])\tcrypto",
@@ -106,7 +106,7 @@
             "contents": "ecdh.getPrivateKey(${1:[, encoding]});$0"
         },
         {
-            "trigger": "ecdh.getPublicKey([encoding[, format]])\tcrypto",
+            "trigger": "ecdh.getPublicKey([encoding][, format])\tcrypto",
             "contents": "ecdh.getPublicKey(${1:[, encoding]}, ${2:[, format]});$0"
         },
         {

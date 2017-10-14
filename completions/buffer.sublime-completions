@@ -274,8 +274,16 @@
             "contents": "buffer[index]$0"
         },
         {
+            "trigger": "buffer.buffer\tbuffer",
+            "contents": "buffer.buffer$0"
+        },
+        {
             "trigger": "buf.length\tbuffer",
             "contents": "buf.length$0"
+        },
+        {
+            "trigger": "buf.parent\tbuffer",
+            "contents": "buf.parent$0"
         },
         {
             "trigger": "buffer.INSPECT_MAX_BYTES\tbuffer",

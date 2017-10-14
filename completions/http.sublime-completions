@@ -138,6 +138,10 @@
             "contents": "http.server.timeout$0"
         },
         {
+            "trigger": "http.server.keepAliveTimeout\thttp",
+            "contents": "http.server.keepAliveTimeout$0"
+        },
+        {
             "trigger": "checkContinue\thttp",
             "contents": "checkContinue$0"
         },

@@ -22,6 +22,10 @@
             "contents": "https.server.timeout$0"
         },
         {
+            "trigger": "https.server.keepAliveTimeout\thttps",
+            "contents": "https.server.keepAliveTimeout$0"
+        },
+        {
             "trigger": "https.globalAgent\thttps",
             "contents": "https.globalAgent$0"
         }

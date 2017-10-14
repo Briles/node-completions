@@ -1,0 +1,29 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "Constructor: new inspector.Session()\tinspector",
+            "contents": "Constructor: new inspector.Session();$0"
+        },
+        {
+            "trigger": "session.connect()\tinspector",
+            "contents": "session.connect();$0"
+        },
+        {
+            "trigger": "session.post(method[, params][, callback])\tinspector",
+            "contents": "session.post(${1:method}, ${2:[, params]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "session.disconnect()\tinspector",
+            "contents": "session.disconnect();$0"
+        },
+        {
+            "trigger": "inspectorNotification\tinspector",
+            "contents": "inspectorNotification$0"
+        },
+        {
+            "trigger": "&lt;inspector-protocol-method&gt;\tinspector",
+            "contents": "&lt;inspector-protocol-method&gt;$0"
+        }
+    ]
+}

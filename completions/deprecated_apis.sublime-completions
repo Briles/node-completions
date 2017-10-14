@@ -1,0 +1,185 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "DEP0022: os.tmpDir()\tdeprecated_apis",
+            "contents": "DEP0022: os.tmpDir();$0"
+        },
+        {
+            "trigger": "DEP0023: os.getNetworkInterfaces()\tdeprecated_apis",
+            "contents": "DEP0023: os.getNetworkInterfaces();$0"
+        },
+        {
+            "trigger": "DEP0026: util.print()\tdeprecated_apis",
+            "contents": "DEP0026: util.print();$0"
+        },
+        {
+            "trigger": "DEP0027: util.puts()\tdeprecated_apis",
+            "contents": "DEP0027: util.puts();$0"
+        },
+        {
+            "trigger": "DEP0028: util.debug()\tdeprecated_apis",
+            "contents": "DEP0028: util.debug();$0"
+        },
+        {
+            "trigger": "DEP0029: util.error()\tdeprecated_apis",
+            "contents": "DEP0029: util.error();$0"
+        },
+        {
+            "trigger": "DEP0031: ecdh.setPublicKey()\tdeprecated_apis",
+            "contents": "DEP0031: ecdh.setPublicKey();$0"
+        },
+        {
+            "trigger": "DEP0033: EventEmitter.listenerCount()\tdeprecated_apis",
+            "contents": "DEP0033: EventEmitter.listenerCount();$0"
+        },
+        {
+            "trigger": "DEP0034: fs.exists(path, callback)\tdeprecated_apis",
+            "contents": "DEP0034: fs.exists(${1:path}, ${2:callback});$0"
+        },
+        {
+            "trigger": "DEP0035: fs.lchmod(path, mode, callback)\tdeprecated_apis",
+            "contents": "DEP0035: fs.lchmod(${1:path}, ${2:mode}, ${3:callback});$0"
+        },
+        {
+            "trigger": "DEP0036: fs.lchmodSync(path, mode)\tdeprecated_apis",
+            "contents": "DEP0036: fs.lchmodSync(${1:path}, ${2:mode});$0"
+        },
+        {
+            "trigger": "DEP0037: fs.lchown(path, uid, gid, callback)\tdeprecated_apis",
+            "contents": "DEP0037: fs.lchown(${1:path}, ${2:uid}, ${3:gid}, ${4:callback});$0"
+        },
+        {
+            "trigger": "DEP0038: fs.lchownSync(path, uid, gid)\tdeprecated_apis",
+            "contents": "DEP0038: fs.lchownSync(${1:path}, ${2:uid}, ${3:gid});$0"
+        },
+        {
+            "trigger": "DEP0044: util.isArray()\tdeprecated_apis",
+            "contents": "DEP0044: util.isArray();$0"
+        },
+        {
+            "trigger": "DEP0045: util.isBoolean()\tdeprecated_apis",
+            "contents": "DEP0045: util.isBoolean();$0"
+        },
+        {
+            "trigger": "DEP0046: util.isBuffer()\tdeprecated_apis",
+            "contents": "DEP0046: util.isBuffer();$0"
+        },
+        {
+            "trigger": "DEP0047: util.isDate()\tdeprecated_apis",
+            "contents": "DEP0047: util.isDate();$0"
+        },
+        {
+            "trigger": "DEP0048: util.isError()\tdeprecated_apis",
+            "contents": "DEP0048: util.isError();$0"
+        },
+        {
+            "trigger": "DEP0049: util.isFunction()\tdeprecated_apis",
+            "contents": "DEP0049: util.isFunction();$0"
+        },
+        {
+            "trigger": "DEP0050: util.isNull()\tdeprecated_apis",
+            "contents": "DEP0050: util.isNull();$0"
+        },
+        {
+            "trigger": "DEP0051: util.isNullOrUndefined()\tdeprecated_apis",
+            "contents": "DEP0051: util.isNullOrUndefined();$0"
+        },
+        {
+            "trigger": "DEP0052: util.isNumber()\tdeprecated_apis",
+            "contents": "DEP0052: util.isNumber();$0"
+        },
+        {
+            "trigger": "DEP0053 util.isObject()\tdeprecated_apis",
+            "contents": "DEP0053 util.isObject();$0"
+        },
+        {
+            "trigger": "DEP0054: util.isPrimitive()\tdeprecated_apis",
+            "contents": "DEP0054: util.isPrimitive();$0"
+        },
+        {
+            "trigger": "DEP0055: util.isRegExp()\tdeprecated_apis",
+            "contents": "DEP0055: util.isRegExp();$0"
+        },
+        {
+            "trigger": "DEP0056: util.isString()\tdeprecated_apis",
+            "contents": "DEP0056: util.isString();$0"
+        },
+        {
+            "trigger": "DEP0057: util.isSymbol()\tdeprecated_apis",
+            "contents": "DEP0057: util.isSymbol();$0"
+        },
+        {
+            "trigger": "DEP0058: util.isUndefined()\tdeprecated_apis",
+            "contents": "DEP0058: util.isUndefined();$0"
+        },
+        {
+            "trigger": "DEP0059: util.log()\tdeprecated_apis",
+            "contents": "DEP0059: util.log();$0"
+        },
+        {
+            "trigger": "DEP0060: util.\\_extend()\tdeprecated_apis",
+            "contents": "DEP0060: util.\\_extend();$0"
+        },
+        {
+            "trigger": "DEP0064: tls.createSecurePair()\tdeprecated_apis",
+            "contents": "DEP0064: tls.createSecurePair();$0"
+        },
+        {
+            "trigger": "DEP0069: vm.runInDebugContext(string)\tdeprecated_apis",
+            "contents": "DEP0069: vm.runInDebugContext(${1:string});$0"
+        },
+        {
+            "trigger": "_writableState.buffer\tdeprecated_apis",
+            "contents": "_writableState.buffer$0"
+        },
+        {
+            "trigger": "options.customFds\tdeprecated_apis",
+            "contents": "options.customFds$0"
+        },
+        {
+            "trigger": "worker.suicide\tdeprecated_apis",
+            "contents": "worker.suicide$0"
+        },
+        {
+            "trigger": "crypto.createCredentials\tdeprecated_apis",
+            "contents": "crypto.createCredentials$0"
+        },
+        {
+            "trigger": "crypto.Credentials\tdeprecated_apis",
+            "contents": "crypto.Credentials$0"
+        },
+        {
+            "trigger": "Domain.dispose\tdeprecated_apis",
+            "contents": "Domain.dispose$0"
+        },
+        {
+            "trigger": "Intl.v8BreakIterator\tdeprecated_apis",
+            "contents": "Intl.v8BreakIterator$0"
+        },
+        {
+            "trigger": "Server.connections\tdeprecated_apis",
+            "contents": "Server.connections$0"
+        },
+        {
+            "trigger": "Server.listenFD\tdeprecated_apis",
+            "contents": "Server.listenFD$0"
+        },
+        {
+            "trigger": "require.extensions\tdeprecated_apis",
+            "contents": "require.extensions$0"
+        },
+        {
+            "trigger": "tls.CryptoStream\tdeprecated_apis",
+            "contents": "tls.CryptoStream$0"
+        },
+        {
+            "trigger": "tls.SecurePair\tdeprecated_apis",
+            "contents": "tls.SecurePair$0"
+        },
+        {
+            "trigger": "fs.SyncWriteStream\tdeprecated_apis",
+            "contents": "fs.SyncWriteStream$0"
+        }
+    ]
+}

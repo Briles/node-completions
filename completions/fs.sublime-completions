@@ -182,12 +182,12 @@
             "contents": "fs.readdirSync(${1:path}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.readFile(file[, options], callback)\tfs",
-            "contents": "fs.readFile(${1:file}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "fs.readFile(path[, options], callback)\tfs",
+            "contents": "fs.readFile(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readFileSync(file[, options])\tfs",
-            "contents": "fs.readFileSync(${1:file}, ${2:[, options]});$0"
+            "trigger": "fs.readFileSync(path[, options])\tfs",
+            "contents": "fs.readFileSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.readlink(path[, options], callback)\tfs",
