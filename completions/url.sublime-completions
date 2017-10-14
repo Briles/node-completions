@@ -2,6 +2,14 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "url.domainToASCII(domain)\turl",
+            "contents": "url.domainToASCII(${1:domain});$0"
+        },
+        {
+            "trigger": "url.domainToUnicode(domain)\turl",
+            "contents": "url.domainToUnicode(${1:domain});$0"
+        },
+        {
             "trigger": "url.format(urlObject)\turl",
             "contents": "url.format(${1:urlObject});$0"
         },
@@ -66,14 +74,6 @@
             "contents": "url_strings_and_url_objects.slashes$0"
         },
         {
-            "trigger": "require('url').domainToASCII(domain)\turl",
-            "contents": "require(${1:domain});$0"
-        },
-        {
-            "trigger": "require('url').domainToUnicode(domain)\turl",
-            "contents": "require(${1:domain});$0"
-        },
-        {
             "trigger": "url.toString()\turl",
             "contents": "url.toString();$0"
         },
@@ -128,10 +128,6 @@
         {
             "trigger": "myURL.username\turl",
             "contents": "myURL.username$0"
-        },
-        {
-            "trigger": "Constructor: new URLSearchParams([init])\turl",
-            "contents": "Constructor: new URLSearchParams(${1:name}, ${2:value});$0"
         },
         {
             "trigger": "urlSearchParams.append(name, value)\turl",

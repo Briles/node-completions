@@ -242,6 +242,14 @@
             "contents": "crypto.randomBytes(${1:size}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "crypto.randomFillSync(buffer[, offset][, size])\tcrypto",
+            "contents": "crypto.randomFillSync(${1:buffer}, ${2:[, offset]}, ${3:[, size]});$0"
+        },
+        {
+            "trigger": "crypto.randomFill(buffer[, offset][, size], callback)\tcrypto",
+            "contents": "crypto.randomFill(${1:buffer}, ${2:[, offset]}, ${3:[, size]}, ${4:callback});$0"
+        },
+        {
             "trigger": "crypto.setEngine(engine[, flags])\tcrypto",
             "contents": "crypto.setEngine(${1:engine}, ${2:[, flags]});$0"
         },
