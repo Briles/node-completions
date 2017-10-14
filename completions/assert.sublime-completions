@@ -23,11 +23,11 @@
         },
         {
             "trigger": "assert.fail(message)\tassert",
-            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:message}, ${4:operator});$0"
+            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[, message]}, ${4:[, operator]}, ${5:[, stackStartFunction]});$0"
         },
         {
-            "trigger": "assert.fail(actual, expected, message, operator)\tassert",
-            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:message}, ${4:operator});$0"
+            "trigger": "assert.fail(actual, expected[, message[, operator[, stackStartFunction]]])\tassert",
+            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[, message]}, ${4:[, operator]}, ${5:[, stackStartFunction]});$0"
         },
         {
             "trigger": "assert.ifError(value)\tassert",

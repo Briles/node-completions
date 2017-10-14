@@ -142,12 +142,12 @@
             "contents": "sign.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "verifier.update(data[, inputEncoding])\tcrypto",
-            "contents": "verifier.update(${1:data}, ${2:[, inputEncoding]});$0"
+            "trigger": "verify.update(data[, inputEncoding])\tcrypto",
+            "contents": "verify.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "verifier.verify(object, signature[, signatureFormat])\tcrypto",
-            "contents": "verifier.verify(${1:object}, ${2:signature}, ${3:[, signatureFormat]});$0"
+            "trigger": "verify.verify(object, signature[, signatureFormat])\tcrypto",
+            "contents": "verify.verify(${1:object}, ${2:signature}, ${3:[, signatureFormat]});$0"
         },
         {
             "trigger": "crypto.createCipher(algorithm, password)\tcrypto",
