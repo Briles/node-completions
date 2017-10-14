@@ -82,6 +82,10 @@
             "contents": "tlsSocket.address();$0"
         },
         {
+            "trigger": "tlsSocket.disableRenegotiation()\ttls_(ssl)",
+            "contents": "tlsSocket.disableRenegotiation();$0"
+        },
+        {
             "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
             "contents": "tlsSocket.getCipher();$0"
         },

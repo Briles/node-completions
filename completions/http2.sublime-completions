@@ -1,0 +1,329 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "http2.createServer(options[, onRequestHandler])\thttp2",
+            "contents": "http2.createServer(${1:options}, ${2:[, onRequestHandler]});$0"
+        },
+        {
+            "trigger": "http2.createSecureServer(options[, onRequestHandler])\thttp2",
+            "contents": "http2.createSecureServer(${1:options}, ${2:[, onRequestHandler]});$0"
+        },
+        {
+            "trigger": "http2.connect(authority[, options][, listener])\thttp2",
+            "contents": "http2.connect(${1:authority}, ${2:[, options]}, ${3:[, listener]});$0"
+        },
+        {
+            "trigger": "http2.getDefaultSettings()\thttp2",
+            "contents": "http2.getDefaultSettings();$0"
+        },
+        {
+            "trigger": "http2.getPackedSettings(settings)\thttp2",
+            "contents": "http2.getPackedSettings(${1:settings});$0"
+        },
+        {
+            "trigger": "http2.getUnpackedSettings(buf)\thttp2",
+            "contents": "http2.getUnpackedSettings(${1:buf});$0"
+        },
+        {
+            "trigger": "core_api.constants\thttp2",
+            "contents": "core_api.constants$0"
+        },
+        {
+            "trigger": "core_api.selectPadding`\thttp2",
+            "contents": "core_api.selectPadding`$0"
+        },
+        {
+            "trigger": "http2session.destroy()\thttp2",
+            "contents": "http2session.destroy();$0"
+        },
+        {
+            "trigger": "http2session.request(headers[, options])\thttp2",
+            "contents": "http2session.request(${1:headers}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "http2session.rstStream(stream, code)\thttp2",
+            "contents": "http2session.rstStream(${1:stream}, ${2:code});$0"
+        },
+        {
+            "trigger": "http2session.setTimeout(msecs, callback)\thttp2",
+            "contents": "http2session.setTimeout(${1:msecs}, ${2:callback});$0"
+        },
+        {
+            "trigger": "http2session.shutdown(options[, callback])\thttp2",
+            "contents": "http2session.shutdown(${1:options}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "http2session.priority(stream, options)\thttp2",
+            "contents": "http2session.priority(${1:stream}, ${2:options});$0"
+        },
+        {
+            "trigger": "http2session.settings(settings)\thttp2",
+            "contents": "http2session.settings(${1:settings});$0"
+        },
+        {
+            "trigger": "http2session.destroyed\thttp2",
+            "contents": "http2session.destroyed$0"
+        },
+        {
+            "trigger": "http2session.localSettings\thttp2",
+            "contents": "http2session.localSettings$0"
+        },
+        {
+            "trigger": "http2session.pendingSettingsAck\thttp2",
+            "contents": "http2session.pendingSettingsAck$0"
+        },
+        {
+            "trigger": "http2session.remoteSettings\thttp2",
+            "contents": "http2session.remoteSettings$0"
+        },
+        {
+            "trigger": "net.Socket\thttp2",
+            "contents": "net.Socket$0"
+        },
+        {
+            "trigger": "http2session.state\thttp2",
+            "contents": "http2session.state$0"
+        },
+        {
+            "trigger": "http2session.type\thttp2",
+            "contents": "http2session.type$0"
+        },
+        {
+            "trigger": "close\thttp2",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "connect\thttp2",
+            "contents": "connect$0"
+        },
+        {
+            "trigger": "error\thttp2",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "frameError\thttp2",
+            "contents": "frameError$0"
+        },
+        {
+            "trigger": "goaway\thttp2",
+            "contents": "goaway$0"
+        },
+        {
+            "trigger": "localSettings\thttp2",
+            "contents": "localSettings$0"
+        },
+        {
+            "trigger": "remoteSettings\thttp2",
+            "contents": "remoteSettings$0"
+        },
+        {
+            "trigger": "stream\thttp2",
+            "contents": "stream$0"
+        },
+        {
+            "trigger": "socketError\thttp2",
+            "contents": "socketError$0"
+        },
+        {
+            "trigger": "timeout\thttp2",
+            "contents": "timeout$0"
+        },
+        {
+            "trigger": "http2stream.priority(options)\thttp2",
+            "contents": "http2stream.priority(${1:options});$0"
+        },
+        {
+            "trigger": "http2stream.rstStream(code)\thttp2",
+            "contents": "http2stream.rstStream(${1:code});$0"
+        },
+        {
+            "trigger": "http2stream.rstWithNoError()\thttp2",
+            "contents": "http2stream.rstWithNoError();$0"
+        },
+        {
+            "trigger": "http2stream.setTimeout(msecs, callback)\thttp2",
+            "contents": "http2stream.setTimeout(${1:msecs}, ${2:callback});$0"
+        },
+        {
+            "trigger": "http2stream.aborted\thttp2",
+            "contents": "http2stream.aborted$0"
+        },
+        {
+            "trigger": "http2stream.destroyed\thttp2",
+            "contents": "http2stream.destroyed$0"
+        },
+        {
+            "trigger": "http2stream.rstCode\thttp2",
+            "contents": "http2stream.rstCode$0"
+        },
+        {
+            "trigger": "http2stream.session\thttp2",
+            "contents": "http2stream.session$0"
+        },
+        {
+            "trigger": "http2stream.state\thttp2",
+            "contents": "http2stream.state$0"
+        },
+        {
+            "trigger": "aborted\thttp2",
+            "contents": "aborted$0"
+        },
+        {
+            "trigger": "streamClosed\thttp2",
+            "contents": "streamClosed$0"
+        },
+        {
+            "trigger": "trailers\thttp2",
+            "contents": "trailers$0"
+        },
+        {
+            "trigger": "headers\thttp2",
+            "contents": "headers$0"
+        },
+        {
+            "trigger": "push\thttp2",
+            "contents": "push$0"
+        },
+        {
+            "trigger": "response\thttp2",
+            "contents": "response$0"
+        },
+        {
+            "trigger": "http2stream.additionalHeaders(headers)\thttp2",
+            "contents": "http2stream.additionalHeaders(${1:headers});$0"
+        },
+        {
+            "trigger": "http2stream.pushStream(headers[, options], callback)\thttp2",
+            "contents": "http2stream.pushStream(${1:headers}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "http2stream.respond([headers[, options]])\thttp2",
+            "contents": "http2stream.respond(${1:[, headers]}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "http2stream.respondWithFD(fd[, headers[, options]])\thttp2",
+            "contents": "http2stream.respondWithFD(${1:fd}, ${2:[, headers]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "http2stream.respondWithFile(path[, headers[, options]])\thttp2",
+            "contents": "http2stream.respondWithFile(${1:path}, ${2:[, headers]}, ${3:[, options]});$0"
+        },
+        {
+            "trigger": "serverhttp2stream.headersSent\thttp2",
+            "contents": "serverhttp2stream.headersSent$0"
+        },
+        {
+            "trigger": "serverhttp2stream.pushAllowed\thttp2",
+            "contents": "serverhttp2stream.pushAllowed$0"
+        },
+        {
+            "trigger": "sessionError\thttp2",
+            "contents": "sessionError$0"
+        },
+        {
+            "trigger": "request\thttp2",
+            "contents": "request$0"
+        },
+        {
+            "trigger": "unknownProtocol\thttp2",
+            "contents": "unknownProtocol$0"
+        },
+        {
+            "trigger": "response.addTrailers(headers)\thttp2",
+            "contents": "response.addTrailers(${1:headers});$0"
+        },
+        {
+            "trigger": "response.end([data][, encoding][, callback])\thttp2",
+            "contents": "response.end(${1:[, data]}, ${2:[, encoding]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "response.getHeader(name)\thttp2",
+            "contents": "response.getHeader(${1:name});$0"
+        },
+        {
+            "trigger": "response.getHeaderNames()\thttp2",
+            "contents": "response.getHeaderNames();$0"
+        },
+        {
+            "trigger": "response.getHeaders()\thttp2",
+            "contents": "response.getHeaders();$0"
+        },
+        {
+            "trigger": "response.hasHeader(name)\thttp2",
+            "contents": "response.hasHeader(${1:name});$0"
+        },
+        {
+            "trigger": "response.removeHeader(name)\thttp2",
+            "contents": "response.removeHeader(${1:name});$0"
+        },
+        {
+            "trigger": "response.setHeader(name, value)\thttp2",
+            "contents": "response.setHeader(${1:name}, ${2:value});$0"
+        },
+        {
+            "trigger": "response.setTimeout(msecs[, callback])\thttp2",
+            "contents": "response.setTimeout(${1:msecs}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "response.write(chunk[, encoding][, callback])\thttp2",
+            "contents": "response.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "response.writeContinue()\thttp2",
+            "contents": "response.writeContinue();$0"
+        },
+        {
+            "trigger": "response.writeHead(statusCode[, statusMessage][, headers])\thttp2",
+            "contents": "response.writeHead(${1:statusCode}, ${2:[, statusMessage]}, ${3:[, headers]});$0"
+        },
+        {
+            "trigger": "response.createPushResponse(headers, callback)\thttp2",
+            "contents": "response.createPushResponse(${1:headers}, ${2:callback});$0"
+        },
+        {
+            "trigger": "message.httpVersion\thttp2",
+            "contents": "message.httpVersion$0"
+        },
+        {
+            "trigger": "compatibility_api.connection\thttp2",
+            "contents": "compatibility_api.connection$0"
+        },
+        {
+            "trigger": "compatibility_api.finished\thttp2",
+            "contents": "compatibility_api.finished$0"
+        },
+        {
+            "trigger": "compatibility_api.headersSent\thttp2",
+            "contents": "compatibility_api.headersSent$0"
+        },
+        {
+            "trigger": "compatibility_api.sendDate\thttp2",
+            "contents": "compatibility_api.sendDate$0"
+        },
+        {
+            "trigger": "req.socket\thttp2",
+            "contents": "req.socket$0"
+        },
+        {
+            "trigger": "response.statusCode\thttp2",
+            "contents": "response.statusCode$0"
+        },
+        {
+            "trigger": "compatibility_api.statusMessage\thttp2",
+            "contents": "compatibility_api.statusMessage$0"
+        },
+        {
+            "trigger": "finish\thttp2",
+            "contents": "finish$0"
+        },
+        {
+            "trigger": "request.destroy([error])\thttp2",
+            "contents": "request.destroy(${1:[, error]});$0"
+        },
+        {
+            "trigger": "request.headers\thttp2",
+            "contents": "request.headers$0"
+        }
+    ]
+}
