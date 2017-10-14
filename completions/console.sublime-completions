@@ -30,8 +30,8 @@
             "contents": "console.timeEnd(${1:label});$0"
         },
         {
-            "trigger": "console.trace(message[, ...args])\tconsole",
-            "contents": "console.trace(${1:message}, ${2:[, ...args]});$0"
+            "trigger": "console.trace([message][, ...args])\tconsole",
+            "contents": "console.trace(${1:[, message]}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "console.warn([data][, ...args])\tconsole",

@@ -66,7 +66,7 @@
             "contents": "url_strings_and_url_objects.slashes$0"
         },
         {
-            "trigger": "require('url').domainToAscii(domain)\turl",
+            "trigger": "require('url').domainToASCII(domain)\turl",
             "contents": "require(${1:domain});$0"
         },
         {
