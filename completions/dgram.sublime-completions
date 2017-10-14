@@ -38,6 +38,10 @@
             "contents": "socket.setBroadcast(${1:flag});$0"
         },
         {
+            "trigger": "socket.setMulticastInterface(multicastInterface)\tdgram",
+            "contents": "socket.setMulticastInterface(${1:multicastInterface});$0"
+        },
+        {
             "trigger": "socket.setMulticastLoopback(flag)\tdgram",
             "contents": "socket.setMulticastLoopback(${1:flag});$0"
         },

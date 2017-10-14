@@ -138,6 +138,10 @@
             "contents": "DEP0071: async_hooks.triggerId();$0"
         },
         {
+            "trigger": "DEP0076: tls.parseCertString()\tdeprecated_apis",
+            "contents": "DEP0076: tls.parseCertString();$0"
+        },
+        {
             "trigger": "_writableState.buffer\tdeprecated_apis",
             "contents": "_writableState.buffer$0"
         },

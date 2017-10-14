@@ -66,6 +66,18 @@
             "contents": "request.flushHeaders();$0"
         },
         {
+            "trigger": "request.getHeader(name)\thttp",
+            "contents": "request.getHeader(${1:name});$0"
+        },
+        {
+            "trigger": "request.removeHeader(name)\thttp",
+            "contents": "request.removeHeader(${1:name});$0"
+        },
+        {
+            "trigger": "request.setHeader(name, value)\thttp",
+            "contents": "request.setHeader(${1:name}, ${2:value});$0"
+        },
+        {
             "trigger": "request.setNoDelay([noDelay])\thttp",
             "contents": "request.setNoDelay(${1:[, noDelay]});$0"
         },
@@ -98,10 +110,6 @@
             "contents": "abort$0"
         },
         {
-            "trigger": "aborted\thttp",
-            "contents": "aborted$0"
-        },
-        {
             "trigger": "connect\thttp",
             "contents": "connect$0"
         },
@@ -116,6 +124,10 @@
         {
             "trigger": "socket\thttp",
             "contents": "socket$0"
+        },
+        {
+            "trigger": "timeout\thttp",
+            "contents": "timeout$0"
         },
         {
             "trigger": "upgrade\thttp",
@@ -308,6 +320,10 @@
         {
             "trigger": "request.url\thttp",
             "contents": "request.url$0"
+        },
+        {
+            "trigger": "aborted\thttp",
+            "contents": "aborted$0"
         },
         {
             "trigger": "http.METHODS\thttp",
