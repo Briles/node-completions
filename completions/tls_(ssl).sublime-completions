@@ -90,7 +90,7 @@
             "contents": "tlsSocket.getEphemeralKeyInfo();$0"
         },
         {
-            "trigger": "tlsSocket.getPeerCertificate([ detailed ])\ttls_(ssl)",
+            "trigger": "tlsSocket.getPeerCertificate([detailed])\ttls_(ssl)",
             "contents": "tlsSocket.getPeerCertificate(${1:[, detailed]});$0"
         },
         {

@@ -58,7 +58,7 @@
             "contents": "request.abort();$0"
         },
         {
-            "trigger": "request.end([data][, encoding][, callback])\thttp",
+            "trigger": "request.end([data[, encoding]][, callback])\thttp",
             "contents": "request.end(${1:[, data]}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
