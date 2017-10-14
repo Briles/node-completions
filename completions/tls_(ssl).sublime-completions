@@ -2,16 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "tls.connect(port[, host][, options][, callback])\ttls_(ssl)",
-            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
+            "trigger": "tls.connect(options[, callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:options}, ${2:[, callback]});$0"
         },
         {
             "trigger": "tls.connect(path[, options][, callback])\ttls_(ssl)",
             "contents": "tls.connect(${1:path}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "tls.connect(options[, callback])\ttls_(ssl)",
-            "contents": "tls.connect(${1:options}, ${2:[, callback]});$0"
+            "trigger": "tls.connect(port[, host][, options][, callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "tls.createSecureContext(options)\ttls_(ssl)",
@@ -54,10 +54,6 @@
             "contents": "tls.server.connections$0"
         },
         {
-            "trigger": "tlsClientError\ttls_(ssl)",
-            "contents": "tlsClientError$0"
-        },
-        {
             "trigger": "newSession\ttls_(ssl)",
             "contents": "newSession$0"
         },
@@ -72,6 +68,10 @@
         {
             "trigger": "secureConnection\ttls_(ssl)",
             "contents": "secureConnection$0"
+        },
+        {
+            "trigger": "tlsClientError\ttls_(ssl)",
+            "contents": "tlsClientError$0"
         },
         {
             "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
@@ -114,12 +114,12 @@
             "contents": "tlsSocket.setMaxSendFragment(${1:size});$0"
         },
         {
-            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
-            "contents": "tls.tlssocket.authorized$0"
-        },
-        {
             "trigger": "tls.tlssocket.authorizationError\ttls_(ssl)",
             "contents": "tls.tlssocket.authorizationError$0"
+        },
+        {
+            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
+            "contents": "tls.tlssocket.authorized$0"
         },
         {
             "trigger": "tls.tlssocket.encrypted\ttls_(ssl)",

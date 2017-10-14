@@ -6,6 +6,10 @@
             "contents": "url.format(${1:urlObject});$0"
         },
         {
+            "trigger": "url.format(URL[, options])\turl",
+            "contents": "url.format(${1:URL}, ${2:[, options]});$0"
+        },
+        {
             "trigger": "url.parse(urlString[, parseQueryString[, slashesDenoteHost]])\turl",
             "contents": "url.parse(${1:urlString}, ${2:[, parseQueryString]}, ${3:[, slashesDenoteHost]});$0"
         },
@@ -14,52 +18,52 @@
             "contents": "url.resolve(${1:from}, ${2:to});$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.href\turl",
-            "contents": "url_strings_and_url_objects.href$0"
+            "trigger": "url_strings_and_url_objects.auth\turl",
+            "contents": "url_strings_and_url_objects.auth$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.protocol\turl",
-            "contents": "url_strings_and_url_objects.protocol$0"
-        },
-        {
-            "trigger": "url_strings_and_url_objects.slashes\turl",
-            "contents": "url_strings_and_url_objects.slashes$0"
+            "trigger": "url_strings_and_url_objects.hash\turl",
+            "contents": "url_strings_and_url_objects.hash$0"
         },
         {
             "trigger": "url_strings_and_url_objects.host\turl",
             "contents": "url_strings_and_url_objects.host$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.auth\turl",
-            "contents": "url_strings_and_url_objects.auth$0"
-        },
-        {
             "trigger": "url_strings_and_url_objects.hostname\turl",
             "contents": "url_strings_and_url_objects.hostname$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.port\turl",
-            "contents": "url_strings_and_url_objects.port$0"
-        },
-        {
-            "trigger": "url_strings_and_url_objects.pathname\turl",
-            "contents": "url_strings_and_url_objects.pathname$0"
-        },
-        {
-            "trigger": "url_strings_and_url_objects.search\turl",
-            "contents": "url_strings_and_url_objects.search$0"
+            "trigger": "url_strings_and_url_objects.href\turl",
+            "contents": "url_strings_and_url_objects.href$0"
         },
         {
             "trigger": "url_strings_and_url_objects.path\turl",
             "contents": "url_strings_and_url_objects.path$0"
         },
         {
+            "trigger": "url_strings_and_url_objects.pathname\turl",
+            "contents": "url_strings_and_url_objects.pathname$0"
+        },
+        {
+            "trigger": "url_strings_and_url_objects.port\turl",
+            "contents": "url_strings_and_url_objects.port$0"
+        },
+        {
+            "trigger": "url_strings_and_url_objects.protocol\turl",
+            "contents": "url_strings_and_url_objects.protocol$0"
+        },
+        {
             "trigger": "url_strings_and_url_objects.query\turl",
             "contents": "url_strings_and_url_objects.query$0"
         },
         {
-            "trigger": "url_strings_and_url_objects.hash\turl",
-            "contents": "url_strings_and_url_objects.hash$0"
+            "trigger": "url_strings_and_url_objects.search\turl",
+            "contents": "url_strings_and_url_objects.search$0"
+        },
+        {
+            "trigger": "url_strings_and_url_objects.slashes\turl",
+            "contents": "url_strings_and_url_objects.slashes$0"
         },
         {
             "trigger": "require('url').domainToAscii(domain)\turl",
@@ -72,6 +76,10 @@
         {
             "trigger": "url.toString()\turl",
             "contents": "url.toString();$0"
+        },
+        {
+            "trigger": "url.toJSON()\turl",
+            "contents": "url.toJSON();$0"
         },
         {
             "trigger": "myURL.hash\turl",
@@ -138,8 +146,8 @@
             "contents": "urlSearchParams.entries();$0"
         },
         {
-            "trigger": "urlSearchParams.forEach(fn)\turl",
-            "contents": "urlSearchParams.forEach(${1:fn});$0"
+            "trigger": "urlSearchParams.forEach(fn[, thisArg])\turl",
+            "contents": "urlSearchParams.forEach(${1:fn}, ${2:[, thisArg]});$0"
         },
         {
             "trigger": "urlSearchParams.get(name)\turl",
@@ -162,6 +170,10 @@
             "contents": "urlSearchParams.set(${1:name}, ${2:value});$0"
         },
         {
+            "trigger": "urlSearchParams.sort()\turl",
+            "contents": "urlSearchParams.sort();$0"
+        },
+        {
             "trigger": "urlSearchParams.toString()\turl",
             "contents": "urlSearchParams.toString();$0"
         },
@@ -170,8 +182,8 @@
             "contents": "urlSearchParams.values();$0"
         },
         {
-            "trigger": "urlSearchParams\\[\\@\\@iterator\\]()\turl",
-            "contents": "urlSearchParams\\[\\@\\@iterator\\]();$0"
+            "trigger": "urlSearchParams\\[@@iterator\\]()\turl",
+            "contents": "urlSearchParams\\[@@iterator\\]();$0"
         }
     ]
 }

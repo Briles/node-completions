@@ -74,6 +74,10 @@
             "contents": "request.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
+            "trigger": "http.clientrequest.aborted\thttp",
+            "contents": "http.clientrequest.aborted$0"
+        },
+        {
             "trigger": "abort\thttp",
             "contents": "abort$0"
         },
@@ -170,6 +174,18 @@
             "contents": "response.getHeader(${1:name});$0"
         },
         {
+            "trigger": "response.getHeaderNames()\thttp",
+            "contents": "response.getHeaderNames();$0"
+        },
+        {
+            "trigger": "response.getHeaders()\thttp",
+            "contents": "response.getHeaders();$0"
+        },
+        {
+            "trigger": "response.hasHeader(name)\thttp",
+            "contents": "response.hasHeader(${1:name});$0"
+        },
+        {
             "trigger": "response.removeHeader(name)\thttp",
             "contents": "response.removeHeader(${1:name});$0"
         },
@@ -246,16 +262,16 @@
             "contents": "http.incomingmessage.rawTrailers$0"
         },
         {
+            "trigger": "net.Socket\thttp",
+            "contents": "net.Socket$0"
+        },
+        {
             "trigger": "http.incomingmessage.statusCode\thttp",
             "contents": "http.incomingmessage.statusCode$0"
         },
         {
             "trigger": "http.incomingmessage.statusMessage\thttp",
             "contents": "http.incomingmessage.statusMessage$0"
-        },
-        {
-            "trigger": "net.Socket\thttp",
-            "contents": "net.Socket$0"
         },
         {
             "trigger": "http.incomingmessage.trailers\thttp",

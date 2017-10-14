@@ -2,12 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "v8.getHeapStatistics()\tv8",
-            "contents": "v8.getHeapStatistics();$0"
-        },
-        {
             "trigger": "v8.getHeapSpaceStatistics()\tv8",
             "contents": "v8.getHeapSpaceStatistics();$0"
+        },
+        {
+            "trigger": "v8.getHeapStatistics()\tv8",
+            "contents": "v8.getHeapStatistics();$0"
         },
         {
             "trigger": "v8.setFlagsFromString(string)\tv8",

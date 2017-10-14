@@ -226,10 +226,6 @@
             "contents": "crypto.privateDecrypt(${1:private_key}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.timingSafeEqual(a, b)\tcrypto",
-            "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
-        },
-        {
             "trigger": "crypto.privateEncrypt(private_key, buffer)\tcrypto",
             "contents": "crypto.privateEncrypt(${1:private_key}, ${2:buffer});$0"
         },
@@ -248,6 +244,10 @@
         {
             "trigger": "crypto.setEngine(engine[, flags])\tcrypto",
             "contents": "crypto.setEngine(${1:engine}, ${2:[, flags]});$0"
+        },
+        {
+            "trigger": "crypto.timingSafeEqual(a, b)\tcrypto",
+            "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
         },
         {
             "trigger": "`crypto`_module_methods_and_properties.constants\tcrypto",

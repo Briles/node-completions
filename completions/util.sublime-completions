@@ -22,6 +22,10 @@
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
         },
         {
+            "trigger": "util.\\_extend(target, source)\tutil",
+            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
+        },
+        {
             "trigger": "util.debug(string)\tutil",
             "contents": "util.debug(${1:string});$0"
         },
@@ -100,10 +104,6 @@
         {
             "trigger": "util.puts([...strings])\tutil",
             "contents": "util.puts(${1:[, ...strings]});$0"
-        },
-        {
-            "trigger": "util.\\_extend(target, source)\tutil",
-            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
         }
     ]
 }

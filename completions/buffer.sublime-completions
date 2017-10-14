@@ -26,12 +26,12 @@
             "contents": "buf.fill(${1:value}, ${2:[, offset]}, ${3:[, end]}, ${4:[, encoding]});$0"
         },
         {
-            "trigger": "buf.indexOf(value[, byteOffset][, encoding])\tbuffer",
-            "contents": "buf.indexOf(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
-        },
-        {
             "trigger": "buf.includes(value[, byteOffset][, encoding])\tbuffer",
             "contents": "buf.includes(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
+        },
+        {
+            "trigger": "buf.indexOf(value[, byteOffset][, encoding])\tbuffer",
+            "contents": "buf.indexOf(${1:value}, ${2:[, byteOffset]}, ${3:[, encoding]});$0"
         },
         {
             "trigger": "buf.keys()\tbuffer",
@@ -130,12 +130,12 @@
             "contents": "buf.swap64();$0"
         },
         {
-            "trigger": "buf.toString([encoding[, start[, end]]])\tbuffer",
-            "contents": "buf.toString(${1:[, encoding]}, ${2:[, start]}, ${3:[, end]});$0"
-        },
-        {
             "trigger": "buf.toJSON()\tbuffer",
             "contents": "buf.toJSON();$0"
+        },
+        {
+            "trigger": "buf.toString([encoding[, start[, end]]])\tbuffer",
+            "contents": "buf.toString(${1:[, encoding]}, ${2:[, start]}, ${3:[, end]});$0"
         },
         {
             "trigger": "buf.values()\tbuffer",
