@@ -98,12 +98,12 @@
             "contents": "fs.fsyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.ftruncate(fd, len, callback)\tfs",
-            "contents": "fs.ftruncate(${1:fd}, ${2:len}, ${3:callback});$0"
+            "trigger": "fs.ftruncate(fd[, len], callback)\tfs",
+            "contents": "fs.ftruncate(${1:fd}, ${2:[, len]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.ftruncateSync(fd, len)\tfs",
-            "contents": "fs.ftruncateSync(${1:fd}, ${2:len});$0"
+            "trigger": "fs.ftruncateSync(fd[, len])\tfs",
+            "contents": "fs.ftruncateSync(${1:fd}, ${2:[, len]});$0"
         },
         {
             "trigger": "fs.futimes(fd, atime, mtime, callback)\tfs",
@@ -242,12 +242,12 @@
             "contents": "fs.symlinkSync(${1:target}, ${2:path}, ${3:[, type]});$0"
         },
         {
-            "trigger": "fs.truncate(path, len, callback)\tfs",
-            "contents": "fs.truncate(${1:path}, ${2:len}, ${3:callback});$0"
+            "trigger": "fs.truncate(path[, len], callback)\tfs",
+            "contents": "fs.truncate(${1:path}, ${2:[, len]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.truncateSync(path, len)\tfs",
-            "contents": "fs.truncateSync(${1:path}, ${2:len});$0"
+            "trigger": "fs.truncateSync(path[, len])\tfs",
+            "contents": "fs.truncateSync(${1:path}, ${2:[, len]});$0"
         },
         {
             "trigger": "fs.unlink(path, callback)\tfs",

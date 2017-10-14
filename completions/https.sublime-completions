@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "https.createServer(options[, requestListener])\thttps",
-            "contents": "https.createServer(${1:options}, ${2:[, requestListener]});$0"
+            "trigger": "https.createServer([options][, requestListener])\thttps",
+            "contents": "https.createServer(${1:[, options]}, ${2:[, requestListener]});$0"
         },
         {
             "trigger": "https.get(options[, callback])\thttps",

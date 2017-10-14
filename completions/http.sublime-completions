@@ -86,6 +86,14 @@
             "contents": "http.clientrequest.aborted$0"
         },
         {
+            "trigger": "http.clientrequest.connection\thttp",
+            "contents": "http.clientrequest.connection$0"
+        },
+        {
+            "trigger": "req.socket\thttp",
+            "contents": "req.socket$0"
+        },
+        {
             "trigger": "abort\thttp",
             "contents": "abort$0"
         },
@@ -220,6 +228,10 @@
         {
             "trigger": "response.writeHead(statusCode[, statusMessage][, headers])\thttp",
             "contents": "response.writeHead(${1:statusCode}, ${2:[, statusMessage]}, ${3:[, headers]});$0"
+        },
+        {
+            "trigger": "http.serverresponse.connection\thttp",
+            "contents": "http.serverresponse.connection$0"
         },
         {
             "trigger": "http.serverresponse.finished\thttp",

@@ -130,6 +130,14 @@
             "contents": "DEP0069: vm.runInDebugContext(${1:string});$0"
         },
         {
+            "trigger": "DEP0070: async_hooks.currentId()\tdeprecated_apis",
+            "contents": "DEP0070: async_hooks.currentId();$0"
+        },
+        {
+            "trigger": "DEP0071: async_hooks.triggerId()\tdeprecated_apis",
+            "contents": "DEP0071: async_hooks.triggerId();$0"
+        },
+        {
             "trigger": "_writableState.buffer\tdeprecated_apis",
             "contents": "_writableState.buffer$0"
         },

@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "util.callbackify(original)\tutil",
+            "contents": "util.callbackify(${1:original});$0"
+        },
+        {
             "trigger": "util.debuglog(section)\tutil",
             "contents": "util.debuglog(${1:section});$0"
         },
