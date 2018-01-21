@@ -42,8 +42,8 @@
             "contents": "server.getTicketKeys();$0"
         },
         {
-            "trigger": "server.listen(port[, hostname][, callback])\ttls_(ssl)",
-            "contents": "server.listen(${1:port}, ${2:[, hostname]}, ${3:[, callback]});$0"
+            "trigger": "server.listen()\ttls_(ssl)",
+            "contents": "server.listen();$0"
         },
         {
             "trigger": "server.setTicketKeys(keys)\ttls_(ssl)",
