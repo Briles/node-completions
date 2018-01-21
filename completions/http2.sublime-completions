@@ -34,36 +34,64 @@
             "contents": "core_api.selectPadding`$0"
         },
         {
-            "trigger": "http2session.destroy()\thttp2",
-            "contents": "http2session.destroy();$0"
+            "trigger": "http2session.close([callback])\thttp2",
+            "contents": "http2session.close(${1:[, callback]});$0"
+        },
+        {
+            "trigger": "http2session.destroy([error,][code])\thttp2",
+            "contents": "http2session.destroy(${1:[, error]}, ${2:[, code]});$0"
+        },
+        {
+            "trigger": "http2session.goaway([code, [lastStreamID, [opaqueData]]])\thttp2",
+            "contents": "http2session.goaway(${1:[, code]}, ${2:[, lastStreamID]}, ${3:[, opaqueData]});$0"
         },
         {
             "trigger": "http2session.ping([payload, ]callback)\thttp2",
             "contents": "http2session.ping(${1:[, payload]}, ${2:callback});$0"
         },
         {
-            "trigger": "http2session.request(headers[, options])\thttp2",
-            "contents": "http2session.request(${1:headers}, ${2:[, options]});$0"
+            "trigger": "http2session.ref()\thttp2",
+            "contents": "http2session.ref();$0"
         },
         {
             "trigger": "http2session.setTimeout(msecs, callback)\thttp2",
             "contents": "http2session.setTimeout(${1:msecs}, ${2:callback});$0"
         },
         {
-            "trigger": "http2session.shutdown(options[, callback])\thttp2",
-            "contents": "http2session.shutdown(${1:options}, ${2:[, callback]});$0"
+            "trigger": "http2session.close(options[, callback])\thttp2",
+            "contents": "http2session.close(${1:options}, ${2:[, callback]});$0"
         },
         {
             "trigger": "http2session.settings(settings)\thttp2",
             "contents": "http2session.settings(${1:settings});$0"
         },
         {
+            "trigger": "http2session.unref()\thttp2",
+            "contents": "http2session.unref();$0"
+        },
+        {
+            "trigger": "http2session.alpnProtocol\thttp2",
+            "contents": "http2session.alpnProtocol$0"
+        },
+        {
+            "trigger": "http2session.closed\thttp2",
+            "contents": "http2session.closed$0"
+        },
+        {
             "trigger": "http2session.destroyed\thttp2",
             "contents": "http2session.destroyed$0"
         },
         {
+            "trigger": "http2session.encrypted\thttp2",
+            "contents": "http2session.encrypted$0"
+        },
+        {
             "trigger": "http2session.localSettings\thttp2",
             "contents": "http2session.localSettings$0"
+        },
+        {
+            "trigger": "http2session.originSet\thttp2",
+            "contents": "http2session.originSet$0"
         },
         {
             "trigger": "http2session.pendingSettingsAck\thttp2",
@@ -118,40 +146,28 @@
             "contents": "stream$0"
         },
         {
-            "trigger": "socketError\thttp2",
-            "contents": "socketError$0"
-        },
-        {
             "trigger": "timeout\thttp2",
             "contents": "timeout$0"
         },
         {
+            "trigger": "serverhttp2session.altsvc(alt, originOrStream)\thttp2",
+            "contents": "serverhttp2session.altsvc(${1:alt}, ${2:originOrStream});$0"
+        },
+        {
+            "trigger": "clienthttp2session.request(headers[, options])\thttp2",
+            "contents": "clienthttp2session.request(${1:headers}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "altsvc\thttp2",
+            "contents": "altsvc$0"
+        },
+        {
+            "trigger": "http2stream.close(code[, callback])\thttp2",
+            "contents": "http2stream.close(${1:code}, ${2:[, callback]});$0"
+        },
+        {
             "trigger": "http2stream.priority(options)\thttp2",
             "contents": "http2stream.priority(${1:options});$0"
-        },
-        {
-            "trigger": "http2stream.rstStream(code)\thttp2",
-            "contents": "http2stream.rstStream(${1:code});$0"
-        },
-        {
-            "trigger": "http2stream.rstWithNoError()\thttp2",
-            "contents": "http2stream.rstWithNoError();$0"
-        },
-        {
-            "trigger": "http2stream.rstWithProtocolError()\thttp2",
-            "contents": "http2stream.rstWithProtocolError();$0"
-        },
-        {
-            "trigger": "http2stream.rstWithCancel()\thttp2",
-            "contents": "http2stream.rstWithCancel();$0"
-        },
-        {
-            "trigger": "http2stream.rstWithRefuse()\thttp2",
-            "contents": "http2stream.rstWithRefuse();$0"
-        },
-        {
-            "trigger": "http2stream.rstWithInternalError()\thttp2",
-            "contents": "http2stream.rstWithInternalError();$0"
         },
         {
             "trigger": "http2stream.setTimeout(msecs, callback)\thttp2",
@@ -162,8 +178,16 @@
             "contents": "http2stream.aborted$0"
         },
         {
+            "trigger": "http2stream.closed\thttp2",
+            "contents": "http2stream.closed$0"
+        },
+        {
             "trigger": "http2stream.destroyed\thttp2",
             "contents": "http2stream.destroyed$0"
+        },
+        {
+            "trigger": "http2stream.pending\thttp2",
+            "contents": "http2stream.pending$0"
         },
         {
             "trigger": "http2stream.rstCode\thttp2",
@@ -230,20 +254,24 @@
             "contents": "serverhttp2stream.pushAllowed$0"
         },
         {
-            "trigger": "sessionError\thttp2",
-            "contents": "sessionError$0"
-        },
-        {
-            "trigger": "streamError\thttp2",
-            "contents": "streamError$0"
+            "trigger": "checkContinue\thttp2",
+            "contents": "checkContinue$0"
         },
         {
             "trigger": "request\thttp2",
             "contents": "request$0"
         },
         {
-            "trigger": "checkContinue\thttp2",
-            "contents": "checkContinue$0"
+            "trigger": "session\thttp2",
+            "contents": "session$0"
+        },
+        {
+            "trigger": "sessionError\thttp2",
+            "contents": "sessionError$0"
+        },
+        {
+            "trigger": "streamError\thttp2",
+            "contents": "streamError$0"
         },
         {
             "trigger": "unknownProtocol\thttp2",
