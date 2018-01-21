@@ -230,12 +230,12 @@
             "contents": "crypto.privateEncrypt(${1:privateKey}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.publicDecrypt(publicKey, buffer)\tcrypto",
-            "contents": "crypto.publicDecrypt(${1:publicKey}, ${2:buffer});$0"
+            "trigger": "crypto.publicDecrypt(key, buffer)\tcrypto",
+            "contents": "crypto.publicDecrypt(${1:key}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.publicEncrypt(publicKey, buffer)\tcrypto",
-            "contents": "crypto.publicEncrypt(${1:publicKey}, ${2:buffer});$0"
+            "trigger": "crypto.publicEncrypt(key, buffer)\tcrypto",
+            "contents": "crypto.publicEncrypt(${1:key}, ${2:buffer});$0"
         },
         {
             "trigger": "crypto.randomBytes(size[, callback])\tcrypto",

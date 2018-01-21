@@ -26,8 +26,8 @@
             "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
-            "trigger": "socket.getSendBufferSize(size)\tdgram",
-            "contents": "socket.getSendBufferSize(${1:size});$0"
+            "trigger": "socket.getSendBufferSize()\tdgram",
+            "contents": "socket.getSendBufferSize();$0"
         },
         {
             "trigger": "socket.ref()\tdgram",
