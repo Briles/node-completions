@@ -38,12 +38,12 @@
             "contents": "http2session.destroy();$0"
         },
         {
-            "trigger": "http2session.request(headers[, options])\thttp2",
-            "contents": "http2session.request(${1:headers}, ${2:[, options]});$0"
+            "trigger": "http2session.ping([payload, ]callback)\thttp2",
+            "contents": "http2session.ping(${1:[, payload]}, ${2:callback});$0"
         },
         {
-            "trigger": "http2session.rstStream(stream, code)\thttp2",
-            "contents": "http2session.rstStream(${1:stream}, ${2:code});$0"
+            "trigger": "http2session.request(headers[, options])\thttp2",
+            "contents": "http2session.request(${1:headers}, ${2:[, options]});$0"
         },
         {
             "trigger": "http2session.setTimeout(msecs, callback)\thttp2",
@@ -52,10 +52,6 @@
         {
             "trigger": "http2session.shutdown(options[, callback])\thttp2",
             "contents": "http2session.shutdown(${1:options}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "http2session.priority(stream, options)\thttp2",
-            "contents": "http2session.priority(${1:stream}, ${2:options});$0"
         },
         {
             "trigger": "http2session.settings(settings)\thttp2",
@@ -184,10 +180,6 @@
         {
             "trigger": "aborted\thttp2",
             "contents": "aborted$0"
-        },
-        {
-            "trigger": "streamClosed\thttp2",
-            "contents": "streamClosed$0"
         },
         {
             "trigger": "trailers\thttp2",
