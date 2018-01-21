@@ -26,6 +26,10 @@
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
         },
         {
+            "trigger": "util.isDeepStrictEqual(val1, val2)\tutil",
+            "contents": "util.isDeepStrictEqual(${1:val1}, ${2:val2});$0"
+        },
+        {
             "trigger": "util.promisify(original)\tutil",
             "contents": "util.promisify(${1:original});$0"
         },

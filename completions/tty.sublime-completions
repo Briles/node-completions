@@ -14,16 +14,8 @@
             "contents": "tty.readstream.isRaw$0"
         },
         {
-            "trigger": "tty.readstream.isTTY\ttty",
-            "contents": "tty.readstream.isTTY$0"
-        },
-        {
             "trigger": "tty.writestream.columns\ttty",
             "contents": "tty.writestream.columns$0"
-        },
-        {
-            "trigger": "tty.writestream.isTTY\ttty",
-            "contents": "tty.writestream.isTTY$0"
         },
         {
             "trigger": "tty.writestream.rows\ttty",

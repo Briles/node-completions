@@ -22,6 +22,10 @@
             "contents": "process.disconnect();$0"
         },
         {
+            "trigger": "process.dlopen(module, filename[, flags])\tglobals",
+            "contents": "process.dlopen(${1:module}, ${2:filename}, ${3:[, flags]});$0"
+        },
+        {
             "trigger": "process.emitWarning(warning[, options])\tglobals",
             "contents": "process.emitWarning(${1:warning}, ${2:[, options]});$0"
         },
