@@ -162,6 +162,10 @@
             "contents": "process.platform$0"
         },
         {
+            "trigger": "process.ppid\tglobals",
+            "contents": "process.ppid$0"
+        },
+        {
             "trigger": "process.release\tglobals",
             "contents": "process.release$0"
         },
