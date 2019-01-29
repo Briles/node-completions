@@ -30,6 +30,10 @@
             "contents": "emitter.listeners(${1:eventName});$0"
         },
         {
+            "trigger": "emitter.off(eventName, listener)\tEvents",
+            "contents": "emitter.off(${1:eventName}, ${2:listener});$0"
+        },
+        {
             "trigger": "emitter.on(eventName, listener)\tEvents",
             "contents": "emitter.on(${1:eventName}, ${2:listener});$0"
         },
@@ -56,6 +60,10 @@
         {
             "trigger": "emitter.setMaxListeners(n)\tEvents",
             "contents": "emitter.setMaxListeners(${1:n});$0"
+        },
+        {
+            "trigger": "emitter.rawListeners(eventName)\tEvents",
+            "contents": "emitter.rawListeners(${1:eventName});$0"
         },
         {
             "trigger": "EventEmitter.defaultMaxListeners\tEvents",
