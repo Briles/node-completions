@@ -26,6 +26,10 @@
             "contents": "console.dir(${1:obj}, ${2:[, options]});$0"
         },
         {
+            "trigger": "console.dirxml(...data)\tconsole",
+            "contents": "console.dirxml(${1:...data});$0"
+        },
+        {
             "trigger": "console.error([data][, ...args])\tconsole",
             "contents": "console.error(${1:[, data]}, ${2:[, ...args]});$0"
         },
@@ -64,6 +68,34 @@
         {
             "trigger": "console.warn([data][, ...args])\tconsole",
             "contents": "console.warn(${1:[, data]}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.markTimeline(label)\tconsole",
+            "contents": "console.markTimeline(${1:label});$0"
+        },
+        {
+            "trigger": "console.profile([label])\tconsole",
+            "contents": "console.profile(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.profileEnd()\tconsole",
+            "contents": "console.profileEnd();$0"
+        },
+        {
+            "trigger": "console.table(array[, columns])\tconsole",
+            "contents": "console.table(${1:array}, ${2:[, columns]});$0"
+        },
+        {
+            "trigger": "console.timeStamp([label])\tconsole",
+            "contents": "console.timeStamp(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.timeline([label])\tconsole",
+            "contents": "console.timeline(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.timelineEnd([label])\tconsole",
+            "contents": "console.timelineEnd(${1:[, label]});$0"
         }
     ]
 }
