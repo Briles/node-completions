@@ -34,10 +34,6 @@
             "contents": "module.require(${1:id});$0"
         },
         {
-            "trigger": "module.createRequireFromPath(filename)\tmodule",
-            "contents": "module.createRequireFromPath(${1:filename});$0"
-        },
-        {
             "trigger": "the_`module`_object.builtinModules\tmodule",
             "contents": "the_`module`_object.builtinModules$0"
         }

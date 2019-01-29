@@ -2,24 +2,28 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
-            "contents": "Certificate.exportChallenge(${1:spkac});$0"
+            "trigger": "new crypto.Certificate()\tcrypto",
+            "contents": "new crypto.Certificate();$0"
         },
         {
-            "trigger": "Certificate.exportPublicKey(spkac[, encoding])\tcrypto",
-            "contents": "Certificate.exportPublicKey(${1:spkac}, ${2:[, encoding]});$0"
+            "trigger": "certificate.exportChallenge(spkac)\tcrypto",
+            "contents": "certificate.exportChallenge(${1:spkac});$0"
         },
         {
-            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
-            "contents": "Certificate.verifySpkac(${1:spkac});$0"
+            "trigger": "certificate.exportPublicKey(spkac)\tcrypto",
+            "contents": "certificate.exportPublicKey(${1:spkac});$0"
+        },
+        {
+            "trigger": "certificate.verifySpkac(spkac)\tcrypto",
+            "contents": "certificate.verifySpkac(${1:spkac});$0"
         },
         {
             "trigger": "cipher.final([outputEncoding])\tcrypto",
             "contents": "cipher.final(${1:[, outputEncoding]});$0"
         },
         {
-            "trigger": "cipher.setAAD(buffer[, options])\tcrypto",
-            "contents": "cipher.setAAD(${1:buffer}, ${2:[, options]});$0"
+            "trigger": "cipher.setAAD(buffer)\tcrypto",
+            "contents": "cipher.setAAD(${1:buffer});$0"
         },
         {
             "trigger": "cipher.getAuthTag()\tcrypto",
@@ -38,8 +42,8 @@
             "contents": "decipher.final(${1:[, outputEncoding]});$0"
         },
         {
-            "trigger": "decipher.setAAD(buffer[, options])\tcrypto",
-            "contents": "decipher.setAAD(${1:buffer}, ${2:[, options]});$0"
+            "trigger": "decipher.setAAD(buffer)\tcrypto",
+            "contents": "decipher.setAAD(${1:buffer});$0"
         },
         {
             "trigger": "decipher.setAuthTag(buffer)\tcrypto",
@@ -112,10 +116,6 @@
         {
             "trigger": "ecdh.setPublicKey(publicKey[, encoding])\tcrypto",
             "contents": "ecdh.setPublicKey(${1:publicKey}, ${2:[, encoding]});$0"
-        },
-        {
-            "trigger": "ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])\tcrypto",
-            "contents": "ECDH.convertKey(${1:key}, ${2:curve}, ${3:[, inputEncoding]}, ${4:[, outputEncoding]}, ${5:[, format]});$0"
         },
         {
             "trigger": "hash.digest([encoding])\tcrypto",
@@ -198,14 +198,6 @@
             "contents": "crypto.createVerify(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.generateKeyPair(type, options, callback)\tcrypto",
-            "contents": "crypto.generateKeyPair(${1:type}, ${2:options}, ${3:callback});$0"
-        },
-        {
-            "trigger": "crypto.generateKeyPairSync(type, options)\tcrypto",
-            "contents": "crypto.generateKeyPairSync(${1:type}, ${2:options});$0"
-        },
-        {
             "trigger": "crypto.getCiphers()\tcrypto",
             "contents": "crypto.getCiphers();$0"
         },
@@ -216,10 +208,6 @@
         {
             "trigger": "crypto.getDiffieHellman(groupName)\tcrypto",
             "contents": "crypto.getDiffieHellman(${1:groupName});$0"
-        },
-        {
-            "trigger": "crypto.getFips()\tcrypto",
-            "contents": "crypto.getFips();$0"
         },
         {
             "trigger": "crypto.getHashes()\tcrypto",
@@ -262,28 +250,16 @@
             "contents": "crypto.randomFill(${1:buffer}, ${2:[, offset]}, ${3:[, size]}, ${4:callback});$0"
         },
         {
-            "trigger": "crypto.scrypt(password, salt, keylen[, options], callback)\tcrypto",
-            "contents": "crypto.scrypt(${1:password}, ${2:salt}, ${3:keylen}, ${4:[, options]}, ${5:callback});$0"
-        },
-        {
-            "trigger": "crypto.scryptSync(password, salt, keylen[, options])\tcrypto",
-            "contents": "crypto.scryptSync(${1:password}, ${2:salt}, ${3:keylen}, ${4:[, options]});$0"
-        },
-        {
             "trigger": "crypto.setEngine(engine[, flags])\tcrypto",
             "contents": "crypto.setEngine(${1:engine}, ${2:[, flags]});$0"
-        },
-        {
-            "trigger": "crypto.setFips(bool)\tcrypto",
-            "contents": "crypto.setFips(${1:bool});$0"
         },
         {
             "trigger": "crypto.timingSafeEqual(a, b)\tcrypto",
             "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
         },
         {
-            "trigger": "`crypto`_module_methods_and_properties.return\tcrypto",
-            "contents": "`crypto`_module_methods_and_properties.return$0"
+            "trigger": "`crypto`_module_methods_and_properties.constants\tcrypto",
+            "contents": "`crypto`_module_methods_and_properties.constants$0"
         },
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
