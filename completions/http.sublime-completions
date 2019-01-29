@@ -2,20 +2,24 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "http.createClient([port][, host])\thttp",
-            "contents": "http.createClient(${1:[, port]}, ${2:[, host]});$0"
-        },
-        {
-            "trigger": "http.createServer([requestListener])\thttp",
-            "contents": "http.createServer(${1:[, requestListener]});$0"
+            "trigger": "http.createServer([options][, requestListener])\thttp",
+            "contents": "http.createServer(${1:[, options]}, ${2:[, requestListener]});$0"
         },
         {
             "trigger": "http.get(options[, callback])\thttp",
             "contents": "http.get(${1:options}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "http.get(url[, options][, callback])\thttp",
+            "contents": "http.get(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
             "trigger": "http.request(options[, callback])\thttp",
             "contents": "http.request(${1:options}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "http.request(url[, options][, callback])\thttp",
+            "contents": "http.request(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "agent.createConnection(options[, callback])\thttp",
@@ -62,12 +66,24 @@
             "contents": "request.abort();$0"
         },
         {
-            "trigger": "request.end([data][, encoding][, callback])\thttp",
+            "trigger": "request.end([data[, encoding]][, callback])\thttp",
             "contents": "request.end(${1:[, data]}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "request.flushHeaders()\thttp",
             "contents": "request.flushHeaders();$0"
+        },
+        {
+            "trigger": "request.getHeader(name)\thttp",
+            "contents": "request.getHeader(${1:name});$0"
+        },
+        {
+            "trigger": "request.removeHeader(name)\thttp",
+            "contents": "request.removeHeader(${1:name});$0"
+        },
+        {
+            "trigger": "request.setHeader(name, value)\thttp",
+            "contents": "request.setHeader(${1:name}, ${2:value});$0"
         },
         {
             "trigger": "request.setNoDelay([noDelay])\thttp",
@@ -86,8 +102,24 @@
             "contents": "request.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "http.clientrequest.aborted\thttp",
-            "contents": "http.clientrequest.aborted$0"
+            "trigger": "request.aborted\thttp",
+            "contents": "request.aborted$0"
+        },
+        {
+            "trigger": "http.clientrequest.connection\thttp",
+            "contents": "http.clientrequest.connection$0"
+        },
+        {
+            "trigger": "request.finished\thttp",
+            "contents": "request.finished$0"
+        },
+        {
+            "trigger": "http.clientrequest.maxHeadersCount\thttp",
+            "contents": "http.clientrequest.maxHeadersCount$0"
+        },
+        {
+            "trigger": "req.socket\thttp",
+            "contents": "req.socket$0"
         },
         {
             "trigger": "abort\thttp",
@@ -102,12 +134,20 @@
             "contents": "continue$0"
         },
         {
+            "trigger": "information\thttp",
+            "contents": "information$0"
+        },
+        {
             "trigger": "response\thttp",
             "contents": "response$0"
         },
         {
             "trigger": "socket\thttp",
             "contents": "socket$0"
+        },
+        {
+            "trigger": "timeout\thttp",
+            "contents": "timeout$0"
         },
         {
             "trigger": "upgrade\thttp",
@@ -118,20 +158,16 @@
             "contents": "server.close(${1:[, callback]});$0"
         },
         {
-            "trigger": "server.listen(handle[, callback])\thttp",
-            "contents": "server.listen(${1:handle}, ${2:[, callback]});$0"
+            "trigger": "server.listen()\thttp",
+            "contents": "server.listen();$0"
         },
         {
-            "trigger": "server.listen(path[, callback])\thttp",
-            "contents": "server.listen(${1:path}, ${2:[, callback]});$0"
+            "trigger": "server.setTimeout([msecs][, callback])\thttp",
+            "contents": "server.setTimeout(${1:[, msecs]}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "server.listen([port][, hostname][, backlog][, callback])\thttp",
-            "contents": "server.listen(${1:[, port]}, ${2:[, hostname]}, ${3:[, backlog]}, ${4:[, callback]});$0"
-        },
-        {
-            "trigger": "server.setTimeout(msecs, callback)\thttp",
-            "contents": "server.setTimeout(${1:msecs}, ${2:callback});$0"
+            "trigger": "server.headersTimeout\thttp",
+            "contents": "server.headersTimeout$0"
         },
         {
             "trigger": "http.server.listening\thttp",
@@ -142,12 +178,12 @@
             "contents": "http.server.maxHeadersCount$0"
         },
         {
-            "trigger": "server.headersTimeout\thttp",
-            "contents": "server.headersTimeout$0"
-        },
-        {
             "trigger": "http.server.timeout\thttp",
             "contents": "http.server.timeout$0"
+        },
+        {
+            "trigger": "http.server.keepAliveTimeout\thttp",
+            "contents": "http.server.keepAliveTimeout$0"
         },
         {
             "trigger": "checkContinue\thttp",
@@ -186,6 +222,18 @@
             "contents": "response.getHeader(${1:name});$0"
         },
         {
+            "trigger": "response.getHeaderNames()\thttp",
+            "contents": "response.getHeaderNames();$0"
+        },
+        {
+            "trigger": "response.getHeaders()\thttp",
+            "contents": "response.getHeaders();$0"
+        },
+        {
+            "trigger": "response.hasHeader(name)\thttp",
+            "contents": "response.hasHeader(${1:name});$0"
+        },
+        {
             "trigger": "response.removeHeader(name)\thttp",
             "contents": "response.removeHeader(${1:name});$0"
         },
@@ -194,8 +242,8 @@
             "contents": "response.setHeader(${1:name}, ${2:value});$0"
         },
         {
-            "trigger": "response.setTimeout(msecs, callback)\thttp",
-            "contents": "response.setTimeout(${1:msecs}, ${2:callback});$0"
+            "trigger": "response.setTimeout(msecs[, callback])\thttp",
+            "contents": "response.setTimeout(${1:msecs}, ${2:[, callback]});$0"
         },
         {
             "trigger": "response.write(chunk[, encoding][, callback])\thttp",
@@ -210,6 +258,14 @@
             "contents": "response.writeHead(${1:statusCode}, ${2:[, statusMessage]}, ${3:[, headers]});$0"
         },
         {
+            "trigger": "response.writeProcessing()\thttp",
+            "contents": "response.writeProcessing();$0"
+        },
+        {
+            "trigger": "http.serverresponse.connection\thttp",
+            "contents": "http.serverresponse.connection$0"
+        },
+        {
             "trigger": "http.serverresponse.finished\thttp",
             "contents": "http.serverresponse.finished$0"
         },
@@ -220,6 +276,10 @@
         {
             "trigger": "http.serverresponse.sendDate\thttp",
             "contents": "http.serverresponse.sendDate$0"
+        },
+        {
+            "trigger": "res.socket\thttp",
+            "contents": "res.socket$0"
         },
         {
             "trigger": "response.statusCode\thttp",
@@ -242,6 +302,14 @@
             "contents": "message.setTimeout(${1:msecs}, ${2:callback});$0"
         },
         {
+            "trigger": "message.aborted\thttp",
+            "contents": "message.aborted$0"
+        },
+        {
+            "trigger": "message.complete\thttp",
+            "contents": "message.complete$0"
+        },
+        {
             "trigger": "request.headers\thttp",
             "contents": "request.headers$0"
         },
@@ -262,16 +330,16 @@
             "contents": "http.incomingmessage.rawTrailers$0"
         },
         {
+            "trigger": "net.Socket\thttp",
+            "contents": "net.Socket$0"
+        },
+        {
             "trigger": "http.incomingmessage.statusCode\thttp",
             "contents": "http.incomingmessage.statusCode$0"
         },
         {
             "trigger": "http.incomingmessage.statusMessage\thttp",
             "contents": "http.incomingmessage.statusMessage$0"
-        },
-        {
-            "trigger": "net.Socket\thttp",
-            "contents": "net.Socket$0"
         },
         {
             "trigger": "http.incomingmessage.trailers\thttp",

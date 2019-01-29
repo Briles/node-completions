@@ -2,64 +2,60 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "new crypto.Certificate()\tcrypto",
-            "contents": "new crypto.Certificate();$0"
+            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
+            "contents": "Certificate.exportChallenge(${1:spkac});$0"
         },
         {
-            "trigger": "certificate.exportChallenge(spkac)\tcrypto",
-            "contents": "certificate.exportChallenge(${1:spkac});$0"
+            "trigger": "Certificate.exportPublicKey(spkac[, encoding])\tcrypto",
+            "contents": "Certificate.exportPublicKey(${1:spkac}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "certificate.exportPublicKey(spkac)\tcrypto",
-            "contents": "certificate.exportPublicKey(${1:spkac});$0"
+            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
+            "contents": "Certificate.verifySpkac(${1:spkac});$0"
         },
         {
-            "trigger": "certificate.verifySpkac(spkac)\tcrypto",
-            "contents": "certificate.verifySpkac(${1:spkac});$0"
+            "trigger": "cipher.final([outputEncoding])\tcrypto",
+            "contents": "cipher.final(${1:[, outputEncoding]});$0"
         },
         {
-            "trigger": "cipher.final([output_encoding])\tcrypto",
-            "contents": "cipher.final(${1:[, output_encoding]});$0"
-        },
-        {
-            "trigger": "cipher.setAAD(buffer)\tcrypto",
-            "contents": "cipher.setAAD(${1:buffer});$0"
+            "trigger": "cipher.setAAD(buffer[, options])\tcrypto",
+            "contents": "cipher.setAAD(${1:buffer}, ${2:[, options]});$0"
         },
         {
             "trigger": "cipher.getAuthTag()\tcrypto",
             "contents": "cipher.getAuthTag();$0"
         },
         {
-            "trigger": "cipher.setAutoPadding(auto_padding=true)\tcrypto",
-            "contents": "cipher.setAutoPadding(${1:auto_padding});$0"
+            "trigger": "cipher.setAutoPadding([autoPadding])\tcrypto",
+            "contents": "cipher.setAutoPadding(${1:[, autoPadding]});$0"
         },
         {
-            "trigger": "cipher.update(data[, input_encoding][, output_encoding])\tcrypto",
-            "contents": "cipher.update(${1:data}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
+            "trigger": "cipher.update(data[, inputEncoding][, outputEncoding])\tcrypto",
+            "contents": "cipher.update(${1:data}, ${2:[, inputEncoding]}, ${3:[, outputEncoding]});$0"
         },
         {
-            "trigger": "decipher.final([output_encoding])\tcrypto",
-            "contents": "decipher.final(${1:[, output_encoding]});$0"
+            "trigger": "decipher.final([outputEncoding])\tcrypto",
+            "contents": "decipher.final(${1:[, outputEncoding]});$0"
         },
         {
-            "trigger": "decipher.setAAD(buffer)\tcrypto",
-            "contents": "decipher.setAAD(${1:buffer});$0"
+            "trigger": "decipher.setAAD(buffer[, options])\tcrypto",
+            "contents": "decipher.setAAD(${1:buffer}, ${2:[, options]});$0"
         },
         {
             "trigger": "decipher.setAuthTag(buffer)\tcrypto",
             "contents": "decipher.setAuthTag(${1:buffer});$0"
         },
         {
-            "trigger": "decipher.setAutoPadding(auto_padding=true)\tcrypto",
-            "contents": "decipher.setAutoPadding(${1:auto_padding});$0"
+            "trigger": "decipher.setAutoPadding([autoPadding])\tcrypto",
+            "contents": "decipher.setAutoPadding(${1:[, autoPadding]});$0"
         },
         {
-            "trigger": "decipher.update(data[, input_encoding][, output_encoding])\tcrypto",
-            "contents": "decipher.update(${1:data}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
+            "trigger": "decipher.update(data[, inputEncoding][, outputEncoding])\tcrypto",
+            "contents": "decipher.update(${1:data}, ${2:[, inputEncoding]}, ${3:[, outputEncoding]});$0"
         },
         {
-            "trigger": "diffieHellman.computeSecret(other_public_key[, input_encoding][, output_encoding])\tcrypto",
-            "contents": "diffieHellman.computeSecret(${1:other_public_key}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
+            "trigger": "diffieHellman.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])\tcrypto",
+            "contents": "diffieHellman.computeSecret(${1:otherPublicKey}, ${2:[, inputEncoding]}, ${3:[, outputEncoding]});$0"
         },
         {
             "trigger": "diffieHellman.generateKeys([encoding])\tcrypto",
@@ -82,20 +78,20 @@
             "contents": "diffieHellman.getPublicKey(${1:[, encoding]});$0"
         },
         {
-            "trigger": "diffieHellman.setPrivateKey(private_key[, encoding])\tcrypto",
-            "contents": "diffieHellman.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
+            "trigger": "diffieHellman.setPrivateKey(privateKey[, encoding])\tcrypto",
+            "contents": "diffieHellman.setPrivateKey(${1:privateKey}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "diffieHellman.setPublicKey(public_key[, encoding])\tcrypto",
-            "contents": "diffieHellman.setPublicKey(${1:public_key}, ${2:[, encoding]});$0"
+            "trigger": "diffieHellman.setPublicKey(publicKey[, encoding])\tcrypto",
+            "contents": "diffieHellman.setPublicKey(${1:publicKey}, ${2:[, encoding]});$0"
         },
         {
             "trigger": "diffiehellman.verifyError\tcrypto",
             "contents": "diffiehellman.verifyError$0"
         },
         {
-            "trigger": "ecdh.computeSecret(other_public_key[, input_encoding][, output_encoding])\tcrypto",
-            "contents": "ecdh.computeSecret(${1:other_public_key}, ${2:[, input_encoding]}, ${3:[, output_encoding]});$0"
+            "trigger": "ecdh.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])\tcrypto",
+            "contents": "ecdh.computeSecret(${1:otherPublicKey}, ${2:[, inputEncoding]}, ${3:[, outputEncoding]});$0"
         },
         {
             "trigger": "ecdh.generateKeys([encoding[, format]])\tcrypto",
@@ -106,96 +102,104 @@
             "contents": "ecdh.getPrivateKey(${1:[, encoding]});$0"
         },
         {
-            "trigger": "ecdh.getPublicKey([encoding[, format]])\tcrypto",
+            "trigger": "ecdh.getPublicKey([encoding][, format])\tcrypto",
             "contents": "ecdh.getPublicKey(${1:[, encoding]}, ${2:[, format]});$0"
         },
         {
-            "trigger": "ecdh.setPrivateKey(private_key[, encoding])\tcrypto",
-            "contents": "ecdh.setPrivateKey(${1:private_key}, ${2:[, encoding]});$0"
+            "trigger": "ecdh.setPrivateKey(privateKey[, encoding])\tcrypto",
+            "contents": "ecdh.setPrivateKey(${1:privateKey}, ${2:[, encoding]});$0"
         },
         {
-            "trigger": "ecdh.setPublicKey(public_key[, encoding])\tcrypto",
-            "contents": "ecdh.setPublicKey(${1:public_key}, ${2:[, encoding]});$0"
+            "trigger": "ecdh.setPublicKey(publicKey[, encoding])\tcrypto",
+            "contents": "ecdh.setPublicKey(${1:publicKey}, ${2:[, encoding]});$0"
+        },
+        {
+            "trigger": "ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])\tcrypto",
+            "contents": "ECDH.convertKey(${1:key}, ${2:curve}, ${3:[, inputEncoding]}, ${4:[, outputEncoding]}, ${5:[, format]});$0"
         },
         {
             "trigger": "hash.digest([encoding])\tcrypto",
             "contents": "hash.digest(${1:[, encoding]});$0"
         },
         {
-            "trigger": "hash.update(data[, input_encoding])\tcrypto",
-            "contents": "hash.update(${1:data}, ${2:[, input_encoding]});$0"
+            "trigger": "hash.update(data[, inputEncoding])\tcrypto",
+            "contents": "hash.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
             "trigger": "hmac.digest([encoding])\tcrypto",
             "contents": "hmac.digest(${1:[, encoding]});$0"
         },
         {
-            "trigger": "hmac.update(data[, input_encoding])\tcrypto",
-            "contents": "hmac.update(${1:data}, ${2:[, input_encoding]});$0"
+            "trigger": "hmac.update(data[, inputEncoding])\tcrypto",
+            "contents": "hmac.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "sign.sign(private_key[, output_format])\tcrypto",
-            "contents": "sign.sign(${1:private_key}, ${2:[, output_format]});$0"
+            "trigger": "sign.sign(privateKey[, outputEncoding])\tcrypto",
+            "contents": "sign.sign(${1:privateKey}, ${2:[, outputEncoding]});$0"
         },
         {
-            "trigger": "sign.update(data[, input_encoding])\tcrypto",
-            "contents": "sign.update(${1:data}, ${2:[, input_encoding]});$0"
+            "trigger": "sign.update(data[, inputEncoding])\tcrypto",
+            "contents": "sign.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "verifier.update(data[, input_encoding])\tcrypto",
-            "contents": "verifier.update(${1:data}, ${2:[, input_encoding]});$0"
+            "trigger": "verify.update(data[, inputEncoding])\tcrypto",
+            "contents": "verify.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "verifier.verify(object, signature[, signature_format])\tcrypto",
-            "contents": "verifier.verify(${1:object}, ${2:signature}, ${3:[, signature_format]});$0"
+            "trigger": "verify.verify(object, signature[, signatureEncoding])\tcrypto",
+            "contents": "verify.verify(${1:object}, ${2:signature}, ${3:[, signatureEncoding]});$0"
         },
         {
-            "trigger": "crypto.createCipher(algorithm, password)\tcrypto",
-            "contents": "crypto.createCipher(${1:algorithm}, ${2:password});$0"
+            "trigger": "crypto.createCipher(algorithm, password[, options])\tcrypto",
+            "contents": "crypto.createCipher(${1:algorithm}, ${2:password}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createCipheriv(algorithm, key, iv)\tcrypto",
-            "contents": "crypto.createCipheriv(${1:algorithm}, ${2:key}, ${3:iv});$0"
+            "trigger": "crypto.createCipheriv(algorithm, key, iv[, options])\tcrypto",
+            "contents": "crypto.createCipheriv(${1:algorithm}, ${2:key}, ${3:iv}, ${4:[, options]});$0"
         },
         {
-            "trigger": "crypto.createCredentials(details)\tcrypto",
-            "contents": "crypto.createCredentials(${1:details});$0"
+            "trigger": "crypto.createDecipher(algorithm, password[, options])\tcrypto",
+            "contents": "crypto.createDecipher(${1:algorithm}, ${2:password}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createDecipher(algorithm, password)\tcrypto",
-            "contents": "crypto.createDecipher(${1:algorithm}, ${2:password});$0"
+            "trigger": "crypto.createDecipheriv(algorithm, key, iv[, options])\tcrypto",
+            "contents": "crypto.createDecipheriv(${1:algorithm}, ${2:key}, ${3:iv}, ${4:[, options]});$0"
         },
         {
-            "trigger": "crypto.createDecipheriv(algorithm, key, iv)\tcrypto",
-            "contents": "crypto.createDecipheriv(${1:algorithm}, ${2:key}, ${3:iv});$0"
+            "trigger": "crypto.createDiffieHellman(prime[, primeEncoding][, generator][, generatorEncoding])\tcrypto",
+            "contents": "crypto.createDiffieHellman(${1:prime}, ${2:[, primeEncoding]}, ${3:[, generator]}, ${4:[, generatorEncoding]});$0"
         },
         {
-            "trigger": "crypto.createDiffieHellman(prime[, prime_encoding][, generator][, generator_encoding])\tcrypto",
-            "contents": "crypto.createDiffieHellman(${1:prime}, ${2:[, prime_encoding]}, ${3:[, generator]}, ${4:[, generator_encoding]});$0"
+            "trigger": "crypto.createDiffieHellman(primeLength[, generator])\tcrypto",
+            "contents": "crypto.createDiffieHellman(${1:primeLength}, ${2:[, generator]});$0"
         },
         {
-            "trigger": "crypto.createDiffieHellman(prime_length[, generator])\tcrypto",
-            "contents": "crypto.createDiffieHellman(${1:prime_length}, ${2:[, generator]});$0"
+            "trigger": "crypto.createECDH(curveName)\tcrypto",
+            "contents": "crypto.createECDH(${1:curveName});$0"
         },
         {
-            "trigger": "crypto.createECDH(curve_name)\tcrypto",
-            "contents": "crypto.createECDH(${1:curve_name});$0"
+            "trigger": "crypto.createHash(algorithm[, options])\tcrypto",
+            "contents": "crypto.createHash(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.createHash(algorithm)\tcrypto",
-            "contents": "crypto.createHash(${1:algorithm});$0"
+            "trigger": "crypto.createHmac(algorithm, key[, options])\tcrypto",
+            "contents": "crypto.createHmac(${1:algorithm}, ${2:key}, ${3:[, options]});$0"
         },
         {
-            "trigger": "crypto.createHmac(algorithm, key)\tcrypto",
-            "contents": "crypto.createHmac(${1:algorithm}, ${2:key});$0"
+            "trigger": "crypto.createSign(algorithm[, options])\tcrypto",
+            "contents": "crypto.createSign(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.createSign(algorithm)\tcrypto",
-            "contents": "crypto.createSign(${1:algorithm});$0"
+            "trigger": "crypto.createVerify(algorithm[, options])\tcrypto",
+            "contents": "crypto.createVerify(${1:algorithm}, ${2:[, options]});$0"
         },
         {
-            "trigger": "crypto.createVerify(algorithm)\tcrypto",
-            "contents": "crypto.createVerify(${1:algorithm});$0"
+            "trigger": "crypto.generateKeyPair(type, options, callback)\tcrypto",
+            "contents": "crypto.generateKeyPair(${1:type}, ${2:options}, ${3:callback});$0"
+        },
+        {
+            "trigger": "crypto.generateKeyPairSync(type, options)\tcrypto",
+            "contents": "crypto.generateKeyPairSync(${1:type}, ${2:options});$0"
         },
         {
             "trigger": "crypto.getCiphers()\tcrypto",
@@ -206,8 +210,12 @@
             "contents": "crypto.getCurves();$0"
         },
         {
-            "trigger": "crypto.getDiffieHellman(group_name)\tcrypto",
-            "contents": "crypto.getDiffieHellman(${1:group_name});$0"
+            "trigger": "crypto.getDiffieHellman(groupName)\tcrypto",
+            "contents": "crypto.getDiffieHellman(${1:groupName});$0"
+        },
+        {
+            "trigger": "crypto.getFips()\tcrypto",
+            "contents": "crypto.getFips();$0"
         },
         {
             "trigger": "crypto.getHashes()\tcrypto",
@@ -222,24 +230,20 @@
             "contents": "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest});$0"
         },
         {
-            "trigger": "crypto.privateDecrypt(private_key, buffer)\tcrypto",
-            "contents": "crypto.privateDecrypt(${1:private_key}, ${2:buffer});$0"
+            "trigger": "crypto.privateDecrypt(privateKey, buffer)\tcrypto",
+            "contents": "crypto.privateDecrypt(${1:privateKey}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.timingSafeEqual(a, b)\tcrypto",
-            "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
+            "trigger": "crypto.privateEncrypt(privateKey, buffer)\tcrypto",
+            "contents": "crypto.privateEncrypt(${1:privateKey}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.privateEncrypt(private_key, buffer)\tcrypto",
-            "contents": "crypto.privateEncrypt(${1:private_key}, ${2:buffer});$0"
+            "trigger": "crypto.publicDecrypt(key, buffer)\tcrypto",
+            "contents": "crypto.publicDecrypt(${1:key}, ${2:buffer});$0"
         },
         {
-            "trigger": "crypto.publicDecrypt(public_key, buffer)\tcrypto",
-            "contents": "crypto.publicDecrypt(${1:public_key}, ${2:buffer});$0"
-        },
-        {
-            "trigger": "crypto.publicEncrypt(public_key, buffer)\tcrypto",
-            "contents": "crypto.publicEncrypt(${1:public_key}, ${2:buffer});$0"
+            "trigger": "crypto.publicEncrypt(key, buffer)\tcrypto",
+            "contents": "crypto.publicEncrypt(${1:key}, ${2:buffer});$0"
         },
         {
             "trigger": "crypto.randomBytes(size[, callback])\tcrypto",
@@ -254,12 +258,28 @@
             "contents": "crypto.randomFill(${1:buffer}, ${2:[, offset]}, ${3:[, size]}, ${4:callback});$0"
         },
         {
+            "trigger": "crypto.scrypt(password, salt, keylen[, options], callback)\tcrypto",
+            "contents": "crypto.scrypt(${1:password}, ${2:salt}, ${3:keylen}, ${4:[, options]}, ${5:callback});$0"
+        },
+        {
+            "trigger": "crypto.scryptSync(password, salt, keylen[, options])\tcrypto",
+            "contents": "crypto.scryptSync(${1:password}, ${2:salt}, ${3:keylen}, ${4:[, options]});$0"
+        },
+        {
             "trigger": "crypto.setEngine(engine[, flags])\tcrypto",
             "contents": "crypto.setEngine(${1:engine}, ${2:[, flags]});$0"
         },
         {
-            "trigger": "`crypto`_module_methods_and_properties.constants\tcrypto",
-            "contents": "`crypto`_module_methods_and_properties.constants$0"
+            "trigger": "crypto.setFips(bool)\tcrypto",
+            "contents": "crypto.setFips(${1:bool});$0"
+        },
+        {
+            "trigger": "crypto.timingSafeEqual(a, b)\tcrypto",
+            "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
+        },
+        {
+            "trigger": "`crypto`_module_methods_and_properties.return\tcrypto",
+            "contents": "`crypto`_module_methods_and_properties.return$0"
         },
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",

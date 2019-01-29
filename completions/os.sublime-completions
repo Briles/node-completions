@@ -18,6 +18,10 @@
             "contents": "os.freemem();$0"
         },
         {
+            "trigger": "os.getPriority([pid])\tos",
+            "contents": "os.getPriority(${1:[, pid]});$0"
+        },
+        {
             "trigger": "os.homedir()\tos",
             "contents": "os.homedir();$0"
         },
@@ -40,6 +44,10 @@
         {
             "trigger": "os.release()\tos",
             "contents": "os.release();$0"
+        },
+        {
+            "trigger": "os.setPriority([pid, ]priority)\tos",
+            "contents": "os.setPriority(${1:[, pid]}, ${2:priority});$0"
         },
         {
             "trigger": "os.tmpdir()\tos",
