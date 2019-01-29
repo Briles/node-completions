@@ -142,6 +142,10 @@
             "contents": "process.connected$0"
         },
         {
+            "trigger": "process.debugPort\tglobals",
+            "contents": "process.debugPort$0"
+        },
+        {
             "trigger": "process.env\tglobals",
             "contents": "process.env$0"
         },

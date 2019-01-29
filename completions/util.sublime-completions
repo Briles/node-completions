@@ -18,6 +18,10 @@
             "contents": "util.format(${1:format}, ${2:[, ...args]});$0"
         },
         {
+            "trigger": "util.getSystemErrorName(err)\tutil",
+            "contents": "util.getSystemErrorName(${1:err});$0"
+        },
+        {
             "trigger": "util.inherits(constructor, superConstructor)\tutil",
             "contents": "util.inherits(${1:constructor}, ${2:superConstructor});$0"
         },
