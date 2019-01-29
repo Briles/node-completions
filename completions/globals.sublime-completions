@@ -22,8 +22,12 @@
             "contents": "process.disconnect();$0"
         },
         {
-            "trigger": "process.emitWarning(warning[, name][, ctor])\tglobals",
-            "contents": "process.emitWarning(${1:warning}, ${2:[, name]}, ${3:[, ctor]});$0"
+            "trigger": "process.emitWarning(warning[, options])\tglobals",
+            "contents": "process.emitWarning(${1:warning}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "process.emitWarning(warning[, type[, code]][, ctor])\tglobals",
+            "contents": "process.emitWarning(${1:warning}, ${2:[, type]}, ${3:[, code]}, ${4:[, ctor]});$0"
         },
         {
             "trigger": "process.exit([code])\tglobals",
@@ -114,12 +118,20 @@
             "contents": "process.argv0$0"
         },
         {
+            "trigger": "process.channel\tglobals",
+            "contents": "process.channel$0"
+        },
+        {
             "trigger": "process.config\tglobals",
             "contents": "process.config$0"
         },
         {
             "trigger": "process.connected\tglobals",
             "contents": "process.connected$0"
+        },
+        {
+            "trigger": "process.debugPort\tglobals",
+            "contents": "process.debugPort$0"
         },
         {
             "trigger": "process.env\tglobals",

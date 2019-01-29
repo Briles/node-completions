@@ -14,6 +14,10 @@
             "contents": "assert.deepStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
+            "trigger": "assert.doesNotReject(block[, error][, message])\tassert",
+            "contents": "assert.doesNotReject(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
+        },
+        {
             "trigger": "assert.doesNotThrow(block[, error][, message])\tassert",
             "contents": "assert.doesNotThrow(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
@@ -56,6 +60,10 @@
         {
             "trigger": "assert.strictEqual(actual, expected[, message])\tassert",
             "contents": "assert.strictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
+        },
+        {
+            "trigger": "assert.rejects(block[, error][, message])\tassert",
+            "contents": "assert.rejects(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
         {
             "trigger": "assert.throws(block[, error][, message])\tassert",

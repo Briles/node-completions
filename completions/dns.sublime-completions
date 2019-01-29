@@ -42,6 +42,10 @@
             "contents": "dns.resolveNs(${1:hostname}, ${2:callback});$0"
         },
         {
+            "trigger": "dns.resolvePtr(hostname, callback)\tdns",
+            "contents": "dns.resolvePtr(${1:hostname}, ${2:callback});$0"
+        },
+        {
             "trigger": "dns.resolveSoa(hostname, callback)\tdns",
             "contents": "dns.resolveSoa(${1:hostname}, ${2:callback});$0"
         },
@@ -50,12 +54,12 @@
             "contents": "dns.resolveSrv(${1:hostname}, ${2:callback});$0"
         },
         {
-            "trigger": "dns.resolvePtr(hostname, callback)\tdns",
-            "contents": "dns.resolvePtr(${1:hostname}, ${2:callback});$0"
-        },
-        {
             "trigger": "dns.resolveTxt(hostname, callback)\tdns",
             "contents": "dns.resolveTxt(${1:hostname}, ${2:callback});$0"
+        },
+        {
+            "trigger": "dns.resolveAny(hostname, callback)\tdns",
+            "contents": "dns.resolveAny(${1:hostname}, ${2:callback});$0"
         },
         {
             "trigger": "dns.reverse(ip, callback)\tdns",
@@ -64,6 +68,10 @@
         {
             "trigger": "dns.setServers(servers)\tdns",
             "contents": "dns.setServers(${1:servers});$0"
+        },
+        {
+            "trigger": "dns.Resolver\tdns",
+            "contents": "dns.Resolver$0"
         }
     ]
 }

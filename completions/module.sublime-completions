@@ -26,6 +26,10 @@
             "contents": "module.parent$0"
         },
         {
+            "trigger": "module.paths\tmodule",
+            "contents": "module.paths$0"
+        },
+        {
             "trigger": "module.require(id)\tmodule",
             "contents": "module.require(${1:id});$0"
         },
