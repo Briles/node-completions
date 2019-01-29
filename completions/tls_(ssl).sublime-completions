@@ -2,20 +2,24 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "tls.connect(port[, host][, options][, callback])\ttls_(ssl)",
-            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
-        },
-        {
-            "trigger": "tls.connect(path[, options][, callback])\ttls_(ssl)",
-            "contents": "tls.connect(${1:path}, ${2:[, options]}, ${3:[, callback]});$0"
+            "trigger": "tls.checkServerIdentity(hostname, cert)\ttls_(ssl)",
+            "contents": "tls.checkServerIdentity(${1:hostname}, ${2:cert});$0"
         },
         {
             "trigger": "tls.connect(options[, callback])\ttls_(ssl)",
             "contents": "tls.connect(${1:options}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "tls.createSecureContext(options)\ttls_(ssl)",
-            "contents": "tls.createSecureContext(${1:options});$0"
+            "trigger": "tls.connect(path[, options][, callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:path}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "tls.connect(port[, host][, options][, callback])\ttls_(ssl)",
+            "contents": "tls.connect(${1:port}, ${2:[, host]}, ${3:[, options]}, ${4:[, callback]});$0"
+        },
+        {
+            "trigger": "tls.createSecureContext([options])\ttls_(ssl)",
+            "contents": "tls.createSecureContext(${1:[, options]});$0"
         },
         {
             "trigger": "tls.createServer([options][, secureConnectionListener])\ttls_(ssl)",
@@ -42,8 +46,8 @@
             "contents": "server.getTicketKeys();$0"
         },
         {
-            "trigger": "server.listen(port[, hostname][, callback])\ttls_(ssl)",
-            "contents": "server.listen(${1:port}, ${2:[, hostname]}, ${3:[, callback]});$0"
+            "trigger": "server.listen()\ttls_(ssl)",
+            "contents": "server.listen();$0"
         },
         {
             "trigger": "server.setTicketKeys(keys)\ttls_(ssl)",
@@ -52,10 +56,6 @@
         {
             "trigger": "tls.server.connections\ttls_(ssl)",
             "contents": "tls.server.connections$0"
-        },
-        {
-            "trigger": "tlsClientError\ttls_(ssl)",
-            "contents": "tlsClientError$0"
         },
         {
             "trigger": "newSession\ttls_(ssl)",
@@ -74,12 +74,16 @@
             "contents": "secureConnection$0"
         },
         {
-            "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
-            "contents": "new tls.TLSSocket(${1:socket}, ${2:[, options]});$0"
+            "trigger": "tlsClientError\ttls_(ssl)",
+            "contents": "tlsClientError$0"
         },
         {
             "trigger": "tlsSocket.address()\ttls_(ssl)",
             "contents": "tlsSocket.address();$0"
+        },
+        {
+            "trigger": "tlsSocket.disableRenegotiation()\ttls_(ssl)",
+            "contents": "tlsSocket.disableRenegotiation();$0"
         },
         {
             "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
@@ -90,8 +94,16 @@
             "contents": "tlsSocket.getEphemeralKeyInfo();$0"
         },
         {
-            "trigger": "tlsSocket.getPeerCertificate([ detailed ])\ttls_(ssl)",
+            "trigger": "tlsSocket.getFinished()\ttls_(ssl)",
+            "contents": "tlsSocket.getFinished();$0"
+        },
+        {
+            "trigger": "tlsSocket.getPeerCertificate([detailed])\ttls_(ssl)",
             "contents": "tlsSocket.getPeerCertificate(${1:[, detailed]});$0"
+        },
+        {
+            "trigger": "tlsSocket.getPeerFinished()\ttls_(ssl)",
+            "contents": "tlsSocket.getPeerFinished();$0"
         },
         {
             "trigger": "tlsSocket.getProtocol()\ttls_(ssl)",
@@ -114,12 +126,12 @@
             "contents": "tlsSocket.setMaxSendFragment(${1:size});$0"
         },
         {
-            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
-            "contents": "tls.tlssocket.authorized$0"
-        },
-        {
             "trigger": "tls.tlssocket.authorizationError\ttls_(ssl)",
             "contents": "tls.tlssocket.authorizationError$0"
+        },
+        {
+            "trigger": "tls.tlssocket.return\ttls_(ssl)",
+            "contents": "tls.tlssocket.return$0"
         },
         {
             "trigger": "tls.tlssocket.encrypted\ttls_(ssl)",

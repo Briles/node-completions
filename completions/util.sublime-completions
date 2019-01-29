@@ -2,16 +2,28 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "util.callbackify(original)\tutil",
+            "contents": "util.callbackify(${1:original});$0"
+        },
+        {
             "trigger": "util.debuglog(section)\tutil",
             "contents": "util.debuglog(${1:section});$0"
         },
         {
-            "trigger": "util.deprecate(function, string)\tutil",
-            "contents": "util.deprecate(${1:function}, ${2:string});$0"
+            "trigger": "util.deprecate(fn, msg[, code])\tutil",
+            "contents": "util.deprecate(${1:fn}, ${2:msg}, ${3:[, code]});$0"
         },
         {
             "trigger": "util.format(format[, ...args])\tutil",
             "contents": "util.format(${1:format}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "util.formatWithOptions(inspectOptions, format[, ...args])\tutil",
+            "contents": "util.formatWithOptions(${1:inspectOptions}, ${2:format}, ${3:[, ...args]});$0"
+        },
+        {
+            "trigger": "util.getSystemErrorName(err)\tutil",
+            "contents": "util.getSystemErrorName(${1:err});$0"
         },
         {
             "trigger": "util.inherits(constructor, superConstructor)\tutil",
@@ -20,6 +32,46 @@
         {
             "trigger": "util.inspect(object[, options])\tutil",
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "util.isDeepStrictEqual(val1, val2)\tutil",
+            "contents": "util.isDeepStrictEqual(${1:val1}, ${2:val2});$0"
+        },
+        {
+            "trigger": "util.promisify(original)\tutil",
+            "contents": "util.promisify(${1:original});$0"
+        },
+        {
+            "trigger": "textDecoder.decode([input[, options]])\tutil",
+            "contents": "textDecoder.decode(${1:[, input]}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "util.textdecoder.encoding\tutil",
+            "contents": "util.textdecoder.encoding$0"
+        },
+        {
+            "trigger": "util.textdecoder.fatal\tutil",
+            "contents": "util.textdecoder.fatal$0"
+        },
+        {
+            "trigger": "util.textdecoder.ignoreBOM\tutil",
+            "contents": "util.textdecoder.ignoreBOM$0"
+        },
+        {
+            "trigger": "textEncoder.encode([input])\tutil",
+            "contents": "textEncoder.encode(${1:[, input]});$0"
+        },
+        {
+            "trigger": "util.textencoder.encoding\tutil",
+            "contents": "util.textencoder.encoding$0"
+        },
+        {
+            "trigger": "util.types\tutil",
+            "contents": "util.types$0"
+        },
+        {
+            "trigger": "util._extend(target, source)\tutil",
+            "contents": "util._extend(${1:target}, ${2:source});$0"
         },
         {
             "trigger": "util.debug(string)\tutil",
@@ -100,10 +152,6 @@
         {
             "trigger": "util.puts([...strings])\tutil",
             "contents": "util.puts(${1:[, ...strings]});$0"
-        },
-        {
-            "trigger": "util.\\_extend(target, source)\tutil",
-            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
         }
     ]
 }

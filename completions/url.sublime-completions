@@ -10,6 +10,10 @@
             "contents": "url.domainToUnicode(${1:domain});$0"
         },
         {
+            "trigger": "url.format(URL[, options])\turl",
+            "contents": "url.format(${1:URL}, ${2:[, options]});$0"
+        },
+        {
             "trigger": "url.toString()\turl",
             "contents": "url.toString();$0"
         },
@@ -114,8 +118,8 @@
             "contents": "urlSearchParams.values();$0"
         },
         {
-            "trigger": "urlSearchParams\\[@@iterator\\]()\turl",
-            "contents": "urlSearchParams\\[@@iterator\\]();$0"
+            "trigger": "urlSearchParams[Symbol.iterator]()\turl",
+            "contents": "urlSearchParams[Symbol.iterator]();$0"
         },
         {
             "trigger": "url.format(urlObject)\turl",
@@ -128,26 +132,6 @@
         {
             "trigger": "url.resolve(from, to)\turl",
             "contents": "url.resolve(${1:from}, ${2:to});$0"
-        },
-        {
-            "trigger": "legacy_url_api.port\turl",
-            "contents": "legacy_url_api.port$0"
-        },
-        {
-            "trigger": "legacy_url_api.pathname\turl",
-            "contents": "legacy_url_api.pathname$0"
-        },
-        {
-            "trigger": "legacy_url_api.search\turl",
-            "contents": "legacy_url_api.search$0"
-        },
-        {
-            "trigger": "legacy_url_api.path\turl",
-            "contents": "legacy_url_api.path$0"
-        },
-        {
-            "trigger": "legacy_url_api.query\turl",
-            "contents": "legacy_url_api.query$0"
         }
     ]
 }

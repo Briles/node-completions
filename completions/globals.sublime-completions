@@ -22,8 +22,16 @@
             "contents": "process.disconnect();$0"
         },
         {
-            "trigger": "process.emitWarning(warning[, name][, ctor])\tglobals",
-            "contents": "process.emitWarning(${1:warning}, ${2:[, name]}, ${3:[, ctor]});$0"
+            "trigger": "process.dlopen(module, filename[, flags])\tglobals",
+            "contents": "process.dlopen(${1:module}, ${2:filename}, ${3:[, flags]});$0"
+        },
+        {
+            "trigger": "process.emitWarning(warning[, options])\tglobals",
+            "contents": "process.emitWarning(${1:warning}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "process.emitWarning(warning[, type[, code]][, ctor])\tglobals",
+            "contents": "process.emitWarning(${1:warning}, ${2:[, type]}, ${3:[, code]}, ${4:[, ctor]});$0"
         },
         {
             "trigger": "process.exit([code])\tglobals",
@@ -50,12 +58,20 @@
             "contents": "process.getuid();$0"
         },
         {
+            "trigger": "process.hasUncaughtExceptionCaptureCallback()\tglobals",
+            "contents": "process.hasUncaughtExceptionCaptureCallback();$0"
+        },
+        {
             "trigger": "process.hrtime([time])\tglobals",
             "contents": "process.hrtime(${1:[, time]});$0"
         },
         {
-            "trigger": "process.initgroups(user, extra_group)\tglobals",
-            "contents": "process.initgroups(${1:user}, ${2:extra_group});$0"
+            "trigger": "process.hrtime.bigint()\tglobals",
+            "contents": "process.hrtime.bigint();$0"
+        },
+        {
+            "trigger": "process.initgroups(user, extraGroup)\tglobals",
+            "contents": "process.initgroups(${1:user}, ${2:extraGroup});$0"
         },
         {
             "trigger": "process.kill(pid[, signal])\tglobals",
@@ -94,12 +110,20 @@
             "contents": "process.setuid(${1:id});$0"
         },
         {
+            "trigger": "process.setUncaughtExceptionCaptureCallback(fn)\tglobals",
+            "contents": "process.setUncaughtExceptionCaptureCallback(${1:fn});$0"
+        },
+        {
             "trigger": "process.umask([mask])\tglobals",
             "contents": "process.umask(${1:[, mask]});$0"
         },
         {
             "trigger": "process.uptime()\tglobals",
             "contents": "process.uptime();$0"
+        },
+        {
+            "trigger": "process.allowedNodeEnvironmentFlags\tglobals",
+            "contents": "process.allowedNodeEnvironmentFlags$0"
         },
         {
             "trigger": "process.arch\tglobals",
@@ -114,12 +138,20 @@
             "contents": "process.argv0$0"
         },
         {
+            "trigger": "process.channel\tglobals",
+            "contents": "process.channel$0"
+        },
+        {
             "trigger": "process.config\tglobals",
             "contents": "process.config$0"
         },
         {
             "trigger": "process.connected\tglobals",
             "contents": "process.connected$0"
+        },
+        {
+            "trigger": "process.debugPort\tglobals",
+            "contents": "process.debugPort$0"
         },
         {
             "trigger": "process.env\tglobals",
