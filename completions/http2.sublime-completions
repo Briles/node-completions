@@ -30,15 +30,19 @@
             "contents": "core_api.constants$0"
         },
         {
+            "trigger": "core_api.selectPadding`\thttp/2",
+            "contents": "core_api.selectPadding`$0"
+        },
+        {
             "trigger": "http2session.close([callback])\thttp/2",
             "contents": "http2session.close(${1:[, callback]});$0"
         },
         {
-            "trigger": "http2session.destroy([error][, code])\thttp/2",
+            "trigger": "http2session.destroy([error,][code])\thttp/2",
             "contents": "http2session.destroy(${1:[, error]}, ${2:[, code]});$0"
         },
         {
-            "trigger": "http2session.goaway([code[, lastStreamID[, opaqueData]]])\thttp/2",
+            "trigger": "http2session.goaway([code, [lastStreamID, [opaqueData]]])\thttp/2",
             "contents": "http2session.goaway(${1:[, code]}, ${2:[, lastStreamID]}, ${3:[, opaqueData]});$0"
         },
         {
@@ -155,7 +159,7 @@
         },
         {
             "trigger": "serverhttp2session.origin(...origins)\thttp/2",
-            "contents": "serverhttp2session.origin(${1:...origins});$0"
+            "contents": "serverhttp2session.origin(${1:origins});$0"
         },
         {
             "trigger": "clienthttp2session.request(headers[, options])\thttp/2",
@@ -188,10 +192,6 @@
         {
             "trigger": "http2stream.aborted\thttp/2",
             "contents": "http2stream.aborted$0"
-        },
-        {
-            "trigger": "Socket.bufferSize\thttp/2",
-            "contents": "Socket.bufferSize$0"
         },
         {
             "trigger": "http2stream.closed\thttp/2",
