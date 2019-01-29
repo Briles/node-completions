@@ -14,12 +14,8 @@
             "contents": "console.count(${1:[, label]});$0"
         },
         {
-            "trigger": "console.countReset([label='default'])\tconsole",
+            "trigger": "console.countReset([label = 'default'])\tconsole",
             "contents": "console.countReset(${1:[, label]});$0"
-        },
-        {
-            "trigger": "console.debug(data[, ...args])\tconsole",
-            "contents": "console.debug(${1:data}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "console.dir(obj[, options])\tconsole",
@@ -28,18 +24,6 @@
         {
             "trigger": "console.error([data][, ...args])\tconsole",
             "contents": "console.error(${1:[, data]}, ${2:[, ...args]});$0"
-        },
-        {
-            "trigger": "console.group([...label])\tconsole",
-            "contents": "console.group(${1:[, ...label]});$0"
-        },
-        {
-            "trigger": "console.groupCollapsed()\tconsole",
-            "contents": "console.groupCollapsed();$0"
-        },
-        {
-            "trigger": "console.groupEnd()\tconsole",
-            "contents": "console.groupEnd();$0"
         },
         {
             "trigger": "console.info([data][, ...args])\tconsole",
@@ -58,8 +42,8 @@
             "contents": "console.timeEnd(${1:label});$0"
         },
         {
-            "trigger": "console.trace([message][, ...args])\tconsole",
-            "contents": "console.trace(${1:[, message]}, ${2:[, ...args]});$0"
+            "trigger": "console.trace(message[, ...args])\tconsole",
+            "contents": "console.trace(${1:message}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "console.warn([data][, ...args])\tconsole",
