@@ -34,28 +34,28 @@
             "contents": "module.link(${1:linker});$0"
         },
         {
-            "trigger": "vm.module.dependencySpecifiers\tvm",
-            "contents": "vm.module.dependencySpecifiers$0"
+            "trigger": "vm.sourcetextmodule.dependencySpecifiers\tvm",
+            "contents": "vm.sourcetextmodule.dependencySpecifiers$0"
         },
         {
-            "trigger": "vm.module.error\tvm",
-            "contents": "vm.module.error$0"
+            "trigger": "vm.sourcetextmodule.error\tvm",
+            "contents": "vm.sourcetextmodule.error$0"
         },
         {
-            "trigger": "vm.module.linkingStatus\tvm",
-            "contents": "vm.module.linkingStatus$0"
+            "trigger": "vm.sourcetextmodule.linkingStatus\tvm",
+            "contents": "vm.sourcetextmodule.linkingStatus$0"
         },
         {
-            "trigger": "vm.module.namespace\tvm",
-            "contents": "vm.module.namespace$0"
+            "trigger": "vm.sourcetextmodule.namespace\tvm",
+            "contents": "vm.sourcetextmodule.namespace$0"
         },
         {
-            "trigger": "vm.module.status\tvm",
-            "contents": "vm.module.status$0"
+            "trigger": "vm.sourcetextmodule.status\tvm",
+            "contents": "vm.sourcetextmodule.status$0"
         },
         {
-            "trigger": "vm.module.url\tvm",
-            "contents": "vm.module.url$0"
+            "trigger": "vm.sourcetextmodule.url\tvm",
+            "contents": "vm.sourcetextmodule.url$0"
         },
         {
             "trigger": "script.createCachedData()\tvm",
