@@ -14,10 +14,6 @@
             "contents": "subprocess.send(${1:message}, ${2:[, sendHandle]}, ${3:[, options]}, ${4:[, callback]});$0"
         },
         {
-            "trigger": "subprocess.channel\tchild_process",
-            "contents": "subprocess.channel$0"
-        },
-        {
             "trigger": "subprocess.connected\tchild_process",
             "contents": "subprocess.connected$0"
         },
