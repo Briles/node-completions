@@ -26,8 +26,16 @@
             "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
-            "trigger": "socket.send(msg, [offset, length,] port, address[, callback])\tdgram",
-            "contents": "socket.send(${1:msg}, ${2:[, offset]}, ${3:[, length]}, ${4:port}, ${5:address}, ${6:[, callback]});$0"
+            "trigger": "socket.getSendBufferSize()\tdgram",
+            "contents": "socket.getSendBufferSize();$0"
+        },
+        {
+            "trigger": "socket.ref()\tdgram",
+            "contents": "socket.ref();$0"
+        },
+        {
+            "trigger": "socket.send(msg, [offset, length,] port [, address] [, callback])\tdgram",
+            "contents": "socket.send(${1:msg}, ${2:[, offset]}, ${3:[, length]}, ${4:port}, ${5:[, address]}, ${6:[, callback]});$0"
         },
         {
             "trigger": "socket.setBroadcast(flag)\tdgram",
@@ -46,12 +54,16 @@
             "contents": "socket.setMulticastTTL(${1:ttl});$0"
         },
         {
-            "trigger": "socket.setTTL(ttl)\tdgram",
-            "contents": "socket.setTTL(${1:ttl});$0"
+            "trigger": "socket.setRecvBufferSize(size)\tdgram",
+            "contents": "socket.setRecvBufferSize(${1:size});$0"
         },
         {
-            "trigger": "socket.ref()\tdgram",
-            "contents": "socket.ref();$0"
+            "trigger": "socket.setSendBufferSize(size)\tdgram",
+            "contents": "socket.setSendBufferSize(${1:size});$0"
+        },
+        {
+            "trigger": "socket.setTTL(ttl)\tdgram",
+            "contents": "socket.setTTL(${1:ttl});$0"
         },
         {
             "trigger": "socket.unref()\tdgram",
