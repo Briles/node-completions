@@ -242,6 +242,10 @@
             "contents": "message$0"
         },
         {
+            "trigger": "multipleResolves\tglobals",
+            "contents": "multipleResolves$0"
+        },
+        {
             "trigger": "rejectionHandled\tglobals",
             "contents": "rejectionHandled$0"
         },

@@ -198,6 +198,14 @@
             "contents": "crypto.createVerify(${1:algorithm}, ${2:[, options]});$0"
         },
         {
+            "trigger": "crypto.generateKeyPair(type, options, callback)\tcrypto",
+            "contents": "crypto.generateKeyPair(${1:type}, ${2:options}, ${3:callback});$0"
+        },
+        {
+            "trigger": "crypto.generateKeyPairSync(type, options)\tcrypto",
+            "contents": "crypto.generateKeyPairSync(${1:type}, ${2:options});$0"
+        },
+        {
             "trigger": "crypto.getCiphers()\tcrypto",
             "contents": "crypto.getCiphers();$0"
         },

@@ -18,8 +18,28 @@
             "contents": "tty.readstream.isTTY$0"
         },
         {
+            "trigger": "writeStream.clearLine(dir)\ttty",
+            "contents": "writeStream.clearLine(${1:dir});$0"
+        },
+        {
+            "trigger": "writeStream.clearScreenDown()\ttty",
+            "contents": "writeStream.clearScreenDown();$0"
+        },
+        {
+            "trigger": "writeStream.cursorTo(x, y)\ttty",
+            "contents": "writeStream.cursorTo(${1:x}, ${2:y});$0"
+        },
+        {
             "trigger": "writeStream.getColorDepth([env])\ttty",
             "contents": "writeStream.getColorDepth(${1:[, env]});$0"
+        },
+        {
+            "trigger": "writeStream.getWindowSize()\ttty",
+            "contents": "writeStream.getWindowSize();$0"
+        },
+        {
+            "trigger": "writeStream.moveCursor(dx, dy)\ttty",
+            "contents": "writeStream.moveCursor(${1:dx}, ${2:dy});$0"
         },
         {
             "trigger": "tty.writestream.columns\ttty",

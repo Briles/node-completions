@@ -134,6 +134,10 @@
             "contents": "localSettings$0"
         },
         {
+            "trigger": "ping\thttp/2",
+            "contents": "ping$0"
+        },
+        {
             "trigger": "remoteSettings\thttp/2",
             "contents": "remoteSettings$0"
         },
@@ -150,12 +154,20 @@
             "contents": "serverhttp2session.altsvc(${1:alt}, ${2:originOrStream});$0"
         },
         {
+            "trigger": "serverhttp2session.origin(...origins)\thttp/2",
+            "contents": "serverhttp2session.origin(${1:...origins});$0"
+        },
+        {
             "trigger": "clienthttp2session.request(headers[, options])\thttp/2",
             "contents": "clienthttp2session.request(${1:headers}, ${2:[, options]});$0"
         },
         {
             "trigger": "altsvc\thttp/2",
             "contents": "altsvc$0"
+        },
+        {
+            "trigger": "origin\thttp/2",
+            "contents": "origin$0"
         },
         {
             "trigger": "http2stream.close(code[, callback])\thttp/2",
