@@ -194,6 +194,10 @@
             "contents": "process.release$0"
         },
         {
+            "trigger": "process.report\tglobals",
+            "contents": "process.report$0"
+        },
+        {
             "trigger": "process.stderr\tglobals",
             "contents": "process.stderr$0"
         },
