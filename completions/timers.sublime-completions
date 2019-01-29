@@ -2,8 +2,28 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "immediate.hasRef()\ttimers",
+            "contents": "immediate.hasRef();$0"
+        },
+        {
+            "trigger": "immediate.ref()\ttimers",
+            "contents": "immediate.ref();$0"
+        },
+        {
+            "trigger": "immediate.unref()\ttimers",
+            "contents": "immediate.unref();$0"
+        },
+        {
+            "trigger": "timeout.hasRef()\ttimers",
+            "contents": "timeout.hasRef();$0"
+        },
+        {
             "trigger": "timeout.ref()\ttimers",
             "contents": "timeout.ref();$0"
+        },
+        {
+            "trigger": "timeout.refresh()\ttimers",
+            "contents": "timeout.refresh();$0"
         },
         {
             "trigger": "timeout.unref()\ttimers",

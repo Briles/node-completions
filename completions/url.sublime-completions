@@ -10,8 +10,16 @@
             "contents": "url.domainToUnicode(${1:domain});$0"
         },
         {
+            "trigger": "url.fileURLToPath(url)\turl",
+            "contents": "url.fileURLToPath(${1:url});$0"
+        },
+        {
             "trigger": "url.format(URL[, options])\turl",
             "contents": "url.format(${1:URL}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "url.pathToFileURL(path)\turl",
+            "contents": "url.pathToFileURL(${1:path});$0"
         },
         {
             "trigger": "url.toString()\turl",
@@ -118,8 +126,8 @@
             "contents": "urlSearchParams.values();$0"
         },
         {
-            "trigger": "urlSearchParams\\[@@iterator\\]()\turl",
-            "contents": "urlSearchParams\\[@@iterator\\]();$0"
+            "trigger": "urlSearchParams[Symbol.iterator]()\turl",
+            "contents": "urlSearchParams[Symbol.iterator]();$0"
         },
         {
             "trigger": "url.format(urlObject)\turl",

@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "console.assert(value[, message][, ...args])\tconsole",
-            "contents": "console.assert(${1:value}, ${2:[, message]}, ${3:[, ...args]});$0"
+            "trigger": "console.assert(value[, ...message])\tconsole",
+            "contents": "console.assert(${1:value}, ${2:[, ...message]});$0"
         },
         {
             "trigger": "console.clear()\tconsole",
@@ -14,7 +14,7 @@
             "contents": "console.count(${1:[, label]});$0"
         },
         {
-            "trigger": "console.countReset([label='default'])\tconsole",
+            "trigger": "console.countReset([label])\tconsole",
             "contents": "console.countReset(${1:[, label]});$0"
         },
         {
@@ -24,6 +24,10 @@
         {
             "trigger": "console.dir(obj[, options])\tconsole",
             "contents": "console.dir(${1:obj}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "console.dirxml(...data)\tconsole",
+            "contents": "console.dirxml(${1:...data});$0"
         },
         {
             "trigger": "console.error([data][, ...args])\tconsole",
@@ -50,12 +54,20 @@
             "contents": "console.log(${1:[, data]}, ${2:[, ...args]});$0"
         },
         {
-            "trigger": "console.time(label)\tconsole",
-            "contents": "console.time(${1:label});$0"
+            "trigger": "console.table(tabularData[, properties])\tconsole",
+            "contents": "console.table(${1:tabularData}, ${2:[, properties]});$0"
         },
         {
-            "trigger": "console.timeEnd(label)\tconsole",
-            "contents": "console.timeEnd(${1:label});$0"
+            "trigger": "console.time([label])\tconsole",
+            "contents": "console.time(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.timeEnd([label])\tconsole",
+            "contents": "console.timeEnd(${1:[, label]});$0"
+        },
+        {
+            "trigger": "console.timeLog([label][, ...data])\tconsole",
+            "contents": "console.timeLog(${1:[, label]}, ${2:[, ...data]});$0"
         },
         {
             "trigger": "console.trace([message][, ...args])\tconsole",
@@ -66,24 +78,16 @@
             "contents": "console.warn(${1:[, data]}, ${2:[, ...args]});$0"
         },
         {
-            "trigger": "console.dirxml(object)\tconsole",
-            "contents": "console.dirxml(${1:object});$0"
-        },
-        {
-            "trigger": "console.markTimeline(label)\tconsole",
-            "contents": "console.markTimeline(${1:label});$0"
+            "trigger": "console.markTimeline([label])\tconsole",
+            "contents": "console.markTimeline(${1:[, label]});$0"
         },
         {
             "trigger": "console.profile([label])\tconsole",
             "contents": "console.profile(${1:[, label]});$0"
         },
         {
-            "trigger": "console.profileEnd()\tconsole",
-            "contents": "console.profileEnd();$0"
-        },
-        {
-            "trigger": "console.table(array[, columns])\tconsole",
-            "contents": "console.table(${1:array}, ${2:[, columns]});$0"
+            "trigger": "console.profileEnd([label])\tconsole",
+            "contents": "console.profileEnd(${1:[, label]});$0"
         },
         {
             "trigger": "console.timeStamp([label])\tconsole",
