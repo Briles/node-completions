@@ -22,14 +22,6 @@
             "contents": "process.disconnect();$0"
         },
         {
-            "trigger": "process.emitWarning(warning[, options])\tglobals",
-            "contents": "process.emitWarning(${1:warning}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "process.emitWarning(warning[, type[, code]][, ctor])\tglobals",
-            "contents": "process.emitWarning(${1:warning}, ${2:[, type]}, ${3:[, code]}, ${4:[, ctor]});$0"
-        },
-        {
             "trigger": "process.exit([code])\tglobals",
             "contents": "process.exit(${1:[, code]});$0"
         },
@@ -54,8 +46,8 @@
             "contents": "process.getuid();$0"
         },
         {
-            "trigger": "process.hrtime([time])\tglobals",
-            "contents": "process.hrtime(${1:[, time]});$0"
+            "trigger": "process.hrtime()\tglobals",
+            "contents": "process.hrtime();$0"
         },
         {
             "trigger": "process.initgroups(user, extra_group)\tglobals",
@@ -70,12 +62,12 @@
             "contents": "process.memoryUsage();$0"
         },
         {
-            "trigger": "process.nextTick(callback[, ...args])\tglobals",
-            "contents": "process.nextTick(${1:callback}, ${2:[, ...args]});$0"
+            "trigger": "process.nextTick(callback[, arg][, ...])\tglobals",
+            "contents": "process.nextTick(${1:callback}, ${2:[, arg]}, ${3:[, ...]});$0"
         },
         {
-            "trigger": "process.send(message[, sendHandle[, options]][, callback])\tglobals",
-            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, options]}, ${4:[, callback]});$0"
+            "trigger": "process.send(message[, sendHandle][, callback])\tglobals",
+            "contents": "process.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "process.setegid(id)\tglobals",
@@ -114,14 +106,6 @@
             "contents": "process.argv$0"
         },
         {
-            "trigger": "process.argv0\tglobals",
-            "contents": "process.argv0$0"
-        },
-        {
-            "trigger": "process.channel\tglobals",
-            "contents": "process.channel$0"
-        },
-        {
             "trigger": "process.config\tglobals",
             "contents": "process.config$0"
         },
@@ -150,20 +134,12 @@
             "contents": "process.mainModule$0"
         },
         {
-            "trigger": "process.noDeprecation\tglobals",
-            "contents": "process.noDeprecation$0"
-        },
-        {
             "trigger": "process.pid\tglobals",
             "contents": "process.pid$0"
         },
         {
             "trigger": "process.platform\tglobals",
             "contents": "process.platform$0"
-        },
-        {
-            "trigger": "process.ppid\tglobals",
-            "contents": "process.ppid$0"
         },
         {
             "trigger": "process.release\tglobals",
@@ -182,16 +158,8 @@
             "contents": "process.stdout$0"
         },
         {
-            "trigger": "process.throwDeprecation\tglobals",
-            "contents": "process.throwDeprecation$0"
-        },
-        {
             "trigger": "process.title\tglobals",
             "contents": "process.title$0"
-        },
-        {
-            "trigger": "process.traceDeprecation\tglobals",
-            "contents": "process.traceDeprecation$0"
         },
         {
             "trigger": "process.version\tglobals",
@@ -204,10 +172,6 @@
         {
             "trigger": "beforeExit\tglobals",
             "contents": "beforeExit$0"
-        },
-        {
-            "trigger": "disconnect\tglobals",
-            "contents": "disconnect$0"
         },
         {
             "trigger": "exit\tglobals",
@@ -228,10 +192,6 @@
         {
             "trigger": "unhandledRejection\tglobals",
             "contents": "unhandledRejection$0"
-        },
-        {
-            "trigger": "warning\tglobals",
-            "contents": "warning$0"
         },
         {
             "trigger": "SIGINT, SIGHUP, etc.\tglobals",

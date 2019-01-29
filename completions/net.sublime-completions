@@ -2,12 +2,28 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "net.connect()\tnet",
-            "contents": "net.connect();$0"
+            "trigger": "net.connect(options[, connectListener])\tnet",
+            "contents": "net.connect(${1:options}, ${2:[, connectListener]});$0"
         },
         {
-            "trigger": "net.createConnection()\tnet",
-            "contents": "net.createConnection();$0"
+            "trigger": "net.connect(path[, connectListener])\tnet",
+            "contents": "net.connect(${1:path}, ${2:[, connectListener]});$0"
+        },
+        {
+            "trigger": "net.connect(port[, host][, connectListener])\tnet",
+            "contents": "net.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
+        },
+        {
+            "trigger": "net.createConnection(options[, connectListener])\tnet",
+            "contents": "net.createConnection(${1:options}, ${2:[, connectListener]});$0"
+        },
+        {
+            "trigger": "net.createConnection(path[, connectListener])\tnet",
+            "contents": "net.createConnection(${1:path}, ${2:[, connectListener]});$0"
+        },
+        {
+            "trigger": "net.createConnection(port[, host][, connectListener])\tnet",
+            "contents": "net.createConnection(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
         },
         {
             "trigger": "net.createServer([options][, connectionListener])\tnet",
@@ -26,10 +42,6 @@
             "contents": "net.isIPv6(${1:input});$0"
         },
         {
-            "trigger": "new net.Server([options][, connectionListener])\tnet",
-            "contents": "new net.Server(${1:[, options]}, ${2:[, connectionListener]});$0"
-        },
-        {
             "trigger": "server.address()\tnet",
             "contents": "server.address();$0"
         },
@@ -42,8 +54,20 @@
             "contents": "server.getConnections(${1:callback});$0"
         },
         {
-            "trigger": "server.listen()\tnet",
-            "contents": "server.listen();$0"
+            "trigger": "server.listen(handle[, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:handle}, ${2:[, backlog]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "server.listen(options[, callback])\tnet",
+            "contents": "server.listen(${1:options}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "server.listen(path[, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:path}, ${2:[, backlog]}, ${3:[, callback]});$0"
+        },
+        {
+            "trigger": "server.listen([port][, hostname][, backlog][, callback])\tnet",
+            "contents": "server.listen(${1:[, port]}, ${2:[, hostname]}, ${3:[, backlog]}, ${4:[, callback]});$0"
         },
         {
             "trigger": "server.ref()\tnet",
@@ -56,10 +80,6 @@
         {
             "trigger": "net.server.connections\tnet",
             "contents": "net.server.connections$0"
-        },
-        {
-            "trigger": "net.server.listening\tnet",
-            "contents": "net.server.listening$0"
         },
         {
             "trigger": "net.server.maxConnections\tnet",
@@ -90,12 +110,20 @@
             "contents": "socket.address();$0"
         },
         {
-            "trigger": "socket.connect()\tnet",
-            "contents": "socket.connect();$0"
+            "trigger": "socket.connect(options[, connectListener])\tnet",
+            "contents": "socket.connect(${1:options}, ${2:[, connectListener]});$0"
         },
         {
-            "trigger": "socket.destroy([exception])\tnet",
-            "contents": "socket.destroy(${1:[, exception]});$0"
+            "trigger": "socket.connect(path[, connectListener])\tnet",
+            "contents": "socket.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
+        },
+        {
+            "trigger": "socket.connect(port[, host][, connectListener])\tnet",
+            "contents": "socket.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
+        },
+        {
+            "trigger": "socket.destroy()\tnet",
+            "contents": "socket.destroy();$0"
         },
         {
             "trigger": "socket.end([data][, encoding])\tnet",
@@ -150,16 +178,12 @@
             "contents": "net.socket.bytesWritten$0"
         },
         {
-            "trigger": "net.socket.connecting\tnet",
-            "contents": "net.socket.connecting$0"
-        },
-        {
             "trigger": "net.socket.destroyed\tnet",
             "contents": "net.socket.destroyed$0"
         },
         {
-            "trigger": "socket.localAddress\tnet",
-            "contents": "socket.localAddress$0"
+            "trigger": "net.socket.localAddress\tnet",
+            "contents": "net.socket.localAddress$0"
         },
         {
             "trigger": "net.socket.localPort\tnet",
