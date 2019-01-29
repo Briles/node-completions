@@ -2,8 +2,36 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "performance.clearEntries(name)\tperformance_timing_api",
+            "contents": "performance.clearEntries(${1:name});$0"
+        },
+        {
+            "trigger": "performance.clearFunctions([name])\tperformance_timing_api",
+            "contents": "performance.clearFunctions(${1:[, name]});$0"
+        },
+        {
+            "trigger": "performance.clearGC()\tperformance_timing_api",
+            "contents": "performance.clearGC();$0"
+        },
+        {
             "trigger": "performance.clearMarks([name])\tperformance_timing_api",
             "contents": "performance.clearMarks(${1:[, name]});$0"
+        },
+        {
+            "trigger": "performance.clearMeasures([name])\tperformance_timing_api",
+            "contents": "performance.clearMeasures(${1:[, name]});$0"
+        },
+        {
+            "trigger": "performance.getEntries()\tperformance_timing_api",
+            "contents": "performance.getEntries();$0"
+        },
+        {
+            "trigger": "performance.getEntriesByName(name[, type])\tperformance_timing_api",
+            "contents": "performance.getEntriesByName(${1:name}, ${2:[, type]});$0"
+        },
+        {
+            "trigger": "performance.getEntriesByType(type)\tperformance_timing_api",
+            "contents": "performance.getEntriesByType(${1:type});$0"
         },
         {
             "trigger": "performance.mark([name])\tperformance_timing_api",
@@ -20,6 +48,10 @@
         {
             "trigger": "performance.timerify(fn)\tperformance_timing_api",
             "contents": "performance.timerify(${1:fn});$0"
+        },
+        {
+            "trigger": "performance.maxEntries\tperformance_timing_api",
+            "contents": "performance.maxEntries$0"
         },
         {
             "trigger": "performance.nodeTiming\tperformance_timing_api",
@@ -54,6 +86,14 @@
             "contents": "performancenodetiming.bootstrapComplete$0"
         },
         {
+            "trigger": "performancenodetiming.clusterSetupEnd\tperformance_timing_api",
+            "contents": "performancenodetiming.clusterSetupEnd$0"
+        },
+        {
+            "trigger": "performancenodetiming.clusterSetupStart\tperformance_timing_api",
+            "contents": "performancenodetiming.clusterSetupStart$0"
+        },
+        {
             "trigger": "performancenodetiming.loopExit\tperformance_timing_api",
             "contents": "performancenodetiming.loopExit$0"
         },
@@ -62,8 +102,32 @@
             "contents": "performancenodetiming.loopStart$0"
         },
         {
+            "trigger": "performancenodetiming.moduleLoadEnd\tperformance_timing_api",
+            "contents": "performancenodetiming.moduleLoadEnd$0"
+        },
+        {
+            "trigger": "performancenodetiming.moduleLoadStart\tperformance_timing_api",
+            "contents": "performancenodetiming.moduleLoadStart$0"
+        },
+        {
             "trigger": "performancenodetiming.nodeStart\tperformance_timing_api",
             "contents": "performancenodetiming.nodeStart$0"
+        },
+        {
+            "trigger": "performancenodetiming.preloadModuleLoadEnd\tperformance_timing_api",
+            "contents": "performancenodetiming.preloadModuleLoadEnd$0"
+        },
+        {
+            "trigger": "performancenodetiming.preloadModuleLoadStart\tperformance_timing_api",
+            "contents": "performancenodetiming.preloadModuleLoadStart$0"
+        },
+        {
+            "trigger": "performancenodetiming.thirdPartyMainEnd\tperformance_timing_api",
+            "contents": "performancenodetiming.thirdPartyMainEnd$0"
+        },
+        {
+            "trigger": "performancenodetiming.thirdPartyMainStart\tperformance_timing_api",
+            "contents": "performancenodetiming.thirdPartyMainStart$0"
         },
         {
             "trigger": "performancenodetiming.v8Start\tperformance_timing_api",
@@ -76,18 +140,6 @@
         {
             "trigger": "performanceObserver.observe(options)\tperformance_timing_api",
             "contents": "performanceObserver.observe(${1:options});$0"
-        },
-        {
-            "trigger": "performanceObserverEntryList.getEntries()\tperformance_timing_api",
-            "contents": "performanceObserverEntryList.getEntries();$0"
-        },
-        {
-            "trigger": "performanceObserverEntryList.getEntriesByName(name[, type])\tperformance_timing_api",
-            "contents": "performanceObserverEntryList.getEntriesByName(${1:name}, ${2:[, type]});$0"
-        },
-        {
-            "trigger": "performanceObserverEntryList.getEntriesByType(type)\tperformance_timing_api",
-            "contents": "performanceObserverEntryList.getEntriesByType(${1:type});$0"
         }
     ]
 }
