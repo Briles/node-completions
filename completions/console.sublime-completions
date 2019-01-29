@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "console.assert(value[, message][, ...args])\tconsole",
-            "contents": "console.assert(${1:value}, ${2:[, message]}, ${3:[, ...args]});$0"
+            "trigger": "console.assert(value[, ...message])\tconsole",
+            "contents": "console.assert(${1:value}, ${2:[, ...message]});$0"
         },
         {
             "trigger": "console.clear()\tconsole",
@@ -52,6 +52,10 @@
         {
             "trigger": "console.log([data][, ...args])\tconsole",
             "contents": "console.log(${1:[, data]}, ${2:[, ...args]});$0"
+        },
+        {
+            "trigger": "console.table(tabularData[, properties])\tconsole",
+            "contents": "console.table(${1:tabularData}, ${2:[, properties]});$0"
         },
         {
             "trigger": "console.time(label)\tconsole",

@@ -118,6 +118,10 @@
             "contents": "continue$0"
         },
         {
+            "trigger": "information\thttp",
+            "contents": "information$0"
+        },
+        {
             "trigger": "response\thttp",
             "contents": "response$0"
         },
@@ -232,6 +236,10 @@
         {
             "trigger": "response.writeHead(statusCode[, statusMessage][, headers])\thttp",
             "contents": "response.writeHead(${1:statusCode}, ${2:[, statusMessage]}, ${3:[, headers]});$0"
+        },
+        {
+            "trigger": "response.writeProcessing()\thttp",
+            "contents": "response.writeProcessing();$0"
         },
         {
             "trigger": "http.serverresponse.connection\thttp",
