@@ -14,6 +14,10 @@
             "contents": "domain.bind(${1:callback});$0"
         },
         {
+            "trigger": "domain.dispose()\tdomain",
+            "contents": "domain.dispose();$0"
+        },
+        {
             "trigger": "domain.enter()\tdomain",
             "contents": "domain.enter();$0"
         },

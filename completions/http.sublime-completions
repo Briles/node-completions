@@ -10,16 +10,8 @@
             "contents": "http.get(${1:options}, ${2:[, callback]});$0"
         },
         {
-            "trigger": "http.get(url[, options][, callback])\thttp",
-            "contents": "http.get(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
-        },
-        {
             "trigger": "http.request(options[, callback])\thttp",
             "contents": "http.request(${1:options}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "http.request(url[, options][, callback])\thttp",
-            "contents": "http.request(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "agent.createConnection(options[, callback])\thttp",
@@ -110,10 +102,6 @@
             "contents": "http.clientrequest.connection$0"
         },
         {
-            "trigger": "http.clientrequest.maxHeadersCount\thttp",
-            "contents": "http.clientrequest.maxHeadersCount$0"
-        },
-        {
             "trigger": "req.socket\thttp",
             "contents": "req.socket$0"
         },
@@ -128,10 +116,6 @@
         {
             "trigger": "continue\thttp",
             "contents": "continue$0"
-        },
-        {
-            "trigger": "information\thttp",
-            "contents": "information$0"
         },
         {
             "trigger": "response\thttp",
@@ -250,10 +234,6 @@
             "contents": "response.writeHead(${1:statusCode}, ${2:[, statusMessage]}, ${3:[, headers]});$0"
         },
         {
-            "trigger": "response.writeProcessing()\thttp",
-            "contents": "response.writeProcessing();$0"
-        },
-        {
             "trigger": "http.serverresponse.connection\thttp",
             "contents": "http.serverresponse.connection$0"
         },
@@ -292,10 +272,6 @@
         {
             "trigger": "message.setTimeout(msecs, callback)\thttp",
             "contents": "message.setTimeout(${1:msecs}, ${2:callback});$0"
-        },
-        {
-            "trigger": "message.aborted\thttp",
-            "contents": "message.aborted$0"
         },
         {
             "trigger": "request.headers\thttp",

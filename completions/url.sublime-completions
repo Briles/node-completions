@@ -118,8 +118,8 @@
             "contents": "urlSearchParams.values();$0"
         },
         {
-            "trigger": "urlSearchParams[Symbol.iterator]()\turl",
-            "contents": "urlSearchParams[Symbol.iterator]();$0"
+            "trigger": "urlSearchParams\\[@@iterator\\]()\turl",
+            "contents": "urlSearchParams\\[@@iterator\\]();$0"
         },
         {
             "trigger": "url.format(urlObject)\turl",

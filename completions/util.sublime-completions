@@ -10,16 +10,12 @@
             "contents": "util.debuglog(${1:section});$0"
         },
         {
-            "trigger": "util.deprecate(fn, msg[, code])\tutil",
-            "contents": "util.deprecate(${1:fn}, ${2:msg}, ${3:[, code]});$0"
+            "trigger": "util.deprecate(function, string)\tutil",
+            "contents": "util.deprecate(${1:function}, ${2:string});$0"
         },
         {
             "trigger": "util.format(format[, ...args])\tutil",
             "contents": "util.format(${1:format}, ${2:[, ...args]});$0"
-        },
-        {
-            "trigger": "util.formatWithOptions(inspectOptions, format[, ...args])\tutil",
-            "contents": "util.formatWithOptions(${1:inspectOptions}, ${2:format}, ${3:[, ...args]});$0"
         },
         {
             "trigger": "util.getSystemErrorName(err)\tutil",
@@ -32,10 +28,6 @@
         {
             "trigger": "util.inspect(object[, options])\tutil",
             "contents": "util.inspect(${1:object}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "util.isDeepStrictEqual(val1, val2)\tutil",
-            "contents": "util.isDeepStrictEqual(${1:val1}, ${2:val2});$0"
         },
         {
             "trigger": "util.promisify(original)\tutil",
@@ -66,12 +58,8 @@
             "contents": "util.textencoder.encoding$0"
         },
         {
-            "trigger": "util.types\tutil",
-            "contents": "util.types$0"
-        },
-        {
-            "trigger": "util._extend(target, source)\tutil",
-            "contents": "util._extend(${1:target}, ${2:source});$0"
+            "trigger": "util.\\_extend(target, source)\tutil",
+            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
         },
         {
             "trigger": "util.debug(string)\tutil",
