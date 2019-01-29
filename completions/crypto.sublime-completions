@@ -2,16 +2,20 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "Certificate.exportChallenge(spkac)\tcrypto",
-            "contents": "Certificate.exportChallenge(${1:spkac});$0"
+            "trigger": "new crypto.Certificate()\tcrypto",
+            "contents": "new crypto.Certificate();$0"
         },
         {
-            "trigger": "Certificate.exportPublicKey(spkac[, encoding])\tcrypto",
-            "contents": "Certificate.exportPublicKey(${1:spkac}, ${2:[, encoding]});$0"
+            "trigger": "certificate.exportChallenge(spkac)\tcrypto",
+            "contents": "certificate.exportChallenge(${1:spkac});$0"
         },
         {
-            "trigger": "Certificate.verifySpkac(spkac)\tcrypto",
-            "contents": "Certificate.verifySpkac(${1:spkac});$0"
+            "trigger": "certificate.exportPublicKey(spkac)\tcrypto",
+            "contents": "certificate.exportPublicKey(${1:spkac});$0"
+        },
+        {
+            "trigger": "certificate.verifySpkac(spkac)\tcrypto",
+            "contents": "certificate.verifySpkac(${1:spkac});$0"
         },
         {
             "trigger": "cipher.final([outputEncoding])\tcrypto",

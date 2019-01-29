@@ -22,10 +22,6 @@
             "contents": "process.disconnect();$0"
         },
         {
-            "trigger": "process.dlopen(module, filename[, flags])\tglobals",
-            "contents": "process.dlopen(${1:module}, ${2:filename}, ${3:[, flags]});$0"
-        },
-        {
             "trigger": "process.emitWarning(warning[, options])\tglobals",
             "contents": "process.emitWarning(${1:warning}, ${2:[, options]});$0"
         },
@@ -56,10 +52,6 @@
         {
             "trigger": "process.getuid()\tglobals",
             "contents": "process.getuid();$0"
-        },
-        {
-            "trigger": "process.hasUncaughtExceptionCaptureCallback()\tglobals",
-            "contents": "process.hasUncaughtExceptionCaptureCallback();$0"
         },
         {
             "trigger": "process.hrtime([time])\tglobals",
@@ -106,10 +98,6 @@
             "contents": "process.setuid(${1:id});$0"
         },
         {
-            "trigger": "process.setUncaughtExceptionCaptureCallback(fn)\tglobals",
-            "contents": "process.setUncaughtExceptionCaptureCallback(${1:fn});$0"
-        },
-        {
             "trigger": "process.umask([mask])\tglobals",
             "contents": "process.umask(${1:[, mask]});$0"
         },
@@ -140,10 +128,6 @@
         {
             "trigger": "process.connected\tglobals",
             "contents": "process.connected$0"
-        },
-        {
-            "trigger": "process.debugPort\tglobals",
-            "contents": "process.debugPort$0"
         },
         {
             "trigger": "process.env\tglobals",

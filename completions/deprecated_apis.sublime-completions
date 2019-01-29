@@ -138,28 +138,12 @@
             "contents": "DEP0071: async_hooks.triggerId();$0"
         },
         {
-            "trigger": "DEP0075: REPLServer.parseREPLKeyword()\tdeprecated_apis",
-            "contents": "DEP0075: REPLServer.parseREPLKeyword();$0"
-        },
-        {
             "trigger": "DEP0076: tls.parseCertString()\tdeprecated_apis",
             "contents": "DEP0076: tls.parseCertString();$0"
         },
         {
-            "trigger": "DEP0077: Module.\\_debug()\tdeprecated_apis",
-            "contents": "DEP0077: Module.\\_debug();$0"
-        },
-        {
-            "trigger": "DEP0078: REPLServer.turnOffEditorMode()\tdeprecated_apis",
-            "contents": "DEP0078: REPLServer.turnOffEditorMode();$0"
-        },
-        {
             "trigger": "DEP0079: Custom inspection function on Objects via .inspect()\tdeprecated_apis",
             "contents": "DEP0079: Custom inspection function on Objects via .inspect();$0"
-        },
-        {
-            "trigger": "DEP0080: path.\\_makeLong()\tdeprecated_apis",
-            "contents": "DEP0080: path.\\_makeLong();$0"
         },
         {
             "trigger": "_writableState.buffer\tdeprecated_apis",
@@ -168,6 +152,10 @@
         {
             "trigger": "options.customFds\tdeprecated_apis",
             "contents": "options.customFds$0"
+        },
+        {
+            "trigger": "worker.suicide\tdeprecated_apis",
+            "contents": "worker.suicide$0"
         },
         {
             "trigger": "crypto.createCredentials\tdeprecated_apis",
@@ -208,14 +196,6 @@
         {
             "trigger": "fs.SyncWriteStream\tdeprecated_apis",
             "contents": "fs.SyncWriteStream$0"
-        },
-        {
-            "trigger": "net.Server\tdeprecated_apis",
-            "contents": "net.Server$0"
-        },
-        {
-            "trigger": "REPLServer.bufferedCommand\tdeprecated_apis",
-            "contents": "REPLServer.bufferedCommand$0"
         }
     ]
 }

@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "http.createServer([options][, requestListener])\thttp",
-            "contents": "http.createServer(${1:[, options]}, ${2:[, requestListener]});$0"
+            "trigger": "http.createServer([requestListener])\thttp",
+            "contents": "http.createServer(${1:[, requestListener]});$0"
         },
         {
             "trigger": "http.get(options[, callback])\thttp",
