@@ -26,6 +26,10 @@
             "contents": "socket.dropMembership(${1:multicastAddress}, ${2:[, multicastInterface]});$0"
         },
         {
+            "trigger": "socket.getRecvBufferSize()\tdgram",
+            "contents": "socket.getRecvBufferSize();$0"
+        },
+        {
             "trigger": "socket.getSendBufferSize()\tdgram",
             "contents": "socket.getSendBufferSize();$0"
         },
@@ -34,7 +38,7 @@
             "contents": "socket.ref();$0"
         },
         {
-            "trigger": "socket.send(msg, [offset, length,] port [, address] [, callback])\tdgram",
+            "trigger": "socket.send(msg[, offset, length], port[, address][, callback])\tdgram",
             "contents": "socket.send(${1:msg}, ${2:[, offset]}, ${3:[, length]}, ${4:port}, ${5:[, address]}, ${6:[, callback]});$0"
         },
         {
