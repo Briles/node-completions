@@ -14,7 +14,7 @@
             "contents": "vm.runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:[, options]});$0"
         },
         {
-            "trigger": "vm.runInNewContext(code[, sandbox][, options])\tvm",
+            "trigger": "vm.runInNewContext(code[, sandbox[, options]])\tvm",
             "contents": "vm.runInNewContext(${1:code}, ${2:[, sandbox]}, ${3:[, options]});$0"
         },
         {

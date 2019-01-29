@@ -2,20 +2,28 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "inspector.close()\tinspector",
+            "contents": "inspector.close();$0"
+        },
+        {
             "trigger": "inspector.open([port[, host[, wait]]])\tinspector",
             "contents": "inspector.open(${1:[, port]}, ${2:[, host]}, ${3:[, wait]});$0"
+        },
+        {
+            "trigger": "inspector.url()\tinspector",
+            "contents": "inspector.url();$0"
         },
         {
             "trigger": "session.connect()\tinspector",
             "contents": "session.connect();$0"
         },
         {
-            "trigger": "session.post(method[, params][, callback])\tinspector",
-            "contents": "session.post(${1:method}, ${2:[, params]}, ${3:[, callback]});$0"
-        },
-        {
             "trigger": "session.disconnect()\tinspector",
             "contents": "session.disconnect();$0"
+        },
+        {
+            "trigger": "session.post(method[, params][, callback])\tinspector",
+            "contents": "session.post(${1:method}, ${2:[, params]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "inspectorNotification\tinspector",
@@ -24,6 +32,10 @@
         {
             "trigger": "&lt;inspector-protocol-method&gt;\tinspector",
             "contents": "&lt;inspector-protocol-method&gt;$0"
+        },
+        {
+            "trigger": "inspector.console\tinspector",
+            "contents": "inspector.console$0"
         }
     ]
 }

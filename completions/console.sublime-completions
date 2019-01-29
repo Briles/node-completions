@@ -66,6 +66,10 @@
             "contents": "console.timeEnd(${1:[, label]});$0"
         },
         {
+            "trigger": "console.timeLog([label][, ...data])\tconsole",
+            "contents": "console.timeLog(${1:[, label]}, ${2:[, ...data]});$0"
+        },
+        {
             "trigger": "console.trace([message][, ...args])\tconsole",
             "contents": "console.trace(${1:[, message]}, ${2:[, ...args]});$0"
         },

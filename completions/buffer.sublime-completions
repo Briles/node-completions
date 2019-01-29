@@ -282,6 +282,10 @@
             "contents": "buffer.buffer$0"
         },
         {
+            "trigger": "nodeBuffer.byteOffset\tbuffer",
+            "contents": "nodeBuffer.byteOffset$0"
+        },
+        {
             "trigger": "buf.length\tbuffer",
             "contents": "buf.length$0"
         },

@@ -66,6 +66,10 @@
             "contents": "process.hrtime(${1:[, time]});$0"
         },
         {
+            "trigger": "process.hrtime.bigint()\tglobals",
+            "contents": "process.hrtime.bigint();$0"
+        },
+        {
             "trigger": "process.initgroups(user, extraGroup)\tglobals",
             "contents": "process.initgroups(${1:user}, ${2:extraGroup});$0"
         },
