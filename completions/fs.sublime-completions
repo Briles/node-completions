@@ -394,6 +394,10 @@
             "contents": "fs.stats.rdev$0"
         },
         {
+            "trigger": "fs.stats.size\tfs",
+            "contents": "fs.stats.size$0"
+        },
+        {
             "trigger": "fs.stats.blksize\tfs",
             "contents": "fs.stats.blksize$0"
         },
