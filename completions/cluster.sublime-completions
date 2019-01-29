@@ -46,10 +46,6 @@
             "contents": "worker.process$0"
         },
         {
-            "trigger": "worker.suicide\tcluster",
-            "contents": "worker.suicide$0"
-        },
-        {
             "trigger": "disconnect\tcluster",
             "contents": "disconnect$0"
         },

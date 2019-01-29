@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "vm.createContext([sandbox])\tvm",
-            "contents": "vm.createContext(${1:[, sandbox]});$0"
+            "trigger": "vm.createContext([sandbox[, options]])\tvm",
+            "contents": "vm.createContext(${1:[, sandbox]}, ${2:[, options]});$0"
         },
         {
             "trigger": "vm.isContext(sandbox)\tvm",
@@ -14,10 +14,6 @@
             "contents": "vm.runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:[, options]});$0"
         },
         {
-            "trigger": "vm.runInDebugContext(code)\tvm",
-            "contents": "vm.runInDebugContext(${1:code});$0"
-        },
-        {
             "trigger": "vm.runInNewContext(code[, sandbox][, options])\tvm",
             "contents": "vm.runInNewContext(${1:code}, ${2:[, sandbox]}, ${3:[, options]});$0"
         },
@@ -26,15 +22,47 @@
             "contents": "vm.runInThisContext(${1:code}, ${2:[, options]});$0"
         },
         {
-            "trigger": "new vm.Script(code, options)\tvm",
-            "contents": "new vm.Script(${1:code}, ${2:options});$0"
+            "trigger": "module.evaluate([options])\tvm",
+            "contents": "module.evaluate(${1:[, options]});$0"
+        },
+        {
+            "trigger": "module.instantiate()\tvm",
+            "contents": "module.instantiate();$0"
+        },
+        {
+            "trigger": "module.link(linker)\tvm",
+            "contents": "module.link(${1:linker});$0"
+        },
+        {
+            "trigger": "vm.module.dependencySpecifiers\tvm",
+            "contents": "vm.module.dependencySpecifiers$0"
+        },
+        {
+            "trigger": "vm.module.error\tvm",
+            "contents": "vm.module.error$0"
+        },
+        {
+            "trigger": "vm.module.linkingStatus\tvm",
+            "contents": "vm.module.linkingStatus$0"
+        },
+        {
+            "trigger": "vm.module.namespace\tvm",
+            "contents": "vm.module.namespace$0"
+        },
+        {
+            "trigger": "vm.module.status\tvm",
+            "contents": "vm.module.status$0"
+        },
+        {
+            "trigger": "vm.module.url\tvm",
+            "contents": "vm.module.url$0"
         },
         {
             "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",
             "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
         },
         {
-            "trigger": "script.runInNewContext([sandbox][, options])\tvm",
+            "trigger": "script.runInNewContext([sandbox[, options]])\tvm",
             "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
         },
         {
