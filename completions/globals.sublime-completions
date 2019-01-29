@@ -162,6 +162,10 @@
             "contents": "process.mainModule$0"
         },
         {
+            "trigger": "process.noDeprecation\tglobals",
+            "contents": "process.noDeprecation$0"
+        },
+        {
             "trigger": "process.pid\tglobals",
             "contents": "process.pid$0"
         },
@@ -190,8 +194,16 @@
             "contents": "process.stdout$0"
         },
         {
+            "trigger": "process.throwDeprecation\tglobals",
+            "contents": "process.throwDeprecation$0"
+        },
+        {
             "trigger": "process.title\tglobals",
             "contents": "process.title$0"
+        },
+        {
+            "trigger": "process.traceDeprecation\tglobals",
+            "contents": "process.traceDeprecation$0"
         },
         {
             "trigger": "process.version\tglobals",

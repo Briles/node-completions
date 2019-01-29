@@ -194,6 +194,18 @@
             "contents": "http2stream.rstCode$0"
         },
         {
+            "trigger": "http2stream.sentHeaders\thttp2",
+            "contents": "http2stream.sentHeaders$0"
+        },
+        {
+            "trigger": "http2stream.sentInfoHeaders\thttp2",
+            "contents": "http2stream.sentInfoHeaders$0"
+        },
+        {
+            "trigger": "http2stream.sentTrailers\thttp2",
+            "contents": "http2stream.sentTrailers$0"
+        },
+        {
             "trigger": "http2stream.session\thttp2",
             "contents": "http2stream.session$0"
         },

@@ -2,8 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "performance.clearEntries(name)\tperformance_timing_api",
+            "contents": "performance.clearEntries(${1:name});$0"
+        },
+        {
             "trigger": "performance.clearFunctions([name])\tperformance_timing_api",
             "contents": "performance.clearFunctions(${1:[, name]});$0"
+        },
+        {
+            "trigger": "performance.clearGC()\tperformance_timing_api",
+            "contents": "performance.clearGC();$0"
         },
         {
             "trigger": "performance.clearMarks([name])\tperformance_timing_api",
