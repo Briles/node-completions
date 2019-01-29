@@ -54,6 +54,10 @@
             "contents": "rl.write(${1:data}, ${2:[, key]});$0"
         },
         {
+            "trigger": "rl[Symbol.asyncIterator]()\treadline",
+            "contents": "rl[Symbol.asyncIterator]();$0"
+        },
+        {
             "trigger": "close\treadline",
             "contents": "close$0"
         },
