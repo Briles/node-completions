@@ -102,8 +102,8 @@
             "contents": "request.write(${1:chunk}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "http.clientrequest.aborted\thttp",
-            "contents": "http.clientrequest.aborted$0"
+            "trigger": "request.aborted\thttp",
+            "contents": "request.aborted$0"
         },
         {
             "trigger": "http.clientrequest.connection\thttp",
