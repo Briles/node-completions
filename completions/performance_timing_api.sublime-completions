@@ -2,36 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "performance.clearEntries(name)\tperformance_timing_api",
-            "contents": "performance.clearEntries(${1:name});$0"
-        },
-        {
-            "trigger": "performance.clearFunctions([name])\tperformance_timing_api",
-            "contents": "performance.clearFunctions(${1:[, name]});$0"
-        },
-        {
-            "trigger": "performance.clearGC()\tperformance_timing_api",
-            "contents": "performance.clearGC();$0"
-        },
-        {
             "trigger": "performance.clearMarks([name])\tperformance_timing_api",
             "contents": "performance.clearMarks(${1:[, name]});$0"
-        },
-        {
-            "trigger": "performance.clearMeasures([name])\tperformance_timing_api",
-            "contents": "performance.clearMeasures(${1:[, name]});$0"
-        },
-        {
-            "trigger": "performance.getEntries()\tperformance_timing_api",
-            "contents": "performance.getEntries();$0"
-        },
-        {
-            "trigger": "performance.getEntriesByName(name[, type])\tperformance_timing_api",
-            "contents": "performance.getEntriesByName(${1:name}, ${2:[, type]});$0"
-        },
-        {
-            "trigger": "performance.getEntriesByType(type)\tperformance_timing_api",
-            "contents": "performance.getEntriesByType(${1:type});$0"
         },
         {
             "trigger": "performance.mark([name])\tperformance_timing_api",
@@ -136,6 +108,18 @@
         {
             "trigger": "performanceObserver.observe(options)\tperformance_timing_api",
             "contents": "performanceObserver.observe(${1:options});$0"
+        },
+        {
+            "trigger": "performanceObserverEntryList.getEntries()\tperformance_timing_api",
+            "contents": "performanceObserverEntryList.getEntries();$0"
+        },
+        {
+            "trigger": "performanceObserverEntryList.getEntriesByName(name[, type])\tperformance_timing_api",
+            "contents": "performanceObserverEntryList.getEntriesByName(${1:name}, ${2:[, type]});$0"
+        },
+        {
+            "trigger": "performanceObserverEntryList.getEntriesByType(type)\tperformance_timing_api",
+            "contents": "performanceObserverEntryList.getEntriesByType(${1:type});$0"
         }
     ]
 }

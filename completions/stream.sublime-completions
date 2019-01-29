@@ -1,0 +1,13 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "stream.finished(stream, callback)\tstream",
+            "contents": "stream.finished(${1:stream}, ${2:callback});$0"
+        },
+        {
+            "trigger": "stream.pipeline(...streams[, callback])\tstream",
+            "contents": "stream.pipeline(${1:...streams}, ${2:[, callback]});$0"
+        }
+    ]
+}
