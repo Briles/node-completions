@@ -90,8 +90,8 @@
             "contents": "socket.destroy(${1:[, exception]});$0"
         },
         {
-            "trigger": "socket.end([data][, encoding])\tnet",
-            "contents": "socket.end(${1:[, data]}, ${2:[, encoding]});$0"
+            "trigger": "socket.end([data][, encoding][, callback])\tnet",
+            "contents": "socket.end(${1:[, data]}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "socket.pause()\tnet",
