@@ -34,16 +34,16 @@
             "contents": "worker.send(${1:message}, ${2:[, sendHandle]}, ${3:[, callback]});$0"
         },
         {
-            "trigger": "worker.exitedAfterDisconnect\tcluster",
-            "contents": "worker.exitedAfterDisconnect$0"
-        },
-        {
             "trigger": "worker.id\tcluster",
             "contents": "worker.id$0"
         },
         {
             "trigger": "worker.process\tcluster",
             "contents": "worker.process$0"
+        },
+        {
+            "trigger": "worker.suicide\tcluster",
+            "contents": "worker.suicide$0"
         },
         {
             "trigger": "disconnect\tcluster",

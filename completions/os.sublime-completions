@@ -58,16 +58,8 @@
             "contents": "os.uptime();$0"
         },
         {
-            "trigger": "os.userInfo([options])\tos",
-            "contents": "os.userInfo(${1:[, options]});$0"
-        },
-        {
             "trigger": "os.EOL\tos",
             "contents": "os.EOL$0"
-        },
-        {
-            "trigger": "os.constants\tos",
-            "contents": "os.constants$0"
         }
     ]
 }

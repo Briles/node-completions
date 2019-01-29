@@ -30,10 +30,6 @@
             "contents": "zlib.createUnzip(${1:[, options]});$0"
         },
         {
-            "trigger": "zlib.close([callback])\tzlib",
-            "contents": "zlib.close(${1:[, callback]});$0"
-        },
-        {
             "trigger": "zlib.flush([kind], callback)\tzlib",
             "contents": "zlib.flush(${1:[, kind]}, ${2:callback});$0"
         },
@@ -44,14 +40,6 @@
         {
             "trigger": "zlib.reset()\tzlib",
             "contents": "zlib.reset();$0"
-        },
-        {
-            "trigger": "zlib.bytesRead\tzlib",
-            "contents": "zlib.bytesRead$0"
-        },
-        {
-            "trigger": "zlib.constants\tzlib",
-            "contents": "zlib.constants$0"
         }
     ]
 }

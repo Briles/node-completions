@@ -26,16 +26,8 @@
             "contents": "module.parent$0"
         },
         {
-            "trigger": "module.paths\tmodule",
-            "contents": "module.paths$0"
-        },
-        {
             "trigger": "module.require(id)\tmodule",
             "contents": "module.require(${1:id});$0"
-        },
-        {
-            "trigger": "the_`module`_object.builtinModules\tmodule",
-            "contents": "the_`module`_object.builtinModules$0"
         }
     ]
 }
