@@ -58,6 +58,10 @@
             "contents": "vm.module.url$0"
         },
         {
+            "trigger": "script.createCachedData()\tvm",
+            "contents": "script.createCachedData();$0"
+        },
+        {
             "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",
             "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
         },

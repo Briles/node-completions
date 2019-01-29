@@ -38,8 +38,8 @@
             "contents": "decipher.final(${1:[, outputEncoding]});$0"
         },
         {
-            "trigger": "decipher.setAAD(buffer)\tcrypto",
-            "contents": "decipher.setAAD(${1:buffer});$0"
+            "trigger": "decipher.setAAD(buffer[, options])\tcrypto",
+            "contents": "decipher.setAAD(${1:buffer}, ${2:[, options]});$0"
         },
         {
             "trigger": "decipher.setAuthTag(buffer)\tcrypto",
