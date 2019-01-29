@@ -30,6 +30,10 @@
             "contents": "core_api.constants$0"
         },
         {
+            "trigger": "core_api.selectPadding`\thttp/2",
+            "contents": "core_api.selectPadding`$0"
+        },
+        {
             "trigger": "http2session.close([callback])\thttp/2",
             "contents": "http2session.close(${1:[, callback]});$0"
         },
@@ -170,10 +174,6 @@
             "contents": "http2stream.setTimeout(${1:msecs}, ${2:callback});$0"
         },
         {
-            "trigger": "http2stream.sendTrailers(headers)\thttp/2",
-            "contents": "http2stream.sendTrailers(${1:headers});$0"
-        },
-        {
             "trigger": "http2stream.aborted\thttp/2",
             "contents": "http2stream.aborted$0"
         },
@@ -220,10 +220,6 @@
         {
             "trigger": "trailers\thttp/2",
             "contents": "trailers$0"
-        },
-        {
-            "trigger": "wantTrailers\thttp/2",
-            "contents": "wantTrailers$0"
         },
         {
             "trigger": "continue\thttp/2",
@@ -290,6 +286,10 @@
             "contents": "sessionError$0"
         },
         {
+            "trigger": "streamError\thttp/2",
+            "contents": "streamError$0"
+        },
+        {
             "trigger": "unknownProtocol\thttp/2",
             "contents": "unknownProtocol$0"
         },
@@ -300,10 +300,6 @@
         {
             "trigger": "request.setTimeout(msecs, callback)\thttp/2",
             "contents": "request.setTimeout(${1:msecs}, ${2:callback});$0"
-        },
-        {
-            "trigger": "request.aborted\thttp/2",
-            "contents": "request.aborted$0"
         },
         {
             "trigger": "request.headers\thttp/2",
