@@ -6,24 +6,28 @@
             "contents": "tty.isatty(${1:fd});$0"
         },
         {
-            "trigger": "tty.setRawMode(mode)\ttty",
-            "contents": "tty.setRawMode(${1:mode});$0"
+            "trigger": "readStream.setRawMode(mode)\ttty",
+            "contents": "readStream.setRawMode(${1:mode});$0"
         },
         {
-            "trigger": "rs.setRawMode(mode)\ttty",
-            "contents": "rs.setRawMode(${1:mode});$0"
+            "trigger": "tty.readstream.isRaw\ttty",
+            "contents": "tty.readstream.isRaw$0"
         },
         {
-            "trigger": "readstream.isRaw\ttty",
-            "contents": "readstream.isRaw$0"
+            "trigger": "tty.readstream.isTTY\ttty",
+            "contents": "tty.readstream.isTTY$0"
         },
         {
-            "trigger": "writestream.columns\ttty",
-            "contents": "writestream.columns$0"
+            "trigger": "tty.writestream.columns\ttty",
+            "contents": "tty.writestream.columns$0"
         },
         {
-            "trigger": "writestream.rows\ttty",
-            "contents": "writestream.rows$0"
+            "trigger": "tty.writestream.isTTY\ttty",
+            "contents": "tty.writestream.isTTY$0"
+        },
+        {
+            "trigger": "tty.writestream.rows\ttty",
+            "contents": "tty.writestream.rows$0"
         },
         {
             "trigger": "resize\ttty",

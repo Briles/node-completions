@@ -1,0 +1,9 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "Node.js\tinternationalization_support",
+            "contents": "Node.js$0"
+        }
+    ]
+}
