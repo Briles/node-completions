@@ -58,10 +58,6 @@
             "contents": "emitter.setMaxListeners(${1:n});$0"
         },
         {
-            "trigger": "emitter.rawListeners(eventName)\tEvents",
-            "contents": "emitter.rawListeners(${1:eventName});$0"
-        },
-        {
             "trigger": "EventEmitter.defaultMaxListeners\tEvents",
             "contents": "EventEmitter.defaultMaxListeners$0"
         },

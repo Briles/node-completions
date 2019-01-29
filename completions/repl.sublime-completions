@@ -14,14 +14,6 @@
             "contents": "replServer.displayPrompt(${1:[, preserveCursor]});$0"
         },
         {
-            "trigger": "replServer.clearBufferedCommand()\trepl",
-            "contents": "replServer.clearBufferedCommand();$0"
-        },
-        {
-            "trigger": "replServer.parseREPLKeyword(keyword, [rest])\trepl",
-            "contents": "replServer.parseREPLKeyword(${1:keyword}, ${2:[, rest]});$0"
-        },
-        {
             "trigger": "exit\trepl",
             "contents": "exit$0"
         },

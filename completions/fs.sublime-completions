@@ -42,14 +42,6 @@
             "contents": "fs.closeSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.copyFile(src, dest[, flags], callback)\tfs",
-            "contents": "fs.copyFile(${1:src}, ${2:dest}, ${3:[, flags]}, ${4:callback});$0"
-        },
-        {
-            "trigger": "fs.copyFileSync(src, dest[, flags])\tfs",
-            "contents": "fs.copyFileSync(${1:src}, ${2:dest}, ${3:[, flags]});$0"
-        },
-        {
             "trigger": "fs.createReadStream(path[, options])\tfs",
             "contents": "fs.createReadStream(${1:path}, ${2:[, options]});$0"
         },
@@ -106,12 +98,12 @@
             "contents": "fs.fsyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.ftruncate(fd[, len], callback)\tfs",
-            "contents": "fs.ftruncate(${1:fd}, ${2:[, len]}, ${3:callback});$0"
+            "trigger": "fs.ftruncate(fd, len, callback)\tfs",
+            "contents": "fs.ftruncate(${1:fd}, ${2:len}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.ftruncateSync(fd[, len])\tfs",
-            "contents": "fs.ftruncateSync(${1:fd}, ${2:[, len]});$0"
+            "trigger": "fs.ftruncateSync(fd, len)\tfs",
+            "contents": "fs.ftruncateSync(${1:fd}, ${2:len});$0"
         },
         {
             "trigger": "fs.futimes(fd, atime, mtime, callback)\tfs",
@@ -190,12 +182,12 @@
             "contents": "fs.readdirSync(${1:path}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.readFile(path[, options], callback)\tfs",
-            "contents": "fs.readFile(${1:path}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "fs.readFile(file[, options], callback)\tfs",
+            "contents": "fs.readFile(${1:file}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readFileSync(path[, options])\tfs",
-            "contents": "fs.readFileSync(${1:path}, ${2:[, options]});$0"
+            "trigger": "fs.readFileSync(file[, options])\tfs",
+            "contents": "fs.readFileSync(${1:file}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.readlink(path[, options], callback)\tfs",
@@ -214,16 +206,8 @@
             "contents": "fs.realpath(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.realpath.native(path[, options], callback)\tfs",
-            "contents": "fs.realpath.native(${1:path}, ${2:[, options]}, ${3:callback});$0"
-        },
-        {
             "trigger": "fs.realpathSync(path[, options])\tfs",
             "contents": "fs.realpathSync(${1:path}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fs.realpathSync.native(path[, options])\tfs",
-            "contents": "fs.realpathSync.native(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.rename(oldPath, newPath, callback)\tfs",
@@ -258,12 +242,12 @@
             "contents": "fs.symlinkSync(${1:target}, ${2:path}, ${3:[, type]});$0"
         },
         {
-            "trigger": "fs.truncate(path[, len], callback)\tfs",
-            "contents": "fs.truncate(${1:path}, ${2:[, len]}, ${3:callback});$0"
+            "trigger": "fs.truncate(path, len, callback)\tfs",
+            "contents": "fs.truncate(${1:path}, ${2:len}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.truncateSync(path[, len])\tfs",
-            "contents": "fs.truncateSync(${1:path}, ${2:[, len]});$0"
+            "trigger": "fs.truncateSync(path, len)\tfs",
+            "contents": "fs.truncateSync(${1:path}, ${2:len});$0"
         },
         {
             "trigger": "fs.unlink(path, callback)\tfs",
@@ -326,10 +310,6 @@
             "contents": "change$0"
         },
         {
-            "trigger": "close\tfs",
-            "contents": "close$0"
-        },
-        {
             "trigger": "error\tfs",
             "contents": "error$0"
         },
@@ -346,108 +326,8 @@
             "contents": "open$0"
         },
         {
-            "trigger": "ready\tfs",
-            "contents": "ready$0"
-        },
-        {
-            "trigger": "stats.isBlockDevice()\tfs",
-            "contents": "stats.isBlockDevice();$0"
-        },
-        {
-            "trigger": "stats.isCharacterDevice()\tfs",
-            "contents": "stats.isCharacterDevice();$0"
-        },
-        {
-            "trigger": "stats.isDirectory()\tfs",
-            "contents": "stats.isDirectory();$0"
-        },
-        {
-            "trigger": "stats.isFIFO()\tfs",
-            "contents": "stats.isFIFO();$0"
-        },
-        {
-            "trigger": "stats.isFile()\tfs",
-            "contents": "stats.isFile();$0"
-        },
-        {
-            "trigger": "stats.isSocket()\tfs",
-            "contents": "stats.isSocket();$0"
-        },
-        {
-            "trigger": "stats.isSymbolicLink()\tfs",
-            "contents": "stats.isSymbolicLink();$0"
-        },
-        {
-            "trigger": "fs.stats.dev\tfs",
-            "contents": "fs.stats.dev$0"
-        },
-        {
-            "trigger": "fs.stats.ino\tfs",
-            "contents": "fs.stats.ino$0"
-        },
-        {
-            "trigger": "fs.stats.mode\tfs",
-            "contents": "fs.stats.mode$0"
-        },
-        {
-            "trigger": "fs.stats.nlink\tfs",
-            "contents": "fs.stats.nlink$0"
-        },
-        {
-            "trigger": "fs.stats.uid\tfs",
-            "contents": "fs.stats.uid$0"
-        },
-        {
-            "trigger": "fs.stats.gid\tfs",
-            "contents": "fs.stats.gid$0"
-        },
-        {
-            "trigger": "fs.stats.rdev\tfs",
-            "contents": "fs.stats.rdev$0"
-        },
-        {
-            "trigger": "fs.stats.size\tfs",
-            "contents": "fs.stats.size$0"
-        },
-        {
-            "trigger": "fs.stats.blksize\tfs",
-            "contents": "fs.stats.blksize$0"
-        },
-        {
-            "trigger": "fs.stats.blocks\tfs",
-            "contents": "fs.stats.blocks$0"
-        },
-        {
-            "trigger": "fs.stats.atimeMs\tfs",
-            "contents": "fs.stats.atimeMs$0"
-        },
-        {
-            "trigger": "fs.stats.mtimeMs\tfs",
-            "contents": "fs.stats.mtimeMs$0"
-        },
-        {
-            "trigger": "fs.stats.ctimeMs\tfs",
-            "contents": "fs.stats.ctimeMs$0"
-        },
-        {
-            "trigger": "fs.stats.birthtimeMs\tfs",
-            "contents": "fs.stats.birthtimeMs$0"
-        },
-        {
-            "trigger": "fs.stats.atime\tfs",
-            "contents": "fs.stats.atime$0"
-        },
-        {
-            "trigger": "fs.stats.mtime\tfs",
-            "contents": "fs.stats.mtime$0"
-        },
-        {
-            "trigger": "fs.stats.ctime\tfs",
-            "contents": "fs.stats.ctime$0"
-        },
-        {
-            "trigger": "fs.stats.birthtime\tfs",
-            "contents": "fs.stats.birthtime$0"
+            "trigger": "close\tfs",
+            "contents": "close$0"
         },
         {
             "trigger": "fs.writestream.bytesWritten\tfs",
@@ -460,194 +340,6 @@
         {
             "trigger": "fs.constants\tfs",
             "contents": "fs.constants$0"
-        },
-        {
-            "trigger": "fsPromises.access(path[, mode])\tfs",
-            "contents": "fsPromises.access(${1:path}, ${2:[, mode]});$0"
-        },
-        {
-            "trigger": "fsPromises.appendFile(file, data[, options])\tfs",
-            "contents": "fsPromises.appendFile(${1:file}, ${2:data}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.chmod(path, mode)\tfs",
-            "contents": "fsPromises.chmod(${1:path}, ${2:mode});$0"
-        },
-        {
-            "trigger": "fsPromises.chown(path, uid, gid)\tfs",
-            "contents": "fsPromises.chown(${1:path}, ${2:uid}, ${3:gid});$0"
-        },
-        {
-            "trigger": "fsPromises.copyFile(src, dest[, flags])\tfs",
-            "contents": "fsPromises.copyFile(${1:src}, ${2:dest}, ${3:[, flags]});$0"
-        },
-        {
-            "trigger": "fsPromises.fchmod(filehandle, mode)\tfs",
-            "contents": "fsPromises.fchmod(${1:filehandle}, ${2:mode});$0"
-        },
-        {
-            "trigger": "fsPromises.fchown(filehandle, uid, gid)\tfs",
-            "contents": "fsPromises.fchown(${1:filehandle}, ${2:uid}, ${3:gid});$0"
-        },
-        {
-            "trigger": "fsPromises.fdatasync(filehandle)\tfs",
-            "contents": "fsPromises.fdatasync(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.fstat(filehandle)\tfs",
-            "contents": "fsPromises.fstat(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.fsync(filehandle)\tfs",
-            "contents": "fsPromises.fsync(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.ftruncate(filehandle[, len])\tfs",
-            "contents": "fsPromises.ftruncate(${1:filehandle}, ${2:[, len]});$0"
-        },
-        {
-            "trigger": "fsPromises.futimes(filehandle, atime, mtime)\tfs",
-            "contents": "fsPromises.futimes(${1:filehandle}, ${2:atime}, ${3:mtime});$0"
-        },
-        {
-            "trigger": "fsPromises.lchmod(path, mode)\tfs",
-            "contents": "fsPromises.lchmod(${1:path}, ${2:mode});$0"
-        },
-        {
-            "trigger": "fsPromises.lchown(path, uid, gid)\tfs",
-            "contents": "fsPromises.lchown(${1:path}, ${2:uid}, ${3:gid});$0"
-        },
-        {
-            "trigger": "fsPromises.link(existingPath, newPath)\tfs",
-            "contents": "fsPromises.link(${1:existingPath}, ${2:newPath});$0"
-        },
-        {
-            "trigger": "fsPromises.lstat(path)\tfs",
-            "contents": "fsPromises.lstat(${1:path});$0"
-        },
-        {
-            "trigger": "fsPromises.mkdir(path[, mode])\tfs",
-            "contents": "fsPromises.mkdir(${1:path}, ${2:[, mode]});$0"
-        },
-        {
-            "trigger": "fsPromises.mkdtemp(prefix[, options])\tfs",
-            "contents": "fsPromises.mkdtemp(${1:prefix}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.open(path, flags[, mode])\tfs",
-            "contents": "fsPromises.open(${1:path}, ${2:flags}, ${3:[, mode]});$0"
-        },
-        {
-            "trigger": "fsPromises.read(filehandle, buffer, offset, length, position)\tfs",
-            "contents": "fsPromises.read(${1:filehandle}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
-        },
-        {
-            "trigger": "fsPromises.readdir(path[, options])\tfs",
-            "contents": "fsPromises.readdir(${1:path}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.readFile(path[, options])\tfs",
-            "contents": "fsPromises.readFile(${1:path}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.readlink(path[, options])\tfs",
-            "contents": "fsPromises.readlink(${1:path}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.realpath(path[, options])\tfs",
-            "contents": "fsPromises.realpath(${1:path}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "fsPromises.rename(oldPath, newPath)\tfs",
-            "contents": "fsPromises.rename(${1:oldPath}, ${2:newPath});$0"
-        },
-        {
-            "trigger": "fsPromises.rmdir(path)\tfs",
-            "contents": "fsPromises.rmdir(${1:path});$0"
-        },
-        {
-            "trigger": "fsPromises.stat(path)\tfs",
-            "contents": "fsPromises.stat(${1:path});$0"
-        },
-        {
-            "trigger": "fsPromises.symlink(target, path[, type])\tfs",
-            "contents": "fsPromises.symlink(${1:target}, ${2:path}, ${3:[, type]});$0"
-        },
-        {
-            "trigger": "fsPromises.truncate(path[, len])\tfs",
-            "contents": "fsPromises.truncate(${1:path}, ${2:[, len]});$0"
-        },
-        {
-            "trigger": "fsPromises.unlink(path)\tfs",
-            "contents": "fsPromises.unlink(${1:path});$0"
-        },
-        {
-            "trigger": "fsPromises.utimes(path, atime, mtime)\tfs",
-            "contents": "fsPromises.utimes(${1:path}, ${2:atime}, ${3:mtime});$0"
-        },
-        {
-            "trigger": "fsPromises.write(filehandle, buffer[, offset[, length[, position]]])\tfs",
-            "contents": "fsPromises.write(${1:filehandle}, ${2:buffer}, ${3:[, offset]}, ${4:[, length]}, ${5:[, position]});$0"
-        },
-        {
-            "trigger": "fsPromises.writeFile(file, data[, options])\tfs",
-            "contents": "fsPromises.writeFile(${1:file}, ${2:data}, ${3:[, options]});$0"
-        },
-        {
-            "trigger": "filehandle.appendFile(data, options)\tfs",
-            "contents": "filehandle.appendFile(${1:data}, ${2:options});$0"
-        },
-        {
-            "trigger": "filehandle.chmod(mode)\tfs",
-            "contents": "filehandle.chmod(${1:mode});$0"
-        },
-        {
-            "trigger": "filehandle.chown(uid, gid)\tfs",
-            "contents": "filehandle.chown(${1:uid}, ${2:gid});$0"
-        },
-        {
-            "trigger": "filehandle.close()\tfs",
-            "contents": "filehandle.close();$0"
-        },
-        {
-            "trigger": "filehandle.datasync()\tfs",
-            "contents": "filehandle.datasync();$0"
-        },
-        {
-            "trigger": "filehandle.read(buffer, offset, length, position)\tfs",
-            "contents": "filehandle.read(${1:buffer}, ${2:offset}, ${3:length}, ${4:position});$0"
-        },
-        {
-            "trigger": "filehandle.readFile(options)\tfs",
-            "contents": "filehandle.readFile(${1:options});$0"
-        },
-        {
-            "trigger": "filehandle.stat()\tfs",
-            "contents": "filehandle.stat();$0"
-        },
-        {
-            "trigger": "filehandle.sync()\tfs",
-            "contents": "filehandle.sync();$0"
-        },
-        {
-            "trigger": "filehandle.truncate(len)\tfs",
-            "contents": "filehandle.truncate(${1:len});$0"
-        },
-        {
-            "trigger": "filehandle.utimes(atime, mtime)\tfs",
-            "contents": "filehandle.utimes(${1:atime}, ${2:mtime});$0"
-        },
-        {
-            "trigger": "filehandle.write(buffer, offset, length, position)\tfs",
-            "contents": "filehandle.write(${1:buffer}, ${2:offset}, ${3:length}, ${4:position});$0"
-        },
-        {
-            "trigger": "filehandle.writeFile(data, options)\tfs",
-            "contents": "filehandle.writeFile(${1:data}, ${2:options});$0"
-        },
-        {
-            "trigger": "filehandle.fd\tfs",
-            "contents": "filehandle.fd$0"
         }
     ]
 }

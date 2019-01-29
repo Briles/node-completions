@@ -18,10 +18,6 @@
             "contents": "tty.readstream.isTTY$0"
         },
         {
-            "trigger": "writeStream.getColorDepth([env])\ttty",
-            "contents": "writeStream.getColorDepth(${1:[, env]});$0"
-        },
-        {
             "trigger": "tty.writestream.columns\ttty",
             "contents": "tty.writestream.columns$0"
         },
