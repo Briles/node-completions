@@ -30,11 +30,67 @@
             "contents": "zlib.createUnzip(${1:[, options]});$0"
         },
         {
+            "trigger": "zlib.deflate(buffer[, options], callback)\tzlib",
+            "contents": "zlib.deflate(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.deflateSync(buffer[, options])\tzlib",
+            "contents": "zlib.deflateSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.deflateRaw(buffer[, options], callback)\tzlib",
+            "contents": "zlib.deflateRaw(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.deflateRawSync(buffer[, options])\tzlib",
+            "contents": "zlib.deflateRawSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gunzip(buffer[, options], callback)\tzlib",
+            "contents": "zlib.gunzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.gunzipSync(buffer[, options])\tzlib",
+            "contents": "zlib.gunzipSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.gzip(buffer[, options], callback)\tzlib",
+            "contents": "zlib.gzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.gzipSync(buffer[, options])\tzlib",
+            "contents": "zlib.gzipSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflate(buffer[, options], callback)\tzlib",
+            "contents": "zlib.inflate(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.inflateSync(buffer[, options])\tzlib",
+            "contents": "zlib.inflateSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.inflateRaw(buffer[, options], callback)\tzlib",
+            "contents": "zlib.inflateRaw(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.inflateRawSync(buffer[, options])\tzlib",
+            "contents": "zlib.inflateRawSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.unzip(buffer[, options], callback)\tzlib",
+            "contents": "zlib.unzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.unzipSync(buffer[, options])\tzlib",
+            "contents": "zlib.unzipSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
             "trigger": "zlib.close([callback])\tzlib",
             "contents": "zlib.close(${1:[, callback]});$0"
         },
         {
-            "trigger": "zlib.flush([kind], callback)\tzlib",
+            "trigger": "zlib.flush([kind, ]callback)\tzlib",
             "contents": "zlib.flush(${1:[, kind]}, ${2:callback});$0"
         },
         {
@@ -46,8 +102,12 @@
             "contents": "zlib.reset();$0"
         },
         {
-            "trigger": "zlib.bytesRead\tzlib",
-            "contents": "zlib.bytesRead$0"
+            "trigger": "zlib.zlib.bytesRead\tzlib",
+            "contents": "zlib.zlib.bytesRead$0"
+        },
+        {
+            "trigger": "zlib.bytesWritten\tzlib",
+            "contents": "zlib.bytesWritten$0"
         },
         {
             "trigger": "zlib.constants\tzlib",

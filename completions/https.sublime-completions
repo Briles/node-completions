@@ -10,8 +10,16 @@
             "contents": "https.get(${1:options}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "https.get(url[, options][, callback])\thttps",
+            "contents": "https.get(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
             "trigger": "https.request(options[, callback])\thttps",
             "contents": "https.request(${1:options}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "https.request(url[, options][, callback])\thttps",
+            "contents": "https.request(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "server.close([callback])\thttps",
@@ -24,6 +32,14 @@
         {
             "trigger": "server.setTimeout([msecs][, callback])\thttps",
             "contents": "server.setTimeout(${1:[, msecs]}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "https.server.maxHeadersCount\thttps",
+            "contents": "https.server.maxHeadersCount$0"
+        },
+        {
+            "trigger": "https.server.headersTimeout\thttps",
+            "contents": "https.server.headersTimeout$0"
         },
         {
             "trigger": "https.server.timeout\thttps",
