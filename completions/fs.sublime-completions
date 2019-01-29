@@ -170,12 +170,12 @@
             "contents": "fs.mkdtempSync(${1:prefix}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.open(path, flags[, mode], callback)\tfs",
-            "contents": "fs.open(${1:path}, ${2:flags}, ${3:[, mode]}, ${4:callback});$0"
+            "trigger": "fs.open(path[, flags[, mode]], callback)\tfs",
+            "contents": "fs.open(${1:path}, ${2:[, flags]}, ${3:[, mode]}, ${4:callback});$0"
         },
         {
-            "trigger": "fs.openSync(path, flags[, mode])\tfs",
-            "contents": "fs.openSync(${1:path}, ${2:flags}, ${3:[, mode]});$0"
+            "trigger": "fs.openSync(path[, flags, mode])\tfs",
+            "contents": "fs.openSync(${1:path}, ${2:[, flags]}, ${3:[, mode]});$0"
         },
         {
             "trigger": "fs.read(fd, buffer, offset, length, position, callback)\tfs",
@@ -374,6 +374,10 @@
             "contents": "readStream.path$0"
         },
         {
+            "trigger": "fs.readstream.pending\tfs",
+            "contents": "fs.readstream.pending$0"
+        },
+        {
             "trigger": "open\tfs",
             "contents": "open$0"
         },
@@ -488,6 +492,10 @@
         {
             "trigger": "writeStream.path\tfs",
             "contents": "writeStream.path$0"
+        },
+        {
+            "trigger": "fs.writestream.pending\tfs",
+            "contents": "fs.writestream.pending$0"
         },
         {
             "trigger": "fs.constants\tfs",
