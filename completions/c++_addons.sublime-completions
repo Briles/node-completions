@@ -1,0 +1,9 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "Node.js\tc++_addons",
+            "contents": "Node.js$0"
+        }
+    ]
+}
