@@ -158,6 +158,10 @@
             "contents": "crypto.createCipheriv(${1:algorithm}, ${2:key}, ${3:iv}, ${4:[, options]});$0"
         },
         {
+            "trigger": "crypto.createCredentials(details)\tcrypto",
+            "contents": "crypto.createCredentials(${1:details});$0"
+        },
+        {
             "trigger": "crypto.createDecipher(algorithm, password[, options])\tcrypto",
             "contents": "crypto.createDecipher(${1:algorithm}, ${2:password}, ${3:[, options]});$0"
         },
