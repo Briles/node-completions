@@ -14,24 +14,20 @@
             "contents": "assert.deepStrictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.doesNotReject(asyncFn[, error][, message])\tassert",
-            "contents": "assert.doesNotReject(${1:asyncFn}, ${2:[, error]}, ${3:[, message]});$0"
-        },
-        {
-            "trigger": "assert.doesNotThrow(fn[, error][, message])\tassert",
-            "contents": "assert.doesNotThrow(${1:fn}, ${2:[, error]}, ${3:[, message]});$0"
+            "trigger": "assert.doesNotThrow(block[, error][, message])\tassert",
+            "contents": "assert.doesNotThrow(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         },
         {
             "trigger": "assert.equal(actual, expected[, message])\tassert",
             "contents": "assert.equal(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.fail([message])\tassert",
-            "contents": "assert.fail(${1:[, message]});$0"
+            "trigger": "assert.fail(message)\tassert",
+            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[, message]}, ${4:[, operator]}, ${5:[, stackStartFunction]});$0"
         },
         {
-            "trigger": "assert.fail(actual, expected[, message[, operator[, stackStartFn]]])\tassert",
-            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[, message]}, ${4:[, operator]}, ${5:[, stackStartFn]});$0"
+            "trigger": "assert.fail(actual, expected[, message[, operator[, stackStartFunction]]])\tassert",
+            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[, message]}, ${4:[, operator]}, ${5:[, stackStartFunction]});$0"
         },
         {
             "trigger": "assert.ifError(value)\tassert",
@@ -58,16 +54,12 @@
             "contents": "assert.ok(${1:value}, ${2:[, message]});$0"
         },
         {
-            "trigger": "assert.rejects(asyncFn[, error][, message])\tassert",
-            "contents": "assert.rejects(${1:asyncFn}, ${2:[, error]}, ${3:[, message]});$0"
-        },
-        {
             "trigger": "assert.strictEqual(actual, expected[, message])\tassert",
             "contents": "assert.strictEqual(${1:actual}, ${2:expected}, ${3:[, message]});$0"
         },
         {
-            "trigger": "assert.throws(fn[, error][, message])\tassert",
-            "contents": "assert.throws(${1:fn}, ${2:[, error]}, ${3:[, message]});$0"
+            "trigger": "assert.throws(block[, error][, message])\tassert",
+            "contents": "assert.throws(${1:block}, ${2:[, error]}, ${3:[, message]});$0"
         }
     ]
 }

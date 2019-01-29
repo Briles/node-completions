@@ -10,20 +10,8 @@
             "contents": "subprocess.kill(${1:[, signal]});$0"
         },
         {
-            "trigger": "subprocess.ref()\tchild_process",
-            "contents": "subprocess.ref();$0"
-        },
-        {
             "trigger": "subprocess.send(message[, sendHandle[, options]][, callback])\tchild_process",
             "contents": "subprocess.send(${1:message}, ${2:[, sendHandle]}, ${3:[, options]}, ${4:[, callback]});$0"
-        },
-        {
-            "trigger": "subprocess.unref()\tchild_process",
-            "contents": "subprocess.unref();$0"
-        },
-        {
-            "trigger": "subprocess.channel\tchild_process",
-            "contents": "subprocess.channel$0"
         },
         {
             "trigger": "subprocess.connected\tchild_process",
