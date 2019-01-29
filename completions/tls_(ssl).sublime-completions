@@ -50,10 +50,6 @@
             "contents": "server.listen();$0"
         },
         {
-            "trigger": "server.setSecureContext(options)\ttls_(ssl)",
-            "contents": "server.setSecureContext(${1:options});$0"
-        },
-        {
             "trigger": "server.setTicketKeys(keys)\ttls_(ssl)",
             "contents": "server.setTicketKeys(${1:keys});$0"
         },
@@ -88,10 +84,6 @@
         {
             "trigger": "tlsSocket.disableRenegotiation()\ttls_(ssl)",
             "contents": "tlsSocket.disableRenegotiation();$0"
-        },
-        {
-            "trigger": "tlsSocket.getCertificate()\ttls_(ssl)",
-            "contents": "tlsSocket.getCertificate();$0"
         },
         {
             "trigger": "tlsSocket.getCipher()\ttls_(ssl)",

@@ -190,10 +190,6 @@
             "contents": "http2stream.aborted$0"
         },
         {
-            "trigger": "Socket.bufferSize\thttp/2",
-            "contents": "Socket.bufferSize$0"
-        },
-        {
             "trigger": "http2stream.closed\thttp/2",
             "contents": "http2stream.closed$0"
         },
@@ -330,10 +326,6 @@
             "contents": "request.aborted$0"
         },
         {
-            "trigger": "http2.http2serverrequest.authority\thttp/2",
-            "contents": "http2.http2serverrequest.authority$0"
-        },
-        {
             "trigger": "request.headers\thttp/2",
             "contents": "request.headers$0"
         },
@@ -352,10 +344,6 @@
         {
             "trigger": "http2.http2serverrequest.rawTrailers\thttp/2",
             "contents": "http2.http2serverrequest.rawTrailers$0"
-        },
-        {
-            "trigger": "http2.http2serverrequest.scheme\thttp/2",
-            "contents": "http2.http2serverrequest.scheme$0"
         },
         {
             "trigger": "http2.http2serverrequest.stream\thttp/2",
