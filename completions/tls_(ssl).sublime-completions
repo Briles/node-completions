@@ -78,10 +78,6 @@
             "contents": "tlsClientError$0"
         },
         {
-            "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
-            "contents": "new tls.TLSSocket(${1:socket}, ${2:[, options]});$0"
-        },
-        {
             "trigger": "tlsSocket.address()\ttls_(ssl)",
             "contents": "tlsSocket.address();$0"
         },

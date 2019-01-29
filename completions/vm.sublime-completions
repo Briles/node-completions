@@ -14,20 +14,12 @@
             "contents": "vm.runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:[, options]});$0"
         },
         {
-            "trigger": "vm.runInDebugContext(code)\tvm",
-            "contents": "vm.runInDebugContext(${1:code});$0"
-        },
-        {
             "trigger": "vm.runInNewContext(code[, sandbox][, options])\tvm",
             "contents": "vm.runInNewContext(${1:code}, ${2:[, sandbox]}, ${3:[, options]});$0"
         },
         {
             "trigger": "vm.runInThisContext(code[, options])\tvm",
             "contents": "vm.runInThisContext(${1:code}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "Constructor: new vm.Module(code[, options])\tvm",
-            "contents": "Constructor: new vm.Module(${1:code}, ${2:[, options]});$0"
         },
         {
             "trigger": "module.evaluate([options])\tvm",
@@ -64,10 +56,6 @@
         {
             "trigger": "vm.module.url\tvm",
             "contents": "vm.module.url$0"
-        },
-        {
-            "trigger": "new vm.Script(code, options)\tvm",
-            "contents": "new vm.Script(${1:code}, ${2:options});$0"
         },
         {
             "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",

@@ -6,10 +6,6 @@
             "contents": "inspector.open(${1:[, port]}, ${2:[, host]}, ${3:[, wait]});$0"
         },
         {
-            "trigger": "Constructor: new inspector.Session()\tinspector",
-            "contents": "Constructor: new inspector.Session();$0"
-        },
-        {
             "trigger": "session.connect()\tinspector",
             "contents": "session.connect();$0"
         },

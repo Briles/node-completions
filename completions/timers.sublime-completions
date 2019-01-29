@@ -14,6 +14,10 @@
             "contents": "timeout.ref();$0"
         },
         {
+            "trigger": "timeout.refresh()\ttimers",
+            "contents": "timeout.refresh();$0"
+        },
+        {
             "trigger": "timeout.unref()\ttimers",
             "contents": "timeout.unref();$0"
         },
