@@ -2,20 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "immediate.ref()\ttimers",
-            "contents": "immediate.ref();$0"
-        },
-        {
-            "trigger": "immediate.unref()\ttimers",
-            "contents": "immediate.unref();$0"
-        },
-        {
             "trigger": "timeout.ref()\ttimers",
             "contents": "timeout.ref();$0"
-        },
-        {
-            "trigger": "timeout.refresh()\ttimers",
-            "contents": "timeout.refresh();$0"
         },
         {
             "trigger": "timeout.unref()\ttimers",

@@ -78,6 +78,10 @@
             "contents": "tlsClientError$0"
         },
         {
+            "trigger": "new tls.TLSSocket(socket[, options])\ttls_(ssl)",
+            "contents": "new tls.TLSSocket(${1:socket}, ${2:[, options]});$0"
+        },
+        {
             "trigger": "tlsSocket.address()\ttls_(ssl)",
             "contents": "tlsSocket.address();$0"
         },
@@ -94,16 +98,8 @@
             "contents": "tlsSocket.getEphemeralKeyInfo();$0"
         },
         {
-            "trigger": "tlsSocket.getFinished()\ttls_(ssl)",
-            "contents": "tlsSocket.getFinished();$0"
-        },
-        {
             "trigger": "tlsSocket.getPeerCertificate([detailed])\ttls_(ssl)",
             "contents": "tlsSocket.getPeerCertificate(${1:[, detailed]});$0"
-        },
-        {
-            "trigger": "tlsSocket.getPeerFinished()\ttls_(ssl)",
-            "contents": "tlsSocket.getPeerFinished();$0"
         },
         {
             "trigger": "tlsSocket.getProtocol()\ttls_(ssl)",

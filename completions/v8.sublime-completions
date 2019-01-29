@@ -14,8 +14,8 @@
             "contents": "v8.getHeapStatistics();$0"
         },
         {
-            "trigger": "v8.setFlagsFromString(flags)\tv8",
-            "contents": "v8.setFlagsFromString(${1:flags});$0"
+            "trigger": "v8.setFlagsFromString(string)\tv8",
+            "contents": "v8.setFlagsFromString(${1:string});$0"
         },
         {
             "trigger": "v8.serialize(value)\tv8",

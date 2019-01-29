@@ -42,10 +42,6 @@
             "contents": "path.resolve(${1:[, ...paths]});$0"
         },
         {
-            "trigger": "path.toNamespacedPath(path)\tpath",
-            "contents": "path.toNamespacedPath(${1:path});$0"
-        },
-        {
             "trigger": "path.delimiter\tpath",
             "contents": "path.delimiter$0"
         },
