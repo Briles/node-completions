@@ -2,28 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "net.connect(options[, connectListener])\tnet",
-            "contents": "net.connect(${1:options}, ${2:[, connectListener]});$0"
+            "trigger": "net.connect()\tnet",
+            "contents": "net.connect();$0"
         },
         {
-            "trigger": "net.connect(path[, connectListener])\tnet",
-            "contents": "net.connect(${1:path}, ${2:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.connect(port[, host][, connectListener])\tnet",
-            "contents": "net.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.createConnection(options[, connectListener])\tnet",
-            "contents": "net.createConnection(${1:options}, ${2:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.createConnection(path[, connectListener])\tnet",
-            "contents": "net.createConnection(${1:path}, ${2:[, connectListener]});$0"
-        },
-        {
-            "trigger": "net.createConnection(port[, host][, connectListener])\tnet",
-            "contents": "net.createConnection(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
+            "trigger": "net.createConnection()\tnet",
+            "contents": "net.createConnection();$0"
         },
         {
             "trigger": "net.createServer([options][, connectionListener])\tnet",
@@ -54,20 +38,8 @@
             "contents": "server.getConnections(${1:callback});$0"
         },
         {
-            "trigger": "server.listen(handle[, backlog][, callback])\tnet",
-            "contents": "server.listen(${1:handle}, ${2:[, backlog]}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "server.listen(options[, callback])\tnet",
-            "contents": "server.listen(${1:options}, ${2:[, callback]});$0"
-        },
-        {
-            "trigger": "server.listen(path[, backlog][, callback])\tnet",
-            "contents": "server.listen(${1:path}, ${2:[, backlog]}, ${3:[, callback]});$0"
-        },
-        {
-            "trigger": "server.listen([port][, hostname][, backlog][, callback])\tnet",
-            "contents": "server.listen(${1:[, port]}, ${2:[, hostname]}, ${3:[, backlog]}, ${4:[, callback]});$0"
+            "trigger": "server.listen()\tnet",
+            "contents": "server.listen();$0"
         },
         {
             "trigger": "server.ref()\tnet",
@@ -106,32 +78,20 @@
             "contents": "listening$0"
         },
         {
-            "trigger": "new net.Socket([options])\tnet",
-            "contents": "new net.Socket(${1:[, options]});$0"
-        },
-        {
             "trigger": "socket.address()\tnet",
             "contents": "socket.address();$0"
         },
         {
-            "trigger": "socket.connect(options[, connectListener])\tnet",
-            "contents": "socket.connect(${1:options}, ${2:[, connectListener]});$0"
-        },
-        {
-            "trigger": "socket.connect(path[, connectListener])\tnet",
-            "contents": "socket.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
-        },
-        {
-            "trigger": "socket.connect(port[, host][, connectListener])\tnet",
-            "contents": "socket.connect(${1:port}, ${2:[, host]}, ${3:[, connectListener]});$0"
+            "trigger": "socket.connect()\tnet",
+            "contents": "socket.connect();$0"
         },
         {
             "trigger": "socket.destroy([exception])\tnet",
             "contents": "socket.destroy(${1:[, exception]});$0"
         },
         {
-            "trigger": "socket.end([data][, encoding])\tnet",
-            "contents": "socket.end(${1:[, data]}, ${2:[, encoding]});$0"
+            "trigger": "socket.end([data][, encoding][, callback])\tnet",
+            "contents": "socket.end(${1:[, data]}, ${2:[, encoding]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "socket.pause()\tnet",
@@ -190,8 +150,8 @@
             "contents": "net.socket.destroyed$0"
         },
         {
-            "trigger": "net.socket.localAddress\tnet",
-            "contents": "net.socket.localAddress$0"
+            "trigger": "socket.localAddress\tnet",
+            "contents": "socket.localAddress$0"
         },
         {
             "trigger": "net.socket.localPort\tnet",
@@ -228,6 +188,10 @@
         {
             "trigger": "lookup\tnet",
             "contents": "lookup$0"
+        },
+        {
+            "trigger": "ready\tnet",
+            "contents": "ready$0"
         },
         {
             "trigger": "timeout\tnet",
