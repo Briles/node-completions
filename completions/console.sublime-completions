@@ -14,12 +14,8 @@
             "contents": "console.count(${1:[, label]});$0"
         },
         {
-            "trigger": "console.countReset([label='default'])\tconsole",
+            "trigger": "console.countReset([label = 'default'])\tconsole",
             "contents": "console.countReset(${1:[, label]});$0"
-        },
-        {
-            "trigger": "console.debug(data[, ...args])\tconsole",
-            "contents": "console.debug(${1:data}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "console.dir(obj[, options])\tconsole",
@@ -28,18 +24,6 @@
         {
             "trigger": "console.error([data][, ...args])\tconsole",
             "contents": "console.error(${1:[, data]}, ${2:[, ...args]});$0"
-        },
-        {
-            "trigger": "console.group([...label])\tconsole",
-            "contents": "console.group(${1:[, ...label]});$0"
-        },
-        {
-            "trigger": "console.groupCollapsed()\tconsole",
-            "contents": "console.groupCollapsed();$0"
-        },
-        {
-            "trigger": "console.groupEnd()\tconsole",
-            "contents": "console.groupEnd();$0"
         },
         {
             "trigger": "console.info([data][, ...args])\tconsole",
@@ -58,44 +42,12 @@
             "contents": "console.timeEnd(${1:label});$0"
         },
         {
-            "trigger": "console.trace([message][, ...args])\tconsole",
-            "contents": "console.trace(${1:[, message]}, ${2:[, ...args]});$0"
+            "trigger": "console.trace(message[, ...args])\tconsole",
+            "contents": "console.trace(${1:message}, ${2:[, ...args]});$0"
         },
         {
             "trigger": "console.warn([data][, ...args])\tconsole",
             "contents": "console.warn(${1:[, data]}, ${2:[, ...args]});$0"
-        },
-        {
-            "trigger": "console.dirxml(object)\tconsole",
-            "contents": "console.dirxml(${1:object});$0"
-        },
-        {
-            "trigger": "console.markTimeline(label)\tconsole",
-            "contents": "console.markTimeline(${1:label});$0"
-        },
-        {
-            "trigger": "console.profile([label])\tconsole",
-            "contents": "console.profile(${1:[, label]});$0"
-        },
-        {
-            "trigger": "console.profileEnd()\tconsole",
-            "contents": "console.profileEnd();$0"
-        },
-        {
-            "trigger": "console.table(array[, columns])\tconsole",
-            "contents": "console.table(${1:array}, ${2:[, columns]});$0"
-        },
-        {
-            "trigger": "console.timeStamp([label])\tconsole",
-            "contents": "console.timeStamp(${1:[, label]});$0"
-        },
-        {
-            "trigger": "console.timeline([label])\tconsole",
-            "contents": "console.timeline(${1:[, label]});$0"
-        },
-        {
-            "trigger": "console.timelineEnd([label])\tconsole",
-            "contents": "console.timelineEnd(${1:[, label]});$0"
         }
     ]
 }
