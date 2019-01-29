@@ -10,8 +10,16 @@
             "contents": "http.get(${1:options}, ${2:[, callback]});$0"
         },
         {
+            "trigger": "http.get(url[, options][, callback])\thttp",
+            "contents": "http.get(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
+        },
+        {
             "trigger": "http.request(options[, callback])\thttp",
             "contents": "http.request(${1:options}, ${2:[, callback]});$0"
+        },
+        {
+            "trigger": "http.request(url[, options][, callback])\thttp",
+            "contents": "http.request(${1:url}, ${2:[, options]}, ${3:[, callback]});$0"
         },
         {
             "trigger": "agent.createConnection(options[, callback])\thttp",

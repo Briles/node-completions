@@ -58,20 +58,20 @@
             "contents": "serializer.writeRawBytes(${1:buffer});$0"
         },
         {
-            "trigger": "serializer.\\_writeHostObject(object)\tv8",
-            "contents": "serializer.\\_writeHostObject(${1:object});$0"
+            "trigger": "serializer._writeHostObject(object)\tv8",
+            "contents": "serializer._writeHostObject(${1:object});$0"
         },
         {
-            "trigger": "serializer.\\_getDataCloneError(message)\tv8",
-            "contents": "serializer.\\_getDataCloneError(${1:message});$0"
+            "trigger": "serializer._getDataCloneError(message)\tv8",
+            "contents": "serializer._getDataCloneError(${1:message});$0"
         },
         {
-            "trigger": "serializer.\\_getSharedArrayBufferId(sharedArrayBuffer)\tv8",
-            "contents": "serializer.\\_getSharedArrayBufferId(${1:sharedArrayBuffer});$0"
+            "trigger": "serializer._getSharedArrayBufferId(sharedArrayBuffer)\tv8",
+            "contents": "serializer._getSharedArrayBufferId(${1:sharedArrayBuffer});$0"
         },
         {
-            "trigger": "serializer.\\_setTreatArrayBufferViewsAsHostObjects(flag)\tv8",
-            "contents": "serializer.\\_setTreatArrayBufferViewsAsHostObjects(${1:flag});$0"
+            "trigger": "serializer._setTreatArrayBufferViewsAsHostObjects(flag)\tv8",
+            "contents": "serializer._setTreatArrayBufferViewsAsHostObjects(${1:flag});$0"
         },
         {
             "trigger": "deserializer.readHeader()\tv8",
@@ -106,8 +106,8 @@
             "contents": "deserializer.readRawBytes(${1:length});$0"
         },
         {
-            "trigger": "deserializer.\\_readHostObject()\tv8",
-            "contents": "deserializer.\\_readHostObject();$0"
+            "trigger": "deserializer._readHostObject()\tv8",
+            "contents": "deserializer._readHostObject();$0"
         }
     ]
 }

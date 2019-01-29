@@ -30,8 +30,8 @@
             "contents": "inspectorNotification$0"
         },
         {
-            "trigger": "&lt;inspector-protocol-method&gt;\tinspector",
-            "contents": "&lt;inspector-protocol-method&gt;$0"
+            "trigger": "<inspector-protocol-method>\tinspector",
+            "contents": "<inspector-protocol-method>$0"
         },
         {
             "trigger": "inspector.console\tinspector",

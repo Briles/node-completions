@@ -31,7 +31,7 @@
         },
         {
             "trigger": "zlib.deflate(buffer[, options], callback)\tzlib",
-            "contents": "zlib.deflate(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.deflate(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.deflateSync(buffer[, options])\tzlib",
@@ -39,7 +39,7 @@
         },
         {
             "trigger": "zlib.deflateRaw(buffer[, options], callback)\tzlib",
-            "contents": "zlib.deflateRaw(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.deflateRaw(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.deflateRawSync(buffer[, options])\tzlib",
@@ -47,7 +47,7 @@
         },
         {
             "trigger": "zlib.gunzip(buffer[, options], callback)\tzlib",
-            "contents": "zlib.gunzip(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.gunzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.gunzipSync(buffer[, options])\tzlib",
@@ -55,7 +55,7 @@
         },
         {
             "trigger": "zlib.gzip(buffer[, options], callback)\tzlib",
-            "contents": "zlib.gzip(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.gzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.gzipSync(buffer[, options])\tzlib",
@@ -63,7 +63,7 @@
         },
         {
             "trigger": "zlib.inflate(buffer[, options], callback)\tzlib",
-            "contents": "zlib.inflate(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.inflate(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.inflateSync(buffer[, options])\tzlib",
@@ -71,7 +71,7 @@
         },
         {
             "trigger": "zlib.inflateRaw(buffer[, options], callback)\tzlib",
-            "contents": "zlib.inflateRaw(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.inflateRaw(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.inflateRawSync(buffer[, options])\tzlib",
@@ -79,7 +79,7 @@
         },
         {
             "trigger": "zlib.unzip(buffer[, options], callback)\tzlib",
-            "contents": "zlib.unzip(${1:buffer}, ${2:[, options]});$0"
+            "contents": "zlib.unzip(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
         },
         {
             "trigger": "zlib.unzipSync(buffer[, options])\tzlib",

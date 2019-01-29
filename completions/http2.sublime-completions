@@ -290,10 +290,6 @@
             "contents": "sessionError$0"
         },
         {
-            "trigger": "streamError\thttp/2",
-            "contents": "streamError$0"
-        },
-        {
             "trigger": "unknownProtocol\thttp/2",
             "contents": "unknownProtocol$0"
         },

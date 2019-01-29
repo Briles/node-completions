@@ -70,8 +70,8 @@
             "contents": "util.types$0"
         },
         {
-            "trigger": "util.\\_extend(target, source)\tutil",
-            "contents": "util.\\_extend(${1:target}, ${2:source});$0"
+            "trigger": "util._extend(target, source)\tutil",
+            "contents": "util._extend(${1:target}, ${2:source});$0"
         },
         {
             "trigger": "util.debug(string)\tutil",

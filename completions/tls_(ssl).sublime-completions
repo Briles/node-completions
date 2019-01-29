@@ -130,8 +130,8 @@
             "contents": "tls.tlssocket.authorizationError$0"
         },
         {
-            "trigger": "tls.tlssocket.authorized\ttls_(ssl)",
-            "contents": "tls.tlssocket.authorized$0"
+            "trigger": "tls.tlssocket.return\ttls_(ssl)",
+            "contents": "tls.tlssocket.return$0"
         },
         {
             "trigger": "tls.tlssocket.encrypted\ttls_(ssl)",

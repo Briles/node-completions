@@ -274,8 +274,8 @@
             "contents": "crypto.timingSafeEqual(${1:a}, ${2:b});$0"
         },
         {
-            "trigger": "`crypto`_module_methods_and_properties.constants\tcrypto",
-            "contents": "`crypto`_module_methods_and_properties.constants$0"
+            "trigger": "`crypto`_module_methods_and_properties.return\tcrypto",
+            "contents": "`crypto`_module_methods_and_properties.return$0"
         },
         {
             "trigger": "crypto.DEFAULT_ENCODING\tcrypto",
