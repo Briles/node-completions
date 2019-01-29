@@ -34,7 +34,7 @@
             "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
         },
         {
-            "trigger": "script.runInNewContext([sandbox][, options])\tvm",
+            "trigger": "script.runInNewContext([sandbox[, options]])\tvm",
             "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
         },
         {

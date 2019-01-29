@@ -2,16 +2,112 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "v8.getHeapStatistics()\tv8",
-            "contents": "v8.getHeapStatistics();$0"
+            "trigger": "v8.cachedDataVersionTag()\tv8",
+            "contents": "v8.cachedDataVersionTag();$0"
         },
         {
             "trigger": "v8.getHeapSpaceStatistics()\tv8",
             "contents": "v8.getHeapSpaceStatistics();$0"
         },
         {
+            "trigger": "v8.getHeapStatistics()\tv8",
+            "contents": "v8.getHeapStatistics();$0"
+        },
+        {
             "trigger": "v8.setFlagsFromString(string)\tv8",
             "contents": "v8.setFlagsFromString(${1:string});$0"
+        },
+        {
+            "trigger": "v8.serialize(value)\tv8",
+            "contents": "v8.serialize(${1:value});$0"
+        },
+        {
+            "trigger": "v8.deserialize(buffer)\tv8",
+            "contents": "v8.deserialize(${1:buffer});$0"
+        },
+        {
+            "trigger": "serializer.writeHeader()\tv8",
+            "contents": "serializer.writeHeader();$0"
+        },
+        {
+            "trigger": "serializer.writeValue(value)\tv8",
+            "contents": "serializer.writeValue(${1:value});$0"
+        },
+        {
+            "trigger": "serializer.releaseBuffer()\tv8",
+            "contents": "serializer.releaseBuffer();$0"
+        },
+        {
+            "trigger": "serializer.transferArrayBuffer(id, arrayBuffer)\tv8",
+            "contents": "serializer.transferArrayBuffer(${1:id}, ${2:arrayBuffer});$0"
+        },
+        {
+            "trigger": "serializer.writeUint32(value)\tv8",
+            "contents": "serializer.writeUint32(${1:value});$0"
+        },
+        {
+            "trigger": "serializer.writeUint64(hi, lo)\tv8",
+            "contents": "serializer.writeUint64(${1:hi}, ${2:lo});$0"
+        },
+        {
+            "trigger": "serializer.writeDouble(value)\tv8",
+            "contents": "serializer.writeDouble(${1:value});$0"
+        },
+        {
+            "trigger": "serializer.writeRawBytes(buffer)\tv8",
+            "contents": "serializer.writeRawBytes(${1:buffer});$0"
+        },
+        {
+            "trigger": "serializer.\\_writeHostObject(object)\tv8",
+            "contents": "serializer.\\_writeHostObject(${1:object});$0"
+        },
+        {
+            "trigger": "serializer.\\_getDataCloneError(message)\tv8",
+            "contents": "serializer.\\_getDataCloneError(${1:message});$0"
+        },
+        {
+            "trigger": "serializer.\\_getSharedArrayBufferId(sharedArrayBuffer)\tv8",
+            "contents": "serializer.\\_getSharedArrayBufferId(${1:sharedArrayBuffer});$0"
+        },
+        {
+            "trigger": "serializer.\\_setTreatArrayBufferViewsAsHostObjects(flag)\tv8",
+            "contents": "serializer.\\_setTreatArrayBufferViewsAsHostObjects(${1:flag});$0"
+        },
+        {
+            "trigger": "deserializer.readHeader()\tv8",
+            "contents": "deserializer.readHeader();$0"
+        },
+        {
+            "trigger": "deserializer.readValue()\tv8",
+            "contents": "deserializer.readValue();$0"
+        },
+        {
+            "trigger": "deserializer.transferArrayBuffer(id, arrayBuffer)\tv8",
+            "contents": "deserializer.transferArrayBuffer(${1:id}, ${2:arrayBuffer});$0"
+        },
+        {
+            "trigger": "deserializer.getWireFormatVersion()\tv8",
+            "contents": "deserializer.getWireFormatVersion();$0"
+        },
+        {
+            "trigger": "deserializer.readUint32()\tv8",
+            "contents": "deserializer.readUint32();$0"
+        },
+        {
+            "trigger": "deserializer.readUint64()\tv8",
+            "contents": "deserializer.readUint64();$0"
+        },
+        {
+            "trigger": "deserializer.readDouble()\tv8",
+            "contents": "deserializer.readDouble();$0"
+        },
+        {
+            "trigger": "deserializer.readRawBytes(length)\tv8",
+            "contents": "deserializer.readRawBytes(${1:length});$0"
+        },
+        {
+            "trigger": "deserializer.\\_readHostObject()\tv8",
+            "contents": "deserializer.\\_readHostObject();$0"
         }
     ]
 }

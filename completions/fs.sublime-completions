@@ -42,6 +42,14 @@
             "contents": "fs.closeSync(${1:fd});$0"
         },
         {
+            "trigger": "fs.copyFile(src, dest[, flags], callback)\tfs",
+            "contents": "fs.copyFile(${1:src}, ${2:dest}, ${3:[, flags]}, ${4:callback});$0"
+        },
+        {
+            "trigger": "fs.copyFileSync(src, dest[, flags])\tfs",
+            "contents": "fs.copyFileSync(${1:src}, ${2:dest}, ${3:[, flags]});$0"
+        },
+        {
             "trigger": "fs.createReadStream(path[, options])\tfs",
             "contents": "fs.createReadStream(${1:path}, ${2:[, options]});$0"
         },
@@ -98,12 +106,12 @@
             "contents": "fs.fsyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.ftruncate(fd, len, callback)\tfs",
-            "contents": "fs.ftruncate(${1:fd}, ${2:len}, ${3:callback});$0"
+            "trigger": "fs.ftruncate(fd[, len], callback)\tfs",
+            "contents": "fs.ftruncate(${1:fd}, ${2:[, len]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.ftruncateSync(fd, len)\tfs",
-            "contents": "fs.ftruncateSync(${1:fd}, ${2:len});$0"
+            "trigger": "fs.ftruncateSync(fd[, len])\tfs",
+            "contents": "fs.ftruncateSync(${1:fd}, ${2:[, len]});$0"
         },
         {
             "trigger": "fs.futimes(fd, atime, mtime, callback)\tfs",
@@ -182,12 +190,12 @@
             "contents": "fs.readdirSync(${1:path}, ${2:[, options]});$0"
         },
         {
-            "trigger": "fs.readFile(file[, options], callback)\tfs",
-            "contents": "fs.readFile(${1:file}, ${2:[, options]}, ${3:callback});$0"
+            "trigger": "fs.readFile(path[, options], callback)\tfs",
+            "contents": "fs.readFile(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.readFileSync(file[, options])\tfs",
-            "contents": "fs.readFileSync(${1:file}, ${2:[, options]});$0"
+            "trigger": "fs.readFileSync(path[, options])\tfs",
+            "contents": "fs.readFileSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.readlink(path[, options], callback)\tfs",
@@ -242,12 +250,12 @@
             "contents": "fs.symlinkSync(${1:target}, ${2:path}, ${3:[, type]});$0"
         },
         {
-            "trigger": "fs.truncate(path, len, callback)\tfs",
-            "contents": "fs.truncate(${1:path}, ${2:len}, ${3:callback});$0"
+            "trigger": "fs.truncate(path[, len], callback)\tfs",
+            "contents": "fs.truncate(${1:path}, ${2:[, len]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.truncateSync(path, len)\tfs",
-            "contents": "fs.truncateSync(${1:path}, ${2:len});$0"
+            "trigger": "fs.truncateSync(path[, len])\tfs",
+            "contents": "fs.truncateSync(${1:path}, ${2:[, len]});$0"
         },
         {
             "trigger": "fs.unlink(path, callback)\tfs",
@@ -322,12 +330,12 @@
             "contents": "readStream.path$0"
         },
         {
-            "trigger": "open\tfs",
-            "contents": "open$0"
-        },
-        {
             "trigger": "close\tfs",
             "contents": "close$0"
+        },
+        {
+            "trigger": "open\tfs",
+            "contents": "open$0"
         },
         {
             "trigger": "fs.writestream.bytesWritten\tfs",
