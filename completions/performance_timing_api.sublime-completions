@@ -54,14 +54,6 @@
             "contents": "performancenodetiming.bootstrapComplete$0"
         },
         {
-            "trigger": "performancenodetiming.clusterSetupEnd\tperformance_timing_api",
-            "contents": "performancenodetiming.clusterSetupEnd$0"
-        },
-        {
-            "trigger": "performancenodetiming.clusterSetupStart\tperformance_timing_api",
-            "contents": "performancenodetiming.clusterSetupStart$0"
-        },
-        {
             "trigger": "performancenodetiming.loopExit\tperformance_timing_api",
             "contents": "performancenodetiming.loopExit$0"
         },
@@ -70,32 +62,8 @@
             "contents": "performancenodetiming.loopStart$0"
         },
         {
-            "trigger": "performancenodetiming.moduleLoadEnd\tperformance_timing_api",
-            "contents": "performancenodetiming.moduleLoadEnd$0"
-        },
-        {
-            "trigger": "performancenodetiming.moduleLoadStart\tperformance_timing_api",
-            "contents": "performancenodetiming.moduleLoadStart$0"
-        },
-        {
             "trigger": "performancenodetiming.nodeStart\tperformance_timing_api",
             "contents": "performancenodetiming.nodeStart$0"
-        },
-        {
-            "trigger": "performancenodetiming.preloadModuleLoadEnd\tperformance_timing_api",
-            "contents": "performancenodetiming.preloadModuleLoadEnd$0"
-        },
-        {
-            "trigger": "performancenodetiming.preloadModuleLoadStart\tperformance_timing_api",
-            "contents": "performancenodetiming.preloadModuleLoadStart$0"
-        },
-        {
-            "trigger": "performancenodetiming.thirdPartyMainEnd\tperformance_timing_api",
-            "contents": "performancenodetiming.thirdPartyMainEnd$0"
-        },
-        {
-            "trigger": "performancenodetiming.thirdPartyMainStart\tperformance_timing_api",
-            "contents": "performancenodetiming.thirdPartyMainStart$0"
         },
         {
             "trigger": "performancenodetiming.v8Start\tperformance_timing_api",

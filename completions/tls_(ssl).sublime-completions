@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "tls.checkServerIdentity(host, cert)\ttls_(ssl)",
-            "contents": "tls.checkServerIdentity(${1:host}, ${2:cert});$0"
+            "trigger": "tls.checkServerIdentity(hostname, cert)\ttls_(ssl)",
+            "contents": "tls.checkServerIdentity(${1:hostname}, ${2:cert});$0"
         },
         {
             "trigger": "tls.connect(options[, callback])\ttls_(ssl)",

@@ -1,0 +1,89 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "port.close()\tworker_threads",
+            "contents": "port.close();$0"
+        },
+        {
+            "trigger": "port.postMessage(value[, transferList])\tworker_threads",
+            "contents": "port.postMessage(${1:value}, ${2:[, transferList]});$0"
+        },
+        {
+            "trigger": "port.ref()\tworker_threads",
+            "contents": "port.ref();$0"
+        },
+        {
+            "trigger": "port.start()\tworker_threads",
+            "contents": "port.start();$0"
+        },
+        {
+            "trigger": "port.unref()\tworker_threads",
+            "contents": "port.unref();$0"
+        },
+        {
+            "trigger": "close\tworker_threads",
+            "contents": "close$0"
+        },
+        {
+            "trigger": "message\tworker_threads",
+            "contents": "message$0"
+        },
+        {
+            "trigger": "worker.postMessage(value[, transferList])\tworker_threads",
+            "contents": "worker.postMessage(${1:value}, ${2:[, transferList]});$0"
+        },
+        {
+            "trigger": "worker.ref()\tworker_threads",
+            "contents": "worker.ref();$0"
+        },
+        {
+            "trigger": "worker.terminate([callback])\tworker_threads",
+            "contents": "worker.terminate(${1:[, callback]});$0"
+        },
+        {
+            "trigger": "worker.unref()\tworker_threads",
+            "contents": "worker.unref();$0"
+        },
+        {
+            "trigger": "process.stderr\tworker_threads",
+            "contents": "process.stderr$0"
+        },
+        {
+            "trigger": "process.stdin\tworker_threads",
+            "contents": "process.stdin$0"
+        },
+        {
+            "trigger": "process.stdout\tworker_threads",
+            "contents": "process.stdout$0"
+        },
+        {
+            "trigger": "worker.threadId\tworker_threads",
+            "contents": "worker.threadId$0"
+        },
+        {
+            "trigger": "error\tworker_threads",
+            "contents": "error$0"
+        },
+        {
+            "trigger": "exit\tworker_threads",
+            "contents": "exit$0"
+        },
+        {
+            "trigger": "online\tworker_threads",
+            "contents": "online$0"
+        },
+        {
+            "trigger": "worker_threads.isMainThread\tworker_threads",
+            "contents": "worker_threads.isMainThread$0"
+        },
+        {
+            "trigger": "worker_threads.parentPort\tworker_threads",
+            "contents": "worker_threads.parentPort$0"
+        },
+        {
+            "trigger": "worker_threads.workerData\tworker_threads",
+            "contents": "worker_threads.workerData$0"
+        }
+    ]
+}

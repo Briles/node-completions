@@ -10,11 +10,11 @@
             "contents": "console.clear();$0"
         },
         {
-            "trigger": "console.count([label='default'])\tconsole",
+            "trigger": "console.count([label])\tconsole",
             "contents": "console.count(${1:[, label]});$0"
         },
         {
-            "trigger": "console.countReset([label='default'])\tconsole",
+            "trigger": "console.countReset([label])\tconsole",
             "contents": "console.countReset(${1:[, label]});$0"
         },
         {
@@ -58,12 +58,12 @@
             "contents": "console.table(${1:tabularData}, ${2:[, properties]});$0"
         },
         {
-            "trigger": "console.time(label)\tconsole",
-            "contents": "console.time(${1:label});$0"
+            "trigger": "console.time([label])\tconsole",
+            "contents": "console.time(${1:[, label]});$0"
         },
         {
-            "trigger": "console.timeEnd(label)\tconsole",
-            "contents": "console.timeEnd(${1:label});$0"
+            "trigger": "console.timeEnd([label])\tconsole",
+            "contents": "console.timeEnd(${1:[, label]});$0"
         },
         {
             "trigger": "console.trace([message][, ...args])\tconsole",
@@ -74,16 +74,16 @@
             "contents": "console.warn(${1:[, data]}, ${2:[, ...args]});$0"
         },
         {
-            "trigger": "console.markTimeline(label)\tconsole",
-            "contents": "console.markTimeline(${1:label});$0"
+            "trigger": "console.markTimeline([label])\tconsole",
+            "contents": "console.markTimeline(${1:[, label]});$0"
         },
         {
             "trigger": "console.profile([label])\tconsole",
             "contents": "console.profile(${1:[, label]});$0"
         },
         {
-            "trigger": "console.profileEnd()\tconsole",
-            "contents": "console.profileEnd();$0"
+            "trigger": "console.profileEnd([label])\tconsole",
+            "contents": "console.profileEnd(${1:[, label]});$0"
         },
         {
             "trigger": "console.timeStamp([label])\tconsole",

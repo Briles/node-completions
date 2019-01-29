@@ -90,12 +90,12 @@
             "contents": "fs.fdatasyncSync(${1:fd});$0"
         },
         {
-            "trigger": "fs.fstat(fd, callback)\tfs",
-            "contents": "fs.fstat(${1:fd}, ${2:callback});$0"
+            "trigger": "fs.fstat(fd[, options], callback)\tfs",
+            "contents": "fs.fstat(${1:fd}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.fstatSync(fd)\tfs",
-            "contents": "fs.fstatSync(${1:fd});$0"
+            "trigger": "fs.fstatSync(fd[, options])\tfs",
+            "contents": "fs.fstatSync(${1:fd}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.fsync(fd, callback)\tfs",
@@ -146,12 +146,12 @@
             "contents": "fs.linkSync(${1:existingPath}, ${2:newPath});$0"
         },
         {
-            "trigger": "fs.lstat(path, callback)\tfs",
-            "contents": "fs.lstat(${1:path}, ${2:callback});$0"
+            "trigger": "fs.lstat(path[, options], callback)\tfs",
+            "contents": "fs.lstat(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.lstatSync(path)\tfs",
-            "contents": "fs.lstatSync(${1:path});$0"
+            "trigger": "fs.lstatSync(path[, options])\tfs",
+            "contents": "fs.lstatSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.mkdir(path[, mode], callback)\tfs",
@@ -242,12 +242,12 @@
             "contents": "fs.rmdirSync(${1:path});$0"
         },
         {
-            "trigger": "fs.stat(path, callback)\tfs",
-            "contents": "fs.stat(${1:path}, ${2:callback});$0"
+            "trigger": "fs.stat(path[, options], callback)\tfs",
+            "contents": "fs.stat(${1:path}, ${2:[, options]}, ${3:callback});$0"
         },
         {
-            "trigger": "fs.statSync(path)\tfs",
-            "contents": "fs.statSync(${1:path});$0"
+            "trigger": "fs.statSync(path[, options])\tfs",
+            "contents": "fs.statSync(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fs.symlink(target, path[, type], callback)\tfs",
@@ -482,34 +482,6 @@
             "contents": "fsPromises.copyFile(${1:src}, ${2:dest}, ${3:[, flags]});$0"
         },
         {
-            "trigger": "fsPromises.fchmod(filehandle, mode)\tfs",
-            "contents": "fsPromises.fchmod(${1:filehandle}, ${2:mode});$0"
-        },
-        {
-            "trigger": "fsPromises.fchown(filehandle, uid, gid)\tfs",
-            "contents": "fsPromises.fchown(${1:filehandle}, ${2:uid}, ${3:gid});$0"
-        },
-        {
-            "trigger": "fsPromises.fdatasync(filehandle)\tfs",
-            "contents": "fsPromises.fdatasync(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.fstat(filehandle)\tfs",
-            "contents": "fsPromises.fstat(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.fsync(filehandle)\tfs",
-            "contents": "fsPromises.fsync(${1:filehandle});$0"
-        },
-        {
-            "trigger": "fsPromises.ftruncate(filehandle[, len])\tfs",
-            "contents": "fsPromises.ftruncate(${1:filehandle}, ${2:[, len]});$0"
-        },
-        {
-            "trigger": "fsPromises.futimes(filehandle, atime, mtime)\tfs",
-            "contents": "fsPromises.futimes(${1:filehandle}, ${2:atime}, ${3:mtime});$0"
-        },
-        {
             "trigger": "fsPromises.lchmod(path, mode)\tfs",
             "contents": "fsPromises.lchmod(${1:path}, ${2:mode});$0"
         },
@@ -522,8 +494,8 @@
             "contents": "fsPromises.link(${1:existingPath}, ${2:newPath});$0"
         },
         {
-            "trigger": "fsPromises.lstat(path)\tfs",
-            "contents": "fsPromises.lstat(${1:path});$0"
+            "trigger": "fsPromises.lstat(path[, options])\tfs",
+            "contents": "fsPromises.lstat(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fsPromises.mkdir(path[, mode])\tfs",
@@ -536,10 +508,6 @@
         {
             "trigger": "fsPromises.open(path, flags[, mode])\tfs",
             "contents": "fsPromises.open(${1:path}, ${2:flags}, ${3:[, mode]});$0"
-        },
-        {
-            "trigger": "fsPromises.read(filehandle, buffer, offset, length, position)\tfs",
-            "contents": "fsPromises.read(${1:filehandle}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
         },
         {
             "trigger": "fsPromises.readdir(path[, options])\tfs",
@@ -566,8 +534,8 @@
             "contents": "fsPromises.rmdir(${1:path});$0"
         },
         {
-            "trigger": "fsPromises.stat(path)\tfs",
-            "contents": "fsPromises.stat(${1:path});$0"
+            "trigger": "fsPromises.stat(path[, options])\tfs",
+            "contents": "fsPromises.stat(${1:path}, ${2:[, options]});$0"
         },
         {
             "trigger": "fsPromises.symlink(target, path[, type])\tfs",
@@ -584,10 +552,6 @@
         {
             "trigger": "fsPromises.utimes(path, atime, mtime)\tfs",
             "contents": "fsPromises.utimes(${1:path}, ${2:atime}, ${3:mtime});$0"
-        },
-        {
-            "trigger": "fsPromises.write(filehandle, buffer[, offset[, length[, position]]])\tfs",
-            "contents": "fsPromises.write(${1:filehandle}, ${2:buffer}, ${3:[, offset]}, ${4:[, length]}, ${5:[, position]});$0"
         },
         {
             "trigger": "fsPromises.writeFile(file, data[, options])\tfs",
@@ -622,8 +586,8 @@
             "contents": "filehandle.readFile(${1:options});$0"
         },
         {
-            "trigger": "filehandle.stat()\tfs",
-            "contents": "filehandle.stat();$0"
+            "trigger": "filehandle.stat([options])\tfs",
+            "contents": "filehandle.stat(${1:[, options]});$0"
         },
         {
             "trigger": "filehandle.sync()\tfs",
