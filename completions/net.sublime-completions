@@ -158,6 +158,10 @@
             "contents": "net.socket.localPort$0"
         },
         {
+            "trigger": "net.socket.pending\tnet",
+            "contents": "net.socket.pending$0"
+        },
+        {
             "trigger": "net.socket.remoteAddress\tnet",
             "contents": "net.socket.remoteAddress$0"
         },

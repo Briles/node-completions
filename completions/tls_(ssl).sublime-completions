@@ -90,6 +90,10 @@
             "contents": "tlsSocket.disableRenegotiation();$0"
         },
         {
+            "trigger": "tlsSocket.getCertificate()\ttls_(ssl)",
+            "contents": "tlsSocket.getCertificate();$0"
+        },
+        {
             "trigger": "tlsSocket.getCipher()\ttls_(ssl)",
             "contents": "tlsSocket.getCipher();$0"
         },

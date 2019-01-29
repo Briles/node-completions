@@ -134,8 +134,8 @@
             "contents": "hmac.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "sign.sign(privateKey[, outputFormat])\tcrypto",
-            "contents": "sign.sign(${1:privateKey}, ${2:[, outputFormat]});$0"
+            "trigger": "sign.sign(privateKey[, outputEncoding])\tcrypto",
+            "contents": "sign.sign(${1:privateKey}, ${2:[, outputEncoding]});$0"
         },
         {
             "trigger": "sign.update(data[, inputEncoding])\tcrypto",
@@ -146,8 +146,8 @@
             "contents": "verify.update(${1:data}, ${2:[, inputEncoding]});$0"
         },
         {
-            "trigger": "verify.verify(object, signature[, signatureFormat])\tcrypto",
-            "contents": "verify.verify(${1:object}, ${2:signature}, ${3:[, signatureFormat]});$0"
+            "trigger": "verify.verify(object, signature[, signatureEncoding])\tcrypto",
+            "contents": "verify.verify(${1:object}, ${2:signature}, ${3:[, signatureEncoding]});$0"
         },
         {
             "trigger": "crypto.createCipher(algorithm, password[, options])\tcrypto",

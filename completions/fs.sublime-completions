@@ -374,6 +374,10 @@
             "contents": "readStream.path$0"
         },
         {
+            "trigger": "fs.readstream.pending\tfs",
+            "contents": "fs.readstream.pending$0"
+        },
+        {
             "trigger": "open\tfs",
             "contents": "open$0"
         },
@@ -488,6 +492,10 @@
         {
             "trigger": "writeStream.path\tfs",
             "contents": "writeStream.path$0"
+        },
+        {
+            "trigger": "fs.writestream.pending\tfs",
+            "contents": "fs.writestream.pending$0"
         },
         {
             "trigger": "fs.constants\tfs",

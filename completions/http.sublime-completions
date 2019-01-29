@@ -110,6 +110,10 @@
             "contents": "http.clientrequest.connection$0"
         },
         {
+            "trigger": "request.finished\thttp",
+            "contents": "request.finished$0"
+        },
+        {
             "trigger": "http.clientrequest.maxHeadersCount\thttp",
             "contents": "http.clientrequest.maxHeadersCount$0"
         },
