@@ -119,11 +119,15 @@
         },
         {
             "trigger": "tlsSocket.getSession()\ttls_(ssl)",
-            "contents": "tlsSocket.getSession();$0"
+            "contents": "tlsSocket.getSession(${1:undefined});$0"
         },
         {
             "trigger": "tlsSocket.getTLSTicket()\ttls_(ssl)",
-            "contents": "tlsSocket.getTLSTicket();$0"
+            "contents": "tlsSocket.getTLSTicket(${1:undefined});$0"
+        },
+        {
+            "trigger": "tlsSocket.isSessionReused()\ttls_(ssl)",
+            "contents": "tlsSocket.isSessionReused();$0"
         },
         {
             "trigger": "tlsSocket.renegotiate(options, callback)\ttls_(ssl)",

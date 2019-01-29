@@ -26,6 +26,22 @@
             "contents": "vm.runInThisContext(${1:code}, ${2:[, options]});$0"
         },
         {
+            "trigger": "script.createCachedData()\tvm",
+            "contents": "script.createCachedData();$0"
+        },
+        {
+            "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",
+            "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "script.runInNewContext([sandbox[, options]])\tvm",
+            "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "script.runInThisContext([options])\tvm",
+            "contents": "script.runInThisContext(${1:[, options]});$0"
+        },
+        {
             "trigger": "module.evaluate([options])\tvm",
             "contents": "module.evaluate(${1:[, options]});$0"
         },
@@ -60,22 +76,6 @@
         {
             "trigger": "vm.sourcetextmodule.url\tvm",
             "contents": "vm.sourcetextmodule.url$0"
-        },
-        {
-            "trigger": "script.createCachedData()\tvm",
-            "contents": "script.createCachedData();$0"
-        },
-        {
-            "trigger": "script.runInContext(contextifiedSandbox[, options])\tvm",
-            "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "script.runInNewContext([sandbox[, options]])\tvm",
-            "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
-        },
-        {
-            "trigger": "script.runInThisContext([options])\tvm",
-            "contents": "script.runInThisContext(${1:[, options]});$0"
         }
     ]
 }

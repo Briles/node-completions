@@ -2,6 +2,14 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "zlib.createBrotliCompress([options])\tzlib",
+            "contents": "zlib.createBrotliCompress(${1:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.createBrotliDecompress([options])\tzlib",
+            "contents": "zlib.createBrotliDecompress(${1:[, options]});$0"
+        },
+        {
             "trigger": "zlib.createDeflate([options])\tzlib",
             "contents": "zlib.createDeflate(${1:[, options]});$0"
         },
@@ -28,6 +36,22 @@
         {
             "trigger": "zlib.createUnzip([options])\tzlib",
             "contents": "zlib.createUnzip(${1:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.brotliCompress(buffer[, options], callback)\tzlib",
+            "contents": "zlib.brotliCompress(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.brotliCompressSync(buffer[, options])\tzlib",
+            "contents": "zlib.brotliCompressSync(${1:buffer}, ${2:[, options]});$0"
+        },
+        {
+            "trigger": "zlib.brotliDecompress(buffer[, options], callback)\tzlib",
+            "contents": "zlib.brotliDecompress(${1:buffer}, ${2:[, options]}, ${3:callback});$0"
+        },
+        {
+            "trigger": "zlib.brotliDecompressSync(buffer[, options])\tzlib",
+            "contents": "zlib.brotliDecompressSync(${1:buffer}, ${2:[, options]});$0"
         },
         {
             "trigger": "zlib.deflate(buffer[, options], callback)\tzlib",
@@ -102,8 +126,8 @@
             "contents": "zlib.reset();$0"
         },
         {
-            "trigger": "zlib.zlib.bytesRead\tzlib",
-            "contents": "zlib.zlib.bytesRead$0"
+            "trigger": "zlib.zlibbase.bytesRead\tzlib",
+            "contents": "zlib.zlibbase.bytesRead$0"
         },
         {
             "trigger": "zlib.bytesWritten\tzlib",

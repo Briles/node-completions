@@ -254,12 +254,12 @@
             "contents": "Buffer.from(${1:buffer});$0"
         },
         {
-            "trigger": "Buffer.from(string[, encoding])\tbuffer",
-            "contents": "Buffer.from(${1:string}, ${2:[, encoding]});$0"
-        },
-        {
             "trigger": "Buffer.from(object[, offsetOrEncoding[, length]])\tbuffer",
             "contents": "Buffer.from(${1:object}, ${2:[, offsetOrEncoding]}, ${3:[, length]});$0"
+        },
+        {
+            "trigger": "Buffer.from(string[, encoding])\tbuffer",
+            "contents": "Buffer.from(${1:string}, ${2:[, encoding]});$0"
         },
         {
             "trigger": "Buffer.isBuffer(obj)\tbuffer",
