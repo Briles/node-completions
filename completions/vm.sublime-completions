@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "vm.createContext([sandbox[, options]])\tvm",
-            "contents": "vm.createContext(${1:[, sandbox]}, ${2:[, options]});$0"
+            "trigger": "vm.createContext([sandbox])\tvm",
+            "contents": "vm.createContext(${1:[, sandbox]});$0"
         },
         {
             "trigger": "vm.isContext(sandbox)\tvm",
@@ -34,7 +34,7 @@
             "contents": "script.runInContext(${1:contextifiedSandbox}, ${2:[, options]});$0"
         },
         {
-            "trigger": "script.runInNewContext([sandbox[, options]])\tvm",
+            "trigger": "script.runInNewContext([sandbox][, options])\tvm",
             "contents": "script.runInNewContext(${1:[, sandbox]}, ${2:[, options]});$0"
         },
         {
