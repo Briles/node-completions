@@ -2,12 +2,12 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "decoder.end()\tstring_decoder",
-            "contents": "decoder.end();$0"
+            "trigger": "stringDecoder.end([buffer])\tstring_decoder",
+            "contents": "stringDecoder.end(${1:[, buffer]});$0"
         },
         {
-            "trigger": "decoder.write(buffer)\tstring_decoder",
-            "contents": "decoder.write(${1:buffer});$0"
+            "trigger": "stringDecoder.write(buffer)\tstring_decoder",
+            "contents": "stringDecoder.write(${1:buffer});$0"
         }
     ]
 }

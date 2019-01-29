@@ -8,6 +8,14 @@
         {
             "trigger": "Error.stackTraceLimit\tclasses",
             "contents": "Error.stackTraceLimit$0"
+        },
+        {
+            "trigger": "error.message\tclasses",
+            "contents": "error.message$0"
+        },
+        {
+            "trigger": "error.stack\tclasses",
+            "contents": "error.stack$0"
         }
     ]
 }

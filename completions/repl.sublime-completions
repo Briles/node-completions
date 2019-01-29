@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "repl.start(options)\trepl",
-            "contents": "repl.start(${1:options});$0"
+            "trigger": "repl.start([options])\trepl",
+            "contents": "repl.start(${1:[, options]});$0"
         },
         {
             "trigger": "replServer.defineCommand(keyword, cmd)\trepl",

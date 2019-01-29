@@ -2,16 +2,16 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "getHeapStatistics()\tv8",
-            "contents": "getHeapStatistics();$0"
+            "trigger": "v8.getHeapStatistics()\tv8",
+            "contents": "v8.getHeapStatistics();$0"
         },
         {
-            "trigger": "getHeapSpaceStatistics()\tv8",
-            "contents": "getHeapSpaceStatistics();$0"
+            "trigger": "v8.getHeapSpaceStatistics()\tv8",
+            "contents": "v8.getHeapSpaceStatistics();$0"
         },
         {
-            "trigger": "setFlagsFromString(string)\tv8",
-            "contents": "setFlagsFromString(${1:string});$0"
+            "trigger": "v8.setFlagsFromString(string)\tv8",
+            "contents": "v8.setFlagsFromString(${1:string});$0"
         }
     ]
 }
